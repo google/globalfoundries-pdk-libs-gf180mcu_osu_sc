@@ -1,0 +1,8 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/import/sakuya1/lrburle/OSU_180/lib/12T'
+rm -f *.cif *.sim *.gds *.ext *.spice 
+rm -rf ./cif/ ./sim/ ./gds/ ./ext/ ./spice/
+rm MAGIC.LOG
+rm log.txt
+make: Leaving directory `/import/sakuya1/lrburle/OSU_180/lib/12T'
+ 

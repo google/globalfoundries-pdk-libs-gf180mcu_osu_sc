@@ -1,0 +1,3 @@
+* include file for sky130 models
+
+.lib 'sky130.lib.spice' TT
