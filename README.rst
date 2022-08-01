@@ -5,7 +5,7 @@ This repository will contain a new set of standard cells for the
 `GF180MCU process technology release by Google and GlobalFoundries <https://github.com/google/gf180mcu>`_.
 
 These standard cells are being designed by James E. Stine, Jr. from the
-VLSI Computer Architecture Research Group.
+VLSI Computer Architecture Research Group at Oklahoma State University.
 
 VLSI Computer Architecture Research Group
 =========================================
