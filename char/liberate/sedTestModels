@@ -1,0 +1,13 @@
+#!/bin/bash
+
+rm -rf TEST_MODELS/*
+                                                                                
+cp -rf ../../sky130A/libs.tech/ngspice/parameters TEST_MODELS/
+cp -rf ../../sky130A/libs.tech/ngspice/parameters TEST_MODELS/
+cp ../../sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__tt.pm3.spice TEST_MODELS/
+cp ../../sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt.pm3.spice TEST_MODELS/
+
+find TEST_MODELS/ -type f -exec sed -i "s/\*AGAUSS([0-9].*)//g" {} +
+
+find TEST_MODELS/ -type f -exec sed -i "s/..\/..\/libs.ref\/sky130_fd_pr\/spice\//.include \"/g" {} +
+find TEST_MODELS/ -type f -exec sed -i "s/..\/..\/..\/libs.tech\/ngspice\//.include \"/g" {} +

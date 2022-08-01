@@ -1,0 +1,42 @@
+#!/bin/bash
+
+mkdir -p GDS
+
+extract=0
+gui=0
+noexit=0
+
+while test $# -gt 0
+do
+    case "$1" in
+        -extract) extract=1
+            ;;
+        -gui) gui=1
+            ;;
+        -noexit) noexit=1
+            ;;
+        -debug) noexit=1; gui=1
+            ;;
+    esac
+    shift    
+done
+
+cp ../../lib/12T/gds/*.gds GDS/
+ls GDS/* | sed ':a;N;$!ba;s/\n/ /g' | sed 's/GDS\/ \|GDS\/$//g' > GDSlist
+
+if [ $noexit -eq 1 ]
+then
+    sed -i '/absExit/d' abstract_SKILL_script
+fi
+
+if [ $gui -eq 1 ]
+then
+    abstract -replay abstract_SKILL_script
+else
+    abstract -nogui -replay abstract_SKILL_script
+fi
+
+if [ $noexit -eq 1 ]
+then
+    echo "absExit()" >> abstract_SKILL_script
+fi

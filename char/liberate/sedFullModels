@@ -1,0 +1,21 @@
+#!/bin/bash
+
+rm -rf FULL_MODELS/*
+                                                                                
+cp -rf ../../sky130A/libs.tech/ngspice/* FULL_MODELS/
+cp -rf ../../sky130A/libs.ref/sky130_fd_pr/spice/* FULL_MODELS/
+
+#find FULL_MODELS/ -type f -exec sed -i "s/AGAUSS(.*\?)//g" {} +
+find FULL_MODELS/ -type f -exec sed -i -e "s/\*AGAUSS([0-9].*,[0-9].*\.[0-9].*,[0-9])//g" {} +
+find FULL_MODELS/ -type f -exec sed -i -e "s/l\*w\*mult/1/g" {} +
+find FULL_MODELS/ -type f -exec sed -i -e "s//1/g" {} +
+
+#find FULL_MODELS/ -type f -exec sed -i "s/..\/..\/..\/libs.ref\/sky130_fd_pr\/spice\///g" {} +
+#find FULL_MODELS/ -type f -exec sed -i "s/..\/..\/libs.tech\/ngspice\///g" {} +
+find FULL_MODELS/corners/ -type f -exec sed -i "s/..\/..\/..\/libs.ref\/sky130_fd_pr\/spice\//..\//g" {} + 
+find FULL_MODELS/ -type f -exec sed -i "s/..\/..\/..\/libs.ref\/sky130_fd_pr\/spice\///g" {} + 
+find FULL_MODELS/ -type f -exec sed -i "s/..\/..\/libs.tech\/ngspice\///g" {} + 
+
+find FULL_MODELS/ -type f -exec sed -i "s/^msky130.*//g" {} +
+find FULL_MODELS/ -type f -exec sed -i "s/__model//g" {} +
+

@@ -1,0 +1,14 @@
+* include file for sky130 models
+
+*.param mc_mm_switch=0
+*.param mc_pr_switch=0
+*
+*.include 'parameters/lod.spice'
+*.include 'parameters/invariant.spice'
+*
+*.include 'sky130_fd_pr__nfet_01v8__tt.pm3.spice'
+*
+*.include 'sky130_fd_pr__pfet_01v8__tt.pm3.spice'
+
+.include '../techfiles/design.hspice'
+
