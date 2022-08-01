@@ -11,16 +11,8 @@ VLSI Computer Architecture Research Group
 =========================================
 
 -  James E. Stine, Jr.
+-  Landon Burleson   
 -  Teo Ene
--  Landon Burleson
--  Ryan Swann
--  Ryan Ridley
--  Brett Mathis
--  Alex Underwood
--  S. Ross Thompson
--  Peter Tikalsky
--  Brandon Ong
--  Hunter Lusk
 
 Thanks to the following for help, guidance and support!
 
