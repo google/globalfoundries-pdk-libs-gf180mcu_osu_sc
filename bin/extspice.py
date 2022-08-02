@@ -1,3 +1,9 @@
+# extspice.py
+# Author:  Landon Burleson
+# Organization: Oklahoma State University
+# E-mail: landon.burleson@okstate.edu
+# Description: perform pex at terminal
+
 import subprocess
 import traceback
 import shutil

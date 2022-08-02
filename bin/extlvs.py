@@ -1,3 +1,9 @@
+# extlvs.py
+# Author:  Landon Burleson
+# Organization: Oklahoma State University
+# E-mail: landon.burleson@okstate.edu
+# Description: perform lvs at terminal
+
 import subprocess
 import traceback
 import shutil
