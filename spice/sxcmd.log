@@ -1,0 +1,49 @@
+### Custom WaveView ADV log file, revision S-2021.09 (build Aug 22, ) ###
+### created at 14:28:25 on Fri Aug  5 2022 (Linux AMD64) ###
+### Host Name: yukari.ecen.okstate.edu   User ID: jstine   PID: 64395   ###
+wv_start_log
+# (0) running in waveview only mode
+# (0) SW_SX_PERL_LIB defined
+# (0) SW_SX_TCL_LIB defined
+# (0) HOME defined
+wv_move_window {Custom WaveView} {} 1325 892
+wv_select_window {Custom WaveView} 
+wv_press_tool_button {Custom WaveView} {} {OpenWaveform0} 
+wv_select_dialog {FileDialog} 
+wv_move_scrollbar {FileDialog} {} {FileList.HScrollBar} {82}
+wv_select_list_item {FileDialog} {} {FileList} {inv_1.st0} 16
+wv_dclick_list_item {FileDialog} {} {FileList} {inv_1.st0} 16
+wv_press_tool_button {Custom WaveView} {} {OpenWaveform0} 
+wv_select_dialog {FileDialog} 
+wv_select_list_item {FileDialog} {} {FileList} {inv_1.tr0} 17
+wv_dclick_list_item {FileDialog} {} {FileList} {inv_1.tr0} 17
+wv_expand_tree_item {Custom WaveView} {} {hierview} {D0:inv_1.tr0(0)} {+sep=@}
+wv_select_tree_item {Custom WaveView} {} {hierview} {D0:inv_1.tr0(0)@toplevel(0)} {0} {+sep=@}
+wv_select_list_item {Custom WaveView} {} {sigview} {v(a)} 0
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(a)} 0
+wv_select_list_item {Custom WaveView} {} {sigview} {v(out)} 1
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(out)} 1
+wv_move_window {Custom WaveView} {} 61 208
+wv_move_window {Custom WaveView} {} 30 204
+wv_move_window {Custom WaveView} {} 0 200
+wv_move_window {Custom WaveView} {} -149 197
+wv_move_window {Custom WaveView} {} -153 198
+wv_move_window {Custom WaveView} {} -154 198
+wv_move_window {Custom WaveView} {} -154 199
+wv_move_window {Custom WaveView} {} -158 200
+wv_move_window {Custom WaveView} {} -184 204
+wv_move_window {Custom WaveView} {} -296 222
+wv_move_window {Custom WaveView} {} -298 222
+wv_move_window {Custom WaveView} {} -442 226
+wv_move_window {Custom WaveView} {} -444 226
+wv_move_window {Custom WaveView} {} -469 224
+wv_move_window {Custom WaveView} {} -505 220
+wv_move_window {Custom WaveView} {} -524 221
+wv_move_window {Custom WaveView} {} -547 223
+wv_select_window {Custom WaveView} 
+wv_close_window {Custom WaveView} 
+wv_move_window {Confirmation} {} 733 848
+wv_select_dialog {Confirmation} 
+wv_move_window {Confirmation} {} 736 877
+#wv_press_button {Confirmation} {} {Ok} 
+#*WARNING* Can not remove '/home/jstine/.cx_hostport/.cx_hostport_yukari.ecen.okstate.edu_64395'.
