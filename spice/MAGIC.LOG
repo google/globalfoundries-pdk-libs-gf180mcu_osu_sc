@@ -1,0 +1,58 @@
+
+Magic 8.3 revision 315 - Compiled on Thu Jul 14 15:06:44 CDT 2022.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+{}
+Sourcing design GF180/magic/.magicrc for technology gf180mcu
+Could not find file '../../char/techfiles/gf180mcuC.tech' in any of these directories:
+         . $CAD_ROOT/magic/sys $CAD_ROOT/magic/sys/current
+Could not find file 'gf180mcuC.tech' in any of these directories:
+         . $CAD_ROOT/magic/sys $CAD_ROOT/magic/sys/current
+Failed to load technology "gf180mcuC"
+Loading "gf180mcu_osu_sc_12T_inv_1" from command line.
+Cell gf180mcu_osu_sc_12T_inv_1 has technology "gf180mcuC", but current technology is "minimum"
+Will attempt to read cell anyway.
+/import/programs/magic/lib/magic/sys/minimum.tech: line 56: section (none):
+	Unrecognized layer (type) name "nwell"
+/import/programs/magic/lib/magic/sys/minimum.tech: line 56: section (none):
+	Unrecognized layer (type) name "nmos"
+/import/programs/magic/lib/magic/sys/minimum.tech: line 56: section (none):
+	Unrecognized layer (type) name "pmos"
+/import/programs/magic/lib/magic/sys/minimum.tech: line 56: section (none):
+	Unrecognized layer (type) name "ndiff"
+/import/programs/magic/lib/magic/sys/minimum.tech: line 56: section (none):
+	Unrecognized layer (type) name "pdiff"
+/import/programs/magic/lib/magic/sys/minimum.tech: line 56: section (none):
+	Unrecognized layer (type) name "ndiffc"
+/import/programs/magic/lib/magic/sys/minimum.tech: line 56: section (none):
+	Unrecognized layer (type) name "pdiffc"
+/import/programs/magic/lib/magic/sys/minimum.tech: line 56: section (none):
+	Unrecognized layer (type) name "psubdiff"
+/import/programs/magic/lib/magic/sys/minimum.tech: line 56: section (none):
+	Unrecognized layer (type) name "nsubdiff"
+/import/programs/magic/lib/magic/sys/minimum.tech: line 56: section (none):
+	Unrecognized layer (type) name "psubdiffcont"
+/import/programs/magic/lib/magic/sys/minimum.tech: line 56: section (none):
+	Unrecognized layer (type) name "nsubdiffcont"
+/import/programs/magic/lib/magic/sys/minimum.tech: line 56: section (none):
+	Unrecognized layer (type) name "polysilicon"
+/import/programs/magic/lib/magic/sys/minimum.tech: line 56: section (none):
+	Unrecognized layer (type) name "polycontact"
+/import/programs/magic/lib/magic/sys/minimum.tech: line 56: section (none):
+	Unrecognized layer (type) name "metal1"
+/import/programs/magic/lib/magic/sys/minimum.tech: line 56: section (none):
+	Unrecognized layer (type) name "via1"
+/import/programs/magic/lib/magic/sys/minimum.tech: line 56: section (none):
+	Unrecognized layer (type) name "metal2"
+Warning: label "GND" attached to unknown type "metal2"
+Warning: label "VDD" attached to unknown type "metal2"
+Warning: label "Y" attached to unknown type "metal2"
+Warning: label "A" attached to unknown type "metal2"
+Using technology "minimum", version 0.0
+Extracting gf180mcu_osu_sc_12T_inv_1 into gf180mcu_osu_sc_12T_inv_1.ext:
+exttosim finished.
+exttospice finished.
+Devices merged: 0
+exttosim finished.

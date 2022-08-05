@@ -1,0 +1,8 @@
+* HSPICE file created from gf180mcu_osu_sc_12T_inv_1.ext - technology: minimum
+
+.option scale=1u
+
+.subckt gf180mcu_osu_sc_12T_inv_1
+.ends
+
+** hspice subcircuit dictionary

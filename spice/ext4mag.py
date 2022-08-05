@@ -19,7 +19,7 @@ class ext4mag():
 		self.enter = True
 		self.cwd = os.getcwd()
 
-		os.chdir('../../char/techfiles/')
+		os.chdir('../char/techfiles/')
 
 		self.pdkspice = os.getcwd()
 		os.chdir(self.cwd)
