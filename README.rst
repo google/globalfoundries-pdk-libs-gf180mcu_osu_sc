@@ -2,7 +2,8 @@ Oklahoma State University (OSU) standard cells for GF180MCU
 ===========================================================
 
 This repository will contain a new set of standard cells for the
-`GF180MCU process technology release by Google and GlobalFoundries <https://github.com/google/gf180mcu>`_.
+`GF180MCU process technology release by Google and GlobalFoundries
+<https://opensource.googleblog.com/2022/08/GlobalFoundries-joins-Googles-open-source-silicon-initiative.html>`_.
 
 These standard cells are being designed by James E. Stine, Jr. from the
 VLSI Computer Architecture Research Group at Oklahoma State University.
