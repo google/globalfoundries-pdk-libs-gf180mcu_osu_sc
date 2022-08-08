@@ -1,9 +1,12 @@
 magic
 tech gf180mcuC
-timestamp 1659394601
+timestamp 1659966631
 << nwell >>
 rect 0 97 704 159
 << metal1 >>
 rect 0 147 704 159
 rect 0 -3 704 9
+<< labels >>
+rlabel metal1 10 153 10 153 1 VDD
+rlabel metal1 6 3 6 3 1 GND
 << end >>
