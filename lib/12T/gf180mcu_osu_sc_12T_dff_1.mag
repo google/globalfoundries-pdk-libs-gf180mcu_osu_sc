@@ -1,6 +1,6 @@
 magic
 tech gf180mcuC
-timestamp 1659378475
+timestamp 1659977817
 << nwell >>
 rect 0 97 259 159
 << nmos >>
@@ -760,6 +760,6 @@ rlabel metal2 13 5 13 5 1 GND
 rlabel metal2 14 151 14 151 1 VDD
 rlabel metal2 233 83 233 83 1 QN
 port 5 n
-rlabel metal2 140 70 140 70 1 CLK
+rlabel metal2 158 83 158 83 1 CLK
 port 6 n
 << end >>
