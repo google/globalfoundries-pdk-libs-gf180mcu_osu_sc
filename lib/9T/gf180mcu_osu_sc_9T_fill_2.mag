@@ -1,0 +1,16 @@
+magic
+tech gf180mcuC
+timestamp 1660765697
+<< error_p >>
+rect 0 147 18 159
+rect 4 97 18 147
+rect 0 36 5 48
+<< nwell >>
+rect 0 97 4 159
+<< metal1 >>
+rect 0 147 4 159
+rect 0 36 4 48
+<< labels >>
+rlabel metal1 2 152 2 152 3 VDD
+rlabel metal1 2 41 2 41 2 GND
+<< end >>
