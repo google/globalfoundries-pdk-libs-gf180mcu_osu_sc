@@ -10,23 +10,23 @@ import shutil
 import sys
 import os
 
-class extlvs():
+class ExtLVS():
 	def __init__(self):
-		self.layoutpath = '../lib/12T/ngspice/'
-		self.sourcepath = '../lib/xschem/spice/'
+		self.layout_path = '../lib/12T/ngspice/'
+		self.source_path = '../lib/xschem/spice/'
 
-		self.currentdirectory = os.getcwd()
+		self.current_directory = os.getcwd()
 
-		os.chdir(self.layoutpath)
+		os.chdir(self.layout_path)
 		self.files = os.listdir()
-		os.chdir(self.currentdirectory)
-		self.moveflag = False
+		os.chdir(self.current_directory)
+		self.move_flag = False
 		self.enter = True
 
 		if (len(sys.argv) > 1):
-			self.cmdlParse(sys.argv)
+			self.cmdl_parse(sys.argv)
 
-	def cmdlParse(self, args):
+	def cmdl_parse(self, args):
 		for i in range(len(args)):
 			if '.spice' in args[i]:
 				if self.enter:
@@ -34,9 +34,9 @@ class extlvs():
 					self.files = []
 				self.files.append(args[i])
 			if '-move' in args[i]:
-				self.moveflag = True
+				self.move_flag = True
 	
-	def moveFiles(self):
+	def move_files(self):
 		names = ['.lvs']
 		files = os.listdir()
 
@@ -47,13 +47,13 @@ class extlvs():
 						os.mkdir(s.split(".")[1])
 					shutil.move(f'./{f}', f'./{s.split(".")[1]}/{f}')
 	
-	def runLVS(self):
+	def run_lvs(self):
 		for f in self.files:
 			if '.spice' in f and '.swp' not in f:
 				print(f'Current lvs file(s): {f}')
 				try:
 					print(f'Running LVS on {f.split(".")[0]}.')
-					subout = subprocess.Popen([f'./runlvs.sh {self.layoutpath}{f} {self.sourcepath}{f}'], shell=True) 
+					subout = subprocess.Popen([f'./runlvs.sh {self.layout_path}{f} {self.source_path}{f}'], shell=True) 
 					subout.wait()
 					mov = subprocess.Popen([f'mv comp.out {f.split(".")[0]}.lvs.txt'], shell=True)
 					mov.wait()
@@ -61,9 +61,9 @@ class extlvs():
 					print(traceback.print_exc())
 
 if __name__ == '__main__':
-	extlvs = extlvs()
+	extlvs = ExtLVS()
 
-	extlvs.runLVS()
+	extlvs.run_lvs()
 
-	if extlvs.moveflag:
-		extlvs.moveFiles()
+	if extlvs.move_flag:
+		extlvs.move_files()

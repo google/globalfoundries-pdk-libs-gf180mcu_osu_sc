@@ -1,19 +1,25 @@
+# extspice.py
+# Author:  Landon Burleson
+# Organization: Oklahoma State University
+# E-mail: landon.burleson@okstate.edu
+# Description: perform pex at terminal
+
 import subprocess
 import traceback
 import shutil
 import sys
 import os
 
-class extspice():
+class ExtSpice():
 	def __init__(self):
 		self.files = os.listdir()
-		self.moveflag = False
+		self.move_flag = False
 		self.enter = True
 
 		if (len(sys.argv) > 1):
-			self.cmdlParse(sys.argv)
+			self.cmdl_parse(sys.argv)
 
-	def cmdlParse(self, args):
+	def cmdl_parse(self, args):
 		for i in range(len(args)):
 			if '.sch' in args[i]:
 				if self.enter:
@@ -21,9 +27,9 @@ class extspice():
 					self.files = []
 				self.files.append(args[i])
 			if '-move' in args[i]:
-				self.moveflag = True
+				self.move_flag = True
 	
-	def moveFiles(self):
+	def move_files(self):
 		names = ['.spice']
 		files = os.listdir()
 
@@ -34,7 +40,7 @@ class extspice():
 						os.mkdir(s.split(".")[1])
 					shutil.move(f'./{f}', f'./{s.split(".")[1]}/{f}')
 	
-	def runXschem(self):
+	def run_xschem(self):
 		for f in self.files:
 			if '.sch' in f and '.swp' not in f:
 				print(f'Current schematic file: {f}')
@@ -46,9 +52,9 @@ class extspice():
 					print(traceback.print_exc())
 
 if __name__ == '__main__':
-	extspice = extspice()
+	extspice = ExtSpice()
 
-	extspice.runXschem()
+	extspice.run_xschem()
 
-	if extspice.moveflag:
-		extspice.moveFiles()
+	if extspice.move_flag:
+		extspice.move_files()

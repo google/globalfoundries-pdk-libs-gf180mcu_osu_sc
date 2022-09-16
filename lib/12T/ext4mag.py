@@ -10,24 +10,24 @@ import shutil
 import sys
 import os
 
-class ext4mag():
+class Ext4Mag():
 	def __init__(self):
 		self.files = os.listdir()
-		self.moveflag = False
-		self.addparams = False
+		self.move_flag = False
+		self.add_params = False
 		self.exng = False 
 		self.enter = True
 		self.cwd = os.getcwd()
 
 		os.chdir('../../char/techfiles/')
 
-		self.pdkspice = os.getcwd()
+		self.pdk_spice = os.getcwd()
 		os.chdir(self.cwd)
 
 		if (len(sys.argv) > 1):
-			self.cmdlParse(sys.argv)
+			self.cmdl_parse(sys.argv)
 
-	def cmdlParse(self, args):
+	def cmdl_parse(self, args):
 		for i in range(len(args)):
 			if '.mag' in args[i]:
 				if self.enter:
@@ -35,14 +35,14 @@ class ext4mag():
 					self.files = []
 				self.files.append(args[i])
 			if '-move' in args[i]:
-				self.moveflag = True
+				self.move_flag = True
 			if '-ap' in args[i]:
-				self.addparams = True
+				self.add_params = True
 			if '-ng' in args[i]:
 				self.exng = True
 				
 	
-	def moveFiles(self):
+	def move_files(self):
 		names = ['.sim', '.spice', '.gds', '.ext', '.cif']
 		files = os.listdir()
 
@@ -53,7 +53,7 @@ class ext4mag():
 						os.mkdir(s.split(".")[1])
 					shutil.move(f'./{f}', f'./{s.split(".")[1]}/{f}')
 	
-	def runMagic(self):
+	def run_magic(self):
 		for f in self.files:
 			if '.mag' in f and '.magicrc' not in f:
 				print(f'Current magic file: {f}')
@@ -65,7 +65,7 @@ class ext4mag():
 				except Exception:
 					print(traceback.print_exc())
 
-	def extractNgspice(self):
+	def extract_ngspice(self):
 		for f in self.files:
 			if '.mag' in f and '.magicrc' not in f:
 				print(f'Current magic file for ngspice extraction: {f}')
@@ -86,8 +86,8 @@ class ext4mag():
 			if ((('.spice' in f) or ('.ext' in f)) and (not os.path.isdir(f))):
 				shutil.move(f'./{f}', f'./ngspice/{f}')
 	
-	def addParamstoSpice(self, dir):
-		param = f'.inc \"{self.pdkspice}/design.hspice\"\n.lib \"{self.pdkspice}/sm141064.hspice\" typical\n\n'
+	def add_params_to_spice(self, dir):
+		param = f'.inc \"{self.pdk_spice}/design.hspice\"\n.lib \"{self.pdk_spice}/sm141064.hspice\" typical\n\n'
 
 		os.chdir(f'{self.cwd}/{dir}')
 		files = os.listdir()
@@ -106,7 +106,7 @@ class ext4mag():
 					out.write(line)
 		os.chdir(self.cwd)
 	
-	def labelAdjust(self): #This function adjusts the cell labels to only reside on the metal 2 layer. Possible future iterations may not need this function.
+	def label_adjust(self): #This function adjusts the cell labels to only reside on the metal 2 layer. Possible future iterations may not need this function.
 		files = os.listdir()
   
 		for f in files:
@@ -129,17 +129,17 @@ class ext4mag():
 						out.write(line)
 
 if __name__ == '__main__':
-	ext4mag = ext4mag()
+	ext4mag = Ext4Mag()
 
-	ext4mag.labelAdjust()
-	ext4mag.runMagic()
+	ext4mag.label_adjust()
+	ext4mag.run_magic()
 
-	if ext4mag.moveflag:
-		ext4mag.moveFiles()
+	if ext4mag.move_flag:
+		ext4mag.move_files()
 
 	if ext4mag.exng:
-		ext4mag.extractNgspice()
+		ext4mag.extract_ngspice()
 
-	if ext4mag.addparams:
-		ext4mag.addParamstoSpice('spice')
-		ext4mag.addParamstoSpice('ngspice')
+	if ext4mag.add_params:
+		ext4mag.add_params_to_spice('spice')
+		ext4mag.add_params_to_spice('ngspice')
