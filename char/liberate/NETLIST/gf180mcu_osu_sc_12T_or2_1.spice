@@ -1,0 +1,20 @@
+* HSPICE file created from gf180mcu_osu_sc_12T_or2_1.ext - technology: gf180mcuC
+
+.inc "/import/yukari1/lrburle/OSU_180/char/techfiles/design.hspice"
+.lib "/import/yukari1/lrburle/OSU_180/char/techfiles/sm141064.hspice" typical
+
+.GLOBAL VDD
+.GLOBAL GND
+
+.option scale=0.05u
+
+.subckt gf180mcu_osu_sc_12T_or2_1 B A Y
+X0 VDD B a_25_106 VDD pmos_3p3 w=34 l=6
+X1 a_25_106 A a_9_106 VDD pmos_3p3 w=34 l=6
+X2 Y a_9_106 GND GND nmos_3p3 w=17 l=6
+X3 a_9_106 A GND GND nmos_3p3 w=17 l=6
+X4 Y a_9_106 VDD VDD pmos_3p3 w=34 l=6
+X5 GND B a_9_106 GND nmos_3p3 w=17 l=6
+.ends
+
+** hspice subcircuit dictionary

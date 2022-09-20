@@ -27,8 +27,8 @@ define_template -type constraint \
         -index_2  {0.1  0.90  1.80} \
         constraint_template
 
-set inputs  {A A0 A1 B C D} 
-set outputs {Y Q QN} 
+set inputs  {A A0 A1 B C D CI Sel} 
+set outputs {Y Q QN S CO} 
 set clocks  {CLK CLKN}
 set asyncs  {RN SN}
 

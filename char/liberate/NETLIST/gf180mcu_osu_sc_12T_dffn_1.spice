@@ -1,0 +1,40 @@
+* HSPICE file created from gf180mcu_osu_sc_12T_dffn_1.ext - technology: gf180mcuC
+
+.inc "/import/yukari1/lrburle/OSU_180/char/techfiles/design.hspice"
+.lib "/import/yukari1/lrburle/OSU_180/char/techfiles/sm141064.hspice" typical
+
+.GLOBAL VDD
+.GLOBAL GND
+
+.option scale=0.05u
+
+.subckt gf180mcu_osu_sc_12T_dffn_1 D Q QN CLKN
+X0 a_19_11 CLKN a_42_106 VDD pmos_3p3 w=34 l=6
+X1 a_75_106 a_52_11 a_19_11 VDD pmos_3p3 w=34 l=6
+X2 a_135_65 a_114_16 VDD VDD pmos_3p3 w=34 l=6
+X3 Q QN GND GND nmos_3p3 w=17 l=6
+X4 a_131_16 a_52_11 a_114_16 GND nmos_3p3 w=17 l=6
+X5 a_42_106 D VDD VDD pmos_3p3 w=34 l=6
+X6 a_135_65 a_114_16 GND GND nmos_3p3 w=17 l=6
+X7 VDD a_19_11 a_9_16 VDD pmos_3p3 w=34 l=6
+X8 a_75_16 CLKN a_19_11 GND nmos_3p3 w=17 l=6
+X9 GND a_135_65 a_131_16 GND nmos_3p3 w=17 l=6
+X10 a_19_11 a_52_11 a_42_16 GND nmos_3p3 w=17 l=6
+X11 GND a_19_11 a_9_16 GND nmos_3p3 w=17 l=6
+X12 a_52_11 CLKN VDD VDD pmos_3p3 w=34 l=6
+X13 VDD a_135_65 a_131_106 VDD pmos_3p3 w=34 l=6
+X14 a_131_106 CLKN a_114_16 VDD pmos_3p3 w=34 l=6
+X15 GND a_135_65 QN GND nmos_3p3 w=17 l=6
+X16 a_114_16 a_52_11 a_103_106 VDD pmos_3p3 w=34 l=6
+X17 a_114_16 CLKN a_103_16 GND nmos_3p3 w=17 l=6
+X18 a_52_11 CLKN GND GND nmos_3p3 w=17 l=6
+X19 a_42_16 D GND GND nmos_3p3 w=17 l=6
+X20 VDD a_9_16 a_75_106 VDD pmos_3p3 w=34 l=6
+X21 a_103_106 a_9_16 VDD VDD pmos_3p3 w=34 l=6
+X22 a_103_16 a_9_16 GND GND nmos_3p3 w=17 l=6
+X23 Q QN VDD VDD pmos_3p3 w=34 l=6
+X24 VDD a_135_65 QN VDD pmos_3p3 w=34 l=6
+X25 GND a_9_16 a_75_16 GND nmos_3p3 w=17 l=6
+.ends
+
+** hspice subcircuit dictionary

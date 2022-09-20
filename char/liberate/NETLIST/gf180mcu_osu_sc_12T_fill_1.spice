@@ -1,0 +1,14 @@
+* HSPICE file created from gf180mcu_osu_sc_12T_fill_1.ext - technology: gf180mcuC
+
+.inc "/import/yukari1/lrburle/OSU_180/char/techfiles/design.hspice"
+.lib "/import/yukari1/lrburle/OSU_180/char/techfiles/sm141064.hspice" typical
+
+.GLOBAL VDD
+.GLOBAL GND
+
+.option scale=0.05u
+
+.subckt gf180mcu_osu_sc_12T_fill_1
+.ends
+
+** hspice subcircuit dictionary

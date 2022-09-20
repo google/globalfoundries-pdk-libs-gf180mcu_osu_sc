@@ -34,6 +34,7 @@ setup:
 	@cp ../../lib/$(VARIANT)/spice/* NETLIST/
 	#@cd MODELS && sh ../sedSpice
 	@ls NETLIST/*spice |  sed 's/.spice\|NETLIST\///g' > celllist
+	@sed -i '/fill/d' celllist
 	@touch $(VPATH)/$@
 
 all:
@@ -52,7 +53,7 @@ run: setup
 	export NAME=`SCRIPTS/getname.tcl`; \
 	printf "*\n.LIB 'sm141064.hspice' nmos_3p3_t\n.LIB 'sm141064.hspice' pmos_3p3_t" > MODELS/include.sp; \
 	liberate --trio char.tcl |& tee LOG/$$NAME.log; \
-	lc_shell -no_log -f SCRIPTS/lib_to_db.tcl
+	lc_shell -no_log -f SCRIPTS/lib_to_db.tcl | tee out.txt
 	@cp *.lib* ../techfiles/
 	@cp *.db* ../techfiles/
 ifndef NO_MAIL
@@ -89,3 +90,7 @@ purge: clean
 	-@rm -rf DATASHEET
 	-@rm -rf VERILOG
 	-@rm -rf NETLIST
+	-@rm -rf *.db
+	-@rm -rf *.lib
+	-@rm -rf out.txt
+
