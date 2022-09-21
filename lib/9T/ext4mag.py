@@ -1,8 +1,58 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 # ext4mag.py
 # Author:  Landon Burleson/James Stine
 # Organization: Oklahoma State University
 # E-mail: landon.burleson@okstate.edu
 # Description: extract info from magic at terminal
+
+# Copyright 2022 Oklahoma State University
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License. 
+
+"""Script Description
+	This script performs extraction from the magic layout files. This script extracts the 
+	.sim, .spice, .gds, .ext, and .cif files from the magic files. Please run this script 
+	inside of the magic files directory to extract.
+ 
+	Utilize the following terminal format(s):
+	
+	The following format extracts all files from all .mag files without moving them to separate directories:
+	python3 ext4mag.py 
+	
+	The following format extracts all files and moves them to separate directories:
+	python3 ext4mag.py -move
+
+	The following format extracts all files, moves them to separate directories, and extracts
+	ngspice files:
+	python3 ext4mag.py -move -ng 
+
+	The following format extracts all files, moves them to separate directories, and extracts
+	ngspice files, and adds library inclusion commands to the spice files to include the appropriate models:
+	python3 ext4mag.py -move -ng -ap
+	
+	The following format extracts all files for a single .mag file. Note that all above file
+	combinations can be applied to the following command: 
+	python3 ext4mag.py file_name.mag
+
+	By default, the Makefile included in this directory will run the following format:
+	python3 ext4mag.py -move -ap -ng
+
+	Note: This script is intended to be used inside of the magic cell library directory. If
+	the library directory is moved, please change the directory paths below appropriately to ensure a
+	successful script execution.
+"""
 
 import subprocess
 import traceback

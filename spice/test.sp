@@ -8,8 +8,8 @@
 ***********************************************************************
 * Parameters and models
 ***********************************************************************
-.inc "/home/jstine/Desktop/gf180/mcu/018MCU/MODEL/Hspice/YI-141-SM064/Rev9/design.hspice"
-.lib "/home/jstine/Desktop/gf180/mcu/018MCU/MODEL/Hspice/YI-141-SM064/Rev9/sm141064.hspice" typical
+.inc "../char/techfiles/design.hspice"
+.lib "../char/techfiles/sm141064.hspice" typical
 .temp 25
 .param SUPPLY=3.3V
 

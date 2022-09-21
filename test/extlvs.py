@@ -1,11 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
-# extspice.py
+# extlvs.py
 # Author:  Landon Burleson
 # Organization: Oklahoma State University
 # E-mail: landon.burleson@okstate.edu
-# Description: perform pex at terminal
+# Description: perform lvs at terminal
 
 # Copyright 2022 Oklahoma State University
 #
@@ -22,18 +21,18 @@
 # limitations under the License. 
 
 """Script Description
-	This script performs spice extraction from the xschem documents. The extracted spice
-	files are used to perform lvs comparison between the xschem spice files and the magic spice
-	files.
+	This script performs LVS (Layout vs Schematic) on the spice decks extracted using the ext4mag and extspice scripts in the 
+	magic and xschem subdirectories of lib, respectively. 
 	
-	Use the following terminal command format to extract spice files:
-	python3 extspice.py
+	Use the following terminal command format to run LVS on all designs:
+	python3 extlvs.py
 
-	If desired, all spice files extracted from the xschem files will be moved to the 'spice'
+	If desired, all output lvs files will be moved to the 'comp'
 	subdirectory with the following format:
-	python3 extspice.py -move
+	python3 extlvs.py -move
 
-	Note: This script is intended to be used inside of the xschem schematic library directory.
+	Please modify the paths of the layout and source files appropriately inside of the
+	initialization constructor in the ExtLVS class below.
 """
 import subprocess
 import traceback
@@ -41,9 +40,16 @@ import shutil
 import sys
 import os
 
-class ExtSpice():
+class ExtLVS():
 	def __init__(self):
+		self.layout_path = '../lib/12T/ngspice/'
+		self.source_path = '../lib/xschem/spice/'
+
+		self.current_directory = os.getcwd()
+
+		os.chdir(self.layout_path)
 		self.files = os.listdir()
+		os.chdir(self.current_directory)
 		self.move_flag = False
 		self.enter = True
 
@@ -52,7 +58,7 @@ class ExtSpice():
 
 	def cmdl_parse(self, args):
 		for i in range(len(args)):
-			if '.sch' in args[i]:
+			if '.spice' in args[i]:
 				if self.enter:
 					self.enter = False
 					self.files = []
@@ -61,7 +67,7 @@ class ExtSpice():
 				self.move_flag = True
 	
 	def move_files(self):
-		names = ['.spice']
+		names = ['.lvs']
 		files = os.listdir()
 
 		for f in files:
@@ -71,21 +77,23 @@ class ExtSpice():
 						os.mkdir(s.split(".")[1])
 					shutil.move(f'./{f}', f'./{s.split(".")[1]}/{f}')
 	
-	def run_xschem(self):
+	def run_lvs(self):
 		for f in self.files:
-			if '.sch' in f and '.swp' not in f:
-				print(f'Current schematic file: {f}')
+			if '.spice' in f and '.swp' not in f:
+				print(f'Current lvs file(s): {f}')
 				try:
-					print(f'Extracting spice from {f.split(".")[0]}.')
-					subout = subprocess.Popen([f'xschem -n -o . ./{f} -q'], shell=True) 
+					print(f'Running LVS on {f.split(".")[0]}.')
+					subout = subprocess.Popen([f'./runlvs.sh {self.layout_path}{f} {self.source_path}{f}'], shell=True) 
 					subout.wait()
+					mov = subprocess.Popen([f'mv comp.out {f.split(".")[0]}.lvs.txt'], shell=True)
+					mov.wait()
 				except Exception:
 					print(traceback.print_exc())
 
 if __name__ == '__main__':
-	extspice = ExtSpice()
+	extlvs = ExtLVS()
 
-	extspice.run_xschem()
+	extlvs.run_lvs()
 
-	if extspice.move_flag:
-		extspice.move_files()
+	if extlvs.move_flag:
+		extlvs.move_files()

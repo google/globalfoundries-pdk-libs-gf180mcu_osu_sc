@@ -1,0 +1,17 @@
+# Ignoring .swp files
+*.swp
+
+# Ignoring logs
+log
+LOG
+*.log
+
+# Ignoring vscode data
+.vscode/
+
+# Ignoring Characterization files
+.abstract
+.cadence
+char/abstract/GDS
+**/.tmp
+**/LOG

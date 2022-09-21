@@ -1,6 +1,5 @@
-#  
-#  Oklahoma State University
 #  Makefile for synthesis
+#  Oklahoma State University
 # 
 NAME := synth
 
