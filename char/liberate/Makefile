@@ -13,7 +13,6 @@ ARGS:=-ccs
 VARIANT:=12T
 
 USER:=$(shell whoami)
-USER_MAIL:=$(shell echo `ldapsearch -x -LL "(uid=$(USER))" mail | sed -n "s/^mail: //p"`)
 export
 
 define \n
@@ -56,8 +55,6 @@ run: setup
 	lc_shell -no_log -f SCRIPTS/lib_to_db.tcl | tee out.txt
 	@cp *.lib* ../techfiles/
 	@cp *.db* ../techfiles/
-ifndef NO_MAIL
-	@echo "" | mail -s "Lib extraction finished for $(CORNER) $(TEMP) $(VLTG) $(ARGS) on `uname -n`" $(USER_MAIL)
 endif
 
 do: run
