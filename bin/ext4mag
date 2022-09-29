@@ -1,1 +1,0 @@
-echo "extract all;ext2sim labels on;ext2sim -R -C;ext2spice scale off;ext2spice -F -R -C -f spice3;calma" | magic -dnull -noconsole $1
