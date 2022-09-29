@@ -1,3 +1,0 @@
-| units: 5 tech: gf180mcuC format: MIT
-x A VDD Y VDD l=6 w=34 x=19 y=106 pmos_3p3
-x A GND Y GND l=6 w=17 x=19 y=16 nmos_3p3
