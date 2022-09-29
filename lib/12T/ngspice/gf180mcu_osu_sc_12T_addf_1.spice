@@ -1,0 +1,33 @@
+* NGSPICE file created from gf180mcu_osu_sc_12T_addf_1.ext - technology: gf180mcuC
+
+.inc "/import/yukari1/lrburle/globalfoundries-pdk-libs-gf180mcu_osu_sc/char/techfiles/design.hspice"
+.lib "/import/yukari1/lrburle/globalfoundries-pdk-libs-gf180mcu_osu_sc/char/techfiles/sm141064.hspice" typical
+
+X0 a_110_109# A VDD VDD pmos_3p3 w=1.7u l=0.3u
+X1 S a_161_19# VDD VDD pmos_3p3 w=1.7u l=0.3u
+X2 S a_161_19# GND GND nmos_3p3 w=0.85u l=0.3u
+X3 VDD CI a_195_109# VDD pmos_3p3 w=1.7u l=0.3u
+X4 a_195_19# B a_178_19# GND nmos_3p3 w=0.85u l=0.3u
+X5 a_76_109# B a_59_19# VDD pmos_3p3 w=1.7u l=0.3u
+X6 VDD A a_76_109# VDD pmos_3p3 w=1.7u l=0.3u
+X7 a_59_19# CI a_9_109# VDD pmos_3p3 w=1.7u l=0.3u
+X8 a_178_19# A a_161_19# GND nmos_3p3 w=0.85u l=0.3u
+X9 a_9_109# B VDD VDD pmos_3p3 w=1.7u l=0.3u
+X10 a_110_19# CI GND GND nmos_3p3 w=0.85u l=0.3u
+X11 VDD A a_9_109# VDD pmos_3p3 w=1.7u l=0.3u
+X12 a_59_19# CI a_9_19# GND nmos_3p3 w=0.85u l=0.3u
+X13 GND B a_110_19# GND nmos_3p3 w=0.85u l=0.3u
+X14 GND A a_9_19# GND nmos_3p3 w=0.85u l=0.3u
+X15 CO a_59_19# GND GND nmos_3p3 w=0.85u l=0.3u
+X16 GND CI a_195_19# GND nmos_3p3 w=0.85u l=0.3u
+X17 CO a_59_19# VDD VDD pmos_3p3 w=1.7u l=0.3u
+X18 GND A a_76_19# GND nmos_3p3 w=0.85u l=0.3u
+X19 a_161_19# a_59_19# a_110_19# GND nmos_3p3 w=0.85u l=0.3u
+X20 a_76_19# B a_59_19# GND nmos_3p3 w=0.85u l=0.3u
+X21 a_178_109# A a_161_19# VDD pmos_3p3 w=1.7u l=0.3u
+X22 a_195_109# B a_178_109# VDD pmos_3p3 w=1.7u l=0.3u
+X23 a_9_19# B GND GND nmos_3p3 w=0.85u l=0.3u
+X24 a_110_19# A GND GND nmos_3p3 w=0.85u l=0.3u
+X25 a_161_19# a_59_19# a_110_109# VDD pmos_3p3 w=1.7u l=0.3u
+X26 VDD B a_110_109# VDD pmos_3p3 w=1.7u l=0.3u
+X27 a_110_109# CI VDD VDD pmos_3p3 w=1.7u l=0.3u

@@ -1,0 +1,15 @@
+timestamp 1660079376
+version 8.3
+.inc "/import/yukari1/lrburle/globalfoundries-pdk-libs-gf180mcu_osu_sc/char/techfiles/design.hspice"
+.lib "/import/yukari1/lrburle/globalfoundries-pdk-libs-gf180mcu_osu_sc/char/techfiles/sm141064.hspice" typical
+
+tech gf180mcuC
+style ngspice()
+scale 1000 1 5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 60
+node "GND" 0 85.7801 0 -3 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 192 56 0 0 0 0 0 0 0 0
+node "VDD" 0 71.7139 0 147 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 192 56 0 0 0 0 0 0 0 0
+node "w_0_97#" 3875 297.6 0 97 nw 992 156 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "SUB" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "VDD" "w_0_97#" 14.0662
+cap "VDD" "GND" 3.24754

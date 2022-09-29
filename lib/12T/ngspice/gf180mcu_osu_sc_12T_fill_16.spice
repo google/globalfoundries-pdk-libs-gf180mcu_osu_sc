@@ -1,0 +1,5 @@
+* NGSPICE file created from gf180mcu_osu_sc_12T_fill_16.ext - technology: gf180mcuC
+
+.inc "/import/yukari1/lrburle/globalfoundries-pdk-libs-gf180mcu_osu_sc/char/techfiles/design.hspice"
+.lib "/import/yukari1/lrburle/globalfoundries-pdk-libs-gf180mcu_osu_sc/char/techfiles/sm141064.hspice" typical
+

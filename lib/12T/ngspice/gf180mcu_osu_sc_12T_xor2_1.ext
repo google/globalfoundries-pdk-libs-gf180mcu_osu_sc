@@ -1,0 +1,52 @@
+timestamp 1660080488
+version 8.3
+.inc "/import/yukari1/lrburle/globalfoundries-pdk-libs-gf180mcu_osu_sc/char/techfiles/design.hspice"
+.lib "/import/yukari1/lrburle/globalfoundries-pdk-libs-gf180mcu_osu_sc/char/techfiles/sm141064.hspice" typical
+
+tech gf180mcuC
+style ngspice()
+scale 1000 1 5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 60
+parameters nmos_3p3_sab l=l w=w
+parameters nmos_3p3 l=l w=w
+parameters pmos_3p3_sab l=l w=w
+parameters pmos_3p3 l=l w=w
+port "Y" 3 61 108 61 108 m2
+port "B" 4 97 70 97 70 m2
+port "A" 1 30 44 30 44 m2
+node "a_76_16#" 21 1.2891 76 16 ndif 0 0 0 0 85 44 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_42_16#" 21 1.45324 42 16 ndif 0 0 0 0 85 44 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_76_106#" 48 0.59971 76 106 pdif 0 0 0 0 0 0 170 78 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "Y" 25 229.086 61 108 m2 0 0 0 0 299 70 578 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 301 136 582 202 0 0 0 0 0 0
+node "a_42_106#" 48 0.741891 42 106 pdif 0 0 0 0 0 0 170 78 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "B" 1028 3372.46 97 70 m2 0 0 0 0 340 108 680 176 0 0 0 0 4944 1586 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2560 980 228 108 0 0 0 0 0 0
+equiv "B" "A"
+node "VDD" 2178 2676.79 0 97 nw 7688 372 0 0 405 180 748 180 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1898 436 380 180 0 0 0 0 0 0
+substrate "GND" 0 0 9 0 ppd 0 0 0 0 374 112 405 180 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1728 368 380 180 0 0 0 0 0 0
+cap "a_42_106#" "B" 3.01197
+cap "a_76_106#" "B" 2.26267
+cap "a_76_16#" "VDD" 0.208956
+cap "a_76_16#" "Y" 0.61253
+cap "VDD" "Y" 124.297
+cap "a_76_16#" "B" 1.00746
+cap "B" "VDD" 438.293
+cap "VDD" "a_42_16#" 0.267474
+cap "a_42_106#" "VDD" 2.66756
+cap "a_76_106#" "VDD" 2.3455
+cap "B" "Y" 204.513
+cap "a_42_16#" "Y" 0.607394
+cap "a_42_106#" "Y" 1.12188
+cap "a_76_106#" "Y" 1.12673
+cap "B" "a_42_16#" 1.38612
+device msubckt nmos_3p3 98 16 99 17 l=6 w=17 "GND" "B" 12 0 "GND" 17 0 "B" 17 0
+device msubckt nmos_3p3 81 16 82 17 l=6 w=17 "GND" "B" 12 0 "a_76_16#" 17 0 "GND" 17 0
+device msubckt nmos_3p3 70 16 71 17 l=6 w=17 "GND" "B" 12 0 "Y" 17 0 "a_76_16#" 17 0
+device msubckt nmos_3p3 47 16 48 17 l=6 w=17 "GND" "B" 12 0 "a_42_16#" 17 0 "Y" 17 0
+device msubckt nmos_3p3 36 16 37 17 l=6 w=17 "GND" "B" 12 0 "GND" 17 0 "a_42_16#" 17 0
+device msubckt nmos_3p3 19 16 20 17 l=6 w=17 "GND" "B" 12 0 "B" 17 0 "GND" 17 0
+device msubckt pmos_3p3 98 106 99 107 l=6 w=34 "VDD" "B" 12 0 "VDD" 34 0 "B" 34 0
+device msubckt pmos_3p3 81 106 82 107 l=6 w=34 "VDD" "B" 12 0 "a_76_106#" 34 0 "VDD" 34 0
+device msubckt pmos_3p3 70 106 71 107 l=6 w=34 "VDD" "B" 12 0 "Y" 34 0 "a_76_106#" 34 0
+device msubckt pmos_3p3 47 106 48 107 l=6 w=34 "VDD" "B" 12 0 "a_42_106#" 34 0 "Y" 34 0
+device msubckt pmos_3p3 36 106 37 107 l=6 w=34 "VDD" "B" 12 0 "VDD" 34 0 "a_42_106#" 34 0
+device msubckt pmos_3p3 19 106 20 107 l=6 w=34 "VDD" "B" 12 0 "B" 34 0 "VDD" 34 0
