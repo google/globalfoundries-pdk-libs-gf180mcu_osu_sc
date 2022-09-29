@@ -1,7 +1,6 @@
-* HSPICE file created from gf180mcu_osu_sc_12T_fill_4.ext - technology: gf180mcuC
 
-.inc "/import/yukari1/lrburle/OSU_180/char/techfiles/design.hspice"
-.lib "/import/yukari1/lrburle/OSU_180/char/techfiles/sm141064.hspice" typical
+.inc "../../char/techfiles/design.hspice"
+.lib "../../char/techfiles/sm141064.hspice" typical
 
 .GLOBAL VDD
 .GLOBAL GND
