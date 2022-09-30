@@ -1,6 +1,3 @@
-// Verilog for library /import/yukari1/lrburle/OSU_180/char/liberate/VERILOG/gf180mcu_12T_TT_3P3_25C.ccs created by Liberate 19.2.2.189 on Tue Sep 20 09:08:31 CDT 2022 for SDF version 2.1
-
-// type:  
 `timescale 1ns/10ps
 `celldefine
 module gf180mcu_osu_sc_12T_addf_1 (CO, S, A, B, CI);
