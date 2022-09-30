@@ -33,4 +33,3 @@ X26 VDD B a_110_109 VDD pmos_3p3 w=34 l=6
 X27 a_110_109 CI VDD VDD pmos_3p3 w=34 l=6
 .ends
 
-** hspice subcircuit dictionary

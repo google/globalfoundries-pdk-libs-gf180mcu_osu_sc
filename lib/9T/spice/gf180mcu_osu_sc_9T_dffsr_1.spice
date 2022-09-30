@@ -41,4 +41,3 @@ X34 a_234_70 CLK a_211_19 VDD pmos_3p3 w=34 l=6
 X35 GND a_25_19 a_247_47 GND nmos_3p3 w=17 l=6
 .ends
 
-** hspice subcircuit dictionary

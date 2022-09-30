@@ -17,4 +17,3 @@ X10 Y a_49_14 a_42_19 GND nmos_3p3 w=17 l=6
 X11 a_49_14 B GND GND nmos_3p3 w=17 l=6
 .ends
 
-** hspice subcircuit dictionary

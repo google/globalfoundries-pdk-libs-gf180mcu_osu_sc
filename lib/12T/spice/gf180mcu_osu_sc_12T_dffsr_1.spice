@@ -41,4 +41,3 @@ X34 GND a_1_11 a_n4_16 GND nmos_3p3 w=17 l=6
 X35 GND a_n40_106 a_75_16 GND nmos_3p3 w=17 l=6
 .ends
 
-** hspice subcircuit dictionary

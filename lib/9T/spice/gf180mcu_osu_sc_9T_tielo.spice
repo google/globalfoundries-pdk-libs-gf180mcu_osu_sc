@@ -7,4 +7,3 @@ X0 Y a_19_14 GND GND nmos_3p3 w=17 l=6
 X1 a_19_14 a_19_14 VDD VDD pmos_3p3 w=34 l=6
 .ends
 
-** hspice subcircuit dictionary

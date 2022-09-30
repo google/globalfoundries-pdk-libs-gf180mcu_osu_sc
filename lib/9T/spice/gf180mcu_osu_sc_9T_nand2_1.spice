@@ -9,4 +9,3 @@ X2 a_28_19 A Y GND nmos_3p3 w=17 l=6
 X3 GND B a_28_19 GND nmos_3p3 w=17 l=6
 .ends
 
-** hspice subcircuit dictionary

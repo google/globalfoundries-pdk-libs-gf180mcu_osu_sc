@@ -11,4 +11,3 @@ X4 B a_23_16 Y VDD pmos_3p3 w=34 l=6
 X5 a_23_16 Sel VDD VDD pmos_3p3 w=34 l=6
 .ends
 
-** hspice subcircuit dictionary

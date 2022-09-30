@@ -31,4 +31,3 @@ X24 VDD a_135_65 QN VDD pmos_3p3 w=34 l=6
 X25 GND a_9_16 a_75_16 GND nmos_3p3 w=17 l=6
 .ends
 
-** hspice subcircuit dictionary

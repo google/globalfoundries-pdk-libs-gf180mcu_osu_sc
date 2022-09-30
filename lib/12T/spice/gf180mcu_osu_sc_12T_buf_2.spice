@@ -11,4 +11,3 @@ X4 GND a_n8_16 Y GND nmos_3p3 w=17 l=6
 X5 GND A a_n8_16 GND nmos_3p3 w=17 l=6
 .ends
 
-** hspice subcircuit dictionary
