@@ -2,7 +2,7 @@ puts stdout "Sourcing design GF180/magic/.magicrc for technology gf180mcu"
 # drc off
 drc euclidean on
 # loading technology
-tech load ../../../char/techfiles/gf180mcuC.tech
+tech load ../../../tech/gf180mcuC.tech
 # set units to lambda grid 
 snap internal
 macro Shift_G "grid 10"
