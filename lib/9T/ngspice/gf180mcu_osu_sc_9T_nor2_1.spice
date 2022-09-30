@@ -1,9 +1,0 @@
-* NGSPICE file created from gf180mcu_osu_sc_9T_nor2_1.ext - technology: gf180mcuC
-
-.inc "/import/yukari1/lrburle/globalfoundries-pdk-libs-gf180mcu_osu_sc/char/techfiles/design.hspice"
-.lib "/import/yukari1/lrburle/globalfoundries-pdk-libs-gf180mcu_osu_sc/char/techfiles/sm141064.hspice" typical
-
-X0 Y B a_25_70# VDD pmos_3p3 w=1.7u l=0.3u
-X1 Y A GND GND nmos_3p3 w=0.85u l=0.3u
-X2 a_25_70# A VDD VDD pmos_3p3 w=1.7u l=0.3u
-X3 GND B Y GND nmos_3p3 w=0.85u l=0.3u
