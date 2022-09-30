@@ -109,12 +109,6 @@ C {ipin.sym} 60 -420 0 0 {name=p3 lab=A
 }
 C {ipin.sym} 210 -420 0 0 {name=p4 lab=B
 }
-C {code.sym} -120 -350 0 0 {name="MODELS"
-only_toplevel=true
-value="
-.inc \\"/import/yukari1/lrburle/OSU_180/char/techfiles/design.hspice\\" 
-.lib \\"/import/yukari1/lrburle/OSU_180/char/techfiles/sm141064.hspice\\" typical
-"}
 C {pmos4.sym} 100 -420 0 0 {name=X1 model=pmos_3p3 w=1.7u l=0.3u m=1}
 C {pmos4.sym} 240 -420 0 0 {name=X0 model=pmos_3p3 w=1.7u l=0.3u m=1}
 C {nmos4.sym} 170 -220 0 0 {name=X2 model=nmos_3p3 w=0.85u l=0.3u m=1}
