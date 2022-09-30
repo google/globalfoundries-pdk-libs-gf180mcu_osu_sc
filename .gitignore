@@ -12,6 +12,5 @@ LOG
 # Ignoring Characterization files
 .abstract
 .cadence
-char/abstract/GDS
 **/.tmp
 **/LOG
