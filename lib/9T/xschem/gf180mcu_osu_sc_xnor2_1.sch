@@ -55,12 +55,6 @@ N 400 -260 400 -210 { lab=Y}
 N 200 -230 400 -230 { lab=Y}
 N 400 -230 440 -230 { lab=Y}
 C {gnd.sym} 200 -20 0 0 {name=l3 lab=GND}
-C {code.sym} -120 -350 0 0 {name="MODELS"
-only_toplevel=true
-value="
-.inc \\"/import/yukari1/lrburle/OSU_180/char/techfiles/design.hspice\\" 
-.lib \\"/import/yukari1/lrburle/OSU_180/char/techfiles/sm141064.hspice\\" typical
-"}
 C {nmos4.sym} 180 -180 0 0 {name=X2 model=nmos_3p3 w=0.85u l=0.3u m=1}
 C {nmos4.sym} 180 -80 0 0 {name=X3 model=nmos_3p3 w=0.85u l=0.3u m=1}
 C {lab_wire.sym} 210 -180 2 0 {name=l6 sig_type=std_logic lab=GND}

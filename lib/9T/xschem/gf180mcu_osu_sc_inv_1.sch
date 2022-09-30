@@ -22,12 +22,6 @@ C {gnd.sym} 190 -60 0 0 {name=l3 lab=GND}
 C {ipin.sym} 90 -190 0 0 {name=p3 lab=A
 }
 C {opin.sym} 320 -180 0 0 {name=p5 lab=Y}
-C {code.sym} -120 -350 0 0 {name="MODELS"
-only_toplevel=true
-value="
-.inc \\"/import/yukari1/lrburle/OSU_180/char/techfiles/design.hspice\\" 
-.lib \\"/import/yukari1/lrburle/OSU_180/char/techfiles/sm141064.hspice\\" typical
-"}
 C {pmos4.sym} 170 -250 0 0 {name=X0 model=pmos_3p3 w=1.7u l=0.3u m=1}
 C {nmos4.sym} 170 -120 0 0 {name=X1 model=nmos_3p3 w=0.85u l=0.3u m=1}
 C {lab_wire.sym} 220 -250 2 0 {name=l2 sig_type=std_logic lab=VDD
