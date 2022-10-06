@@ -1,0 +1,12 @@
+ABC command line: "source /tmp/yosys-abc-O8ML52/abc.script".
+
+Generic file reader requires a known file extension to open "2".
++ read_blif /tmp/yosys-abc-O8ML52/input.blif 
++ read_lib -w /import/yukari1/lrburle/globalfoundries-pdk-libs-gf180mcu_osu_sc/flow/./objects/gf180mcu/aes/base/lib/gf180mcu_12T_TT_3P3_25C_ccs.lib 
+Parsing finished successfully.  Parsing time =     0.05 sec
+Scl_LibertyReadGenlib() skipped sequential cell "gf180mcu_osu_sc_12T_dff_1".
+Scl_LibertyReadGenlib() skipped sequential cell "gf180mcu_osu_sc_12T_dffn_1".
+Scl_LibertyReadGenlib() skipped sequential cell "gf180mcu_osu_sc_12T_dffsr_1".
+Library "gf180mcu_12T_TT_3P3_25C_ccs" from "/import/yukari1/lrburle/globalfoundries-pdk-libs-gf180mcu_osu_sc/flow/./objects/gf180mcu/aes/base/lib/gf180mcu_12T_TT_3P3_25C_ccs.lib" has 17 cells (3 skipped: 3 seq; 0 tri-state; 0 no func; 0 dont_use).  Time =     0.05 sec
+Memory =    8.07 MB. Time =     0.05 sec
+Warning: Detected 2 multi-output gates (for example, "gf180mcu_osu_sc_12T_addf_1").
