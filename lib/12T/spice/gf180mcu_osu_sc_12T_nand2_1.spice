@@ -1,4 +1,10 @@
+* HSPICE file created from gf180mcu_osu_sc_12T_nand2_1.ext - technology: gf180mcuC
 
+.inc "../../../char/techfiles/design.hspice"
+.lib "../../../char/techfiles/sm141064.hspice" typical
+
+.GLOBAL VDD
+.GLOBAL GND
 
 .option scale=0.05u
 
@@ -9,3 +15,4 @@ X2 a_28_16 A Y GND nmos_3p3 w=17 l=6
 X3 GND B a_28_16 GND nmos_3p3 w=17 l=6
 .ends
 
+** hspice subcircuit dictionary

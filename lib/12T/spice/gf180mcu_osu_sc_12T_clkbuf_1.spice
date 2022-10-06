@@ -1,4 +1,4 @@
-* HSPICE file created from gf180mcu_osu_sc_12T_buf_1.ext - technology: gf180mcuC
+* HSPICE file created from gf180mcu_osu_sc_12T_clkbuf_1.ext - technology: gf180mcuC
 
 .inc "../../../char/techfiles/design.hspice"
 .lib "../../../char/techfiles/sm141064.hspice" typical
@@ -8,7 +8,7 @@
 
 .option scale=0.05u
 
-.subckt gf180mcu_osu_sc_12T_buf_1 A Y
+.subckt gf180mcu_osu_sc_12T_clkbuf_1 A Y
 X0 Y a_n8_16 VDD VDD pmos_3p3 w=34 l=6
 X1 Y a_n8_16 GND GND nmos_3p3 w=17 l=6
 X2 VDD A a_n8_16 VDD pmos_3p3 w=34 l=6

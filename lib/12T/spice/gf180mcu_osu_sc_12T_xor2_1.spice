@@ -1,19 +1,26 @@
+* HSPICE file created from gf180mcu_osu_sc_12T_xor2_1.ext - technology: gf180mcuC
 
+.inc "../../../char/techfiles/design.hspice"
+.lib "../../../char/techfiles/sm141064.hspice" typical
+
+.GLOBAL VDD
+.GLOBAL GND
 
 .option scale=0.05u
 
-.subckt gf180mcu_osu_sc_12T_xor2_1 Y B
+.subckt gf180mcu_osu_sc_12T_xor2_1 A Y B
 X0 Y B a_42_16 GND nmos_3p3 w=17 l=6
 X1 VDD B a_76_106 VDD pmos_3p3 w=34 l=6
-X2 B B VDD VDD pmos_3p3 w=34 l=6
-X3 a_76_106 B Y VDD pmos_3p3 w=34 l=6
-X4 Y B a_42_106 VDD pmos_3p3 w=34 l=6
-X5 a_42_106 B VDD VDD pmos_3p3 w=34 l=6
-X6 VDD B B VDD pmos_3p3 w=34 l=6
-X7 GND B B GND nmos_3p3 w=17 l=6
-X8 a_76_16 B Y GND nmos_3p3 w=17 l=6
-X9 a_42_16 B GND GND nmos_3p3 w=17 l=6
-X10 B B GND GND nmos_3p3 w=17 l=6
-X11 GND B a_76_16 GND nmos_3p3 w=17 l=6
+X2 a_47_91 B VDD VDD pmos_3p3 w=34 l=6
+X3 a_76_106 a_9_16 Y VDD pmos_3p3 w=34 l=6
+X4 Y a_47_91 a_42_106 VDD pmos_3p3 w=34 l=6
+X5 a_42_106 A VDD VDD pmos_3p3 w=34 l=6
+X6 VDD A a_9_16 VDD pmos_3p3 w=34 l=6
+X7 GND A a_9_16 GND nmos_3p3 w=17 l=6
+X8 a_76_16 a_9_16 Y GND nmos_3p3 w=17 l=6
+X9 a_42_16 A GND GND nmos_3p3 w=17 l=6
+X10 a_47_91 B GND GND nmos_3p3 w=17 l=6
+X11 GND a_47_91 a_76_16 GND nmos_3p3 w=17 l=6
 .ends
 
+** hspice subcircuit dictionary

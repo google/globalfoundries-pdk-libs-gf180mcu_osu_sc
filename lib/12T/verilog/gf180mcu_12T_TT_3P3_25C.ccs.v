@@ -1,3 +1,6 @@
+// Verilog for library /import/yukari1/lrburle/OSU_180/char/liberate/VERILOG/gf180mcu_12T_TT_3P3_25C.ccs created by Liberate 19.2.2.189 on Tue Oct  4 16:21:30 CDT 2022 for SDF version 2.1
+
+// type:  
 `timescale 1ns/10ps
 `celldefine
 module gf180mcu_osu_sc_12T_addf_1 (CO, S, A, B, CI);
@@ -177,6 +180,23 @@ endmodule
 `timescale 1ns/10ps
 `celldefine
 module gf180mcu_osu_sc_12T_buf_2 (Y, A);
+	output Y;
+	input A;
+
+	// Function
+	buf (Y, A);
+
+	// Timing
+	specify
+		(A => Y) = 0;
+	endspecify
+endmodule
+`endcelldefine
+
+// type:  
+`timescale 1ns/10ps
+`celldefine
+module gf180mcu_osu_sc_12T_clkbuf_1 (Y, A);
 	output Y;
 	input A;
 
@@ -377,6 +397,60 @@ module gf180mcu_osu_sc_12T_dffsr_1 (Q, QN, D, RN, SN, CLK);
 		$width (negedge CLK &&& adacond7, 0, 0, notifier);
 		$width (posedge CLK &&& adacond8, 0, 0, notifier);
 		$width (negedge CLK &&& adacond8, 0, 0, notifier);
+	endspecify
+endmodule
+`endcelldefine
+
+// type:  
+`timescale 1ns/10ps
+`celldefine
+module gf180mcu_osu_sc_12T_dlat_1 (Q, D, CLK);
+	output Q;
+	input D, CLK;
+	reg notifier;
+	wire delayed_D, delayed_CLK;
+
+	// Function
+	wire int_fwire_IQ;
+
+	altos_latch (int_fwire_IQ, notifier, delayed_CLK, delayed_D);
+	buf (Q, int_fwire_IQ);
+
+	// Timing
+	specify
+		(D => Q) = 0;
+		(posedge CLK => (Q+:D)) = 0;
+		$setuphold (negedge CLK, posedge D, 0, 0, notifier,,, delayed_CLK, delayed_D);
+		$setuphold (negedge CLK, negedge D, 0, 0, notifier,,, delayed_CLK, delayed_D);
+		$width (posedge CLK &&& D, 0, 0, notifier);
+		$width (posedge CLK &&& ~D, 0, 0, notifier);
+	endspecify
+endmodule
+`endcelldefine
+
+// type:  
+`timescale 1ns/10ps
+`celldefine
+module gf180mcu_osu_sc_12T_dlatn_1 (Q, D, CLKN);
+	output Q;
+	input D, CLKN;
+	reg notifier;
+	wire delayed_D, delayed_CLKN;
+
+	// Function
+	wire int_fwire_IQ;
+
+	altos_latch (int_fwire_IQ, notifier, delayed_CLKN, delayed_D);
+	buf (Q, int_fwire_IQ);
+
+	// Timing
+	specify
+		(D => Q) = 0;
+		(posedge CLKN => (Q+:D)) = 0;
+		$setuphold (negedge CLKN, posedge D, 0, 0, notifier,,, delayed_CLKN, delayed_D);
+		$setuphold (negedge CLKN, negedge D, 0, 0, notifier,,, delayed_CLKN, delayed_D);
+		$width (posedge CLKN &&& D, 0, 0, notifier);
+		$width (posedge CLKN &&& ~D, 0, 0, notifier);
 	endspecify
 endmodule
 `endcelldefine
@@ -600,16 +674,30 @@ endmodule
 // type:  
 `timescale 1ns/10ps
 `celldefine
-module gf180mcu_osu_sc_12T_xor2_1 (Y, B);
+module gf180mcu_osu_sc_12T_xor2_1 (Y, A, B);
 	output Y;
-	input B;
+	input A, B;
 
 	// Function
-	not (Y, B);
+	wire A__bar, B__bar, int_fwire_0;
+	wire int_fwire_1;
+
+	not (A__bar, A);
+	and (int_fwire_0, A__bar, B);
+	not (B__bar, B);
+	and (int_fwire_1, A, B__bar);
+	or (Y, int_fwire_1, int_fwire_0);
 
 	// Timing
 	specify
-		(B => Y) = 0;
+		if (~B)
+			(A => Y) = 0;
+		if (B)
+			(A => Y) = 0;
+		if (~A)
+			(B => Y) = 0;
+		if (A)
+			(B => Y) = 0;
 	endspecify
 endmodule
 `endcelldefine
