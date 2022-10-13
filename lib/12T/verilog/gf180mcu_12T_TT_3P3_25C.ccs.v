@@ -1,6 +1,16 @@
-// Verilog for library /import/yukari1/lrburle/OSU_180/char/liberate/VERILOG/gf180mcu_12T_TT_3P3_25C.ccs created by Liberate 19.2.2.189 on Tue Oct  4 16:21:30 CDT 2022 for SDF version 2.1
-
-// type:  
+// Copyright 2022 Google LLC
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
 `timescale 1ns/10ps
 `celldefine
 module gf180mcu_osu_sc_12T_addf_1 (CO, S, A, B, CI);
