@@ -1,0 +1,29 @@
+VERSION 5.7 ;
+BUSBITCHARS "[]" ;
+DIVIDERCHAR "/" ;
+
+MACRO gf180mcu_osu_sc_12T_fill_4
+  CLASS CORE ;
+  ORIGIN 0 0.15 ;
+  FOREIGN gf180mcu_osu_sc_12T_fill_4 0 -0.15 ;
+  SIZE 0.4 BY 8.1 ;
+  SYMMETRY X Y ;
+  SITE 12T ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 7.35 0.4 7.95 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 -0.15 0.4 0.45 ;
+    END
+  END VSS
+END gf180mcu_osu_sc_12T_fill_4

@@ -1,0 +1,87 @@
+VERSION 5.7 ;
+BUSBITCHARS "[]" ;
+DIVIDERCHAR "/" ;
+
+MACRO gf180mcu_osu_sc_12T_nor2_1
+  CLASS CORE ;
+  ORIGIN 0 0.15 ;
+  FOREIGN gf180mcu_osu_sc_12T_nor2_1 0 -0.15 ;
+  SIZE 2.8 BY 8.1 ;
+  SYMMETRY X Y ;
+  SITE 12T ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 0.45 3.35 0.95 3.65 ;
+      LAYER MET2 ;
+        RECT 0.45 3.3 0.95 3.7 ;
+      LAYER VIA12 ;
+        RECT 0.57 3.37 0.83 3.63 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 1.85 2.7 2.35 3 ;
+      LAYER MET2 ;
+        RECT 1.85 2.65 2.35 3.05 ;
+      LAYER VIA12 ;
+        RECT 1.97 2.72 2.23 2.98 ;
+    END
+  END B
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 7.35 2.8 7.95 ;
+        RECT 0.55 5.3 0.8 7.95 ;
+      LAYER MET2 ;
+        RECT 1.65 7.4 2.15 7.7 ;
+        RECT 1.7 7.35 2.1 7.75 ;
+        RECT 0.45 7.4 0.95 7.7 ;
+        RECT 0.5 7.35 0.9 7.75 ;
+      LAYER VIA12 ;
+        RECT 0.57 7.42 0.83 7.68 ;
+        RECT 1.77 7.42 2.03 7.68 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 -0.15 2.8 0.45 ;
+        RECT 2.1 -0.15 2.35 1.65 ;
+        RECT 0.4 -0.15 0.65 1.65 ;
+      LAYER MET2 ;
+        RECT 1.65 0.1 2.15 0.4 ;
+        RECT 1.7 0.05 2.1 0.45 ;
+        RECT 0.45 0.1 0.95 0.4 ;
+        RECT 0.5 0.05 0.9 0.45 ;
+      LAYER VIA12 ;
+        RECT 0.57 0.12 0.83 0.38 ;
+        RECT 1.77 0.12 2.03 0.38 ;
+    END
+  END VSS
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 1.95 4.6 2.2 7 ;
+        RECT 1.25 4.6 2.2 4.85 ;
+        RECT 1.15 4 1.65 4.3 ;
+        RECT 1.25 0.8 1.5 4.85 ;
+      LAYER MET2 ;
+        RECT 1.15 3.95 1.65 4.35 ;
+      LAYER VIA12 ;
+        RECT 1.27 4.02 1.53 4.28 ;
+    END
+  END Y
+END gf180mcu_osu_sc_12T_nor2_1
