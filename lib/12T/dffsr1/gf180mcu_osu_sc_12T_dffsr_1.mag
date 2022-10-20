@@ -1122,7 +1122,7 @@ port 1 n
 rlabel metal2 282 96 282 96 1 Q
 port 5 n
 rlabel metal2 -67 151 -67 151 1 VDD
-rlabel metal2 -67 4 -67 4 1 GND
+rlabel metal2 -67 4 -67 4 1 VSS
 rlabel metal2 -65 96 -65 96 1 RN
 port 4 n
 rlabel metal2 203 83 203 83 1 SN

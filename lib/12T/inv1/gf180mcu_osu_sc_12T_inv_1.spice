@@ -12,8 +12,11 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 
+.option scale=0.05u
+
 .subckt gf180mcu_osu_sc_12T_inv_1 A Y
 X0 Y A VDD VDD pmos_3p3 w=34 l=6
-X1 Y A GND GND nmos_3p3 w=17 l=6
+X1 Y A VSS VSS nmos_3p3 w=17 l=6
 .ends
 
+** hspice subcircuit dictionary

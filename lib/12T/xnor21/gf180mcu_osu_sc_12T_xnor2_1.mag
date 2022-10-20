@@ -369,7 +369,7 @@ rect 106 1 114 2
 rlabel metal2 30 44 30 44 1 A
 port 1 n
 rlabel metal2 14 151 14 151 1 VDD
-rlabel metal2 14 5 14 5 1 GND
+rlabel metal2 14 5 14 5 1 VSS
 rlabel metal2 61 108 61 108 1 Y
 port 3 n
 rlabel metal2 92 44 92 44 1 B

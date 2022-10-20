@@ -239,7 +239,7 @@ rlabel metal2 23 70 23 70 1 A
 port 2 n
 rlabel metal2 64 96 64 96 1 Y
 port 3 n
-rlabel metal2 14 5 14 5 1 GND
+rlabel metal2 14 5 14 5 1 VSS
 rlabel metal2 14 152 14 152 1 VDD
 rlabel metal2 38 57 38 57 1 B
 port 1 n

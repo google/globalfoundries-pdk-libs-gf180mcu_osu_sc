@@ -16,8 +16,9 @@
 
 .subckt gf180mcu_osu_sc_12T_buf_1 A Y
 X0 Y a_n8_16 VDD VDD pmos_3p3 w=34 l=6
-X1 Y a_n8_16 GND GND nmos_3p3 w=17 l=6
+X1 Y a_n8_16 VSS VSS nmos_3p3 w=17 l=6
 X2 VDD A a_n8_16 VDD pmos_3p3 w=34 l=6
-X3 GND A a_n8_16 GND nmos_3p3 w=17 l=6
+X3 VSS A a_n8_16 VSS nmos_3p3 w=17 l=6
 .ends
 
+** hspice subcircuit dictionary

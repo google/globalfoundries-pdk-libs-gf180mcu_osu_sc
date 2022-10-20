@@ -16,3 +16,5 @@
 
 .subckt gf180mcu_osu_sc_12T_fill_2
 .ends
+
+** hspice subcircuit dictionary

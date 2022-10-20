@@ -769,7 +769,7 @@ rlabel metal2 248 96 248 96 1 Q
 port 4 n
 rlabel metal2 43 70 43 70 1 D
 port 1 n
-rlabel metal2 13 5 13 5 1 GND
+rlabel metal2 13 5 13 5 1 VSS
 rlabel metal2 14 151 14 151 1 VDD
 rlabel metal2 233 83 233 83 1 QN
 port 5 n

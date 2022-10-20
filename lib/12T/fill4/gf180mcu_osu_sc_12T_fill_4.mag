@@ -22,6 +22,6 @@ rect 0 97 8 159
 rect 0 147 8 159
 rect 0 -3 8 9
 << labels >>
-rlabel metal1 7 2 7 2 1 GND
+rlabel metal1 7 2 7 2 1 VSS
 rlabel metal1 4 153 4 153 3 VDD
 << end >>

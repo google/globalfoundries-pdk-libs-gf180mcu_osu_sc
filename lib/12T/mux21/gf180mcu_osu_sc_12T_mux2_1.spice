@@ -15,11 +15,12 @@
 .option scale=0.05u
 
 .subckt gf180mcu_osu_sc_12T_mux2_1 Y Sel A B
-X0 B Sel Y GND nmos_3p3 w=17 l=6
-X1 Y a_23_16 A GND nmos_3p3 w=17 l=6
-X2 a_23_16 Sel GND GND nmos_3p3 w=17 l=6
+X0 B Sel Y VSS nmos_3p3 w=17 l=6
+X1 Y a_23_16 A VSS nmos_3p3 w=17 l=6
+X2 a_23_16 Sel VSS VSS nmos_3p3 w=17 l=6
 X3 Y Sel A VDD pmos_3p3 w=34 l=6
 X4 B a_23_16 Y VDD pmos_3p3 w=34 l=6
 X5 a_23_16 Sel VDD VDD pmos_3p3 w=34 l=6
 .ends
 
+** hspice subcircuit dictionary

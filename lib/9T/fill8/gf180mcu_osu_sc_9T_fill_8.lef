@@ -1,0 +1,29 @@
+VERSION 5.7 ;
+BUSBITCHARS "[]" ;
+DIVIDERCHAR "/" ;
+
+MACRO gf180mcu_osu_sc_9T_fill_8
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_9T_fill_8 0 0 ;
+  SIZE 0.8 BY 6.15 ;
+  SYMMETRY X Y ;
+  SITE 9T ;
+  PIN GND
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 0 0.8 0.6 ;
+    END
+  END GND
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 5.55 0.8 6.15 ;
+    END
+  END VDD
+END gf180mcu_osu_sc_9T_fill_8
