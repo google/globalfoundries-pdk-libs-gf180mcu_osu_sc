@@ -20,7 +20,7 @@ MACRO gf180mcu_osu_sc_12T_dffn_1
   FOREIGN gf180mcu_osu_sc_12T_dffn_1 0 -0.15 ;
   SIZE 13 BY 8.1 ;
   SYMMETRY X Y ;
-  SITE 12T ;
+  SITE GF018hv5v_mcu_sc7 ;
   PIN CLKN
     DIRECTION INPUT ;
     USE CLOCK ;

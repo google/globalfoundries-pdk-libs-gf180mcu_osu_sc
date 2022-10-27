@@ -15,11 +15,11 @@
 .option scale=0.05u
 
 .subckt gf180mcu_osu_sc_9T_mux2_1 Y Sel A B
-X0 Y a_25_19 A GND nmos_3p3 w=17 l=6
-X1 a_25_19 Sel GND GND nmos_3p3 w=17 l=6
+X0 Y a_25_19 A VSS nmos_3p3 w=17 l=6
+X1 a_25_19 Sel VSS VSS nmos_3p3 w=17 l=6
 X2 Y Sel A VDD pmos_3p3 w=34 l=6
 X3 a_25_19 Sel VDD VDD pmos_3p3 w=34 l=6
-X4 B Sel Y GND nmos_3p3 w=17 l=6
+X4 B Sel Y VSS nmos_3p3 w=17 l=6
 X5 B a_25_19 Y VDD pmos_3p3 w=34 l=6
 .ends
 

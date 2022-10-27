@@ -16,9 +16,9 @@
 
 .subckt gf180mcu_osu_sc_9T_inv_2 A Y
 X0 VDD A Y VDD pmos_3p3 w=34 l=6
-X1 Y A GND GND nmos_3p3 w=17 l=6
+X1 Y A VSS VSS nmos_3p3 w=17 l=6
 X2 Y A VDD VDD pmos_3p3 w=34 l=6
-X3 GND A Y GND nmos_3p3 w=17 l=6
+X3 VSS A Y VSS nmos_3p3 w=17 l=6
 .ends
 
 ** hspice subcircuit dictionary

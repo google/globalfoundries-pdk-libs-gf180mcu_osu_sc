@@ -457,7 +457,7 @@ rect 135 4 143 5
 rlabel metal2 14 115 14 115 1 VDD
 rlabel metal2 35 47 35 47 1 A
 port 1 n
-rlabel metal2 14 8 14 8 1 GND
+rlabel metal2 14 8 14 8 1 VSS
 rlabel metal2 159 60 159 60 1 S
 port 3 n
 rlabel metal2 52 34 52 34 1 B

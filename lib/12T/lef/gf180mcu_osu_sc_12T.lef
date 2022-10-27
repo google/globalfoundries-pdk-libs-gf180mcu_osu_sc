@@ -1,0 +1,4655 @@
+VERSION 5.7 ;
+BUSBITCHARS "[]" ;
+DIVIDERCHAR "/" ;
+
+MACRO gf180mcu_osu_sc_12T_addf_1
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_12T_addf_1 0 0 ;
+  SIZE 14 BY 8.1 ;
+  SYMMETRY X Y ;
+  SITE GF018hv5v_mcu_sc7 ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 8.7 3.5 9.2 3.8 ;
+        RECT 4.6 3.5 5.1 3.8 ;
+        RECT 0.6 3.5 1.1 3.8 ;
+      LAYER MET2 ;
+        RECT 0.6 3.5 9.2 3.8 ;
+        RECT 8.75 3.45 9.15 3.85 ;
+        RECT 4.65 3.45 5.05 3.85 ;
+        RECT 0.65 3.45 1.05 3.85 ;
+      LAYER VIA12 ;
+        RECT 0.72 3.52 0.98 3.78 ;
+        RECT 4.72 3.52 4.98 3.78 ;
+        RECT 8.82 3.52 9.08 3.78 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 9.55 4.15 10.05 4.45 ;
+        RECT 3.6 4.15 6.25 4.45 ;
+        RECT 1.5 4.15 2 4.45 ;
+      LAYER MET2 ;
+        RECT 5.75 4.15 10.05 4.45 ;
+        RECT 9.6 4.1 10 4.5 ;
+        RECT 5.8 4.1 6.2 4.5 ;
+        RECT 1.5 4.15 4.1 4.45 ;
+        RECT 3.65 4.1 4.05 4.5 ;
+        RECT 1.55 4.1 1.95 4.5 ;
+      LAYER VIA12 ;
+        RECT 1.62 4.17 1.88 4.43 ;
+        RECT 3.72 4.17 3.98 4.43 ;
+        RECT 5.87 4.17 6.13 4.43 ;
+        RECT 9.67 4.17 9.93 4.43 ;
+    END
+  END B
+  PIN CI
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 10.05 2.2 10.55 2.5 ;
+        RECT 6.65 2.2 7.15 2.5 ;
+        RECT 2.35 2.85 2.85 3.15 ;
+      LAYER MET2 ;
+        RECT 2.45 2.2 10.55 2.5 ;
+        RECT 10.1 2.15 10.5 2.55 ;
+        RECT 10.15 2.1 10.45 2.55 ;
+        RECT 6.7 2.15 7.1 2.55 ;
+        RECT 6.75 2.1 7.05 2.55 ;
+        RECT 2.35 2.85 2.85 3.15 ;
+        RECT 2.4 2.8 2.8 3.2 ;
+        RECT 2.45 2.2 2.75 3.2 ;
+      LAYER VIA12 ;
+        RECT 2.47 2.87 2.73 3.13 ;
+        RECT 6.77 2.22 7.03 2.48 ;
+        RECT 10.17 2.22 10.43 2.48 ;
+    END
+  END CI
+  PIN CO
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 13.2 2.85 13.75 3.15 ;
+        RECT 13.2 2.8 13.6 3.2 ;
+        RECT 13.2 0.95 13.45 7.15 ;
+      LAYER MET2 ;
+        RECT 13.25 2.85 13.75 3.15 ;
+        RECT 13.3 2.8 13.7 3.2 ;
+      LAYER VIA12 ;
+        RECT 13.37 2.87 13.63 3.13 ;
+    END
+  END CO
+  PIN S
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 11.6 4.15 12 4.45 ;
+        RECT 11.6 0.95 11.85 7.15 ;
+      LAYER MET2 ;
+        RECT 11.5 4.15 12 4.45 ;
+        RECT 11.55 4.1 11.95 4.5 ;
+      LAYER VIA12 ;
+        RECT 11.62 4.17 11.88 4.43 ;
+    END
+  END S
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 7.5 14 8.1 ;
+        RECT 12.35 5.45 12.6 8.1 ;
+        RECT 10.75 5.45 11 8.1 ;
+        RECT 6.5 5.45 6.75 8.1 ;
+        RECT 4.8 5.45 5.05 8.1 ;
+        RECT 1.4 5.45 1.65 8.1 ;
+      LAYER MET2 ;
+        RECT 12.45 7.55 12.95 7.85 ;
+        RECT 12.5 7.5 12.9 7.9 ;
+        RECT 11.25 7.55 11.75 7.85 ;
+        RECT 11.3 7.5 11.7 7.9 ;
+        RECT 10.05 7.55 10.55 7.85 ;
+        RECT 10.1 7.5 10.5 7.9 ;
+        RECT 8.85 7.55 9.35 7.85 ;
+        RECT 8.9 7.5 9.3 7.9 ;
+        RECT 7.65 7.55 8.15 7.85 ;
+        RECT 7.7 7.5 8.1 7.9 ;
+        RECT 6.45 7.55 6.95 7.85 ;
+        RECT 6.5 7.5 6.9 7.9 ;
+        RECT 5.25 7.55 5.75 7.85 ;
+        RECT 5.3 7.5 5.7 7.9 ;
+        RECT 4.05 7.55 4.55 7.85 ;
+        RECT 4.1 7.5 4.5 7.9 ;
+        RECT 2.85 7.55 3.35 7.85 ;
+        RECT 2.9 7.5 3.3 7.9 ;
+        RECT 1.65 7.55 2.15 7.85 ;
+        RECT 1.7 7.5 2.1 7.9 ;
+        RECT 0.45 7.55 0.95 7.85 ;
+        RECT 0.5 7.5 0.9 7.9 ;
+      LAYER VIA12 ;
+        RECT 0.57 7.57 0.83 7.83 ;
+        RECT 1.77 7.57 2.03 7.83 ;
+        RECT 2.97 7.57 3.23 7.83 ;
+        RECT 4.17 7.57 4.43 7.83 ;
+        RECT 5.37 7.57 5.63 7.83 ;
+        RECT 6.57 7.57 6.83 7.83 ;
+        RECT 7.77 7.57 8.03 7.83 ;
+        RECT 8.97 7.57 9.23 7.83 ;
+        RECT 10.17 7.57 10.43 7.83 ;
+        RECT 11.37 7.57 11.63 7.83 ;
+        RECT 12.57 7.57 12.83 7.83 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 0 14 0.6 ;
+        RECT 12.35 0 12.6 1.8 ;
+        RECT 10.75 0 11 1.8 ;
+        RECT 6.5 0 6.75 1.45 ;
+        RECT 4.8 0 5.05 1.8 ;
+        RECT 1.4 0 1.65 1.8 ;
+      LAYER MET2 ;
+        RECT 12.45 0.25 12.95 0.55 ;
+        RECT 12.5 0.2 12.9 0.6 ;
+        RECT 11.25 0.25 11.75 0.55 ;
+        RECT 11.3 0.2 11.7 0.6 ;
+        RECT 10.05 0.25 10.55 0.55 ;
+        RECT 10.1 0.2 10.5 0.6 ;
+        RECT 8.85 0.25 9.35 0.55 ;
+        RECT 8.9 0.2 9.3 0.6 ;
+        RECT 7.65 0.25 8.15 0.55 ;
+        RECT 7.7 0.2 8.1 0.6 ;
+        RECT 6.45 0.25 6.95 0.55 ;
+        RECT 6.5 0.2 6.9 0.6 ;
+        RECT 5.25 0.25 5.75 0.55 ;
+        RECT 5.3 0.2 5.7 0.6 ;
+        RECT 4.05 0.25 4.55 0.55 ;
+        RECT 4.1 0.2 4.5 0.6 ;
+        RECT 2.85 0.25 3.35 0.55 ;
+        RECT 2.9 0.2 3.3 0.6 ;
+        RECT 1.65 0.25 2.15 0.55 ;
+        RECT 1.7 0.2 2.1 0.6 ;
+        RECT 0.45 0.25 0.95 0.55 ;
+        RECT 0.5 0.2 0.9 0.6 ;
+      LAYER VIA12 ;
+        RECT 0.57 0.27 0.83 0.53 ;
+        RECT 1.77 0.27 2.03 0.53 ;
+        RECT 2.97 0.27 3.23 0.53 ;
+        RECT 4.17 0.27 4.43 0.53 ;
+        RECT 5.37 0.27 5.63 0.53 ;
+        RECT 6.57 0.27 6.83 0.53 ;
+        RECT 7.77 0.27 8.03 0.53 ;
+        RECT 8.97 0.27 9.23 0.53 ;
+        RECT 10.17 0.27 10.43 0.53 ;
+        RECT 11.37 0.27 11.63 0.53 ;
+        RECT 12.57 0.27 12.83 0.53 ;
+    END
+  END VSS
+  OBS
+    LAYER MET2 ;
+      RECT 12.5 2.8 12.9 3.2 ;
+      RECT 7.5 2.8 7.9 3.2 ;
+      RECT 7.45 2.85 12.95 3.15 ;
+      RECT 12.55 2.75 12.85 3.2 ;
+    LAYER VIA12 ;
+      RECT 12.57 2.87 12.83 3.13 ;
+      RECT 7.57 2.87 7.83 3.13 ;
+    LAYER MET1 ;
+      RECT 8.2 0.95 8.45 7.15 ;
+      RECT 8.2 2.85 11.35 3.15 ;
+      RECT 3.1 0.95 3.35 7.15 ;
+      RECT 3.1 2.85 7.95 3.15 ;
+      RECT 5.65 1.7 7.6 1.95 ;
+      RECT 7.35 0.95 7.6 1.95 ;
+      RECT 5.65 0.95 5.9 1.95 ;
+      RECT 7.35 4.95 7.6 7.15 ;
+      RECT 5.65 4.95 5.9 7.15 ;
+      RECT 5.65 4.95 7.6 5.2 ;
+      RECT 0.55 2.05 2.5 2.3 ;
+      RECT 2.25 0.95 2.5 2.3 ;
+      RECT 0.55 0.95 0.8 2.3 ;
+      RECT 2.25 4.95 2.5 7.15 ;
+      RECT 0.55 4.95 0.8 7.15 ;
+      RECT 0.55 4.95 2.5 5.2 ;
+      RECT 12.45 2.85 12.95 3.15 ;
+  END
+END gf180mcu_osu_sc_12T_addf_1
+
+MACRO gf180mcu_osu_sc_12T_addh_1
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_12T_addh_1 0 0 ;
+  SIZE 8.1 BY 8.1 ;
+  SYMMETRY X Y ;
+  SITE GF018hv5v_mcu_sc7 ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 3.9 3.5 4.4 3.8 ;
+        RECT 1.5 3.5 2 3.8 ;
+      LAYER MET2 ;
+        RECT 3.9 3.45 4.4 3.85 ;
+        RECT 1.5 3.5 4.4 3.8 ;
+        RECT 1.5 3.45 2 3.85 ;
+      LAYER VIA12 ;
+        RECT 1.62 3.52 1.88 3.78 ;
+        RECT 4.02 3.52 4.28 3.78 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 5.2 2.85 5.7 3.15 ;
+        RECT 2.35 2.85 2.85 3.15 ;
+      LAYER MET2 ;
+        RECT 5.2 2.8 5.7 3.2 ;
+        RECT 2.35 2.85 5.7 3.15 ;
+        RECT 2.35 2.8 2.85 3.2 ;
+      LAYER VIA12 ;
+        RECT 2.47 2.87 2.73 3.13 ;
+        RECT 5.32 2.87 5.58 3.13 ;
+    END
+  END B
+  PIN CO
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 0.4 2.2 0.9 2.5 ;
+        RECT 0.55 0.95 0.8 7.15 ;
+      LAYER MET2 ;
+        RECT 0.4 2.15 0.9 2.55 ;
+      LAYER VIA12 ;
+        RECT 0.52 2.22 0.78 2.48 ;
+    END
+  END CO
+  PIN S
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 7.2 4.8 7.7 5.1 ;
+        RECT 7.25 4.75 7.6 5.15 ;
+        RECT 7.25 0.95 7.5 7.15 ;
+      LAYER MET2 ;
+        RECT 7.2 4.75 7.7 5.15 ;
+      LAYER VIA12 ;
+        RECT 7.32 4.82 7.58 5.08 ;
+    END
+  END S
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 7.5 8.1 8.1 ;
+        RECT 6.4 5.45 6.65 8.1 ;
+        RECT 3.85 5.45 4.1 8.1 ;
+        RECT 3.1 5.45 3.35 8.1 ;
+        RECT 1.4 5.45 1.65 8.1 ;
+      LAYER MET2 ;
+        RECT 6.45 7.55 6.95 7.85 ;
+        RECT 6.5 7.5 6.9 7.9 ;
+        RECT 5.25 7.55 5.75 7.85 ;
+        RECT 5.3 7.5 5.7 7.9 ;
+        RECT 4.05 7.55 4.55 7.85 ;
+        RECT 4.1 7.5 4.5 7.9 ;
+        RECT 2.85 7.55 3.35 7.85 ;
+        RECT 2.9 7.5 3.3 7.9 ;
+        RECT 1.65 7.55 2.15 7.85 ;
+        RECT 1.7 7.5 2.1 7.9 ;
+        RECT 0.45 7.55 0.95 7.85 ;
+        RECT 0.5 7.5 0.9 7.9 ;
+      LAYER VIA12 ;
+        RECT 0.57 7.57 0.83 7.83 ;
+        RECT 1.77 7.57 2.03 7.83 ;
+        RECT 2.97 7.57 3.23 7.83 ;
+        RECT 4.17 7.57 4.43 7.83 ;
+        RECT 5.37 7.57 5.63 7.83 ;
+        RECT 6.57 7.57 6.83 7.83 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 0 8.1 0.6 ;
+        RECT 6.4 0 6.65 1.8 ;
+        RECT 1.4 0 1.65 1.8 ;
+      LAYER MET2 ;
+        RECT 6.45 0.25 6.95 0.55 ;
+        RECT 6.5 0.2 6.9 0.6 ;
+        RECT 5.25 0.25 5.75 0.55 ;
+        RECT 5.3 0.2 5.7 0.6 ;
+        RECT 4.05 0.25 4.55 0.55 ;
+        RECT 4.1 0.2 4.5 0.6 ;
+        RECT 2.85 0.25 3.35 0.55 ;
+        RECT 2.9 0.2 3.3 0.6 ;
+        RECT 1.65 0.25 2.15 0.55 ;
+        RECT 1.7 0.2 2.1 0.6 ;
+        RECT 0.45 0.25 0.95 0.55 ;
+        RECT 0.5 0.2 0.9 0.6 ;
+      LAYER VIA12 ;
+        RECT 0.57 0.27 0.83 0.53 ;
+        RECT 1.77 0.27 2.03 0.53 ;
+        RECT 2.97 0.27 3.23 0.53 ;
+        RECT 4.17 0.27 4.43 0.53 ;
+        RECT 5.37 0.27 5.63 0.53 ;
+        RECT 6.57 0.27 6.83 0.53 ;
+    END
+  END VSS
+  OBS
+    LAYER MET2 ;
+      RECT 6.05 4.75 6.55 5.15 ;
+      RECT 3 4.75 3.5 5.15 ;
+      RECT 3 4.8 6.55 5.1 ;
+    LAYER VIA12 ;
+      RECT 6.17 4.82 6.43 5.08 ;
+      RECT 3.12 4.82 3.38 5.08 ;
+    LAYER MET1 ;
+      RECT 5.55 3.5 5.8 7.15 ;
+      RECT 5.55 3.5 7 3.8 ;
+      RECT 4.7 3.5 7 3.75 ;
+      RECT 4.7 1.35 4.95 3.75 ;
+      RECT 5.55 0.85 5.8 1.9 ;
+      RECT 3.85 0.85 4.1 1.9 ;
+      RECT 3.85 0.85 5.8 1.1 ;
+      RECT 2.25 4.8 2.5 7.15 ;
+      RECT 1.05 4.8 3.5 5.1 ;
+      RECT 3.1 0.95 3.35 5.1 ;
+      RECT 6.05 4.8 6.55 5.1 ;
+  END
+END gf180mcu_osu_sc_12T_addh_1
+
+MACRO gf180mcu_osu_sc_12T_and2_1
+  CLASS CORE ;
+  ORIGIN 0 0.15 ;
+  FOREIGN gf180mcu_osu_sc_12T_and2_1 0 -0.15 ;
+  SIZE 3.9 BY 8.1 ;
+  SYMMETRY X Y ;
+  SITE GF018hv5v_mcu_sc7 ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 0.6 3.35 1.1 3.65 ;
+      LAYER MET2 ;
+        RECT 0.6 3.3 1.1 3.7 ;
+      LAYER VIA12 ;
+        RECT 0.72 3.37 0.98 3.63 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 1.9 2.7 2.4 3 ;
+      LAYER MET2 ;
+        RECT 1.9 2.65 2.4 3.05 ;
+      LAYER VIA12 ;
+        RECT 2.02 2.72 2.28 2.98 ;
+    END
+  END B
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 7.35 3.9 7.95 ;
+        RECT 2.25 5.3 2.5 7.95 ;
+        RECT 0.55 5.3 0.8 7.95 ;
+      LAYER MET2 ;
+        RECT 2.85 7.4 3.35 7.7 ;
+        RECT 2.9 7.35 3.3 7.75 ;
+        RECT 1.65 7.4 2.15 7.7 ;
+        RECT 1.7 7.35 2.1 7.75 ;
+        RECT 0.45 7.4 0.95 7.7 ;
+        RECT 0.5 7.35 0.9 7.75 ;
+      LAYER VIA12 ;
+        RECT 0.57 7.42 0.83 7.68 ;
+        RECT 1.77 7.42 2.03 7.68 ;
+        RECT 2.97 7.42 3.23 7.68 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 -0.15 3.9 0.45 ;
+        RECT 2.1 -0.15 2.5 1.65 ;
+      LAYER MET2 ;
+        RECT 2.85 0.1 3.35 0.4 ;
+        RECT 2.9 0.05 3.3 0.45 ;
+        RECT 1.65 0.1 2.15 0.4 ;
+        RECT 1.7 0.05 2.1 0.45 ;
+        RECT 0.45 0.1 0.95 0.4 ;
+        RECT 0.5 0.05 0.9 0.45 ;
+      LAYER VIA12 ;
+        RECT 0.57 0.12 0.83 0.38 ;
+        RECT 1.77 0.12 2.03 0.38 ;
+        RECT 2.97 0.12 3.23 0.38 ;
+    END
+  END VSS
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 3.1 4.7 3.6 5 ;
+        RECT 3.1 4.65 3.5 5 ;
+        RECT 3.1 4.65 3.45 5.05 ;
+        RECT 3.1 0.8 3.35 7 ;
+      LAYER MET2 ;
+        RECT 3.1 4.65 3.6 5.05 ;
+      LAYER VIA12 ;
+        RECT 3.22 4.72 3.48 4.98 ;
+    END
+  END Y
+  OBS
+    LAYER MET2 ;
+      RECT 2.35 3.95 2.85 4.35 ;
+      RECT 1.3 3.95 1.8 4.35 ;
+    LAYER VIA12 ;
+      RECT 2.47 4.02 2.73 4.28 ;
+      RECT 1.42 4.02 1.68 4.28 ;
+    LAYER MET1 ;
+      RECT 1.4 1.75 1.65 7 ;
+      RECT 1.3 4 2.85 4.3 ;
+      RECT 0.7 1.75 1.65 2 ;
+      RECT 0.7 0.8 0.95 2 ;
+  END
+END gf180mcu_osu_sc_12T_and2_1
+
+MACRO gf180mcu_osu_sc_12T_aoi21_1
+  CLASS CORE ;
+  ORIGIN 0 0.15 ;
+  FOREIGN gf180mcu_osu_sc_12T_aoi21_1 0 -0.15 ;
+  SIZE 3.9 BY 8.1 ;
+  SYMMETRY X Y ;
+  SITE GF018hv5v_mcu_sc7 ;
+  PIN A0
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 0.6 3.35 1.1 3.65 ;
+      LAYER MET2 ;
+        RECT 0.6 3.3 1.1 3.7 ;
+      LAYER VIA12 ;
+        RECT 0.72 3.37 0.98 3.63 ;
+    END
+  END A0
+  PIN A1
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 1.6 4 2.1 4.3 ;
+      LAYER MET2 ;
+        RECT 1.6 3.95 2.1 4.35 ;
+      LAYER VIA12 ;
+        RECT 1.72 4.02 1.98 4.28 ;
+    END
+  END A1
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 2.35 3.35 2.85 3.65 ;
+      LAYER MET2 ;
+        RECT 2.35 3.3 2.85 3.7 ;
+      LAYER VIA12 ;
+        RECT 2.47 3.37 2.73 3.63 ;
+    END
+  END B
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 7.35 3.9 7.95 ;
+        RECT 1.4 6.05 1.65 7.95 ;
+      LAYER MET2 ;
+        RECT 2.85 7.4 3.35 7.7 ;
+        RECT 2.9 7.35 3.3 7.75 ;
+        RECT 1.65 7.4 2.15 7.7 ;
+        RECT 1.7 7.35 2.1 7.75 ;
+        RECT 0.45 7.4 0.95 7.7 ;
+        RECT 0.5 7.35 0.9 7.75 ;
+      LAYER VIA12 ;
+        RECT 0.57 7.42 0.83 7.68 ;
+        RECT 1.77 7.42 2.03 7.68 ;
+        RECT 2.97 7.42 3.23 7.68 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 -0.15 3.9 0.45 ;
+        RECT 2.95 -0.15 3.2 1.65 ;
+        RECT 0.7 -0.15 0.95 1.65 ;
+      LAYER MET2 ;
+        RECT 2.85 0.1 3.35 0.4 ;
+        RECT 2.9 0.05 3.3 0.45 ;
+        RECT 1.65 0.1 2.15 0.4 ;
+        RECT 1.7 0.05 2.1 0.45 ;
+        RECT 0.45 0.1 0.95 0.4 ;
+        RECT 0.5 0.05 0.9 0.45 ;
+      LAYER VIA12 ;
+        RECT 0.57 0.12 0.83 0.38 ;
+        RECT 1.77 0.12 2.03 0.38 ;
+        RECT 2.97 0.12 3.23 0.38 ;
+    END
+  END VSS
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 3 4.65 3.5 4.95 ;
+        RECT 3.1 2.4 3.35 7 ;
+        RECT 2.1 2.4 3.35 2.65 ;
+        RECT 2.1 0.8 2.35 2.65 ;
+      LAYER MET2 ;
+        RECT 3 4.6 3.5 5 ;
+      LAYER VIA12 ;
+        RECT 3.12 4.67 3.38 4.93 ;
+    END
+  END Y
+  OBS
+    LAYER MET1 ;
+      RECT 2.25 5.55 2.5 7 ;
+      RECT 0.55 5.55 0.8 7 ;
+      RECT 0.55 5.55 2.5 5.8 ;
+  END
+END gf180mcu_osu_sc_12T_aoi21_1
+
+MACRO gf180mcu_osu_sc_12T_buf_1
+  CLASS CORE ;
+  ORIGIN 0.85 0.15 ;
+  FOREIGN gf180mcu_osu_sc_12T_buf_1 -0.85 -0.15 ;
+  SIZE 3.1 BY 8.1 ;
+  SYMMETRY X Y ;
+  SITE GF018hv5v_mcu_sc7 ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 0.2 4 0.7 4.3 ;
+      LAYER MET2 ;
+        RECT 0.2 4 0.7 4.3 ;
+        RECT 0.25 3.95 0.65 4.35 ;
+      LAYER VIA12 ;
+        RECT 0.32 4.02 0.58 4.28 ;
+    END
+  END A
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER MET1 ;
+        RECT -0.85 7.35 2.25 7.95 ;
+        RECT 0.55 5.3 0.8 7.95 ;
+      LAYER MET2 ;
+        RECT 0.8 7.4 1.3 7.7 ;
+        RECT 0.85 7.35 1.25 7.75 ;
+        RECT -0.4 7.4 0.1 7.7 ;
+        RECT -0.35 7.35 0.05 7.75 ;
+      LAYER VIA12 ;
+        RECT -0.28 7.42 -0.02 7.68 ;
+        RECT 0.92 7.42 1.18 7.68 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER MET1 ;
+        RECT -0.85 -0.15 2.25 0.45 ;
+        RECT 0.55 -0.15 0.8 1.65 ;
+      LAYER MET2 ;
+        RECT 0.8 0.1 1.3 0.4 ;
+        RECT 0.85 0.05 1.25 0.45 ;
+        RECT -0.4 0.1 0.1 0.4 ;
+        RECT -0.35 0.05 0.05 0.45 ;
+      LAYER VIA12 ;
+        RECT -0.28 0.12 -0.02 0.38 ;
+        RECT 0.92 0.12 1.18 0.38 ;
+    END
+  END VSS
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 1.3 4.65 1.8 4.95 ;
+        RECT 1.4 0.8 1.65 7 ;
+      LAYER MET2 ;
+        RECT 1.3 4.6 1.8 5 ;
+      LAYER VIA12 ;
+        RECT 1.42 4.67 1.68 4.93 ;
+    END
+  END Y
+  OBS
+    LAYER MET1 ;
+      RECT -0.3 0.8 -0.05 7 ;
+      RECT -0.3 2.75 1.15 3.05 ;
+  END
+END gf180mcu_osu_sc_12T_buf_1
+
+MACRO gf180mcu_osu_sc_12T_buf_16
+  CLASS CORE ;
+  ORIGIN 0.85 0.15 ;
+  FOREIGN gf180mcu_osu_sc_12T_buf_16 -0.85 -0.15 ;
+  SIZE 15.8 BY 8.1 ;
+  SYMMETRY X Y ;
+  SITE GF018hv5v_mcu_sc7 ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 0.2 4 0.7 4.3 ;
+      LAYER MET2 ;
+        RECT 0.2 4 0.7 4.3 ;
+        RECT 0.25 3.95 0.65 4.35 ;
+      LAYER VIA12 ;
+        RECT 0.32 4.02 0.58 4.28 ;
+    END
+  END A
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER MET1 ;
+        RECT -0.85 7.35 14.95 7.95 ;
+        RECT 14.15 5.3 14.4 7.95 ;
+        RECT 12.45 5.3 12.7 7.95 ;
+        RECT 10.75 5.3 11 7.95 ;
+        RECT 9.05 5.3 9.3 7.95 ;
+        RECT 7.35 5.3 7.6 7.95 ;
+        RECT 5.65 5.3 5.9 7.95 ;
+        RECT 3.95 5.3 4.2 7.95 ;
+        RECT 2.25 5.3 2.5 7.95 ;
+        RECT 0.55 5.3 0.8 7.95 ;
+      LAYER MET2 ;
+        RECT 12.8 7.4 13.3 7.7 ;
+        RECT 12.85 7.35 13.25 7.75 ;
+        RECT 11.6 7.4 12.1 7.7 ;
+        RECT 11.65 7.35 12.05 7.75 ;
+        RECT 10.4 7.4 10.9 7.7 ;
+        RECT 10.45 7.35 10.85 7.75 ;
+        RECT 9.2 7.4 9.7 7.7 ;
+        RECT 9.25 7.35 9.65 7.75 ;
+        RECT 8 7.4 8.5 7.7 ;
+        RECT 8.05 7.35 8.45 7.75 ;
+        RECT 6.8 7.4 7.3 7.7 ;
+        RECT 6.85 7.35 7.25 7.75 ;
+        RECT 5.6 7.4 6.1 7.7 ;
+        RECT 5.65 7.35 6.05 7.75 ;
+        RECT 4.4 7.4 4.9 7.7 ;
+        RECT 4.45 7.35 4.85 7.75 ;
+        RECT 3.2 7.4 3.7 7.7 ;
+        RECT 3.25 7.35 3.65 7.75 ;
+        RECT 2 7.4 2.5 7.7 ;
+        RECT 2.05 7.35 2.45 7.75 ;
+        RECT 0.8 7.4 1.3 7.7 ;
+        RECT 0.85 7.35 1.25 7.75 ;
+        RECT -0.4 7.4 0.1 7.7 ;
+        RECT -0.35 7.35 0.05 7.75 ;
+      LAYER VIA12 ;
+        RECT -0.28 7.42 -0.02 7.68 ;
+        RECT 0.92 7.42 1.18 7.68 ;
+        RECT 2.12 7.42 2.38 7.68 ;
+        RECT 3.32 7.42 3.58 7.68 ;
+        RECT 4.52 7.42 4.78 7.68 ;
+        RECT 5.72 7.42 5.98 7.68 ;
+        RECT 6.92 7.42 7.18 7.68 ;
+        RECT 8.12 7.42 8.38 7.68 ;
+        RECT 9.32 7.42 9.58 7.68 ;
+        RECT 10.52 7.42 10.78 7.68 ;
+        RECT 11.72 7.42 11.98 7.68 ;
+        RECT 12.92 7.42 13.18 7.68 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER MET1 ;
+        RECT -0.85 -0.15 14.95 0.45 ;
+        RECT 14.15 -0.15 14.4 1.65 ;
+        RECT 12.45 -0.15 12.7 1.65 ;
+        RECT 10.75 -0.15 11 1.65 ;
+        RECT 9.05 -0.15 9.3 1.65 ;
+        RECT 7.35 -0.15 7.6 1.65 ;
+        RECT 5.65 -0.15 5.9 1.65 ;
+        RECT 3.95 -0.15 4.2 1.65 ;
+        RECT 2.25 -0.15 2.5 1.65 ;
+        RECT 0.55 -0.15 0.8 1.65 ;
+      LAYER MET2 ;
+        RECT 12.8 0.1 13.3 0.4 ;
+        RECT 12.85 0.05 13.25 0.45 ;
+        RECT 11.6 0.1 12.1 0.4 ;
+        RECT 11.65 0.05 12.05 0.45 ;
+        RECT 10.4 0.1 10.9 0.4 ;
+        RECT 10.45 0.05 10.85 0.45 ;
+        RECT 9.2 0.1 9.7 0.4 ;
+        RECT 9.25 0.05 9.65 0.45 ;
+        RECT 8 0.1 8.5 0.4 ;
+        RECT 8.05 0.05 8.45 0.45 ;
+        RECT 6.8 0.1 7.3 0.4 ;
+        RECT 6.85 0.05 7.25 0.45 ;
+        RECT 5.6 0.1 6.1 0.4 ;
+        RECT 5.65 0.05 6.05 0.45 ;
+        RECT 4.4 0.1 4.9 0.4 ;
+        RECT 4.45 0.05 4.85 0.45 ;
+        RECT 3.2 0.1 3.7 0.4 ;
+        RECT 3.25 0.05 3.65 0.45 ;
+        RECT 2 0.1 2.5 0.4 ;
+        RECT 2.05 0.05 2.45 0.45 ;
+        RECT 0.8 0.1 1.3 0.4 ;
+        RECT 0.85 0.05 1.25 0.45 ;
+        RECT -0.4 0.1 0.1 0.4 ;
+        RECT -0.35 0.05 0.05 0.45 ;
+      LAYER VIA12 ;
+        RECT -0.28 0.12 -0.02 0.38 ;
+        RECT 0.92 0.12 1.18 0.38 ;
+        RECT 2.12 0.12 2.38 0.38 ;
+        RECT 3.32 0.12 3.58 0.38 ;
+        RECT 4.52 0.12 4.78 0.38 ;
+        RECT 5.72 0.12 5.98 0.38 ;
+        RECT 6.92 0.12 7.18 0.38 ;
+        RECT 8.12 0.12 8.38 0.38 ;
+        RECT 9.32 0.12 9.58 0.38 ;
+        RECT 10.52 0.12 10.78 0.38 ;
+        RECT 11.72 0.12 11.98 0.38 ;
+        RECT 12.92 0.12 13.18 0.38 ;
+    END
+  END VSS
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 1.4 4.7 13.7 5 ;
+        RECT 13.3 0.8 13.55 7 ;
+        RECT 1.4 1.9 13.55 2.15 ;
+        RECT 11.6 0.8 11.85 7 ;
+        RECT 9.9 0.8 10.15 7 ;
+        RECT 8.2 0.8 8.45 7 ;
+        RECT 6.5 0.8 6.75 7 ;
+        RECT 4.8 0.8 5.05 7 ;
+        RECT 3.1 0.8 3.35 7 ;
+        RECT 1.4 0.8 1.65 7 ;
+      LAYER MET2 ;
+        RECT 13.2 4.65 13.7 5.05 ;
+        RECT 13.15 4.7 13.7 5 ;
+      LAYER VIA12 ;
+        RECT 13.32 4.72 13.58 4.98 ;
+    END
+  END Y
+  OBS
+    LAYER MET1 ;
+      RECT -0.3 0.8 -0.05 7 ;
+      RECT -0.3 2.75 1.15 3.05 ;
+  END
+END gf180mcu_osu_sc_12T_buf_16
+
+MACRO gf180mcu_osu_sc_12T_buf_2
+  CLASS CORE ;
+  ORIGIN 0.85 0.15 ;
+  FOREIGN gf180mcu_osu_sc_12T_buf_2 -0.85 -0.15 ;
+  SIZE 3.9 BY 8.1 ;
+  SYMMETRY X Y ;
+  SITE GF018hv5v_mcu_sc7 ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 0.2 4 0.7 4.3 ;
+      LAYER MET2 ;
+        RECT 0.2 4 0.7 4.3 ;
+        RECT 0.25 3.95 0.65 4.35 ;
+      LAYER VIA12 ;
+        RECT 0.32 4.02 0.58 4.28 ;
+    END
+  END A
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER MET1 ;
+        RECT -0.85 7.35 3.05 7.95 ;
+        RECT 2.25 5.3 2.5 7.95 ;
+        RECT 0.55 5.3 0.8 7.95 ;
+      LAYER MET2 ;
+        RECT 0.8 7.4 1.3 7.7 ;
+        RECT 0.85 7.35 1.25 7.75 ;
+        RECT -0.4 7.4 0.1 7.7 ;
+        RECT -0.35 7.35 0.05 7.75 ;
+      LAYER VIA12 ;
+        RECT -0.28 7.42 -0.02 7.68 ;
+        RECT 0.92 7.42 1.18 7.68 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER MET1 ;
+        RECT -0.85 -0.15 3.05 0.45 ;
+        RECT 2.25 -0.15 2.5 1.65 ;
+        RECT 0.55 -0.15 0.8 1.65 ;
+      LAYER MET2 ;
+        RECT 0.8 0.1 1.3 0.4 ;
+        RECT 0.85 0.05 1.25 0.45 ;
+        RECT -0.4 0.1 0.1 0.4 ;
+        RECT -0.35 0.05 0.05 0.45 ;
+      LAYER VIA12 ;
+        RECT -0.28 0.12 -0.02 0.38 ;
+        RECT 0.92 0.12 1.18 0.38 ;
+    END
+  END VSS
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 1.3 4.7 1.8 5 ;
+        RECT 1.4 0.8 1.65 7 ;
+      LAYER MET2 ;
+        RECT 1.3 4.65 1.8 5.05 ;
+      LAYER VIA12 ;
+        RECT 1.42 4.72 1.68 4.98 ;
+    END
+  END Y
+  OBS
+    LAYER MET1 ;
+      RECT -0.3 0.8 -0.05 7 ;
+      RECT -0.3 2.75 1.15 3.05 ;
+  END
+END gf180mcu_osu_sc_12T_buf_2
+
+MACRO gf180mcu_osu_sc_12T_buf_4
+  CLASS CORE ;
+  ORIGIN 0.85 0.15 ;
+  FOREIGN gf180mcu_osu_sc_12T_buf_4 -0.85 -0.15 ;
+  SIZE 5.6 BY 8.1 ;
+  SYMMETRY X Y ;
+  SITE GF018hv5v_mcu_sc7 ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 0.2 4 0.7 4.3 ;
+      LAYER MET2 ;
+        RECT 0.2 4 0.7 4.3 ;
+        RECT 0.25 3.95 0.65 4.35 ;
+      LAYER VIA12 ;
+        RECT 0.32 4.02 0.58 4.28 ;
+    END
+  END A
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER MET1 ;
+        RECT -0.85 7.35 4.75 7.95 ;
+        RECT 3.95 5.3 4.2 7.95 ;
+        RECT 2.25 5.3 2.5 7.95 ;
+        RECT 0.55 5.3 0.8 7.95 ;
+      LAYER MET2 ;
+        RECT 3.2 7.4 3.7 7.7 ;
+        RECT 3.25 7.35 3.65 7.75 ;
+        RECT 2 7.4 2.5 7.7 ;
+        RECT 2.05 7.35 2.45 7.75 ;
+        RECT 0.8 7.4 1.3 7.7 ;
+        RECT 0.85 7.35 1.25 7.75 ;
+        RECT -0.4 7.4 0.1 7.7 ;
+        RECT -0.35 7.35 0.05 7.75 ;
+      LAYER VIA12 ;
+        RECT -0.28 7.42 -0.02 7.68 ;
+        RECT 0.92 7.42 1.18 7.68 ;
+        RECT 2.12 7.42 2.38 7.68 ;
+        RECT 3.32 7.42 3.58 7.68 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER MET1 ;
+        RECT -0.85 -0.15 4.75 0.45 ;
+        RECT 3.95 -0.15 4.2 1.65 ;
+        RECT 2.25 -0.15 2.5 1.65 ;
+        RECT 0.55 -0.15 0.8 1.65 ;
+      LAYER MET2 ;
+        RECT 3.2 0.1 3.7 0.4 ;
+        RECT 3.25 0.05 3.65 0.45 ;
+        RECT 2 0.1 2.5 0.4 ;
+        RECT 2.05 0.05 2.45 0.45 ;
+        RECT 0.8 0.1 1.3 0.4 ;
+        RECT 0.85 0.05 1.25 0.45 ;
+        RECT -0.4 0.1 0.1 0.4 ;
+        RECT -0.35 0.05 0.05 0.45 ;
+      LAYER VIA12 ;
+        RECT -0.28 0.12 -0.02 0.38 ;
+        RECT 0.92 0.12 1.18 0.38 ;
+        RECT 2.12 0.12 2.38 0.38 ;
+        RECT 3.32 0.12 3.58 0.38 ;
+    END
+  END VSS
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 1.4 4.7 3.5 5 ;
+        RECT 3.1 0.8 3.35 7 ;
+        RECT 1.4 1.9 3.35 2.15 ;
+        RECT 1.4 0.8 1.65 7 ;
+      LAYER MET2 ;
+        RECT 3 4.65 3.5 5.05 ;
+        RECT 2.95 4.7 3.5 5 ;
+      LAYER VIA12 ;
+        RECT 3.12 4.72 3.38 4.98 ;
+    END
+  END Y
+  OBS
+    LAYER MET1 ;
+      RECT -0.3 0.8 -0.05 7 ;
+      RECT -0.3 2.75 1.15 3.05 ;
+  END
+END gf180mcu_osu_sc_12T_buf_4
+
+MACRO gf180mcu_osu_sc_12T_buf_8
+  CLASS CORE ;
+  ORIGIN 0.85 0.15 ;
+  FOREIGN gf180mcu_osu_sc_12T_buf_8 -0.85 -0.15 ;
+  SIZE 9 BY 8.1 ;
+  SYMMETRY X Y ;
+  SITE GF018hv5v_mcu_sc7 ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 0.2 4 0.7 4.3 ;
+      LAYER MET2 ;
+        RECT 0.2 4 0.7 4.3 ;
+        RECT 0.25 3.95 0.65 4.35 ;
+      LAYER VIA12 ;
+        RECT 0.32 4.02 0.58 4.28 ;
+    END
+  END A
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER MET1 ;
+        RECT -0.85 7.35 8.15 7.95 ;
+        RECT 7.35 5.3 7.6 7.95 ;
+        RECT 5.65 5.3 5.9 7.95 ;
+        RECT 3.95 5.3 4.2 7.95 ;
+        RECT 2.25 5.3 2.5 7.95 ;
+        RECT 0.55 5.3 0.8 7.95 ;
+      LAYER MET2 ;
+        RECT 5.6 7.4 6.1 7.7 ;
+        RECT 5.65 7.35 6.05 7.75 ;
+        RECT 4.4 7.4 4.9 7.7 ;
+        RECT 4.45 7.35 4.85 7.75 ;
+        RECT 3.2 7.4 3.7 7.7 ;
+        RECT 3.25 7.35 3.65 7.75 ;
+        RECT 2 7.4 2.5 7.7 ;
+        RECT 2.05 7.35 2.45 7.75 ;
+        RECT 0.8 7.4 1.3 7.7 ;
+        RECT 0.85 7.35 1.25 7.75 ;
+        RECT -0.4 7.4 0.1 7.7 ;
+        RECT -0.35 7.35 0.05 7.75 ;
+      LAYER VIA12 ;
+        RECT -0.28 7.42 -0.02 7.68 ;
+        RECT 0.92 7.42 1.18 7.68 ;
+        RECT 2.12 7.42 2.38 7.68 ;
+        RECT 3.32 7.42 3.58 7.68 ;
+        RECT 4.52 7.42 4.78 7.68 ;
+        RECT 5.72 7.42 5.98 7.68 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER MET1 ;
+        RECT -0.85 -0.15 8.15 0.45 ;
+        RECT 7.35 -0.15 7.6 1.65 ;
+        RECT 5.65 -0.15 5.9 1.65 ;
+        RECT 3.95 -0.15 4.2 1.65 ;
+        RECT 2.25 -0.15 2.5 1.65 ;
+        RECT 0.55 -0.15 0.8 1.65 ;
+      LAYER MET2 ;
+        RECT 5.6 0.1 6.1 0.4 ;
+        RECT 5.65 0.05 6.05 0.45 ;
+        RECT 4.4 0.1 4.9 0.4 ;
+        RECT 4.45 0.05 4.85 0.45 ;
+        RECT 3.2 0.1 3.7 0.4 ;
+        RECT 3.25 0.05 3.65 0.45 ;
+        RECT 2 0.1 2.5 0.4 ;
+        RECT 2.05 0.05 2.45 0.45 ;
+        RECT 0.8 0.1 1.3 0.4 ;
+        RECT 0.85 0.05 1.25 0.45 ;
+        RECT -0.4 0.1 0.1 0.4 ;
+        RECT -0.35 0.05 0.05 0.45 ;
+      LAYER VIA12 ;
+        RECT -0.28 0.12 -0.02 0.38 ;
+        RECT 0.92 0.12 1.18 0.38 ;
+        RECT 2.12 0.12 2.38 0.38 ;
+        RECT 3.32 0.12 3.58 0.38 ;
+        RECT 4.52 0.12 4.78 0.38 ;
+        RECT 5.72 0.12 5.98 0.38 ;
+    END
+  END VSS
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 1.4 4.7 6.9 5 ;
+        RECT 6.5 0.8 6.75 7 ;
+        RECT 1.4 1.9 6.75 2.15 ;
+        RECT 4.8 0.8 5.05 7 ;
+        RECT 3.1 0.8 3.35 7 ;
+        RECT 1.4 0.8 1.65 7 ;
+      LAYER MET2 ;
+        RECT 6.4 4.65 6.9 5.05 ;
+        RECT 6.35 4.7 6.9 5 ;
+      LAYER VIA12 ;
+        RECT 6.52 4.72 6.78 4.98 ;
+    END
+  END Y
+  OBS
+    LAYER MET1 ;
+      RECT -0.3 0.8 -0.05 7 ;
+      RECT -0.3 2.75 1.15 3.05 ;
+  END
+END gf180mcu_osu_sc_12T_buf_8
+
+MACRO gf180mcu_osu_sc_12T_clkbuf_1
+  CLASS CORE ;
+  ORIGIN 0.85 0.15 ;
+  FOREIGN gf180mcu_osu_sc_12T_clkbuf_1 -0.85 -0.15 ;
+  SIZE 3.1 BY 8.1 ;
+  SYMMETRY X Y ;
+  SITE GF018hv5v_mcu_sc7 ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 0.2 4 0.7 4.3 ;
+      LAYER MET2 ;
+        RECT 0.2 4 0.7 4.3 ;
+        RECT 0.25 3.95 0.65 4.35 ;
+      LAYER VIA12 ;
+        RECT 0.32 4.02 0.58 4.28 ;
+    END
+  END A
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER MET1 ;
+        RECT -0.85 7.35 2.25 7.95 ;
+        RECT 0.55 5.3 0.8 7.95 ;
+      LAYER MET2 ;
+        RECT 0.8 7.4 1.3 7.7 ;
+        RECT 0.85 7.35 1.25 7.75 ;
+        RECT -0.4 7.4 0.1 7.7 ;
+        RECT -0.35 7.35 0.05 7.75 ;
+      LAYER VIA12 ;
+        RECT -0.28 7.42 -0.02 7.68 ;
+        RECT 0.92 7.42 1.18 7.68 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER MET1 ;
+        RECT -0.85 -0.15 2.25 0.45 ;
+        RECT 0.55 -0.15 0.8 1.65 ;
+      LAYER MET2 ;
+        RECT 0.8 0.1 1.3 0.4 ;
+        RECT 0.85 0.05 1.25 0.45 ;
+        RECT -0.4 0.1 0.1 0.4 ;
+        RECT -0.35 0.05 0.05 0.45 ;
+      LAYER VIA12 ;
+        RECT -0.28 0.12 -0.02 0.38 ;
+        RECT 0.92 0.12 1.18 0.38 ;
+    END
+  END VSS
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 1.3 4.65 1.8 4.95 ;
+        RECT 1.4 0.8 1.65 7 ;
+      LAYER MET2 ;
+        RECT 1.3 4.6 1.8 5 ;
+      LAYER VIA12 ;
+        RECT 1.42 4.67 1.68 4.93 ;
+    END
+  END Y
+  OBS
+    LAYER MET1 ;
+      RECT -0.3 0.8 -0.05 7 ;
+      RECT -0.3 2.75 1.15 3.05 ;
+  END
+END gf180mcu_osu_sc_12T_clkbuf_1
+
+MACRO gf180mcu_osu_sc_12T_clkbuf_16
+  CLASS CORE ;
+  ORIGIN 0.85 0.15 ;
+  FOREIGN gf180mcu_osu_sc_12T_clkbuf_16 -0.85 -0.15 ;
+  SIZE 15.8 BY 8.1 ;
+  SYMMETRY X Y ;
+  SITE GF018hv5v_mcu_sc7 ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 0.2 4 0.7 4.3 ;
+      LAYER MET2 ;
+        RECT 0.2 4 0.7 4.3 ;
+        RECT 0.25 3.95 0.65 4.35 ;
+      LAYER VIA12 ;
+        RECT 0.32 4.02 0.58 4.28 ;
+    END
+  END A
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER MET1 ;
+        RECT -0.85 7.35 14.95 7.95 ;
+        RECT 14.15 5.3 14.4 7.95 ;
+        RECT 12.45 5.3 12.7 7.95 ;
+        RECT 10.75 5.3 11 7.95 ;
+        RECT 9.05 5.3 9.3 7.95 ;
+        RECT 7.35 5.3 7.6 7.95 ;
+        RECT 5.65 5.3 5.9 7.95 ;
+        RECT 3.95 5.3 4.2 7.95 ;
+        RECT 2.25 5.3 2.5 7.95 ;
+        RECT 0.55 5.3 0.8 7.95 ;
+      LAYER MET2 ;
+        RECT 12.8 7.4 13.3 7.7 ;
+        RECT 12.85 7.35 13.25 7.75 ;
+        RECT 11.6 7.4 12.1 7.7 ;
+        RECT 11.65 7.35 12.05 7.75 ;
+        RECT 10.4 7.4 10.9 7.7 ;
+        RECT 10.45 7.35 10.85 7.75 ;
+        RECT 9.2 7.4 9.7 7.7 ;
+        RECT 9.25 7.35 9.65 7.75 ;
+        RECT 8 7.4 8.5 7.7 ;
+        RECT 8.05 7.35 8.45 7.75 ;
+        RECT 6.8 7.4 7.3 7.7 ;
+        RECT 6.85 7.35 7.25 7.75 ;
+        RECT 5.6 7.4 6.1 7.7 ;
+        RECT 5.65 7.35 6.05 7.75 ;
+        RECT 4.4 7.4 4.9 7.7 ;
+        RECT 4.45 7.35 4.85 7.75 ;
+        RECT 3.2 7.4 3.7 7.7 ;
+        RECT 3.25 7.35 3.65 7.75 ;
+        RECT 2 7.4 2.5 7.7 ;
+        RECT 2.05 7.35 2.45 7.75 ;
+        RECT 0.8 7.4 1.3 7.7 ;
+        RECT 0.85 7.35 1.25 7.75 ;
+        RECT -0.4 7.4 0.1 7.7 ;
+        RECT -0.35 7.35 0.05 7.75 ;
+      LAYER VIA12 ;
+        RECT -0.28 7.42 -0.02 7.68 ;
+        RECT 0.92 7.42 1.18 7.68 ;
+        RECT 2.12 7.42 2.38 7.68 ;
+        RECT 3.32 7.42 3.58 7.68 ;
+        RECT 4.52 7.42 4.78 7.68 ;
+        RECT 5.72 7.42 5.98 7.68 ;
+        RECT 6.92 7.42 7.18 7.68 ;
+        RECT 8.12 7.42 8.38 7.68 ;
+        RECT 9.32 7.42 9.58 7.68 ;
+        RECT 10.52 7.42 10.78 7.68 ;
+        RECT 11.72 7.42 11.98 7.68 ;
+        RECT 12.92 7.42 13.18 7.68 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER MET1 ;
+        RECT -0.85 -0.15 14.95 0.45 ;
+        RECT 14.15 -0.15 14.4 1.65 ;
+        RECT 12.45 -0.15 12.7 1.65 ;
+        RECT 10.75 -0.15 11 1.65 ;
+        RECT 9.05 -0.15 9.3 1.65 ;
+        RECT 7.35 -0.15 7.6 1.65 ;
+        RECT 5.65 -0.15 5.9 1.65 ;
+        RECT 3.95 -0.15 4.2 1.65 ;
+        RECT 2.25 -0.15 2.5 1.65 ;
+        RECT 0.55 -0.15 0.8 1.65 ;
+      LAYER MET2 ;
+        RECT 12.8 0.1 13.3 0.4 ;
+        RECT 12.85 0.05 13.25 0.45 ;
+        RECT 11.6 0.1 12.1 0.4 ;
+        RECT 11.65 0.05 12.05 0.45 ;
+        RECT 10.4 0.1 10.9 0.4 ;
+        RECT 10.45 0.05 10.85 0.45 ;
+        RECT 9.2 0.1 9.7 0.4 ;
+        RECT 9.25 0.05 9.65 0.45 ;
+        RECT 8 0.1 8.5 0.4 ;
+        RECT 8.05 0.05 8.45 0.45 ;
+        RECT 6.8 0.1 7.3 0.4 ;
+        RECT 6.85 0.05 7.25 0.45 ;
+        RECT 5.6 0.1 6.1 0.4 ;
+        RECT 5.65 0.05 6.05 0.45 ;
+        RECT 4.4 0.1 4.9 0.4 ;
+        RECT 4.45 0.05 4.85 0.45 ;
+        RECT 3.2 0.1 3.7 0.4 ;
+        RECT 3.25 0.05 3.65 0.45 ;
+        RECT 2 0.1 2.5 0.4 ;
+        RECT 2.05 0.05 2.45 0.45 ;
+        RECT 0.8 0.1 1.3 0.4 ;
+        RECT 0.85 0.05 1.25 0.45 ;
+        RECT -0.4 0.1 0.1 0.4 ;
+        RECT -0.35 0.05 0.05 0.45 ;
+      LAYER VIA12 ;
+        RECT -0.28 0.12 -0.02 0.38 ;
+        RECT 0.92 0.12 1.18 0.38 ;
+        RECT 2.12 0.12 2.38 0.38 ;
+        RECT 3.32 0.12 3.58 0.38 ;
+        RECT 4.52 0.12 4.78 0.38 ;
+        RECT 5.72 0.12 5.98 0.38 ;
+        RECT 6.92 0.12 7.18 0.38 ;
+        RECT 8.12 0.12 8.38 0.38 ;
+        RECT 9.32 0.12 9.58 0.38 ;
+        RECT 10.52 0.12 10.78 0.38 ;
+        RECT 11.72 0.12 11.98 0.38 ;
+        RECT 12.92 0.12 13.18 0.38 ;
+    END
+  END VSS
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 1.4 4.7 13.7 5 ;
+        RECT 13.3 0.8 13.55 7 ;
+        RECT 1.4 1.9 13.55 2.15 ;
+        RECT 11.6 0.8 11.85 7 ;
+        RECT 9.9 0.8 10.15 7 ;
+        RECT 8.2 0.8 8.45 7 ;
+        RECT 6.5 0.8 6.75 7 ;
+        RECT 4.8 0.8 5.05 7 ;
+        RECT 3.1 0.8 3.35 7 ;
+        RECT 1.4 0.8 1.65 7 ;
+      LAYER MET2 ;
+        RECT 13.2 4.65 13.7 5.05 ;
+        RECT 13.15 4.7 13.7 5 ;
+      LAYER VIA12 ;
+        RECT 13.32 4.72 13.58 4.98 ;
+    END
+  END Y
+  OBS
+    LAYER MET1 ;
+      RECT -0.3 0.8 -0.05 7 ;
+      RECT -0.3 2.75 1.15 3.05 ;
+  END
+END gf180mcu_osu_sc_12T_clkbuf_16
+
+MACRO gf180mcu_osu_sc_12T_clkbuf_2
+  CLASS CORE ;
+  ORIGIN 0.85 0.15 ;
+  FOREIGN gf180mcu_osu_sc_12T_clkbuf_2 -0.85 -0.15 ;
+  SIZE 3.9 BY 8.1 ;
+  SYMMETRY X Y ;
+  SITE GF018hv5v_mcu_sc7 ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 0.2 4 0.7 4.3 ;
+      LAYER MET2 ;
+        RECT 0.2 4 0.7 4.3 ;
+        RECT 0.25 3.95 0.65 4.35 ;
+      LAYER VIA12 ;
+        RECT 0.32 4.02 0.58 4.28 ;
+    END
+  END A
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER MET1 ;
+        RECT -0.85 7.35 3.05 7.95 ;
+        RECT 2.25 5.3 2.5 7.95 ;
+        RECT 0.55 5.3 0.8 7.95 ;
+      LAYER MET2 ;
+        RECT 0.8 7.4 1.3 7.7 ;
+        RECT 0.85 7.35 1.25 7.75 ;
+        RECT -0.4 7.4 0.1 7.7 ;
+        RECT -0.35 7.35 0.05 7.75 ;
+      LAYER VIA12 ;
+        RECT -0.28 7.42 -0.02 7.68 ;
+        RECT 0.92 7.42 1.18 7.68 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER MET1 ;
+        RECT -0.85 -0.15 3.05 0.45 ;
+        RECT 2.25 -0.15 2.5 1.65 ;
+        RECT 0.55 -0.15 0.8 1.65 ;
+      LAYER MET2 ;
+        RECT 0.8 0.1 1.3 0.4 ;
+        RECT 0.85 0.05 1.25 0.45 ;
+        RECT -0.4 0.1 0.1 0.4 ;
+        RECT -0.35 0.05 0.05 0.45 ;
+      LAYER VIA12 ;
+        RECT -0.28 0.12 -0.02 0.38 ;
+        RECT 0.92 0.12 1.18 0.38 ;
+    END
+  END VSS
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 1.3 4.7 1.8 5 ;
+        RECT 1.4 0.8 1.65 7 ;
+      LAYER MET2 ;
+        RECT 1.3 4.65 1.8 5.05 ;
+      LAYER VIA12 ;
+        RECT 1.42 4.72 1.68 4.98 ;
+    END
+  END Y
+  OBS
+    LAYER MET1 ;
+      RECT -0.3 0.8 -0.05 7 ;
+      RECT -0.3 2.75 1.15 3.05 ;
+  END
+END gf180mcu_osu_sc_12T_clkbuf_2
+
+MACRO gf180mcu_osu_sc_12T_clkbuf_4
+  CLASS CORE ;
+  ORIGIN 0.85 0.15 ;
+  FOREIGN gf180mcu_osu_sc_12T_clkbuf_4 -0.85 -0.15 ;
+  SIZE 5.6 BY 8.1 ;
+  SYMMETRY X Y ;
+  SITE GF018hv5v_mcu_sc7 ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 0.2 4 0.7 4.3 ;
+      LAYER MET2 ;
+        RECT 0.2 4 0.7 4.3 ;
+        RECT 0.25 3.95 0.65 4.35 ;
+      LAYER VIA12 ;
+        RECT 0.32 4.02 0.58 4.28 ;
+    END
+  END A
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER MET1 ;
+        RECT -0.85 7.35 4.75 7.95 ;
+        RECT 3.95 5.3 4.2 7.95 ;
+        RECT 2.25 5.3 2.5 7.95 ;
+        RECT 0.55 5.3 0.8 7.95 ;
+      LAYER MET2 ;
+        RECT 3.2 7.4 3.7 7.7 ;
+        RECT 3.25 7.35 3.65 7.75 ;
+        RECT 2 7.4 2.5 7.7 ;
+        RECT 2.05 7.35 2.45 7.75 ;
+        RECT 0.8 7.4 1.3 7.7 ;
+        RECT 0.85 7.35 1.25 7.75 ;
+        RECT -0.4 7.4 0.1 7.7 ;
+        RECT -0.35 7.35 0.05 7.75 ;
+      LAYER VIA12 ;
+        RECT -0.28 7.42 -0.02 7.68 ;
+        RECT 0.92 7.42 1.18 7.68 ;
+        RECT 2.12 7.42 2.38 7.68 ;
+        RECT 3.32 7.42 3.58 7.68 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER MET1 ;
+        RECT -0.85 -0.15 4.75 0.45 ;
+        RECT 3.95 -0.15 4.2 1.65 ;
+        RECT 2.25 -0.15 2.5 1.65 ;
+        RECT 0.55 -0.15 0.8 1.65 ;
+      LAYER MET2 ;
+        RECT 3.2 0.1 3.7 0.4 ;
+        RECT 3.25 0.05 3.65 0.45 ;
+        RECT 2 0.1 2.5 0.4 ;
+        RECT 2.05 0.05 2.45 0.45 ;
+        RECT 0.8 0.1 1.3 0.4 ;
+        RECT 0.85 0.05 1.25 0.45 ;
+        RECT -0.4 0.1 0.1 0.4 ;
+        RECT -0.35 0.05 0.05 0.45 ;
+      LAYER VIA12 ;
+        RECT -0.28 0.12 -0.02 0.38 ;
+        RECT 0.92 0.12 1.18 0.38 ;
+        RECT 2.12 0.12 2.38 0.38 ;
+        RECT 3.32 0.12 3.58 0.38 ;
+    END
+  END VSS
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 1.4 4.7 3.5 5 ;
+        RECT 3.1 0.8 3.35 7 ;
+        RECT 1.4 1.9 3.35 2.15 ;
+        RECT 1.4 0.8 1.65 7 ;
+      LAYER MET2 ;
+        RECT 3 4.65 3.5 5.05 ;
+        RECT 2.95 4.7 3.5 5 ;
+      LAYER VIA12 ;
+        RECT 3.12 4.72 3.38 4.98 ;
+    END
+  END Y
+  OBS
+    LAYER MET1 ;
+      RECT -0.3 0.8 -0.05 7 ;
+      RECT -0.3 2.75 1.15 3.05 ;
+  END
+END gf180mcu_osu_sc_12T_clkbuf_4
+
+MACRO gf180mcu_osu_sc_12T_clkbuf_8
+  CLASS CORE ;
+  ORIGIN 0.85 0.15 ;
+  FOREIGN gf180mcu_osu_sc_12T_clkbuf_8 -0.85 -0.15 ;
+  SIZE 9 BY 8.1 ;
+  SYMMETRY X Y ;
+  SITE GF018hv5v_mcu_sc7 ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 0.2 4 0.7 4.3 ;
+      LAYER MET2 ;
+        RECT 0.2 4 0.7 4.3 ;
+        RECT 0.25 3.95 0.65 4.35 ;
+      LAYER VIA12 ;
+        RECT 0.32 4.02 0.58 4.28 ;
+    END
+  END A
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER MET1 ;
+        RECT -0.85 7.35 8.15 7.95 ;
+        RECT 7.35 5.3 7.6 7.95 ;
+        RECT 5.65 5.3 5.9 7.95 ;
+        RECT 3.95 5.3 4.2 7.95 ;
+        RECT 2.25 5.3 2.5 7.95 ;
+        RECT 0.55 5.3 0.8 7.95 ;
+      LAYER MET2 ;
+        RECT 5.6 7.4 6.1 7.7 ;
+        RECT 5.65 7.35 6.05 7.75 ;
+        RECT 4.4 7.4 4.9 7.7 ;
+        RECT 4.45 7.35 4.85 7.75 ;
+        RECT 3.2 7.4 3.7 7.7 ;
+        RECT 3.25 7.35 3.65 7.75 ;
+        RECT 2 7.4 2.5 7.7 ;
+        RECT 2.05 7.35 2.45 7.75 ;
+        RECT 0.8 7.4 1.3 7.7 ;
+        RECT 0.85 7.35 1.25 7.75 ;
+        RECT -0.4 7.4 0.1 7.7 ;
+        RECT -0.35 7.35 0.05 7.75 ;
+      LAYER VIA12 ;
+        RECT -0.28 7.42 -0.02 7.68 ;
+        RECT 0.92 7.42 1.18 7.68 ;
+        RECT 2.12 7.42 2.38 7.68 ;
+        RECT 3.32 7.42 3.58 7.68 ;
+        RECT 4.52 7.42 4.78 7.68 ;
+        RECT 5.72 7.42 5.98 7.68 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER MET1 ;
+        RECT -0.85 -0.15 8.15 0.45 ;
+        RECT 7.35 -0.15 7.6 1.65 ;
+        RECT 5.65 -0.15 5.9 1.65 ;
+        RECT 3.95 -0.15 4.2 1.65 ;
+        RECT 2.25 -0.15 2.5 1.65 ;
+        RECT 0.55 -0.15 0.8 1.65 ;
+      LAYER MET2 ;
+        RECT 5.6 0.1 6.1 0.4 ;
+        RECT 5.65 0.05 6.05 0.45 ;
+        RECT 4.4 0.1 4.9 0.4 ;
+        RECT 4.45 0.05 4.85 0.45 ;
+        RECT 3.2 0.1 3.7 0.4 ;
+        RECT 3.25 0.05 3.65 0.45 ;
+        RECT 2 0.1 2.5 0.4 ;
+        RECT 2.05 0.05 2.45 0.45 ;
+        RECT 0.8 0.1 1.3 0.4 ;
+        RECT 0.85 0.05 1.25 0.45 ;
+        RECT -0.4 0.1 0.1 0.4 ;
+        RECT -0.35 0.05 0.05 0.45 ;
+      LAYER VIA12 ;
+        RECT -0.28 0.12 -0.02 0.38 ;
+        RECT 0.92 0.12 1.18 0.38 ;
+        RECT 2.12 0.12 2.38 0.38 ;
+        RECT 3.32 0.12 3.58 0.38 ;
+        RECT 4.52 0.12 4.78 0.38 ;
+        RECT 5.72 0.12 5.98 0.38 ;
+    END
+  END VSS
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 1.4 4.7 6.9 5 ;
+        RECT 6.5 0.8 6.75 7 ;
+        RECT 1.4 1.9 6.75 2.15 ;
+        RECT 4.8 0.8 5.05 7 ;
+        RECT 3.1 0.8 3.35 7 ;
+        RECT 1.4 0.8 1.65 7 ;
+      LAYER MET2 ;
+        RECT 6.4 4.65 6.9 5.05 ;
+        RECT 6.35 4.7 6.9 5 ;
+      LAYER VIA12 ;
+        RECT 6.52 4.72 6.78 4.98 ;
+    END
+  END Y
+  OBS
+    LAYER MET1 ;
+      RECT -0.3 0.8 -0.05 7 ;
+      RECT -0.3 2.75 1.15 3.05 ;
+  END
+END gf180mcu_osu_sc_12T_clkbuf_8
+
+MACRO gf180mcu_osu_sc_12T_clkinv_1
+  CLASS CORE ;
+  ORIGIN 0 0.15 ;
+  FOREIGN gf180mcu_osu_sc_12T_clkinv_1 0 -0.15 ;
+  SIZE 2.2 BY 8.1 ;
+  SYMMETRY X Y ;
+  SITE GF018hv5v_mcu_sc7 ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 0.55 4.65 1.05 4.95 ;
+      LAYER MET2 ;
+        RECT 0.55 4.6 1.05 5 ;
+      LAYER VIA12 ;
+        RECT 0.67 4.67 0.93 4.93 ;
+    END
+  END A
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 7.35 2.2 7.95 ;
+        RECT 0.55 5.3 0.8 7.95 ;
+      LAYER MET2 ;
+        RECT 0.45 7.4 0.95 7.7 ;
+        RECT 0.5 7.35 0.9 7.75 ;
+      LAYER VIA12 ;
+        RECT 0.57 7.42 0.83 7.68 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 -0.15 2.2 0.45 ;
+        RECT 0.55 -0.15 0.8 1.65 ;
+      LAYER MET2 ;
+        RECT 0.45 0.1 0.95 0.4 ;
+        RECT 0.5 0.05 0.9 0.45 ;
+      LAYER VIA12 ;
+        RECT 0.57 0.12 0.83 0.38 ;
+    END
+  END VSS
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 1.3 3.35 1.8 3.65 ;
+        RECT 1.4 0.8 1.65 7 ;
+      LAYER MET2 ;
+        RECT 1.3 3.3 1.8 3.7 ;
+      LAYER VIA12 ;
+        RECT 1.42 3.37 1.68 3.63 ;
+    END
+  END Y
+END gf180mcu_osu_sc_12T_clkinv_1
+
+MACRO gf180mcu_osu_sc_12T_clkinv_16
+  CLASS CORE ;
+  ORIGIN 0 0.15 ;
+  FOREIGN gf180mcu_osu_sc_12T_clkinv_16 0 -0.15 ;
+  SIZE 15 BY 8.1 ;
+  SYMMETRY X Y ;
+  SITE GF018hv5v_mcu_sc7 ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 0.4 3.35 0.9 3.65 ;
+      LAYER MET2 ;
+        RECT 0.4 3.3 0.9 3.7 ;
+      LAYER VIA12 ;
+        RECT 0.52 3.37 0.78 3.63 ;
+    END
+  END A
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 7.35 15 7.95 ;
+        RECT 14.15 5.3 14.4 7.95 ;
+        RECT 12.45 5.3 12.7 7.95 ;
+        RECT 10.75 5.3 11 7.95 ;
+        RECT 9.05 5.3 9.3 7.95 ;
+        RECT 7.35 5.3 7.6 7.95 ;
+        RECT 5.65 5.3 5.9 7.95 ;
+        RECT 3.95 5.3 4.2 7.95 ;
+        RECT 2.25 5.3 2.5 7.95 ;
+        RECT 0.55 5.3 0.8 7.95 ;
+      LAYER MET2 ;
+        RECT 13.65 7.4 14.15 7.7 ;
+        RECT 13.7 7.35 14.1 7.75 ;
+        RECT 12.45 7.4 12.95 7.7 ;
+        RECT 12.5 7.35 12.9 7.75 ;
+        RECT 11.25 7.4 11.75 7.7 ;
+        RECT 11.3 7.35 11.7 7.75 ;
+        RECT 10.05 7.4 10.55 7.7 ;
+        RECT 10.1 7.35 10.5 7.75 ;
+        RECT 8.85 7.4 9.35 7.7 ;
+        RECT 8.9 7.35 9.3 7.75 ;
+        RECT 7.65 7.4 8.15 7.7 ;
+        RECT 7.7 7.35 8.1 7.75 ;
+        RECT 6.45 7.4 6.95 7.7 ;
+        RECT 6.5 7.35 6.9 7.75 ;
+        RECT 5.25 7.4 5.75 7.7 ;
+        RECT 5.3 7.35 5.7 7.75 ;
+        RECT 4.05 7.4 4.55 7.7 ;
+        RECT 4.1 7.35 4.5 7.75 ;
+        RECT 2.85 7.4 3.35 7.7 ;
+        RECT 2.9 7.35 3.3 7.75 ;
+        RECT 1.65 7.4 2.15 7.7 ;
+        RECT 1.7 7.35 2.1 7.75 ;
+        RECT 0.45 7.4 0.95 7.7 ;
+        RECT 0.5 7.35 0.9 7.75 ;
+      LAYER VIA12 ;
+        RECT 0.57 7.42 0.83 7.68 ;
+        RECT 1.77 7.42 2.03 7.68 ;
+        RECT 2.97 7.42 3.23 7.68 ;
+        RECT 4.17 7.42 4.43 7.68 ;
+        RECT 5.37 7.42 5.63 7.68 ;
+        RECT 6.57 7.42 6.83 7.68 ;
+        RECT 7.77 7.42 8.03 7.68 ;
+        RECT 8.97 7.42 9.23 7.68 ;
+        RECT 10.17 7.42 10.43 7.68 ;
+        RECT 11.37 7.42 11.63 7.68 ;
+        RECT 12.57 7.42 12.83 7.68 ;
+        RECT 13.77 7.42 14.03 7.68 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 -0.15 15 0.45 ;
+        RECT 14.15 -0.15 14.4 1.65 ;
+        RECT 12.45 -0.15 12.7 1.65 ;
+        RECT 10.75 -0.15 11 1.65 ;
+        RECT 9.05 -0.15 9.3 1.65 ;
+        RECT 7.35 -0.15 7.6 1.65 ;
+        RECT 5.65 -0.15 5.9 1.65 ;
+        RECT 3.95 -0.15 4.2 1.65 ;
+        RECT 2.25 -0.15 2.5 1.65 ;
+        RECT 0.55 -0.15 0.8 1.65 ;
+      LAYER MET2 ;
+        RECT 13.65 0.1 14.15 0.4 ;
+        RECT 13.7 0.05 14.1 0.45 ;
+        RECT 12.45 0.1 12.95 0.4 ;
+        RECT 12.5 0.05 12.9 0.45 ;
+        RECT 11.25 0.1 11.75 0.4 ;
+        RECT 11.3 0.05 11.7 0.45 ;
+        RECT 10.05 0.1 10.55 0.4 ;
+        RECT 10.1 0.05 10.5 0.45 ;
+        RECT 8.85 0.1 9.35 0.4 ;
+        RECT 8.9 0.05 9.3 0.45 ;
+        RECT 7.65 0.1 8.15 0.4 ;
+        RECT 7.7 0.05 8.1 0.45 ;
+        RECT 6.45 0.1 6.95 0.4 ;
+        RECT 6.5 0.05 6.9 0.45 ;
+        RECT 5.25 0.1 5.75 0.4 ;
+        RECT 5.3 0.05 5.7 0.45 ;
+        RECT 4.05 0.1 4.55 0.4 ;
+        RECT 4.1 0.05 4.5 0.45 ;
+        RECT 2.85 0.1 3.35 0.4 ;
+        RECT 2.9 0.05 3.3 0.45 ;
+        RECT 1.65 0.1 2.15 0.4 ;
+        RECT 1.7 0.05 2.1 0.45 ;
+        RECT 0.45 0.1 0.95 0.4 ;
+        RECT 0.5 0.05 0.9 0.45 ;
+      LAYER VIA12 ;
+        RECT 0.57 0.12 0.83 0.38 ;
+        RECT 1.77 0.12 2.03 0.38 ;
+        RECT 2.97 0.12 3.23 0.38 ;
+        RECT 4.17 0.12 4.43 0.38 ;
+        RECT 5.37 0.12 5.63 0.38 ;
+        RECT 6.57 0.12 6.83 0.38 ;
+        RECT 7.77 0.12 8.03 0.38 ;
+        RECT 8.97 0.12 9.23 0.38 ;
+        RECT 10.17 0.12 10.43 0.38 ;
+        RECT 11.37 0.12 11.63 0.38 ;
+        RECT 12.57 0.12 12.83 0.38 ;
+        RECT 13.77 0.12 14.03 0.38 ;
+    END
+  END VSS
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 13.3 0.8 13.55 7 ;
+        RECT 1.4 4.3 13.55 4.55 ;
+        RECT 13.15 4.2 13.55 4.55 ;
+        RECT 1.4 1.9 13.55 2.15 ;
+        RECT 11.6 0.8 11.85 7 ;
+        RECT 9.9 0.8 10.15 7 ;
+        RECT 8.2 0.8 8.45 7 ;
+        RECT 6.5 0.8 6.75 7 ;
+        RECT 4.8 0.8 5.05 7 ;
+        RECT 3.1 0.8 3.35 7 ;
+        RECT 1.4 0.8 1.65 7 ;
+      LAYER MET2 ;
+        RECT 13.15 4.2 13.65 4.6 ;
+      LAYER VIA12 ;
+        RECT 13.27 4.27 13.53 4.53 ;
+    END
+  END Y
+END gf180mcu_osu_sc_12T_clkinv_16
+
+MACRO gf180mcu_osu_sc_12T_clkinv_2
+  CLASS CORE ;
+  ORIGIN 0 0.15 ;
+  FOREIGN gf180mcu_osu_sc_12T_clkinv_2 0 -0.15 ;
+  SIZE 3.2 BY 8.1 ;
+  SYMMETRY X Y ;
+  SITE GF018hv5v_mcu_sc7 ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 0.65 3.35 1.15 3.65 ;
+      LAYER MET2 ;
+        RECT 0.65 3.3 1.15 3.7 ;
+      LAYER VIA12 ;
+        RECT 0.77 3.37 1.03 3.63 ;
+    END
+  END A
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 7.35 3.2 7.95 ;
+        RECT 2.3 5.3 2.55 7.95 ;
+        RECT 0.55 5.3 0.8 7.95 ;
+      LAYER MET2 ;
+        RECT 0.45 7.4 0.95 7.7 ;
+        RECT 0.5 7.35 0.9 7.75 ;
+      LAYER VIA12 ;
+        RECT 0.57 7.42 0.83 7.68 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 -0.15 3.2 0.45 ;
+        RECT 2.25 -0.15 2.5 1.65 ;
+        RECT 0.55 -0.15 0.8 1.65 ;
+      LAYER MET2 ;
+        RECT 0.45 0.1 0.95 0.4 ;
+        RECT 0.5 0.05 0.9 0.45 ;
+      LAYER VIA12 ;
+        RECT 0.57 0.12 0.83 0.38 ;
+    END
+  END VSS
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 1.4 4.25 2 4.55 ;
+        RECT 1.4 4.1 1.85 4.65 ;
+        RECT 1.4 0.8 1.65 7 ;
+      LAYER MET2 ;
+        RECT 1.5 4.2 2 4.6 ;
+      LAYER VIA12 ;
+        RECT 1.62 4.27 1.88 4.53 ;
+    END
+  END Y
+END gf180mcu_osu_sc_12T_clkinv_2
+
+MACRO gf180mcu_osu_sc_12T_clkinv_4
+  CLASS CORE ;
+  ORIGIN 0 0.15 ;
+  FOREIGN gf180mcu_osu_sc_12T_clkinv_4 0 -0.15 ;
+  SIZE 4.8 BY 8.1 ;
+  SYMMETRY X Y ;
+  SITE GF018hv5v_mcu_sc7 ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 0.4 3.35 0.9 3.65 ;
+      LAYER MET2 ;
+        RECT 0.4 3.3 0.9 3.7 ;
+      LAYER VIA12 ;
+        RECT 0.52 3.37 0.78 3.63 ;
+    END
+  END A
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 7.35 4.8 7.95 ;
+        RECT 3.95 5.3 4.2 7.95 ;
+        RECT 2.25 5.3 2.5 7.95 ;
+        RECT 0.55 5.3 0.8 7.95 ;
+      LAYER MET2 ;
+        RECT 2.85 7.4 3.35 7.7 ;
+        RECT 2.9 7.35 3.3 7.75 ;
+        RECT 1.65 7.4 2.15 7.7 ;
+        RECT 1.7 7.35 2.1 7.75 ;
+        RECT 0.45 7.4 0.95 7.7 ;
+        RECT 0.5 7.35 0.9 7.75 ;
+      LAYER VIA12 ;
+        RECT 0.57 7.42 0.83 7.68 ;
+        RECT 1.77 7.42 2.03 7.68 ;
+        RECT 2.97 7.42 3.23 7.68 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 -0.15 4.8 0.45 ;
+        RECT 3.95 -0.15 4.2 1.65 ;
+        RECT 2.25 -0.15 2.5 1.65 ;
+        RECT 0.55 -0.15 0.8 1.65 ;
+      LAYER MET2 ;
+        RECT 2.85 0.1 3.35 0.4 ;
+        RECT 2.9 0.05 3.3 0.45 ;
+        RECT 1.65 0.1 2.15 0.4 ;
+        RECT 1.7 0.05 2.1 0.45 ;
+        RECT 0.45 0.1 0.95 0.4 ;
+        RECT 0.5 0.05 0.9 0.45 ;
+      LAYER VIA12 ;
+        RECT 0.57 0.12 0.83 0.38 ;
+        RECT 1.77 0.12 2.03 0.38 ;
+        RECT 2.97 0.12 3.23 0.38 ;
+    END
+  END VSS
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 3.1 0.8 3.35 7 ;
+        RECT 1.4 4.3 3.35 4.55 ;
+        RECT 2.95 4.2 3.35 4.55 ;
+        RECT 1.4 1.9 3.35 2.15 ;
+        RECT 1.4 0.8 1.65 7 ;
+      LAYER MET2 ;
+        RECT 2.95 4.2 3.45 4.6 ;
+      LAYER VIA12 ;
+        RECT 3.07 4.27 3.33 4.53 ;
+    END
+  END Y
+END gf180mcu_osu_sc_12T_clkinv_4
+
+MACRO gf180mcu_osu_sc_12T_clkinv_8
+  CLASS CORE ;
+  ORIGIN 0 0.15 ;
+  FOREIGN gf180mcu_osu_sc_12T_clkinv_8 0 -0.15 ;
+  SIZE 8.15 BY 8.1 ;
+  SYMMETRY X Y ;
+  SITE GF018hv5v_mcu_sc7 ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 0.4 3.35 0.9 3.65 ;
+      LAYER MET2 ;
+        RECT 0.4 3.3 0.9 3.7 ;
+      LAYER VIA12 ;
+        RECT 0.52 3.37 0.78 3.63 ;
+    END
+  END A
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 7.35 8.15 7.95 ;
+        RECT 7.35 5.3 7.6 7.95 ;
+        RECT 5.65 5.3 5.9 7.95 ;
+        RECT 3.95 5.3 4.2 7.95 ;
+        RECT 2.25 5.3 2.5 7.95 ;
+        RECT 0.55 5.3 0.8 7.95 ;
+      LAYER MET2 ;
+        RECT 6.45 7.4 6.95 7.7 ;
+        RECT 6.5 7.35 6.9 7.75 ;
+        RECT 5.25 7.4 5.75 7.7 ;
+        RECT 5.3 7.35 5.7 7.75 ;
+        RECT 4.05 7.4 4.55 7.7 ;
+        RECT 4.1 7.35 4.5 7.75 ;
+        RECT 2.85 7.4 3.35 7.7 ;
+        RECT 2.9 7.35 3.3 7.75 ;
+        RECT 1.65 7.4 2.15 7.7 ;
+        RECT 1.7 7.35 2.1 7.75 ;
+        RECT 0.45 7.4 0.95 7.7 ;
+        RECT 0.5 7.35 0.9 7.75 ;
+      LAYER VIA12 ;
+        RECT 0.57 7.42 0.83 7.68 ;
+        RECT 1.77 7.42 2.03 7.68 ;
+        RECT 2.97 7.42 3.23 7.68 ;
+        RECT 4.17 7.42 4.43 7.68 ;
+        RECT 5.37 7.42 5.63 7.68 ;
+        RECT 6.57 7.42 6.83 7.68 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 -0.15 8.15 0.45 ;
+        RECT 7.35 -0.15 7.6 1.65 ;
+        RECT 5.65 -0.15 5.9 1.65 ;
+        RECT 3.95 -0.15 4.2 1.65 ;
+        RECT 2.25 -0.15 2.5 1.65 ;
+        RECT 0.55 -0.15 0.8 1.65 ;
+      LAYER MET2 ;
+        RECT 6.45 0.1 6.95 0.4 ;
+        RECT 6.5 0.05 6.9 0.45 ;
+        RECT 5.25 0.1 5.75 0.4 ;
+        RECT 5.3 0.05 5.7 0.45 ;
+        RECT 4.05 0.1 4.55 0.4 ;
+        RECT 4.1 0.05 4.5 0.45 ;
+        RECT 2.85 0.1 3.35 0.4 ;
+        RECT 2.9 0.05 3.3 0.45 ;
+        RECT 1.65 0.1 2.15 0.4 ;
+        RECT 1.7 0.05 2.1 0.45 ;
+        RECT 0.45 0.1 0.95 0.4 ;
+        RECT 0.5 0.05 0.9 0.45 ;
+      LAYER VIA12 ;
+        RECT 0.57 0.12 0.83 0.38 ;
+        RECT 1.77 0.12 2.03 0.38 ;
+        RECT 2.97 0.12 3.23 0.38 ;
+        RECT 4.17 0.12 4.43 0.38 ;
+        RECT 5.37 0.12 5.63 0.38 ;
+        RECT 6.57 0.12 6.83 0.38 ;
+    END
+  END VSS
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 6.5 0.8 6.75 7 ;
+        RECT 1.4 4.3 6.75 4.55 ;
+        RECT 6.35 4.2 6.75 4.55 ;
+        RECT 1.4 1.9 6.75 2.15 ;
+        RECT 4.8 0.8 5.05 7 ;
+        RECT 3.1 0.8 3.35 7 ;
+        RECT 1.4 0.8 1.65 7 ;
+      LAYER MET2 ;
+        RECT 6.35 4.2 6.85 4.6 ;
+      LAYER VIA12 ;
+        RECT 6.47 4.27 6.73 4.53 ;
+    END
+  END Y
+END gf180mcu_osu_sc_12T_clkinv_8
+
+MACRO gf180mcu_osu_sc_12T_dff_1
+  CLASS CORE ;
+  ORIGIN 0 0.15 ;
+  FOREIGN gf180mcu_osu_sc_12T_dff_1 0 -0.15 ;
+  SIZE 13 BY 8.1 ;
+  SYMMETRY X Y ;
+  SITE GF018hv5v_mcu_sc7 ;
+  PIN CLK
+    DIRECTION INPUT ;
+    USE CLOCK ;
+    PORT
+      LAYER MET1 ;
+        RECT 7.65 4 8.15 4.3 ;
+        RECT 5.5 4 6.55 4.3 ;
+        RECT 5.4 2 5.9 2.3 ;
+        RECT 5.5 2 5.8 4.3 ;
+        RECT 2.6 4 3.75 4.3 ;
+        RECT 3.25 2.05 3.75 2.35 ;
+        RECT 3.35 2.05 3.65 4.3 ;
+      LAYER MET2 ;
+        RECT 3.25 4 8.15 4.3 ;
+        RECT 7.7 3.95 8.1 4.35 ;
+        RECT 6.05 3.95 6.55 4.35 ;
+        RECT 3.25 3.95 3.7 4.35 ;
+      LAYER VIA12 ;
+        RECT 3.37 4.02 3.63 4.28 ;
+        RECT 6.17 4.02 6.43 4.28 ;
+        RECT 7.77 4.02 8.03 4.28 ;
+    END
+  END CLK
+  PIN D
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 1.9 3.35 2.4 3.65 ;
+      LAYER MET2 ;
+        RECT 1.75 3.35 2.55 3.65 ;
+        RECT 1.9 3.3 2.4 3.7 ;
+      LAYER VIA12 ;
+        RECT 2.02 3.37 2.28 3.63 ;
+    END
+  END D
+  PIN Q
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 12.15 4.65 12.65 5 ;
+        RECT 12.15 4.6 12.6 5 ;
+        RECT 12.15 0.8 12.4 7 ;
+      LAYER MET2 ;
+        RECT 12.15 4.65 12.65 4.95 ;
+        RECT 12.2 4.6 12.6 5 ;
+      LAYER VIA12 ;
+        RECT 12.27 4.67 12.53 4.93 ;
+    END
+  END Q
+  PIN QN
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 10.45 4 11.9 4.3 ;
+        RECT 11.55 1.9 11.8 4.3 ;
+        RECT 10.45 1.9 11.8 2.15 ;
+        RECT 10.45 4 10.7 7 ;
+        RECT 10.45 0.8 10.7 2.15 ;
+      LAYER MET2 ;
+        RECT 11.4 4 11.9 4.3 ;
+        RECT 11.45 3.95 11.85 4.35 ;
+      LAYER VIA12 ;
+        RECT 11.52 4.02 11.78 4.28 ;
+    END
+  END QN
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 7.35 13 7.95 ;
+        RECT 11.3 5.3 11.55 7.95 ;
+        RECT 8.85 5.3 9.1 7.95 ;
+        RECT 7.25 6.05 7.5 7.95 ;
+        RECT 4.45 5.3 4.7 7.95 ;
+        RECT 1.4 5.3 1.65 7.95 ;
+      LAYER MET2 ;
+        RECT 11.25 7.4 11.75 7.7 ;
+        RECT 11.3 7.35 11.7 7.75 ;
+        RECT 10.05 7.4 10.55 7.7 ;
+        RECT 10.1 7.35 10.5 7.75 ;
+        RECT 8.85 7.4 9.35 7.7 ;
+        RECT 8.9 7.35 9.3 7.75 ;
+        RECT 7.65 7.4 8.15 7.7 ;
+        RECT 7.7 7.35 8.1 7.75 ;
+        RECT 6.45 7.4 6.95 7.7 ;
+        RECT 6.5 7.35 6.9 7.75 ;
+        RECT 5.25 7.4 5.75 7.7 ;
+        RECT 5.3 7.35 5.7 7.75 ;
+        RECT 4.05 7.4 4.55 7.7 ;
+        RECT 4.1 7.35 4.5 7.75 ;
+        RECT 2.85 7.4 3.35 7.7 ;
+        RECT 2.9 7.35 3.3 7.75 ;
+        RECT 1.65 7.4 2.15 7.7 ;
+        RECT 1.7 7.35 2.1 7.75 ;
+        RECT 0.45 7.4 0.95 7.7 ;
+        RECT 0.5 7.35 0.9 7.75 ;
+      LAYER VIA12 ;
+        RECT 0.57 7.42 0.83 7.68 ;
+        RECT 1.77 7.42 2.03 7.68 ;
+        RECT 2.97 7.42 3.23 7.68 ;
+        RECT 4.17 7.42 4.43 7.68 ;
+        RECT 5.37 7.42 5.63 7.68 ;
+        RECT 6.57 7.42 6.83 7.68 ;
+        RECT 7.77 7.42 8.03 7.68 ;
+        RECT 8.97 7.42 9.23 7.68 ;
+        RECT 10.17 7.42 10.43 7.68 ;
+        RECT 11.37 7.42 11.63 7.68 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 -0.15 13 0.45 ;
+        RECT 11.3 -0.15 11.55 1.65 ;
+        RECT 8.85 -0.15 9.1 1.3 ;
+        RECT 7.25 -0.15 7.5 1.65 ;
+        RECT 4.45 -0.15 4.7 1.25 ;
+        RECT 1.4 -0.15 1.65 1.65 ;
+      LAYER MET2 ;
+        RECT 11.25 0.1 11.75 0.4 ;
+        RECT 11.3 0.05 11.7 0.45 ;
+        RECT 10.05 0.1 10.55 0.4 ;
+        RECT 10.1 0.05 10.5 0.45 ;
+        RECT 8.85 0.1 9.35 0.4 ;
+        RECT 8.9 0.05 9.3 0.45 ;
+        RECT 7.65 0.1 8.15 0.4 ;
+        RECT 7.7 0.05 8.1 0.45 ;
+        RECT 6.45 0.1 6.95 0.4 ;
+        RECT 6.5 0.05 6.9 0.45 ;
+        RECT 5.25 0.1 5.75 0.4 ;
+        RECT 5.3 0.05 5.7 0.45 ;
+        RECT 4.05 0.1 4.55 0.4 ;
+        RECT 4.1 0.05 4.5 0.45 ;
+        RECT 2.85 0.1 3.35 0.4 ;
+        RECT 2.9 0.05 3.3 0.45 ;
+        RECT 1.65 0.1 2.15 0.4 ;
+        RECT 1.7 0.05 2.1 0.45 ;
+        RECT 0.45 0.1 0.95 0.4 ;
+        RECT 0.5 0.05 0.9 0.45 ;
+      LAYER VIA12 ;
+        RECT 0.57 0.12 0.83 0.38 ;
+        RECT 1.77 0.12 2.03 0.38 ;
+        RECT 2.97 0.12 3.23 0.38 ;
+        RECT 4.17 0.12 4.43 0.38 ;
+        RECT 5.37 0.12 5.63 0.38 ;
+        RECT 6.57 0.12 6.83 0.38 ;
+        RECT 7.77 0.12 8.03 0.38 ;
+        RECT 8.97 0.12 9.23 0.38 ;
+        RECT 10.17 0.12 10.43 0.38 ;
+        RECT 11.37 0.12 11.63 0.38 ;
+    END
+  END VSS
+  OBS
+    LAYER MET2 ;
+      RECT 6.75 4.6 7.15 5 ;
+      RECT 6.7 4.65 9.9 4.95 ;
+      RECT 9.6 2.7 9.9 4.95 ;
+      RECT 10.7 2.65 11.1 3.05 ;
+      RECT 9.6 2.7 11.15 3 ;
+      RECT 9 1.5 9.4 1.9 ;
+      RECT 8.5 1.55 9.45 1.85 ;
+      RECT 5.8 1.35 6.2 1.75 ;
+      RECT 5.75 1.4 8.8 1.7 ;
+      RECT 5.75 1.5 9.4 1.7 ;
+      RECT 8.05 2.65 8.45 3.05 ;
+      RECT 6.1 2.65 6.5 3.05 ;
+      RECT 6.05 2.7 8.55 3 ;
+      RECT 6.8 3.3 7.2 3.7 ;
+      RECT 6.75 3.35 7.25 3.65 ;
+      RECT 4.1 2 4.5 2.4 ;
+      RECT 0.45 2 0.85 2.4 ;
+      RECT 0.4 2.05 4.55 2.35 ;
+    LAYER VIA12 ;
+      RECT 10.77 2.72 11.03 2.98 ;
+      RECT 9.07 1.57 9.33 1.83 ;
+      RECT 8.12 2.72 8.38 2.98 ;
+      RECT 6.87 3.37 7.13 3.63 ;
+      RECT 6.82 4.67 7.08 4.93 ;
+      RECT 6.17 2.72 6.43 2.98 ;
+      RECT 5.87 1.42 6.13 1.68 ;
+      RECT 4.17 2.07 4.43 2.33 ;
+      RECT 0.52 2.07 0.78 2.33 ;
+    LAYER MET1 ;
+      RECT 9.7 0.8 9.95 7 ;
+      RECT 9.7 2.7 11.15 3 ;
+      RECT 9.05 1.55 9.35 3.1 ;
+      RECT 8.95 2.7 9.45 3 ;
+      RECT 8.95 1.55 9.45 1.85 ;
+      RECT 8.1 4.6 8.35 7 ;
+      RECT 8.1 4.6 8.9 4.85 ;
+      RECT 8.6 3.4 8.9 4.85 ;
+      RECT 8.1 3.4 8.9 3.65 ;
+      RECT 8.1 2.6 8.4 3.65 ;
+      RECT 8.1 0.8 8.35 3.65 ;
+      RECT 6.7 4.65 7.2 4.95 ;
+      RECT 6.8 3.3 7.1 4.95 ;
+      RECT 6.75 3.35 7.3 3.65 ;
+      RECT 6.8 3.3 7.2 3.65 ;
+      RECT 5.85 5.8 6.1 7 ;
+      RECT 4.95 5.8 6.1 6.05 ;
+      RECT 4.95 3.3 5.2 6.05 ;
+      RECT 4.9 1.45 5.15 3.55 ;
+      RECT 4.9 1.45 6.25 1.7 ;
+      RECT 5.85 1.4 6.25 1.7 ;
+      RECT 5.85 0.8 6.1 1.7 ;
+      RECT 4.05 4.65 4.55 4.95 ;
+      RECT 4.15 2.05 4.45 4.95 ;
+      RECT 4.05 2.05 4.55 2.35 ;
+      RECT 3.05 4.8 3.3 7 ;
+      RECT 1.4 4.8 3.3 5.05 ;
+      RECT 1.4 2.1 1.65 5.05 ;
+      RECT 1.05 4 1.65 4.3 ;
+      RECT 1.4 2.1 2.4 2.35 ;
+      RECT 2 1.4 2.4 2.35 ;
+      RECT 2 1.4 3.3 1.65 ;
+      RECT 3.05 0.8 3.3 1.65 ;
+      RECT 0.55 0.8 0.8 7 ;
+      RECT 0.5 1.95 0.8 2.45 ;
+      RECT 6.05 2.7 6.55 3 ;
+  END
+END gf180mcu_osu_sc_12T_dff_1
+
+MACRO gf180mcu_osu_sc_12T_dffn_1
+  CLASS CORE ;
+  ORIGIN 0 0.15 ;
+  FOREIGN gf180mcu_osu_sc_12T_dffn_1 0 -0.15 ;
+  SIZE 13 BY 8.1 ;
+  SYMMETRY X Y ;
+  SITE GF018hv5v_mcu_sc7 ;
+  PIN CLKN
+    DIRECTION INPUT ;
+    USE CLOCK ;
+    PORT
+      LAYER MET1 ;
+        RECT 7.65 4 8.15 4.3 ;
+        RECT 5.5 4 6.55 4.3 ;
+        RECT 5.4 2 5.9 2.3 ;
+        RECT 5.5 2 5.8 4.3 ;
+        RECT 2.6 4 3.75 4.3 ;
+        RECT 3.25 2.05 3.75 2.35 ;
+        RECT 3.35 2.05 3.65 4.3 ;
+      LAYER MET2 ;
+        RECT 3.25 4 8.15 4.3 ;
+        RECT 7.7 3.95 8.1 4.35 ;
+        RECT 6.05 3.95 6.55 4.35 ;
+        RECT 3.25 3.95 3.7 4.35 ;
+      LAYER VIA12 ;
+        RECT 3.37 4.02 3.63 4.28 ;
+        RECT 6.17 4.02 6.43 4.28 ;
+        RECT 7.77 4.02 8.03 4.28 ;
+    END
+  END CLKN
+  PIN D
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 1.9 3.35 2.4 3.65 ;
+      LAYER MET2 ;
+        RECT 1.75 3.35 2.55 3.65 ;
+        RECT 1.9 3.3 2.4 3.7 ;
+      LAYER VIA12 ;
+        RECT 2.02 3.37 2.28 3.63 ;
+    END
+  END D
+  PIN Q
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 12.15 4.65 12.65 5 ;
+        RECT 12.15 4.6 12.6 5 ;
+        RECT 12.15 0.8 12.4 7 ;
+      LAYER MET2 ;
+        RECT 12.15 4.65 12.65 4.95 ;
+        RECT 12.2 4.6 12.6 5 ;
+      LAYER VIA12 ;
+        RECT 12.27 4.67 12.53 4.93 ;
+    END
+  END Q
+  PIN QN
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 10.45 4 11.9 4.3 ;
+        RECT 11.55 1.9 11.8 4.3 ;
+        RECT 10.45 1.9 11.8 2.15 ;
+        RECT 10.45 4 10.7 7 ;
+        RECT 10.45 0.8 10.7 2.15 ;
+      LAYER MET2 ;
+        RECT 11.4 4 11.9 4.3 ;
+        RECT 11.45 3.95 11.85 4.35 ;
+      LAYER VIA12 ;
+        RECT 11.52 4.02 11.78 4.28 ;
+    END
+  END QN
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 7.35 13 7.95 ;
+        RECT 11.3 5.3 11.55 7.95 ;
+        RECT 8.85 5.3 9.1 7.95 ;
+        RECT 7.25 6.05 7.5 7.95 ;
+        RECT 4.45 5.3 4.7 7.95 ;
+        RECT 1.4 5.3 1.65 7.95 ;
+      LAYER MET2 ;
+        RECT 11.25 7.4 11.75 7.7 ;
+        RECT 11.3 7.35 11.7 7.75 ;
+        RECT 10.05 7.4 10.55 7.7 ;
+        RECT 10.1 7.35 10.5 7.75 ;
+        RECT 8.85 7.4 9.35 7.7 ;
+        RECT 8.9 7.35 9.3 7.75 ;
+        RECT 7.65 7.4 8.15 7.7 ;
+        RECT 7.7 7.35 8.1 7.75 ;
+        RECT 6.45 7.4 6.95 7.7 ;
+        RECT 6.5 7.35 6.9 7.75 ;
+        RECT 5.25 7.4 5.75 7.7 ;
+        RECT 5.3 7.35 5.7 7.75 ;
+        RECT 4.05 7.4 4.55 7.7 ;
+        RECT 4.1 7.35 4.5 7.75 ;
+        RECT 2.85 7.4 3.35 7.7 ;
+        RECT 2.9 7.35 3.3 7.75 ;
+        RECT 1.65 7.4 2.15 7.7 ;
+        RECT 1.7 7.35 2.1 7.75 ;
+        RECT 0.45 7.4 0.95 7.7 ;
+        RECT 0.5 7.35 0.9 7.75 ;
+      LAYER VIA12 ;
+        RECT 0.57 7.42 0.83 7.68 ;
+        RECT 1.77 7.42 2.03 7.68 ;
+        RECT 2.97 7.42 3.23 7.68 ;
+        RECT 4.17 7.42 4.43 7.68 ;
+        RECT 5.37 7.42 5.63 7.68 ;
+        RECT 6.57 7.42 6.83 7.68 ;
+        RECT 7.77 7.42 8.03 7.68 ;
+        RECT 8.97 7.42 9.23 7.68 ;
+        RECT 10.17 7.42 10.43 7.68 ;
+        RECT 11.37 7.42 11.63 7.68 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 -0.15 13 0.45 ;
+        RECT 11.3 -0.15 11.55 1.65 ;
+        RECT 8.85 -0.15 9.1 1.3 ;
+        RECT 7.25 -0.15 7.5 1.65 ;
+        RECT 4.45 -0.15 4.7 1.25 ;
+        RECT 1.4 -0.15 1.65 1.65 ;
+      LAYER MET2 ;
+        RECT 11.25 0.1 11.75 0.4 ;
+        RECT 11.3 0.05 11.7 0.45 ;
+        RECT 10.05 0.1 10.55 0.4 ;
+        RECT 10.1 0.05 10.5 0.45 ;
+        RECT 8.85 0.1 9.35 0.4 ;
+        RECT 8.9 0.05 9.3 0.45 ;
+        RECT 7.65 0.1 8.15 0.4 ;
+        RECT 7.7 0.05 8.1 0.45 ;
+        RECT 6.45 0.1 6.95 0.4 ;
+        RECT 6.5 0.05 6.9 0.45 ;
+        RECT 5.25 0.1 5.75 0.4 ;
+        RECT 5.3 0.05 5.7 0.45 ;
+        RECT 4.05 0.1 4.55 0.4 ;
+        RECT 4.1 0.05 4.5 0.45 ;
+        RECT 2.85 0.1 3.35 0.4 ;
+        RECT 2.9 0.05 3.3 0.45 ;
+        RECT 1.65 0.1 2.15 0.4 ;
+        RECT 1.7 0.05 2.1 0.45 ;
+        RECT 0.45 0.1 0.95 0.4 ;
+        RECT 0.5 0.05 0.9 0.45 ;
+      LAYER VIA12 ;
+        RECT 0.57 0.12 0.83 0.38 ;
+        RECT 1.77 0.12 2.03 0.38 ;
+        RECT 2.97 0.12 3.23 0.38 ;
+        RECT 4.17 0.12 4.43 0.38 ;
+        RECT 5.37 0.12 5.63 0.38 ;
+        RECT 6.57 0.12 6.83 0.38 ;
+        RECT 7.77 0.12 8.03 0.38 ;
+        RECT 8.97 0.12 9.23 0.38 ;
+        RECT 10.17 0.12 10.43 0.38 ;
+        RECT 11.37 0.12 11.63 0.38 ;
+    END
+  END VSS
+  OBS
+    LAYER MET2 ;
+      RECT 6.75 4.6 7.15 5 ;
+      RECT 6.7 4.65 9.9 4.95 ;
+      RECT 9.6 2.7 9.9 4.95 ;
+      RECT 10.7 2.65 11.1 3.05 ;
+      RECT 9.6 2.7 11.15 3 ;
+      RECT 9 1.5 9.4 1.9 ;
+      RECT 8.5 1.55 9.45 1.85 ;
+      RECT 5.8 1.35 6.2 1.75 ;
+      RECT 5.75 1.4 8.8 1.7 ;
+      RECT 5.75 1.5 9.4 1.7 ;
+      RECT 8.05 2.65 8.45 3.05 ;
+      RECT 6.1 2.65 6.5 3.05 ;
+      RECT 6.05 2.7 8.55 3 ;
+      RECT 6.8 3.3 7.2 3.7 ;
+      RECT 6.75 3.35 7.25 3.65 ;
+      RECT 4.1 2 4.5 2.4 ;
+      RECT 0.45 2 0.85 2.4 ;
+      RECT 0.4 2.05 4.55 2.35 ;
+    LAYER VIA12 ;
+      RECT 10.77 2.72 11.03 2.98 ;
+      RECT 9.07 1.57 9.33 1.83 ;
+      RECT 8.12 2.72 8.38 2.98 ;
+      RECT 6.87 3.37 7.13 3.63 ;
+      RECT 6.82 4.67 7.08 4.93 ;
+      RECT 6.17 2.72 6.43 2.98 ;
+      RECT 5.87 1.42 6.13 1.68 ;
+      RECT 4.17 2.07 4.43 2.33 ;
+      RECT 0.52 2.07 0.78 2.33 ;
+    LAYER MET1 ;
+      RECT 9.7 0.8 9.95 7 ;
+      RECT 9.7 2.7 11.15 3 ;
+      RECT 9.05 1.55 9.35 3.1 ;
+      RECT 8.95 2.7 9.45 3 ;
+      RECT 8.95 1.55 9.45 1.85 ;
+      RECT 8.1 4.6 8.35 7 ;
+      RECT 8.1 4.6 8.9 4.85 ;
+      RECT 8.6 3.4 8.9 4.85 ;
+      RECT 8.1 3.4 8.9 3.65 ;
+      RECT 8.1 2.6 8.4 3.65 ;
+      RECT 8.1 0.8 8.35 3.65 ;
+      RECT 6.7 4.65 7.2 4.95 ;
+      RECT 6.8 3.35 7.1 4.95 ;
+      RECT 6.75 3.35 7.25 3.65 ;
+      RECT 5.85 5.8 6.1 7 ;
+      RECT 4.95 5.8 6.1 6.05 ;
+      RECT 4.95 3.3 5.2 6.05 ;
+      RECT 4.9 1.45 5.15 3.55 ;
+      RECT 4.9 1.45 6.25 1.7 ;
+      RECT 5.85 1.4 6.25 1.7 ;
+      RECT 5.85 0.8 6.1 1.7 ;
+      RECT 4.05 4.65 4.55 4.95 ;
+      RECT 4.15 2.05 4.45 4.95 ;
+      RECT 4.05 2.05 4.55 2.35 ;
+      RECT 3.05 4.8 3.3 7 ;
+      RECT 1.4 4.8 3.3 5.05 ;
+      RECT 1.4 2.1 1.65 5.05 ;
+      RECT 1.05 4 1.65 4.3 ;
+      RECT 1.4 2.1 2.4 2.35 ;
+      RECT 2 1.4 2.4 2.35 ;
+      RECT 2 1.4 3.3 1.65 ;
+      RECT 3.05 0.8 3.3 1.65 ;
+      RECT 0.55 0.8 0.8 7 ;
+      RECT 0.5 1.95 0.8 2.45 ;
+      RECT 6.05 2.7 6.55 3 ;
+  END
+END gf180mcu_osu_sc_12T_dffn_1
+
+MACRO gf180mcu_osu_sc_12T_dffsr_1
+  CLASS CORE ;
+  ORIGIN 4.05 0.15 ;
+  FOREIGN gf180mcu_osu_sc_12T_dffsr_1 -4.05 -0.15 ;
+  SIZE 18.7 BY 8.1 ;
+  SYMMETRY X Y ;
+  SITE GF018hv5v_mcu_sc7 ;
+  PIN CLK
+    DIRECTION INPUT ;
+    USE CLOCK ;
+    PORT
+      LAYER MET1 ;
+        RECT 7.65 4 8.15 4.3 ;
+        RECT 5.5 4 6.55 4.3 ;
+        RECT 5.4 2 5.9 2.3 ;
+        RECT 5.5 2 5.8 4.3 ;
+        RECT 2.6 4 3.75 4.3 ;
+        RECT 3.25 2.05 3.75 2.35 ;
+        RECT 3.35 2.05 3.65 4.3 ;
+      LAYER MET2 ;
+        RECT 3.25 4 8.15 4.3 ;
+        RECT 7.7 3.95 8.1 4.35 ;
+        RECT 6.05 3.95 6.55 4.35 ;
+        RECT 3.25 3.95 3.7 4.35 ;
+      LAYER VIA12 ;
+        RECT 3.37 4.02 3.63 4.28 ;
+        RECT 6.17 4.02 6.43 4.28 ;
+        RECT 7.77 4.02 8.03 4.28 ;
+    END
+  END CLK
+  PIN D
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 1.9 3.35 2.4 3.65 ;
+      LAYER MET2 ;
+        RECT 1.9 3.3 2.4 3.7 ;
+      LAYER VIA12 ;
+        RECT 2.02 3.37 2.28 3.63 ;
+    END
+  END D
+  PIN Q
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 13.85 4.65 14.35 5 ;
+        RECT 13.85 4.6 14.3 5 ;
+        RECT 13.85 0.8 14.1 7 ;
+      LAYER MET2 ;
+        RECT 13.85 4.65 14.35 4.95 ;
+        RECT 13.9 4.6 14.3 5 ;
+      LAYER VIA12 ;
+        RECT 13.97 4.67 14.23 4.93 ;
+    END
+  END Q
+  PIN QN
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 12.15 4 13.6 4.3 ;
+        RECT 13.25 1.9 13.5 4.3 ;
+        RECT 12.15 1.9 13.5 2.15 ;
+        RECT 12.15 4 12.4 7 ;
+        RECT 12.15 0.8 12.4 2.15 ;
+      LAYER MET2 ;
+        RECT 13.1 4 13.6 4.3 ;
+        RECT 13.15 3.95 13.55 4.35 ;
+      LAYER VIA12 ;
+        RECT 13.22 4.02 13.48 4.28 ;
+    END
+  END QN
+  PIN RN
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT -3.5 4.65 -3 4.95 ;
+      LAYER MET2 ;
+        RECT -3.5 4.6 -3 5 ;
+      LAYER VIA12 ;
+        RECT -3.38 4.67 -3.12 4.93 ;
+    END
+  END RN
+  PIN SN
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 9.9 4 10.4 4.3 ;
+        RECT -0.65 4 -0.15 4.3 ;
+      LAYER MET2 ;
+        RECT 9.9 3.95 10.4 4.35 ;
+        RECT -0.55 5.3 10.3 5.6 ;
+        RECT 10 3.95 10.3 5.6 ;
+        RECT -0.65 3.95 -0.15 4.35 ;
+        RECT -0.55 3.95 -0.25 5.6 ;
+      LAYER VIA12 ;
+        RECT -0.53 4.02 -0.27 4.28 ;
+        RECT 10.02 4.02 10.28 4.28 ;
+    END
+  END SN
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER MET1 ;
+        RECT -4.05 7.35 14.65 7.95 ;
+        RECT 13 5.3 13.25 7.95 ;
+        RECT 9.7 6.55 9.95 7.95 ;
+        RECT 7.25 6.05 7.5 7.95 ;
+        RECT 4.45 5.3 4.7 7.95 ;
+        RECT 1.4 5.3 1.65 7.95 ;
+        RECT -0.2 6.05 0.05 7.95 ;
+        RECT -3.5 5.3 -3.25 7.95 ;
+      LAYER MET2 ;
+        RECT 13.2 7.4 13.7 7.7 ;
+        RECT 13.25 7.35 13.65 7.75 ;
+        RECT 12 7.4 12.5 7.7 ;
+        RECT 12.05 7.35 12.45 7.75 ;
+        RECT 10.8 7.4 11.3 7.7 ;
+        RECT 10.85 7.35 11.25 7.75 ;
+        RECT 9.6 7.4 10.1 7.7 ;
+        RECT 9.65 7.35 10.05 7.75 ;
+        RECT 8.4 7.4 8.9 7.7 ;
+        RECT 8.45 7.35 8.85 7.75 ;
+        RECT 7.2 7.4 7.7 7.7 ;
+        RECT 7.25 7.35 7.65 7.75 ;
+        RECT 6 7.4 6.5 7.7 ;
+        RECT 6.05 7.35 6.45 7.75 ;
+        RECT 4.8 7.4 5.3 7.7 ;
+        RECT 4.85 7.35 5.25 7.75 ;
+        RECT 3.6 7.4 4.1 7.7 ;
+        RECT 3.65 7.35 4.05 7.75 ;
+        RECT 2.4 7.4 2.9 7.7 ;
+        RECT 2.45 7.35 2.85 7.75 ;
+        RECT 1.2 7.4 1.7 7.7 ;
+        RECT 1.25 7.35 1.65 7.75 ;
+        RECT 0 7.4 0.5 7.7 ;
+        RECT 0.05 7.35 0.45 7.75 ;
+        RECT -1.2 7.4 -0.7 7.7 ;
+        RECT -1.15 7.35 -0.75 7.75 ;
+        RECT -2.4 7.4 -1.9 7.7 ;
+        RECT -2.35 7.35 -1.95 7.75 ;
+        RECT -3.6 7.4 -3.1 7.7 ;
+        RECT -3.55 7.35 -3.15 7.75 ;
+      LAYER VIA12 ;
+        RECT -3.48 7.42 -3.22 7.68 ;
+        RECT -2.28 7.42 -2.02 7.68 ;
+        RECT -1.08 7.42 -0.82 7.68 ;
+        RECT 0.12 7.42 0.38 7.68 ;
+        RECT 1.32 7.42 1.58 7.68 ;
+        RECT 2.52 7.42 2.78 7.68 ;
+        RECT 3.72 7.42 3.98 7.68 ;
+        RECT 4.92 7.42 5.18 7.68 ;
+        RECT 6.12 7.42 6.38 7.68 ;
+        RECT 7.32 7.42 7.58 7.68 ;
+        RECT 8.52 7.42 8.78 7.68 ;
+        RECT 9.72 7.42 9.98 7.68 ;
+        RECT 10.92 7.42 11.18 7.68 ;
+        RECT 12.12 7.42 12.38 7.68 ;
+        RECT 13.32 7.42 13.58 7.68 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER MET1 ;
+        RECT -4.05 -0.15 14.65 0.45 ;
+        RECT 13 -0.15 13.25 1.65 ;
+        RECT 11.25 -0.15 11.5 1.65 ;
+        RECT 9 -0.15 9.25 1.65 ;
+        RECT 7.25 -0.15 7.5 1.65 ;
+        RECT 4.45 -0.15 4.7 1.25 ;
+        RECT 1.4 -0.15 1.65 1.65 ;
+        RECT 0.5 -0.15 0.75 1.65 ;
+        RECT -1.75 -0.15 -1.5 1.65 ;
+        RECT -3.5 -0.15 -3.25 1.65 ;
+      LAYER MET2 ;
+        RECT 13.2 0.1 13.7 0.4 ;
+        RECT 13.25 0.05 13.65 0.45 ;
+        RECT 12 0.1 12.5 0.4 ;
+        RECT 12.05 0.05 12.45 0.45 ;
+        RECT 10.8 0.1 11.3 0.4 ;
+        RECT 10.85 0.05 11.25 0.45 ;
+        RECT 9.6 0.1 10.1 0.4 ;
+        RECT 9.65 0.05 10.05 0.45 ;
+        RECT 8.4 0.1 8.9 0.4 ;
+        RECT 8.45 0.05 8.85 0.45 ;
+        RECT 7.2 0.1 7.7 0.4 ;
+        RECT 7.25 0.05 7.65 0.45 ;
+        RECT 6 0.1 6.5 0.4 ;
+        RECT 6.05 0.05 6.45 0.45 ;
+        RECT 4.8 0.1 5.3 0.4 ;
+        RECT 4.85 0.05 5.25 0.45 ;
+        RECT 3.6 0.1 4.1 0.4 ;
+        RECT 3.65 0.05 4.05 0.45 ;
+        RECT 2.4 0.1 2.9 0.4 ;
+        RECT 2.45 0.05 2.85 0.45 ;
+        RECT 1.2 0.1 1.7 0.4 ;
+        RECT 1.25 0.05 1.65 0.45 ;
+        RECT 0 0.1 0.5 0.4 ;
+        RECT 0.05 0.05 0.45 0.45 ;
+        RECT -1.2 0.1 -0.7 0.4 ;
+        RECT -1.15 0.05 -0.75 0.45 ;
+        RECT -2.4 0.1 -1.9 0.4 ;
+        RECT -2.35 0.05 -1.95 0.45 ;
+        RECT -3.6 0.1 -3.1 0.4 ;
+        RECT -3.55 0.05 -3.15 0.45 ;
+      LAYER VIA12 ;
+        RECT -3.48 0.12 -3.22 0.38 ;
+        RECT -2.28 0.12 -2.02 0.38 ;
+        RECT -1.08 0.12 -0.82 0.38 ;
+        RECT 0.12 0.12 0.38 0.38 ;
+        RECT 1.32 0.12 1.58 0.38 ;
+        RECT 2.52 0.12 2.78 0.38 ;
+        RECT 3.72 0.12 3.98 0.38 ;
+        RECT 4.92 0.12 5.18 0.38 ;
+        RECT 6.12 0.12 6.38 0.38 ;
+        RECT 7.32 0.12 7.58 0.38 ;
+        RECT 8.52 0.12 8.78 0.38 ;
+        RECT 9.72 0.12 9.98 0.38 ;
+        RECT 10.92 0.12 11.18 0.38 ;
+        RECT 12.12 0.12 12.38 0.38 ;
+        RECT 13.32 0.12 13.58 0.38 ;
+    END
+  END VSS
+  OBS
+    LAYER MET2 ;
+      RECT 12.4 2.65 12.8 3.05 ;
+      RECT 12.05 2.7 12.85 3 ;
+      RECT -1.4 3.3 -0.9 3.7 ;
+      RECT -1.3 0.75 -1 3.7 ;
+      RECT -2.75 2 -2.25 2.4 ;
+      RECT 10.8 1.95 11.4 2.35 ;
+      RECT -2.75 2.05 -1 2.35 ;
+      RECT 10.8 0.75 11.1 2.35 ;
+      RECT -1.3 0.75 11.1 1.05 ;
+      RECT 8.9 1.95 9.4 2.35 ;
+      RECT 8.9 1.4 9.3 2.35 ;
+      RECT 5.8 1.35 6.2 1.75 ;
+      RECT 5.75 1.4 9.3 1.7 ;
+      RECT 8.95 4.6 9.35 5 ;
+      RECT 6.75 4.6 7.15 5 ;
+      RECT 6.7 4.65 9.4 4.95 ;
+      RECT 8.05 2.65 8.45 3.05 ;
+      RECT 6.1 2.65 6.5 3.05 ;
+      RECT 6.05 2.7 8.55 3 ;
+      RECT 6.8 3.3 7.2 3.7 ;
+      RECT 6.75 3.35 7.25 3.65 ;
+      RECT 4.1 2 4.5 2.4 ;
+      RECT 0.35 2 0.85 2.4 ;
+      RECT 0.35 2.05 4.55 2.35 ;
+      RECT 11.3 4.6 11.8 5 ;
+      RECT 0.35 3.3 0.85 3.7 ;
+    LAYER VIA12 ;
+      RECT 12.47 2.72 12.73 2.98 ;
+      RECT 11.42 4.67 11.68 4.93 ;
+      RECT 11.02 2.02 11.28 2.28 ;
+      RECT 9.02 2.02 9.28 2.28 ;
+      RECT 9.02 4.67 9.28 4.93 ;
+      RECT 8.12 2.72 8.38 2.98 ;
+      RECT 6.87 3.37 7.13 3.63 ;
+      RECT 6.82 4.67 7.08 4.93 ;
+      RECT 6.17 2.72 6.43 2.98 ;
+      RECT 5.87 1.42 6.13 1.68 ;
+      RECT 4.17 2.07 4.43 2.33 ;
+      RECT 0.47 2.07 0.73 2.33 ;
+      RECT 0.47 3.37 0.73 3.63 ;
+      RECT -1.28 3.37 -1.02 3.63 ;
+      RECT -2.63 2.07 -2.37 2.33 ;
+    LAYER MET1 ;
+      RECT 11.4 2.7 11.65 7 ;
+      RECT 9 4.55 9.3 5.05 ;
+      RECT 9 4.65 11.8 4.95 ;
+      RECT 10.4 2.7 12.85 3 ;
+      RECT 10.4 0.8 10.65 3 ;
+      RECT 10.55 6.05 10.8 7 ;
+      RECT 8.85 6.05 9.1 7 ;
+      RECT 8.85 6.05 10.8 6.3 ;
+      RECT 8.1 4.6 8.35 7 ;
+      RECT 8.1 4.6 8.65 4.85 ;
+      RECT 8.4 3.4 8.65 4.85 ;
+      RECT 8.1 2.6 8.4 3.65 ;
+      RECT 8.1 0.8 8.35 3.65 ;
+      RECT 6.7 4.65 7.2 4.95 ;
+      RECT 6.8 3.35 7.1 4.95 ;
+      RECT 6.75 3.35 7.25 3.65 ;
+      RECT 5.85 5.8 6.1 7 ;
+      RECT 4.95 5.8 6.1 6.05 ;
+      RECT 4.95 3.3 5.2 6.05 ;
+      RECT 4.9 1.45 5.15 3.55 ;
+      RECT 4.9 1.45 6.25 1.7 ;
+      RECT 5.85 1.4 6.25 1.7 ;
+      RECT 5.85 0.8 6.1 1.7 ;
+      RECT 4.05 4.65 4.55 4.95 ;
+      RECT 4.15 2.05 4.45 4.95 ;
+      RECT 4.05 2.05 4.55 2.35 ;
+      RECT 3.05 4.8 3.3 7 ;
+      RECT 1.4 4.8 3.3 5.05 ;
+      RECT 1.4 2.1 1.65 5.05 ;
+      RECT 0.35 3.35 1.65 3.65 ;
+      RECT 1.4 2.1 2.4 2.35 ;
+      RECT 2 1.4 2.4 2.35 ;
+      RECT 2 1.4 3.3 1.65 ;
+      RECT 3.05 0.8 3.3 1.65 ;
+      RECT 0.65 5.55 0.9 7 ;
+      RECT -1.05 5.55 -0.8 7 ;
+      RECT -1.05 5.55 0.9 5.8 ;
+      RECT -1.9 2.35 -1.65 7 ;
+      RECT -1.9 2.35 -0.65 2.6 ;
+      RECT -0.9 0.8 -0.65 2.6 ;
+      RECT 0.45 2 0.7 2.4 ;
+      RECT -0.9 2.05 0.85 2.35 ;
+      RECT -2.65 0.8 -2.4 7 ;
+      RECT -2.75 2.05 -2.25 2.35 ;
+      RECT -2.65 2 -2.35 2.35 ;
+      RECT 10.9 2 11.4 2.3 ;
+      RECT 8.9 2 9.4 2.3 ;
+      RECT 6.05 2.7 6.55 3 ;
+      RECT -1.4 3.35 -0.9 3.65 ;
+  END
+END gf180mcu_osu_sc_12T_dffsr_1
+
+MACRO gf180mcu_osu_sc_12T_dlat_1
+  CLASS CORE ;
+  ORIGIN 7.75 0 ;
+  FOREIGN gf180mcu_osu_sc_12T_dlat_1 -7.75 0 ;
+  SIZE 9 BY 8.1 ;
+  SYMMETRY X Y ;
+  SITE GF018hv5v_mcu_sc7 ;
+  PIN CLK
+    DIRECTION INPUT ;
+    USE CLOCK ;
+    PORT
+      LAYER MET2 ;
+        RECT -2.55 4.1 -2.05 4.5 ;
+        RECT -4.3 4.15 -2.05 4.45 ;
+        RECT -4.25 4.1 -3.85 4.5 ;
+      LAYER MET1 ;
+        RECT -2.55 4.15 -2.05 4.45 ;
+        RECT -4.3 4.15 -3.8 4.45 ;
+      LAYER VIA12 ;
+        RECT -4.18 4.17 -3.92 4.43 ;
+        RECT -2.43 4.17 -2.17 4.43 ;
+    END
+  END CLK
+  PIN D
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET2 ;
+        RECT -5.9 4.1 -5.4 4.5 ;
+      LAYER MET1 ;
+        RECT -5.9 4.15 -5.4 4.45 ;
+      LAYER VIA12 ;
+        RECT -5.78 4.17 -5.52 4.43 ;
+    END
+  END D
+  PIN Q
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET2 ;
+        RECT 0.4 4.8 0.9 5.1 ;
+        RECT 0.45 4.75 0.85 5.15 ;
+      LAYER MET1 ;
+        RECT 0.4 4.8 0.9 5.1 ;
+        RECT 0.4 4.75 0.8 5.15 ;
+        RECT 0.4 0.95 0.65 7.15 ;
+      LAYER VIA12 ;
+        RECT 0.52 4.82 0.78 5.08 ;
+    END
+  END Q
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER MET2 ;
+        RECT -0.1 7.55 0.4 7.85 ;
+        RECT -0.05 7.5 0.35 7.9 ;
+        RECT -1.3 7.55 -0.8 7.85 ;
+        RECT -1.25 7.5 -0.85 7.9 ;
+        RECT -2.5 7.55 -2 7.85 ;
+        RECT -2.45 7.5 -2.05 7.9 ;
+        RECT -3.7 7.55 -3.2 7.85 ;
+        RECT -3.65 7.5 -3.25 7.9 ;
+        RECT -4.9 7.55 -4.4 7.85 ;
+        RECT -4.85 7.5 -4.45 7.9 ;
+        RECT -6.1 7.55 -5.6 7.85 ;
+        RECT -6.05 7.5 -5.65 7.9 ;
+        RECT -7.3 7.55 -6.8 7.85 ;
+        RECT -7.25 7.5 -6.85 7.9 ;
+      LAYER MET1 ;
+        RECT -7.75 7.5 1.25 8.1 ;
+        RECT -0.45 5.45 -0.2 8.1 ;
+        RECT -2.9 5.45 -2.65 8.1 ;
+        RECT -6.3 6.25 -6.05 8.1 ;
+      LAYER VIA12 ;
+        RECT -7.18 7.57 -6.92 7.83 ;
+        RECT -5.98 7.57 -5.72 7.83 ;
+        RECT -4.78 7.57 -4.52 7.83 ;
+        RECT -3.58 7.57 -3.32 7.83 ;
+        RECT -2.38 7.57 -2.12 7.83 ;
+        RECT -1.18 7.57 -0.92 7.83 ;
+        RECT 0.02 7.57 0.28 7.83 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER MET2 ;
+        RECT -0.1 0.25 0.4 0.55 ;
+        RECT -0.05 0.2 0.35 0.6 ;
+        RECT -1.3 0.25 -0.8 0.55 ;
+        RECT -1.25 0.2 -0.85 0.6 ;
+        RECT -2.5 0.25 -2 0.55 ;
+        RECT -2.45 0.2 -2.05 0.6 ;
+        RECT -3.7 0.25 -3.2 0.55 ;
+        RECT -3.65 0.2 -3.25 0.6 ;
+        RECT -4.9 0.25 -4.4 0.55 ;
+        RECT -4.85 0.2 -4.45 0.6 ;
+        RECT -6.1 0.25 -5.6 0.55 ;
+        RECT -6.05 0.2 -5.65 0.6 ;
+        RECT -7.3 0.25 -6.8 0.55 ;
+        RECT -7.25 0.2 -6.85 0.6 ;
+      LAYER MET1 ;
+        RECT -7.75 0 1.25 0.6 ;
+        RECT -0.45 0 -0.2 1.8 ;
+        RECT -3.05 0 -2.65 1.8 ;
+        RECT -6.3 0 -5.9 1.8 ;
+      LAYER VIA12 ;
+        RECT -7.18 0.27 -6.92 0.53 ;
+        RECT -5.98 0.27 -5.72 0.53 ;
+        RECT -4.78 0.27 -4.52 0.53 ;
+        RECT -3.58 0.27 -3.32 0.53 ;
+        RECT -2.38 0.27 -2.12 0.53 ;
+        RECT -1.18 0.27 -0.92 0.53 ;
+        RECT 0.02 0.27 0.28 0.53 ;
+    END
+  END VSS
+  OBS
+    LAYER MET2 ;
+      RECT -1 3.45 -0.5 3.85 ;
+      RECT -3.2 3.45 -2.8 3.85 ;
+      RECT -7.4 3.45 -6.9 3.85 ;
+      RECT -7.4 3.5 -0.5 3.8 ;
+      RECT -1.25 4.75 -0.85 5.15 ;
+      RECT -1.3 4.8 -0.8 5.1 ;
+    LAYER VIA12 ;
+      RECT -0.88 3.52 -0.62 3.78 ;
+      RECT -1.18 4.82 -0.92 5.08 ;
+      RECT -3.13 3.52 -2.87 3.78 ;
+      RECT -7.28 3.52 -7.02 3.78 ;
+    LAYER MET1 ;
+      RECT -1.3 4.75 -1.05 7.15 ;
+      RECT -1.3 4.75 -0.9 5.3 ;
+      RECT -1.3 4.8 -0.8 5.1 ;
+      RECT -1.3 4.8 0.05 5.05 ;
+      RECT -0.25 2.05 0.05 5.05 ;
+      RECT -1.3 2.05 0.05 2.3 ;
+      RECT -1.3 0.95 -1.05 2.3 ;
+      RECT -2.05 5.25 -1.8 7.15 ;
+      RECT -1.8 1.95 -1.55 5.5 ;
+      RECT -5.15 4.7 -4.65 5 ;
+      RECT -5.05 2.55 -4.75 5 ;
+      RECT -5.05 2.55 -1.55 2.85 ;
+      RECT -2.05 0.95 -1.8 2.2 ;
+      RECT -4.6 5.45 -4.35 7.15 ;
+      RECT -6.6 5.45 -4.35 5.7 ;
+      RECT -6.6 2.05 -6.35 5.7 ;
+      RECT -6.65 4.15 -6.2 4.45 ;
+      RECT -6.6 2.05 -4.35 2.3 ;
+      RECT -4.6 0.95 -4.35 2.3 ;
+      RECT -7.15 0.95 -6.9 7.15 ;
+      RECT -7.25 3.45 -6.9 3.85 ;
+      RECT -7.4 3.5 -6.9 3.8 ;
+      RECT -7.3 3.45 -6.9 3.8 ;
+      RECT -1 3.5 -0.5 3.8 ;
+      RECT -3.25 3.5 -2.75 3.8 ;
+  END
+END gf180mcu_osu_sc_12T_dlat_1
+
+MACRO gf180mcu_osu_sc_12T_dlatn_1
+  CLASS CORE ;
+  ORIGIN 7.75 0 ;
+  FOREIGN gf180mcu_osu_sc_12T_dlatn_1 -7.75 0 ;
+  SIZE 9 BY 8.1 ;
+  SYMMETRY X Y ;
+  SITE GF018hv5v_mcu_sc7 ;
+  PIN CLKN
+    DIRECTION INPUT ;
+    USE CLOCK ;
+    PORT
+      LAYER MET1 ;
+        RECT -2.55 4.15 -2.05 4.45 ;
+        RECT -4.3 4.15 -3.8 4.45 ;
+      LAYER MET2 ;
+        RECT -2.55 4.1 -2.05 4.5 ;
+        RECT -4.3 4.15 -2.05 4.45 ;
+        RECT -4.25 4.1 -3.85 4.5 ;
+      LAYER VIA12 ;
+        RECT -4.18 4.17 -3.92 4.43 ;
+        RECT -2.43 4.17 -2.17 4.43 ;
+    END
+  END CLKN
+  PIN D
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT -5.9 4.15 -5.4 4.45 ;
+      LAYER MET2 ;
+        RECT -5.9 4.1 -5.4 4.5 ;
+      LAYER VIA12 ;
+        RECT -5.78 4.17 -5.52 4.43 ;
+    END
+  END D
+  PIN Q
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 0.4 4.8 0.9 5.1 ;
+        RECT 0.4 4.75 0.8 5.15 ;
+        RECT 0.4 0.95 0.65 7.15 ;
+      LAYER MET2 ;
+        RECT 0.4 4.8 0.9 5.1 ;
+        RECT 0.45 4.75 0.85 5.15 ;
+      LAYER VIA12 ;
+        RECT 0.52 4.82 0.78 5.08 ;
+    END
+  END Q
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER MET1 ;
+        RECT -7.75 7.5 1.25 8.1 ;
+        RECT -0.45 5.45 -0.2 8.1 ;
+        RECT -2.9 5.45 -2.65 8.1 ;
+        RECT -6.3 6.25 -6.05 8.1 ;
+      LAYER MET2 ;
+        RECT -0.1 7.55 0.4 7.85 ;
+        RECT -0.05 7.5 0.35 7.9 ;
+        RECT -1.3 7.55 -0.8 7.85 ;
+        RECT -1.25 7.5 -0.85 7.9 ;
+        RECT -2.5 7.55 -2 7.85 ;
+        RECT -2.45 7.5 -2.05 7.9 ;
+        RECT -3.7 7.55 -3.2 7.85 ;
+        RECT -3.65 7.5 -3.25 7.9 ;
+        RECT -4.9 7.55 -4.4 7.85 ;
+        RECT -4.85 7.5 -4.45 7.9 ;
+        RECT -6.1 7.55 -5.6 7.85 ;
+        RECT -6.05 7.5 -5.65 7.9 ;
+        RECT -7.3 7.55 -6.8 7.85 ;
+        RECT -7.25 7.5 -6.85 7.9 ;
+      LAYER VIA12 ;
+        RECT -7.18 7.57 -6.92 7.83 ;
+        RECT -5.98 7.57 -5.72 7.83 ;
+        RECT -4.78 7.57 -4.52 7.83 ;
+        RECT -3.58 7.57 -3.32 7.83 ;
+        RECT -2.38 7.57 -2.12 7.83 ;
+        RECT -1.18 7.57 -0.92 7.83 ;
+        RECT 0.02 7.57 0.28 7.83 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER MET1 ;
+        RECT -7.75 0 1.25 0.6 ;
+        RECT -0.45 0 -0.2 1.8 ;
+        RECT -3.05 0 -2.65 1.8 ;
+        RECT -6.3 0 -5.9 1.8 ;
+      LAYER MET2 ;
+        RECT -0.1 0.25 0.4 0.55 ;
+        RECT -0.05 0.2 0.35 0.6 ;
+        RECT -1.3 0.25 -0.8 0.55 ;
+        RECT -1.25 0.2 -0.85 0.6 ;
+        RECT -2.5 0.25 -2 0.55 ;
+        RECT -2.45 0.2 -2.05 0.6 ;
+        RECT -3.7 0.25 -3.2 0.55 ;
+        RECT -3.65 0.2 -3.25 0.6 ;
+        RECT -4.9 0.25 -4.4 0.55 ;
+        RECT -4.85 0.2 -4.45 0.6 ;
+        RECT -6.1 0.25 -5.6 0.55 ;
+        RECT -6.05 0.2 -5.65 0.6 ;
+        RECT -7.3 0.25 -6.8 0.55 ;
+        RECT -7.25 0.2 -6.85 0.6 ;
+      LAYER VIA12 ;
+        RECT -7.18 0.27 -6.92 0.53 ;
+        RECT -5.98 0.27 -5.72 0.53 ;
+        RECT -4.78 0.27 -4.52 0.53 ;
+        RECT -3.58 0.27 -3.32 0.53 ;
+        RECT -2.38 0.27 -2.12 0.53 ;
+        RECT -1.18 0.27 -0.92 0.53 ;
+        RECT 0.02 0.27 0.28 0.53 ;
+    END
+  END VSS
+  OBS
+    LAYER MET2 ;
+      RECT -1 3.45 -0.5 3.85 ;
+      RECT -3.2 3.45 -2.8 3.85 ;
+      RECT -7.4 3.45 -6.9 3.85 ;
+      RECT -7.4 3.5 -0.5 3.8 ;
+      RECT -1.25 4.75 -0.85 5.15 ;
+      RECT -1.3 4.8 -0.8 5.1 ;
+    LAYER VIA12 ;
+      RECT -0.88 3.52 -0.62 3.78 ;
+      RECT -1.18 4.82 -0.92 5.08 ;
+      RECT -3.13 3.52 -2.87 3.78 ;
+      RECT -7.28 3.52 -7.02 3.78 ;
+    LAYER MET1 ;
+      RECT -1.3 4.75 -1.05 7.15 ;
+      RECT -1.3 4.75 -0.9 5.3 ;
+      RECT -1.3 4.8 -0.8 5.1 ;
+      RECT -1.3 4.8 0.05 5.05 ;
+      RECT -0.25 2.05 0.05 5.05 ;
+      RECT -1.3 2.05 0.05 2.3 ;
+      RECT -1.3 0.95 -1.05 2.3 ;
+      RECT -2.05 5.25 -1.8 7.15 ;
+      RECT -1.8 1.95 -1.55 5.5 ;
+      RECT -5.15 4.7 -4.65 5 ;
+      RECT -5.05 2.55 -4.75 5 ;
+      RECT -5.05 2.55 -1.55 2.85 ;
+      RECT -2.05 0.95 -1.8 2.2 ;
+      RECT -4.6 5.45 -4.35 7.15 ;
+      RECT -6.6 5.45 -4.35 5.7 ;
+      RECT -6.6 2.05 -6.35 5.7 ;
+      RECT -6.65 4.15 -6.2 4.45 ;
+      RECT -6.6 2.05 -4.35 2.3 ;
+      RECT -4.6 0.95 -4.35 2.3 ;
+      RECT -7.15 0.95 -6.9 7.15 ;
+      RECT -7.25 3.45 -6.9 3.85 ;
+      RECT -7.4 3.5 -6.9 3.8 ;
+      RECT -7.3 3.45 -6.9 3.8 ;
+      RECT -1 3.5 -0.5 3.8 ;
+      RECT -3.25 3.5 -2.75 3.8 ;
+  END
+END gf180mcu_osu_sc_12T_dlatn_1
+
+MACRO gf180mcu_osu_sc_12T_fill_1
+  CLASS CORE ;
+  ORIGIN 0 0.15 ;
+  FOREIGN gf180mcu_osu_sc_12T_fill_1 0 -0.15 ;
+  SIZE 0.1 BY 8.1 ;
+  SYMMETRY X Y ;
+  SITE GF018hv5v_mcu_sc7 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 7.35 0.1 7.95 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 -0.15 0.1 0.45 ;
+    END
+  END VSS
+END gf180mcu_osu_sc_12T_fill_1
+
+MACRO gf180mcu_osu_sc_12T_fill_16
+  CLASS CORE ;
+  ORIGIN 0 0.15 ;
+  FOREIGN gf180mcu_osu_sc_12T_fill_16 0 -0.15 ;
+  SIZE 1.6 BY 8.1 ;
+  SYMMETRY X Y ;
+  SITE GF018hv5v_mcu_sc7 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 7.35 1.6 7.95 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 -0.15 1.6 0.45 ;
+    END
+  END VSS
+END gf180mcu_osu_sc_12T_fill_16
+
+MACRO gf180mcu_osu_sc_12T_fill_2
+  CLASS CORE ;
+  ORIGIN 0 0.15 ;
+  FOREIGN gf180mcu_osu_sc_12T_fill_2 0 -0.15 ;
+  SIZE 0.2 BY 8.1 ;
+  SYMMETRY X Y ;
+  SITE GF018hv5v_mcu_sc7 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 7.35 0.2 7.95 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 -0.15 0.2 0.45 ;
+    END
+  END VSS
+END gf180mcu_osu_sc_12T_fill_2
+
+MACRO gf180mcu_osu_sc_12T_fill_4
+  CLASS CORE ;
+  ORIGIN 0 0.15 ;
+  FOREIGN gf180mcu_osu_sc_12T_fill_4 0 -0.15 ;
+  SIZE 0.4 BY 8.1 ;
+  SYMMETRY X Y ;
+  SITE GF018hv5v_mcu_sc7 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 7.35 0.4 7.95 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 -0.15 0.4 0.45 ;
+    END
+  END VSS
+END gf180mcu_osu_sc_12T_fill_4
+
+MACRO gf180mcu_osu_sc_12T_fill_8
+  CLASS CORE ;
+  ORIGIN 0 0.15 ;
+  FOREIGN gf180mcu_osu_sc_12T_fill_8 0 -0.15 ;
+  SIZE 0.8 BY 8.1 ;
+  SYMMETRY X Y ;
+  SITE GF018hv5v_mcu_sc7 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 7.35 0.8 7.95 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 -0.15 0.8 0.45 ;
+    END
+  END VSS
+END gf180mcu_osu_sc_12T_fill_8
+
+MACRO gf180mcu_osu_sc_12T_inv_1
+  CLASS CORE ;
+  ORIGIN 0 0.15 ;
+  FOREIGN gf180mcu_osu_sc_12T_inv_1 0 -0.15 ;
+  SIZE 2.2 BY 8.1 ;
+  SYMMETRY X Y ;
+  SITE GF018hv5v_mcu_sc7 ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 0.55 4.65 1.05 4.95 ;
+      LAYER MET2 ;
+        RECT 0.55 4.6 1.05 5 ;
+      LAYER VIA12 ;
+        RECT 0.67 4.67 0.93 4.93 ;
+    END
+  END A
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 7.35 2.2 7.95 ;
+        RECT 0.55 5.3 0.8 7.95 ;
+      LAYER MET2 ;
+        RECT 0.45 7.4 0.95 7.7 ;
+        RECT 0.5 7.35 0.9 7.75 ;
+      LAYER VIA12 ;
+        RECT 0.57 7.42 0.83 7.68 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 -0.15 2.2 0.45 ;
+        RECT 0.55 -0.15 0.8 1.65 ;
+      LAYER MET2 ;
+        RECT 0.45 0.1 0.95 0.4 ;
+        RECT 0.5 0.05 0.9 0.45 ;
+      LAYER VIA12 ;
+        RECT 0.57 0.12 0.83 0.38 ;
+    END
+  END VSS
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 1.3 3.35 1.8 3.65 ;
+        RECT 1.4 0.8 1.65 7 ;
+      LAYER MET2 ;
+        RECT 1.3 3.3 1.8 3.7 ;
+      LAYER VIA12 ;
+        RECT 1.42 3.37 1.68 3.63 ;
+    END
+  END Y
+END gf180mcu_osu_sc_12T_inv_1
+
+MACRO gf180mcu_osu_sc_12T_inv_16
+  CLASS CORE ;
+  ORIGIN 0 0.15 ;
+  FOREIGN gf180mcu_osu_sc_12T_inv_16 0 -0.15 ;
+  SIZE 15 BY 8.1 ;
+  SYMMETRY X Y ;
+  SITE GF018hv5v_mcu_sc7 ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 0.4 3.35 0.9 3.65 ;
+      LAYER MET2 ;
+        RECT 0.4 3.3 0.9 3.7 ;
+      LAYER VIA12 ;
+        RECT 0.52 3.37 0.78 3.63 ;
+    END
+  END A
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 7.35 15 7.95 ;
+        RECT 14.15 5.3 14.4 7.95 ;
+        RECT 12.45 5.3 12.7 7.95 ;
+        RECT 10.75 5.3 11 7.95 ;
+        RECT 9.05 5.3 9.3 7.95 ;
+        RECT 7.35 5.3 7.6 7.95 ;
+        RECT 5.65 5.3 5.9 7.95 ;
+        RECT 3.95 5.3 4.2 7.95 ;
+        RECT 2.25 5.3 2.5 7.95 ;
+        RECT 0.55 5.3 0.8 7.95 ;
+      LAYER MET2 ;
+        RECT 13.65 7.4 14.15 7.7 ;
+        RECT 13.7 7.35 14.1 7.75 ;
+        RECT 12.45 7.4 12.95 7.7 ;
+        RECT 12.5 7.35 12.9 7.75 ;
+        RECT 11.25 7.4 11.75 7.7 ;
+        RECT 11.3 7.35 11.7 7.75 ;
+        RECT 10.05 7.4 10.55 7.7 ;
+        RECT 10.1 7.35 10.5 7.75 ;
+        RECT 8.85 7.4 9.35 7.7 ;
+        RECT 8.9 7.35 9.3 7.75 ;
+        RECT 7.65 7.4 8.15 7.7 ;
+        RECT 7.7 7.35 8.1 7.75 ;
+        RECT 6.45 7.4 6.95 7.7 ;
+        RECT 6.5 7.35 6.9 7.75 ;
+        RECT 5.25 7.4 5.75 7.7 ;
+        RECT 5.3 7.35 5.7 7.75 ;
+        RECT 4.05 7.4 4.55 7.7 ;
+        RECT 4.1 7.35 4.5 7.75 ;
+        RECT 2.85 7.4 3.35 7.7 ;
+        RECT 2.9 7.35 3.3 7.75 ;
+        RECT 1.65 7.4 2.15 7.7 ;
+        RECT 1.7 7.35 2.1 7.75 ;
+        RECT 0.45 7.4 0.95 7.7 ;
+        RECT 0.5 7.35 0.9 7.75 ;
+      LAYER VIA12 ;
+        RECT 0.57 7.42 0.83 7.68 ;
+        RECT 1.77 7.42 2.03 7.68 ;
+        RECT 2.97 7.42 3.23 7.68 ;
+        RECT 4.17 7.42 4.43 7.68 ;
+        RECT 5.37 7.42 5.63 7.68 ;
+        RECT 6.57 7.42 6.83 7.68 ;
+        RECT 7.77 7.42 8.03 7.68 ;
+        RECT 8.97 7.42 9.23 7.68 ;
+        RECT 10.17 7.42 10.43 7.68 ;
+        RECT 11.37 7.42 11.63 7.68 ;
+        RECT 12.57 7.42 12.83 7.68 ;
+        RECT 13.77 7.42 14.03 7.68 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 -0.15 15 0.45 ;
+        RECT 14.15 -0.15 14.4 1.65 ;
+        RECT 12.45 -0.15 12.7 1.65 ;
+        RECT 10.75 -0.15 11 1.65 ;
+        RECT 9.05 -0.15 9.3 1.65 ;
+        RECT 7.35 -0.15 7.6 1.65 ;
+        RECT 5.65 -0.15 5.9 1.65 ;
+        RECT 3.95 -0.15 4.2 1.65 ;
+        RECT 2.25 -0.15 2.5 1.65 ;
+        RECT 0.55 -0.15 0.8 1.65 ;
+      LAYER MET2 ;
+        RECT 13.65 0.1 14.15 0.4 ;
+        RECT 13.7 0.05 14.1 0.45 ;
+        RECT 12.45 0.1 12.95 0.4 ;
+        RECT 12.5 0.05 12.9 0.45 ;
+        RECT 11.25 0.1 11.75 0.4 ;
+        RECT 11.3 0.05 11.7 0.45 ;
+        RECT 10.05 0.1 10.55 0.4 ;
+        RECT 10.1 0.05 10.5 0.45 ;
+        RECT 8.85 0.1 9.35 0.4 ;
+        RECT 8.9 0.05 9.3 0.45 ;
+        RECT 7.65 0.1 8.15 0.4 ;
+        RECT 7.7 0.05 8.1 0.45 ;
+        RECT 6.45 0.1 6.95 0.4 ;
+        RECT 6.5 0.05 6.9 0.45 ;
+        RECT 5.25 0.1 5.75 0.4 ;
+        RECT 5.3 0.05 5.7 0.45 ;
+        RECT 4.05 0.1 4.55 0.4 ;
+        RECT 4.1 0.05 4.5 0.45 ;
+        RECT 2.85 0.1 3.35 0.4 ;
+        RECT 2.9 0.05 3.3 0.45 ;
+        RECT 1.65 0.1 2.15 0.4 ;
+        RECT 1.7 0.05 2.1 0.45 ;
+        RECT 0.45 0.1 0.95 0.4 ;
+        RECT 0.5 0.05 0.9 0.45 ;
+      LAYER VIA12 ;
+        RECT 0.57 0.12 0.83 0.38 ;
+        RECT 1.77 0.12 2.03 0.38 ;
+        RECT 2.97 0.12 3.23 0.38 ;
+        RECT 4.17 0.12 4.43 0.38 ;
+        RECT 5.37 0.12 5.63 0.38 ;
+        RECT 6.57 0.12 6.83 0.38 ;
+        RECT 7.77 0.12 8.03 0.38 ;
+        RECT 8.97 0.12 9.23 0.38 ;
+        RECT 10.17 0.12 10.43 0.38 ;
+        RECT 11.37 0.12 11.63 0.38 ;
+        RECT 12.57 0.12 12.83 0.38 ;
+        RECT 13.77 0.12 14.03 0.38 ;
+    END
+  END VSS
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 13.3 0.8 13.55 7 ;
+        RECT 1.4 4.3 13.55 4.55 ;
+        RECT 13.15 4.2 13.55 4.55 ;
+        RECT 1.4 1.9 13.55 2.15 ;
+        RECT 11.6 0.8 11.85 7 ;
+        RECT 9.9 0.8 10.15 7 ;
+        RECT 8.2 0.8 8.45 7 ;
+        RECT 6.5 0.8 6.75 7 ;
+        RECT 4.8 0.8 5.05 7 ;
+        RECT 3.1 0.8 3.35 7 ;
+        RECT 1.4 0.8 1.65 7 ;
+      LAYER MET2 ;
+        RECT 13.15 4.2 13.65 4.6 ;
+      LAYER VIA12 ;
+        RECT 13.27 4.27 13.53 4.53 ;
+    END
+  END Y
+END gf180mcu_osu_sc_12T_inv_16
+
+MACRO gf180mcu_osu_sc_12T_inv_2
+  CLASS CORE ;
+  ORIGIN 0 0.15 ;
+  FOREIGN gf180mcu_osu_sc_12T_inv_2 0 -0.15 ;
+  SIZE 3.2 BY 8.1 ;
+  SYMMETRY X Y ;
+  SITE GF018hv5v_mcu_sc7 ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 0.65 3.35 1.15 3.65 ;
+      LAYER MET2 ;
+        RECT 0.65 3.3 1.15 3.7 ;
+      LAYER VIA12 ;
+        RECT 0.77 3.37 1.03 3.63 ;
+    END
+  END A
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 7.35 3.2 7.95 ;
+        RECT 2.3 5.3 2.55 7.95 ;
+        RECT 0.55 5.3 0.8 7.95 ;
+      LAYER MET2 ;
+        RECT 0.45 7.4 0.95 7.7 ;
+        RECT 0.5 7.35 0.9 7.75 ;
+      LAYER VIA12 ;
+        RECT 0.57 7.42 0.83 7.68 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 -0.15 3.2 0.45 ;
+        RECT 2.25 -0.15 2.5 1.65 ;
+        RECT 0.55 -0.15 0.8 1.65 ;
+      LAYER MET2 ;
+        RECT 0.45 0.1 0.95 0.4 ;
+        RECT 0.5 0.05 0.9 0.45 ;
+      LAYER VIA12 ;
+        RECT 0.57 0.12 0.83 0.38 ;
+    END
+  END VSS
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 1.4 4.25 2 4.55 ;
+        RECT 1.4 4.1 1.85 4.65 ;
+        RECT 1.4 0.8 1.65 7 ;
+      LAYER MET2 ;
+        RECT 1.5 4.2 2 4.6 ;
+      LAYER VIA12 ;
+        RECT 1.62 4.27 1.88 4.53 ;
+    END
+  END Y
+END gf180mcu_osu_sc_12T_inv_2
+
+MACRO gf180mcu_osu_sc_12T_inv_4
+  CLASS CORE ;
+  ORIGIN 0 0.15 ;
+  FOREIGN gf180mcu_osu_sc_12T_inv_4 0 -0.15 ;
+  SIZE 4.8 BY 8.1 ;
+  SYMMETRY X Y ;
+  SITE GF018hv5v_mcu_sc7 ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 0.4 3.35 0.9 3.65 ;
+      LAYER MET2 ;
+        RECT 0.4 3.3 0.9 3.7 ;
+      LAYER VIA12 ;
+        RECT 0.52 3.37 0.78 3.63 ;
+    END
+  END A
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 7.35 4.8 7.95 ;
+        RECT 3.95 5.3 4.2 7.95 ;
+        RECT 2.25 5.3 2.5 7.95 ;
+        RECT 0.55 5.3 0.8 7.95 ;
+      LAYER MET2 ;
+        RECT 2.85 7.4 3.35 7.7 ;
+        RECT 2.9 7.35 3.3 7.75 ;
+        RECT 1.65 7.4 2.15 7.7 ;
+        RECT 1.7 7.35 2.1 7.75 ;
+        RECT 0.45 7.4 0.95 7.7 ;
+        RECT 0.5 7.35 0.9 7.75 ;
+      LAYER VIA12 ;
+        RECT 0.57 7.42 0.83 7.68 ;
+        RECT 1.77 7.42 2.03 7.68 ;
+        RECT 2.97 7.42 3.23 7.68 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 -0.15 4.8 0.45 ;
+        RECT 3.95 -0.15 4.2 1.65 ;
+        RECT 2.25 -0.15 2.5 1.65 ;
+        RECT 0.55 -0.15 0.8 1.65 ;
+      LAYER MET2 ;
+        RECT 2.85 0.1 3.35 0.4 ;
+        RECT 2.9 0.05 3.3 0.45 ;
+        RECT 1.65 0.1 2.15 0.4 ;
+        RECT 1.7 0.05 2.1 0.45 ;
+        RECT 0.45 0.1 0.95 0.4 ;
+        RECT 0.5 0.05 0.9 0.45 ;
+      LAYER VIA12 ;
+        RECT 0.57 0.12 0.83 0.38 ;
+        RECT 1.77 0.12 2.03 0.38 ;
+        RECT 2.97 0.12 3.23 0.38 ;
+    END
+  END VSS
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 3.1 0.8 3.35 7 ;
+        RECT 1.4 4.3 3.35 4.55 ;
+        RECT 2.95 4.2 3.35 4.55 ;
+        RECT 1.4 1.9 3.35 2.15 ;
+        RECT 1.4 0.8 1.65 7 ;
+      LAYER MET2 ;
+        RECT 2.95 4.2 3.45 4.6 ;
+      LAYER VIA12 ;
+        RECT 3.07 4.27 3.33 4.53 ;
+    END
+  END Y
+END gf180mcu_osu_sc_12T_inv_4
+
+MACRO gf180mcu_osu_sc_12T_inv_8
+  CLASS CORE ;
+  ORIGIN 0 0.15 ;
+  FOREIGN gf180mcu_osu_sc_12T_inv_8 0 -0.15 ;
+  SIZE 8.15 BY 8.1 ;
+  SYMMETRY X Y ;
+  SITE GF018hv5v_mcu_sc7 ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 0.4 3.35 0.9 3.65 ;
+      LAYER MET2 ;
+        RECT 0.4 3.3 0.9 3.7 ;
+      LAYER VIA12 ;
+        RECT 0.52 3.37 0.78 3.63 ;
+    END
+  END A
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 7.35 8.15 7.95 ;
+        RECT 7.35 5.3 7.6 7.95 ;
+        RECT 5.65 5.3 5.9 7.95 ;
+        RECT 3.95 5.3 4.2 7.95 ;
+        RECT 2.25 5.3 2.5 7.95 ;
+        RECT 0.55 5.3 0.8 7.95 ;
+      LAYER MET2 ;
+        RECT 6.45 7.4 6.95 7.7 ;
+        RECT 6.5 7.35 6.9 7.75 ;
+        RECT 5.25 7.4 5.75 7.7 ;
+        RECT 5.3 7.35 5.7 7.75 ;
+        RECT 4.05 7.4 4.55 7.7 ;
+        RECT 4.1 7.35 4.5 7.75 ;
+        RECT 2.85 7.4 3.35 7.7 ;
+        RECT 2.9 7.35 3.3 7.75 ;
+        RECT 1.65 7.4 2.15 7.7 ;
+        RECT 1.7 7.35 2.1 7.75 ;
+        RECT 0.45 7.4 0.95 7.7 ;
+        RECT 0.5 7.35 0.9 7.75 ;
+      LAYER VIA12 ;
+        RECT 0.57 7.42 0.83 7.68 ;
+        RECT 1.77 7.42 2.03 7.68 ;
+        RECT 2.97 7.42 3.23 7.68 ;
+        RECT 4.17 7.42 4.43 7.68 ;
+        RECT 5.37 7.42 5.63 7.68 ;
+        RECT 6.57 7.42 6.83 7.68 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 -0.15 8.15 0.45 ;
+        RECT 7.35 -0.15 7.6 1.65 ;
+        RECT 5.65 -0.15 5.9 1.65 ;
+        RECT 3.95 -0.15 4.2 1.65 ;
+        RECT 2.25 -0.15 2.5 1.65 ;
+        RECT 0.55 -0.15 0.8 1.65 ;
+      LAYER MET2 ;
+        RECT 6.45 0.1 6.95 0.4 ;
+        RECT 6.5 0.05 6.9 0.45 ;
+        RECT 5.25 0.1 5.75 0.4 ;
+        RECT 5.3 0.05 5.7 0.45 ;
+        RECT 4.05 0.1 4.55 0.4 ;
+        RECT 4.1 0.05 4.5 0.45 ;
+        RECT 2.85 0.1 3.35 0.4 ;
+        RECT 2.9 0.05 3.3 0.45 ;
+        RECT 1.65 0.1 2.15 0.4 ;
+        RECT 1.7 0.05 2.1 0.45 ;
+        RECT 0.45 0.1 0.95 0.4 ;
+        RECT 0.5 0.05 0.9 0.45 ;
+      LAYER VIA12 ;
+        RECT 0.57 0.12 0.83 0.38 ;
+        RECT 1.77 0.12 2.03 0.38 ;
+        RECT 2.97 0.12 3.23 0.38 ;
+        RECT 4.17 0.12 4.43 0.38 ;
+        RECT 5.37 0.12 5.63 0.38 ;
+        RECT 6.57 0.12 6.83 0.38 ;
+    END
+  END VSS
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 6.5 0.8 6.75 7 ;
+        RECT 1.4 4.3 6.75 4.55 ;
+        RECT 6.35 4.2 6.75 4.55 ;
+        RECT 1.4 1.9 6.75 2.15 ;
+        RECT 4.8 0.8 5.05 7 ;
+        RECT 3.1 0.8 3.35 7 ;
+        RECT 1.4 0.8 1.65 7 ;
+      LAYER MET2 ;
+        RECT 6.35 4.2 6.85 4.6 ;
+      LAYER VIA12 ;
+        RECT 6.47 4.27 6.73 4.53 ;
+    END
+  END Y
+END gf180mcu_osu_sc_12T_inv_8
+
+MACRO gf180mcu_osu_sc_12T_mux2_1
+  CLASS CORE ;
+  ORIGIN 0.1 0.15 ;
+  FOREIGN gf180mcu_osu_sc_12T_mux2_1 -0.1 -0.15 ;
+  SIZE 4.8 BY 8.1 ;
+  SYMMETRY X Y ;
+  SITE GF018hv5v_mcu_sc7 ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 2.15 3.3 2.75 3.7 ;
+        RECT 2.15 0.8 2.4 7 ;
+      LAYER MET2 ;
+        RECT 2.25 3.3 2.75 3.7 ;
+      LAYER VIA12 ;
+        RECT 2.37 3.37 2.63 3.63 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 3.65 3.95 4.15 4.35 ;
+        RECT 3.85 0.8 4.1 7 ;
+      LAYER MET2 ;
+        RECT 3.65 3.95 4.15 4.35 ;
+      LAYER VIA12 ;
+        RECT 3.77 4.02 4.03 4.28 ;
+    END
+  END B
+  PIN Sel
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 0.45 2.7 0.95 3 ;
+      LAYER MET2 ;
+        RECT 0.45 2.65 0.95 3.05 ;
+      LAYER VIA12 ;
+        RECT 0.57 2.72 0.83 2.98 ;
+    END
+  END Sel
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER MET1 ;
+        RECT -0.1 7.35 4.7 7.95 ;
+        RECT 0.45 5.3 0.7 7.95 ;
+      LAYER MET2 ;
+        RECT 2.75 7.4 3.25 7.7 ;
+        RECT 2.8 7.35 3.2 7.75 ;
+        RECT 1.55 7.4 2.05 7.7 ;
+        RECT 1.6 7.35 2 7.75 ;
+        RECT 0.35 7.4 0.85 7.7 ;
+        RECT 0.4 7.35 0.8 7.75 ;
+      LAYER VIA12 ;
+        RECT 0.47 7.42 0.73 7.68 ;
+        RECT 1.67 7.42 1.93 7.68 ;
+        RECT 2.87 7.42 3.13 7.68 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER MET1 ;
+        RECT -0.1 -0.15 4.7 0.45 ;
+        RECT 0.45 -0.15 0.7 1.65 ;
+      LAYER MET2 ;
+        RECT 2.75 0.1 3.25 0.4 ;
+        RECT 2.8 0.05 3.2 0.45 ;
+        RECT 1.55 0.1 2.05 0.4 ;
+        RECT 1.6 0.05 2 0.45 ;
+        RECT 0.35 0.1 0.85 0.4 ;
+        RECT 0.4 0.05 0.8 0.45 ;
+      LAYER VIA12 ;
+        RECT 0.47 0.12 0.73 0.38 ;
+        RECT 1.67 0.12 1.93 0.38 ;
+        RECT 2.87 0.12 3.13 0.38 ;
+    END
+  END VSS
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 2.9 4.6 3.4 5 ;
+        RECT 3 0.8 3.25 7 ;
+      LAYER MET2 ;
+        RECT 2.9 4.6 3.4 5 ;
+      LAYER VIA12 ;
+        RECT 3.02 4.67 3.28 4.93 ;
+    END
+  END Y
+  OBS
+    LAYER MET1 ;
+      RECT 1.3 0.8 1.55 7 ;
+      RECT 1.3 4 1.9 4.3 ;
+      RECT 1.3 2.05 1.9 2.35 ;
+  END
+END gf180mcu_osu_sc_12T_mux2_1
+
+MACRO gf180mcu_osu_sc_12T_nand2_1
+  CLASS CORE ;
+  ORIGIN 0 0.15 ;
+  FOREIGN gf180mcu_osu_sc_12T_nand2_1 0 -0.15 ;
+  SIZE 3.1 BY 8.1 ;
+  SYMMETRY X Y ;
+  SITE GF018hv5v_mcu_sc7 ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 0.6 3.35 1.1 3.65 ;
+      LAYER MET2 ;
+        RECT 0.6 3.3 1.1 3.7 ;
+      LAYER VIA12 ;
+        RECT 0.72 3.37 0.98 3.63 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 1.9 2.7 2.4 3 ;
+      LAYER MET2 ;
+        RECT 1.9 2.65 2.4 3.05 ;
+      LAYER VIA12 ;
+        RECT 2.02 2.72 2.28 2.98 ;
+    END
+  END B
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 7.35 3.1 7.95 ;
+        RECT 2.25 5.3 2.5 7.95 ;
+        RECT 0.55 5.3 0.8 7.95 ;
+      LAYER MET2 ;
+        RECT 1.65 7.4 2.15 7.7 ;
+        RECT 1.7 7.35 2.1 7.75 ;
+        RECT 0.45 7.4 0.95 7.7 ;
+        RECT 0.5 7.35 0.9 7.75 ;
+      LAYER VIA12 ;
+        RECT 0.57 7.42 0.83 7.68 ;
+        RECT 1.77 7.42 2.03 7.68 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 -0.15 3.1 0.45 ;
+        RECT 2.1 -0.15 2.35 1.65 ;
+      LAYER MET2 ;
+        RECT 1.65 0.1 2.15 0.4 ;
+        RECT 1.7 0.05 2.1 0.45 ;
+        RECT 0.45 0.1 0.95 0.4 ;
+        RECT 0.5 0.05 0.9 0.45 ;
+      LAYER VIA12 ;
+        RECT 0.57 0.12 0.83 0.38 ;
+        RECT 1.77 0.12 2.03 0.38 ;
+    END
+  END VSS
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 1.3 4 1.8 4.3 ;
+        RECT 1.4 1.75 1.65 7 ;
+        RECT 0.7 1.75 1.65 2 ;
+        RECT 0.7 0.8 0.95 2 ;
+      LAYER MET2 ;
+        RECT 1.3 3.95 1.8 4.35 ;
+      LAYER VIA12 ;
+        RECT 1.42 4.02 1.68 4.28 ;
+    END
+  END Y
+END gf180mcu_osu_sc_12T_nand2_1
+
+MACRO gf180mcu_osu_sc_12T_nor2_1
+  CLASS CORE ;
+  ORIGIN 0 0.15 ;
+  FOREIGN gf180mcu_osu_sc_12T_nor2_1 0 -0.15 ;
+  SIZE 2.8 BY 8.1 ;
+  SYMMETRY X Y ;
+  SITE GF018hv5v_mcu_sc7 ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 0.45 3.35 0.95 3.65 ;
+      LAYER MET2 ;
+        RECT 0.45 3.3 0.95 3.7 ;
+      LAYER VIA12 ;
+        RECT 0.57 3.37 0.83 3.63 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 1.85 2.7 2.35 3 ;
+      LAYER MET2 ;
+        RECT 1.85 2.65 2.35 3.05 ;
+      LAYER VIA12 ;
+        RECT 1.97 2.72 2.23 2.98 ;
+    END
+  END B
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 7.35 2.8 7.95 ;
+        RECT 0.55 5.3 0.8 7.95 ;
+      LAYER MET2 ;
+        RECT 1.65 7.4 2.15 7.7 ;
+        RECT 1.7 7.35 2.1 7.75 ;
+        RECT 0.45 7.4 0.95 7.7 ;
+        RECT 0.5 7.35 0.9 7.75 ;
+      LAYER VIA12 ;
+        RECT 0.57 7.42 0.83 7.68 ;
+        RECT 1.77 7.42 2.03 7.68 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 -0.15 2.8 0.45 ;
+        RECT 2.1 -0.15 2.35 1.65 ;
+        RECT 0.4 -0.15 0.65 1.65 ;
+      LAYER MET2 ;
+        RECT 1.65 0.1 2.15 0.4 ;
+        RECT 1.7 0.05 2.1 0.45 ;
+        RECT 0.45 0.1 0.95 0.4 ;
+        RECT 0.5 0.05 0.9 0.45 ;
+      LAYER VIA12 ;
+        RECT 0.57 0.12 0.83 0.38 ;
+        RECT 1.77 0.12 2.03 0.38 ;
+    END
+  END VSS
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 1.95 4.6 2.2 7 ;
+        RECT 1.25 4.6 2.2 4.85 ;
+        RECT 1.15 4 1.65 4.3 ;
+        RECT 1.25 0.8 1.5 4.85 ;
+      LAYER MET2 ;
+        RECT 1.15 3.95 1.65 4.35 ;
+      LAYER VIA12 ;
+        RECT 1.27 4.02 1.53 4.28 ;
+    END
+  END Y
+END gf180mcu_osu_sc_12T_nor2_1
+
+MACRO gf180mcu_osu_sc_12T_oai21_1
+  CLASS CORE ;
+  ORIGIN 0 0.15 ;
+  FOREIGN gf180mcu_osu_sc_12T_oai21_1 0 -0.15 ;
+  SIZE 3.9 BY 8.1 ;
+  SYMMETRY X Y ;
+  SITE GF018hv5v_mcu_sc7 ;
+  PIN A0
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 0.45 3.35 0.95 3.65 ;
+      LAYER MET2 ;
+        RECT 0.45 3.3 0.95 3.7 ;
+      LAYER VIA12 ;
+        RECT 0.57 3.37 0.83 3.63 ;
+    END
+  END A0
+  PIN A1
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 1.45 4 1.95 4.3 ;
+      LAYER MET2 ;
+        RECT 1.45 3.95 1.95 4.35 ;
+      LAYER VIA12 ;
+        RECT 1.57 4.02 1.83 4.28 ;
+    END
+  END A1
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 2.2 3.35 2.7 3.65 ;
+      LAYER MET2 ;
+        RECT 2.2 3.3 2.7 3.7 ;
+      LAYER VIA12 ;
+        RECT 2.32 3.37 2.58 3.63 ;
+    END
+  END B
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 7.35 3.9 7.95 ;
+        RECT 2.95 5.3 3.2 7.95 ;
+        RECT 0.65 5.3 0.9 7.95 ;
+      LAYER MET2 ;
+        RECT 2.85 7.4 3.35 7.7 ;
+        RECT 2.9 7.35 3.3 7.75 ;
+        RECT 1.65 7.4 2.15 7.7 ;
+        RECT 1.7 7.35 2.1 7.75 ;
+        RECT 0.45 7.4 0.95 7.7 ;
+        RECT 0.5 7.35 0.9 7.75 ;
+      LAYER VIA12 ;
+        RECT 0.57 7.42 0.83 7.68 ;
+        RECT 1.77 7.42 2.03 7.68 ;
+        RECT 2.97 7.42 3.23 7.68 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 -0.15 3.9 0.45 ;
+        RECT 1.35 -0.15 1.6 1.35 ;
+      LAYER MET2 ;
+        RECT 2.85 0.1 3.35 0.4 ;
+        RECT 2.9 0.05 3.3 0.45 ;
+        RECT 1.65 0.1 2.15 0.4 ;
+        RECT 1.7 0.05 2.1 0.45 ;
+        RECT 0.45 0.1 0.95 0.4 ;
+        RECT 0.5 0.05 0.9 0.45 ;
+      LAYER VIA12 ;
+        RECT 0.57 0.12 0.83 0.38 ;
+        RECT 1.77 0.12 2.03 0.38 ;
+        RECT 2.97 0.12 3.23 0.38 ;
+    END
+  END VSS
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 2.1 4.65 3.35 4.95 ;
+        RECT 3.05 0.8 3.3 2.35 ;
+        RECT 2.95 2.1 3.2 4.95 ;
+        RECT 2.1 4.65 2.35 7 ;
+      LAYER MET2 ;
+        RECT 2.85 4.6 3.35 5 ;
+      LAYER VIA12 ;
+        RECT 2.97 4.67 3.23 4.93 ;
+    END
+  END Y
+  OBS
+    LAYER MET1 ;
+      RECT 0.5 1.6 2.45 1.85 ;
+      RECT 2.2 0.8 2.45 1.85 ;
+      RECT 0.5 0.8 0.75 1.85 ;
+  END
+END gf180mcu_osu_sc_12T_oai21_1
+
+MACRO gf180mcu_osu_sc_12T_or2_1
+  CLASS CORE ;
+  ORIGIN 0 0.15 ;
+  FOREIGN gf180mcu_osu_sc_12T_or2_1 0 -0.15 ;
+  SIZE 3.8 BY 8.1 ;
+  SYMMETRY X Y ;
+  SITE GF018hv5v_mcu_sc7 ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 0.9 3.35 1.4 3.65 ;
+      LAYER MET2 ;
+        RECT 0.9 3.3 1.4 3.7 ;
+      LAYER VIA12 ;
+        RECT 1.02 3.37 1.28 3.63 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 1.65 2.7 2.15 3 ;
+      LAYER MET2 ;
+        RECT 1.65 2.65 2.15 3.05 ;
+      LAYER VIA12 ;
+        RECT 1.77 2.72 2.03 2.98 ;
+    END
+  END B
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 7.35 3.8 7.95 ;
+        RECT 1.95 5.3 2.35 7.95 ;
+      LAYER MET2 ;
+        RECT 2.85 7.35 3.35 7.75 ;
+        RECT 1.65 7.35 2.15 7.75 ;
+        RECT 0.45 7.35 0.95 7.75 ;
+      LAYER VIA12 ;
+        RECT 0.57 7.42 0.83 7.68 ;
+        RECT 1.77 7.42 2.03 7.68 ;
+        RECT 2.97 7.42 3.23 7.68 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 -0.15 3.8 0.45 ;
+        RECT 2.1 -0.15 2.35 1.65 ;
+        RECT 0.4 -0.15 0.65 1.65 ;
+      LAYER MET2 ;
+        RECT 2.85 0.05 3.35 0.45 ;
+        RECT 1.65 0.05 2.15 0.45 ;
+        RECT 0.45 0.05 0.95 0.45 ;
+      LAYER VIA12 ;
+        RECT 0.57 0.12 0.83 0.38 ;
+        RECT 1.77 0.12 2.03 0.38 ;
+        RECT 2.97 0.12 3.23 0.38 ;
+    END
+  END VSS
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 2.95 4.65 3.45 4.95 ;
+        RECT 2.95 0.8 3.2 7 ;
+      LAYER MET2 ;
+        RECT 2.95 4.6 3.45 5 ;
+      LAYER VIA12 ;
+        RECT 3.07 4.67 3.33 4.93 ;
+    END
+  END Y
+  OBS
+    LAYER MET2 ;
+      RECT 2.2 3.95 2.7 4.35 ;
+    LAYER VIA12 ;
+      RECT 2.32 4.02 2.58 4.28 ;
+    LAYER MET1 ;
+      RECT 0.55 5.1 0.8 7 ;
+      RECT 0.4 2.05 0.65 5.35 ;
+      RECT 0.4 4 2.7 4.3 ;
+      RECT 0.4 2.05 1.5 2.3 ;
+      RECT 1.25 0.8 1.5 2.3 ;
+  END
+END gf180mcu_osu_sc_12T_or2_1
+
+MACRO gf180mcu_osu_sc_12T_tiehi
+  CLASS CORE ;
+  ORIGIN 0 0.15 ;
+  FOREIGN gf180mcu_osu_sc_12T_tiehi 0 -0.15 ;
+  SIZE 2.2 BY 8.1 ;
+  SYMMETRY X Y ;
+  SITE GF018hv5v_mcu_sc7 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 7.35 2.2 7.95 ;
+        RECT 0.55 5.3 0.8 7.95 ;
+      LAYER MET2 ;
+        RECT 0.45 7.4 0.95 7.7 ;
+        RECT 0.5 7.35 0.9 7.75 ;
+      LAYER VIA12 ;
+        RECT 0.57 7.42 0.83 7.68 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 -0.15 2.2 0.45 ;
+        RECT 0.55 -0.15 0.8 1.65 ;
+      LAYER MET2 ;
+        RECT 0.45 0.1 0.95 0.4 ;
+        RECT 0.5 0.05 0.9 0.45 ;
+      LAYER VIA12 ;
+        RECT 0.57 0.12 0.83 0.38 ;
+    END
+  END VSS
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 1.3 4.65 1.8 4.95 ;
+        RECT 1.4 4.6 1.65 7 ;
+      LAYER MET2 ;
+        RECT 1.3 4.6 1.8 5 ;
+      LAYER VIA12 ;
+        RECT 1.42 4.67 1.68 4.93 ;
+    END
+  END Y
+  OBS
+    LAYER MET1 ;
+      RECT 1.15 2.05 1.65 2.3 ;
+      RECT 1.4 0.8 1.65 2.3 ;
+  END
+END gf180mcu_osu_sc_12T_tiehi
+
+MACRO gf180mcu_osu_sc_12T_tielo
+  CLASS CORE ;
+  ORIGIN 0 0.15 ;
+  FOREIGN gf180mcu_osu_sc_12T_tielo 0 -0.15 ;
+  SIZE 2.2 BY 8.1 ;
+  SYMMETRY X Y ;
+  SITE GF018hv5v_mcu_sc7 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 7.35 2.2 7.95 ;
+        RECT 0.55 5.3 0.8 7.95 ;
+      LAYER MET2 ;
+        RECT 0.45 7.4 0.95 7.7 ;
+        RECT 0.5 7.35 0.9 7.75 ;
+      LAYER VIA12 ;
+        RECT 0.57 7.42 0.83 7.68 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 -0.15 2.2 0.45 ;
+        RECT 0.55 -0.15 0.8 1.65 ;
+      LAYER MET2 ;
+        RECT 0.45 0.1 0.95 0.4 ;
+        RECT 0.5 0.05 0.9 0.45 ;
+      LAYER VIA12 ;
+        RECT 0.57 0.12 0.83 0.38 ;
+    END
+  END VSS
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 1.3 1.95 1.8 2.25 ;
+        RECT 1.4 0.8 1.65 2.3 ;
+      LAYER MET2 ;
+        RECT 1.3 1.9 1.8 2.3 ;
+      LAYER VIA12 ;
+        RECT 1.42 1.97 1.68 2.23 ;
+    END
+  END Y
+  OBS
+    LAYER MET1 ;
+      RECT 1.4 4.7 1.65 7 ;
+      RECT 1.15 4.7 1.65 4.95 ;
+  END
+END gf180mcu_osu_sc_12T_tielo
+
+MACRO gf180mcu_osu_sc_12T_xnor2_1
+  CLASS CORE ;
+  ORIGIN 0 0.15 ;
+  FOREIGN gf180mcu_osu_sc_12T_xnor2_1 0 -0.15 ;
+  SIZE 6.2 BY 8.1 ;
+  SYMMETRY X Y ;
+  SITE GF018hv5v_mcu_sc7 ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 3.55 3.35 4.05 3.65 ;
+        RECT 1.25 2.05 1.75 2.35 ;
+      LAYER MET2 ;
+        RECT 3.6 3.3 4 3.7 ;
+        RECT 3.65 0.75 3.95 3.75 ;
+        RECT 1.35 0.75 3.95 1.05 ;
+        RECT 1.3 2 1.7 2.4 ;
+        RECT 1.35 0.75 1.65 2.45 ;
+      LAYER VIA12 ;
+        RECT 1.37 2.07 1.63 2.33 ;
+        RECT 3.67 3.37 3.93 3.63 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 4.35 2.05 4.85 2.35 ;
+      LAYER MET2 ;
+        RECT 4.35 2.05 4.85 2.35 ;
+        RECT 4.4 2 4.8 2.4 ;
+        RECT 4.45 1.95 4.75 2.45 ;
+      LAYER VIA12 ;
+        RECT 4.47 2.07 4.73 2.33 ;
+    END
+  END B
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 7.35 6.2 7.95 ;
+        RECT 4.5 5.3 4.75 7.95 ;
+        RECT 1.4 5.3 1.65 7.95 ;
+      LAYER MET2 ;
+        RECT 5.25 7.4 5.75 7.7 ;
+        RECT 5.3 7.35 5.7 7.75 ;
+        RECT 4.05 7.4 4.55 7.7 ;
+        RECT 4.1 7.35 4.5 7.75 ;
+        RECT 2.85 7.4 3.35 7.7 ;
+        RECT 2.9 7.35 3.3 7.75 ;
+        RECT 1.65 7.4 2.15 7.7 ;
+        RECT 1.7 7.35 2.1 7.75 ;
+        RECT 0.45 7.4 0.95 7.7 ;
+        RECT 0.5 7.35 0.9 7.75 ;
+      LAYER VIA12 ;
+        RECT 0.57 7.42 0.83 7.68 ;
+        RECT 1.77 7.42 2.03 7.68 ;
+        RECT 2.97 7.42 3.23 7.68 ;
+        RECT 4.17 7.42 4.43 7.68 ;
+        RECT 5.37 7.42 5.63 7.68 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 -0.15 6.2 0.45 ;
+        RECT 4.5 -0.15 4.75 1.65 ;
+        RECT 1.4 -0.15 1.65 1.65 ;
+      LAYER MET2 ;
+        RECT 5.25 0.1 5.75 0.4 ;
+        RECT 5.3 0.05 5.7 0.45 ;
+        RECT 4.05 0.1 4.55 0.4 ;
+        RECT 4.1 0.05 4.5 0.45 ;
+        RECT 2.85 0.1 3.35 0.4 ;
+        RECT 2.9 0.05 3.3 0.45 ;
+        RECT 1.65 0.1 2.15 0.4 ;
+        RECT 1.7 0.05 2.1 0.45 ;
+        RECT 0.45 0.1 0.95 0.4 ;
+        RECT 0.5 0.05 0.9 0.45 ;
+      LAYER VIA12 ;
+        RECT 0.57 0.12 0.83 0.38 ;
+        RECT 1.77 0.12 2.03 0.38 ;
+        RECT 2.97 0.12 3.23 0.38 ;
+        RECT 4.17 0.12 4.43 0.38 ;
+        RECT 5.37 0.12 5.63 0.38 ;
+    END
+  END VSS
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 2.9 1.25 3.2 1.8 ;
+        RECT 2.95 0.8 3.2 1.8 ;
+        RECT 2.95 5.15 3.2 7 ;
+        RECT 2.9 5.15 3.2 5.7 ;
+      LAYER MET2 ;
+        RECT 2.8 1.35 3.3 1.75 ;
+        RECT 2.85 5.25 3.25 5.65 ;
+        RECT 2.9 1.35 3.2 5.8 ;
+      LAYER VIA12 ;
+        RECT 2.92 5.32 3.18 5.58 ;
+        RECT 2.92 1.42 3.18 1.68 ;
+    END
+  END Y
+  OBS
+    LAYER MET1 ;
+      RECT 5.35 0.8 5.6 7 ;
+      RECT 2.55 4 5.6 4.3 ;
+      RECT 0.55 0.8 0.8 7 ;
+      RECT 0.55 3.35 3.3 3.65 ;
+      RECT 3 2.05 3.3 3.65 ;
+      RECT 2.9 2.05 3.4 2.35 ;
+  END
+END gf180mcu_osu_sc_12T_xnor2_1
+
+MACRO gf180mcu_osu_sc_12T_xor2_1
+  CLASS CORE ;
+  ORIGIN 0 0.15 ;
+  FOREIGN gf180mcu_osu_sc_12T_xor2_1 0 -0.15 ;
+  SIZE 6.2 BY 8.1 ;
+  SYMMETRY X Y ;
+  SITE GF018hv5v_mcu_sc7 ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 1.25 2.05 1.75 2.35 ;
+      LAYER MET2 ;
+        RECT 1.25 2.05 1.75 2.35 ;
+        RECT 1.3 2 1.7 2.4 ;
+      LAYER VIA12 ;
+        RECT 1.37 2.07 1.63 2.33 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 1.95 3.35 5.1 3.65 ;
+      LAYER MET2 ;
+        RECT 4.6 3.35 5.1 3.65 ;
+        RECT 4.65 3.3 5.05 3.7 ;
+        RECT 1.95 3.35 2.45 3.65 ;
+        RECT 2 3.3 2.4 3.7 ;
+      LAYER VIA12 ;
+        RECT 2.07 3.37 2.33 3.63 ;
+        RECT 4.72 3.37 4.98 3.63 ;
+    END
+  END B
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 7.35 6.2 7.95 ;
+        RECT 4.5 5.3 4.75 7.95 ;
+        RECT 1.4 5.3 1.65 7.95 ;
+      LAYER MET2 ;
+        RECT 5.25 7.4 5.75 7.7 ;
+        RECT 5.3 7.35 5.7 7.75 ;
+        RECT 4.05 7.4 4.55 7.7 ;
+        RECT 4.1 7.35 4.5 7.75 ;
+        RECT 2.85 7.4 3.35 7.7 ;
+        RECT 2.9 7.35 3.3 7.75 ;
+        RECT 1.65 7.4 2.15 7.7 ;
+        RECT 1.7 7.35 2.1 7.75 ;
+        RECT 0.45 7.4 0.95 7.7 ;
+        RECT 0.5 7.35 0.9 7.75 ;
+      LAYER VIA12 ;
+        RECT 0.57 7.42 0.83 7.68 ;
+        RECT 1.77 7.42 2.03 7.68 ;
+        RECT 2.97 7.42 3.23 7.68 ;
+        RECT 4.17 7.42 4.43 7.68 ;
+        RECT 5.37 7.42 5.63 7.68 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 -0.15 6.2 0.45 ;
+        RECT 4.5 -0.15 4.75 1.65 ;
+        RECT 1.4 -0.15 1.65 1.65 ;
+      LAYER MET2 ;
+        RECT 5.25 0.1 5.75 0.4 ;
+        RECT 5.3 0.05 5.7 0.45 ;
+        RECT 4.05 0.1 4.55 0.4 ;
+        RECT 4.1 0.05 4.5 0.45 ;
+        RECT 2.85 0.1 3.35 0.4 ;
+        RECT 2.9 0.05 3.3 0.45 ;
+        RECT 1.65 0.1 2.15 0.4 ;
+        RECT 1.7 0.05 2.1 0.45 ;
+        RECT 0.45 0.1 0.95 0.4 ;
+        RECT 0.5 0.05 0.9 0.45 ;
+      LAYER VIA12 ;
+        RECT 0.57 0.12 0.83 0.38 ;
+        RECT 1.77 0.12 2.03 0.38 ;
+        RECT 2.97 0.12 3.23 0.38 ;
+        RECT 4.17 0.12 4.43 0.38 ;
+        RECT 5.37 0.12 5.63 0.38 ;
+    END
+  END VSS
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 2.9 1.25 3.2 1.8 ;
+        RECT 2.95 0.8 3.2 1.8 ;
+        RECT 2.95 5.2 3.2 7 ;
+        RECT 2.9 5.2 3.2 5.7 ;
+      LAYER MET2 ;
+        RECT 2.8 1.35 3.3 1.75 ;
+        RECT 2.85 5.25 3.25 5.65 ;
+        RECT 2.9 1.35 3.2 5.8 ;
+      LAYER VIA12 ;
+        RECT 2.92 5.32 3.18 5.58 ;
+        RECT 2.92 1.42 3.18 1.68 ;
+    END
+  END Y
+  OBS
+    LAYER MET1 ;
+      RECT 5.35 0.8 5.6 7 ;
+      RECT 2.55 4.65 5.6 4.95 ;
+      RECT 4.05 2.05 5.6 2.35 ;
+      RECT 0.55 0.8 0.8 7 ;
+      RECT 0.55 4 4.05 4.3 ;
+  END
+END gf180mcu_osu_sc_12T_xor2_1
+
+END LIBRARY

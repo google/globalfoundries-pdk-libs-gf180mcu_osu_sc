@@ -20,7 +20,7 @@ MACRO gf180mcu_osu_sc_12T_buf_2
   FOREIGN gf180mcu_osu_sc_12T_buf_2 -0.85 -0.15 ;
   SIZE 3.9 BY 8.1 ;
   SYMMETRY X Y ;
-  SITE 12T ;
+  SITE GF018hv5v_mcu_sc7 ;
   PIN A
     DIRECTION INPUT ;
     USE SIGNAL ;

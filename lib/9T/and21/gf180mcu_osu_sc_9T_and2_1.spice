@@ -16,11 +16,11 @@
 
 .subckt gf180mcu_osu_sc_9T_and2_1 A B Y
 X0 VDD B a_12_19 VDD pmos_3p3 w=34 l=6
-X1 Y a_12_19 GND GND nmos_3p3 w=17 l=6
+X1 Y a_12_19 VSS VSS nmos_3p3 w=17 l=6
 X2 Y a_12_19 VDD VDD pmos_3p3 w=34 l=6
 X3 a_12_19 A VDD VDD pmos_3p3 w=34 l=6
-X4 a_28_19 A a_12_19 GND nmos_3p3 w=17 l=6
-X5 GND B a_28_19 GND nmos_3p3 w=17 l=6
+X4 a_28_19 A a_12_19 VSS nmos_3p3 w=17 l=6
+X5 VSS B a_28_19 VSS nmos_3p3 w=17 l=6
 .ends
 
 ** hspice subcircuit dictionary

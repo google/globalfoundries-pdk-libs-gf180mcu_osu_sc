@@ -20,7 +20,7 @@ MACRO gf180mcu_osu_sc_9T_aoi21_1
   FOREIGN gf180mcu_osu_sc_9T_aoi21_1 0 0 ;
   SIZE 3.9 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE 9T ;
+  SITE GF018hv5v_mcu_sc7 ;
   PIN A0
     DIRECTION INPUT ;
     USE SIGNAL ;
@@ -57,27 +57,6 @@ MACRO gf180mcu_osu_sc_9T_aoi21_1
         RECT 2.47 2.22 2.73 2.48 ;
     END
   END B
-  PIN GND
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER MET1 ;
-        RECT 0 0 3.9 0.6 ;
-        RECT 2.95 0 3.2 1.4 ;
-        RECT 0.7 0 0.95 1.8 ;
-      LAYER MET2 ;
-        RECT 2.85 0.25 3.35 0.55 ;
-        RECT 2.9 0.2 3.3 0.6 ;
-        RECT 1.65 0.25 2.15 0.55 ;
-        RECT 1.7 0.2 2.1 0.6 ;
-        RECT 0.45 0.25 0.95 0.55 ;
-        RECT 0.5 0.2 0.9 0.6 ;
-      LAYER VIA12 ;
-        RECT 0.57 0.27 0.83 0.53 ;
-        RECT 1.77 0.27 2.03 0.53 ;
-        RECT 2.97 0.27 3.23 0.53 ;
-    END
-  END GND
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
@@ -99,6 +78,27 @@ MACRO gf180mcu_osu_sc_9T_aoi21_1
         RECT 2.97 5.62 3.23 5.88 ;
     END
   END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 0 3.9 0.6 ;
+        RECT 2.95 0 3.2 1.4 ;
+        RECT 0.7 0 0.95 1.8 ;
+      LAYER MET2 ;
+        RECT 2.85 0.25 3.35 0.55 ;
+        RECT 2.9 0.2 3.3 0.6 ;
+        RECT 1.65 0.25 2.15 0.55 ;
+        RECT 1.7 0.2 2.1 0.6 ;
+        RECT 0.45 0.25 0.95 0.55 ;
+        RECT 0.5 0.2 0.9 0.6 ;
+      LAYER VIA12 ;
+        RECT 0.57 0.27 0.83 0.53 ;
+        RECT 1.77 0.27 2.03 0.53 ;
+        RECT 2.97 0.27 3.23 0.53 ;
+    END
+  END VSS
   PIN Y
     DIRECTION OUTPUT ;
     USE SIGNAL ;

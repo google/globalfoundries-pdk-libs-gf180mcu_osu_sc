@@ -20,15 +20,7 @@ MACRO gf180mcu_osu_sc_9T_fill_1
   FOREIGN gf180mcu_osu_sc_9T_fill_1 0 0 ;
   SIZE 0.1 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE 9T ;
-  PIN GND
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER MET1 ;
-        RECT 0 0 0.1 0.6 ;
-    END
-  END GND
+  SITE GF018hv5v_mcu_sc7 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
@@ -38,4 +30,12 @@ MACRO gf180mcu_osu_sc_9T_fill_1
         RECT 0 5.55 0.1 6.15 ;
     END
   END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 0 0.1 0.6 ;
+    END
+  END VSS
 END gf180mcu_osu_sc_9T_fill_1

@@ -176,7 +176,7 @@ rect 10 4 18 5
 rect 34 4 42 5
 << labels >>
 rlabel metal2 13 115 13 115 1 VDD
-rlabel metal2 14 8 14 8 1 GND
+rlabel metal2 14 8 14 8 1 VSS
 rlabel metal2 14 47 14 47 1 A
 port 1 n
 rlabel metal2 28 73 28 73 1 Y

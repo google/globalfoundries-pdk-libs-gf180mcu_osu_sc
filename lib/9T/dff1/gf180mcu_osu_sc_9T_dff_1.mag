@@ -813,7 +813,7 @@ rect 226 4 234 5
 rect 250 4 258 5
 << labels >>
 rlabel metal2 14 115 14 115 1 VDD
-rlabel metal2 13 8 13 8 1 GND
+rlabel metal2 13 8 13 8 1 VSS
 rlabel metal2 40 60 40 60 1 D
 port 1 n
 rlabel metal2 185 60 185 60 1 CLK

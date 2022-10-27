@@ -1,16 +1,6 @@
-// Copyright 2022 Google LLC
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//      http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
+// Verilog for library /import/yukari1/lrburle/OSU_180/char/liberate/VERILOG/gf180mcu_9T_TT_3P3_25C.ccs created by Liberate 19.2.2.189 on Thu Oct 27 10:01:39 CDT 2022 for SDF version 2.1
+
+// type:  
 `timescale 1ns/10ps
 `celldefine
 module gf180mcu_osu_sc_9T_addf_1 (CO, S, A, B, CI);
@@ -189,12 +179,233 @@ endmodule
 // type:  
 `timescale 1ns/10ps
 `celldefine
+module gf180mcu_osu_sc_9T_buf_16 (Y, A);
+	output Y;
+	input A;
+
+	// Function
+	buf (Y, A);
+
+	// Timing
+	specify
+		(A => Y) = 0;
+	endspecify
+endmodule
+`endcelldefine
+
+// type:  
+`timescale 1ns/10ps
+`celldefine
 module gf180mcu_osu_sc_9T_buf_2 (Y, A);
 	output Y;
 	input A;
 
 	// Function
 	buf (Y, A);
+
+	// Timing
+	specify
+		(A => Y) = 0;
+	endspecify
+endmodule
+`endcelldefine
+
+// type:  
+`timescale 1ns/10ps
+`celldefine
+module gf180mcu_osu_sc_9T_buf_4 (Y, A);
+	output Y;
+	input A;
+
+	// Function
+	buf (Y, A);
+
+	// Timing
+	specify
+		(A => Y) = 0;
+	endspecify
+endmodule
+`endcelldefine
+
+// type:  
+`timescale 1ns/10ps
+`celldefine
+module gf180mcu_osu_sc_9T_buf_8 (Y, A);
+	output Y;
+	input A;
+
+	// Function
+	buf (Y, A);
+
+	// Timing
+	specify
+		(A => Y) = 0;
+	endspecify
+endmodule
+`endcelldefine
+
+// type:  
+`timescale 1ns/10ps
+`celldefine
+module gf180mcu_osu_sc_9T_clkbuf_1 (Y, A);
+	output Y;
+	input A;
+
+	// Function
+	buf (Y, A);
+
+	// Timing
+	specify
+		(A => Y) = 0;
+	endspecify
+endmodule
+`endcelldefine
+
+// type:  
+`timescale 1ns/10ps
+`celldefine
+module gf180mcu_osu_sc_9T_clkbuf_16 (Y, A);
+	output Y;
+	input A;
+
+	// Function
+	buf (Y, A);
+
+	// Timing
+	specify
+		(A => Y) = 0;
+	endspecify
+endmodule
+`endcelldefine
+
+// type:  
+`timescale 1ns/10ps
+`celldefine
+module gf180mcu_osu_sc_9T_clkbuf_2 (Y, A);
+	output Y;
+	input A;
+
+	// Function
+	buf (Y, A);
+
+	// Timing
+	specify
+		(A => Y) = 0;
+	endspecify
+endmodule
+`endcelldefine
+
+// type:  
+`timescale 1ns/10ps
+`celldefine
+module gf180mcu_osu_sc_9T_clkbuf_4 (Y, A);
+	output Y;
+	input A;
+
+	// Function
+	buf (Y, A);
+
+	// Timing
+	specify
+		(A => Y) = 0;
+	endspecify
+endmodule
+`endcelldefine
+
+// type:  
+`timescale 1ns/10ps
+`celldefine
+module gf180mcu_osu_sc_9T_clkbuf_8 (Y, A);
+	output Y;
+	input A;
+
+	// Function
+	buf (Y, A);
+
+	// Timing
+	specify
+		(A => Y) = 0;
+	endspecify
+endmodule
+`endcelldefine
+
+// type:  
+`timescale 1ns/10ps
+`celldefine
+module gf180mcu_osu_sc_9T_clkinv_1 (Y, A);
+	output Y;
+	input A;
+
+	// Function
+	not (Y, A);
+
+	// Timing
+	specify
+		(A => Y) = 0;
+	endspecify
+endmodule
+`endcelldefine
+
+// type:  
+`timescale 1ns/10ps
+`celldefine
+module gf180mcu_osu_sc_9T_clkinv_16 (Y, A);
+	output Y;
+	input A;
+
+	// Function
+	not (Y, A);
+
+	// Timing
+	specify
+		(A => Y) = 0;
+	endspecify
+endmodule
+`endcelldefine
+
+// type:  
+`timescale 1ns/10ps
+`celldefine
+module gf180mcu_osu_sc_9T_clkinv_2 (Y, A);
+	output Y;
+	input A;
+
+	// Function
+	not (Y, A);
+
+	// Timing
+	specify
+		(A => Y) = 0;
+	endspecify
+endmodule
+`endcelldefine
+
+// type:  
+`timescale 1ns/10ps
+`celldefine
+module gf180mcu_osu_sc_9T_clkinv_4 (Y, A);
+	output Y;
+	input A;
+
+	// Function
+	not (Y, A);
+
+	// Timing
+	specify
+		(A => Y) = 0;
+	endspecify
+endmodule
+`endcelldefine
+
+// type:  
+`timescale 1ns/10ps
+`celldefine
+module gf180mcu_osu_sc_9T_clkinv_8 (Y, A);
+	output Y;
+	input A;
+
+	// Function
+	not (Y, A);
 
 	// Timing
 	specify
@@ -397,6 +608,60 @@ endmodule
 // type:  
 `timescale 1ns/10ps
 `celldefine
+module gf180mcu_osu_sc_9T_dlat_1 (Q, D, CLK);
+	output Q;
+	input D, CLK;
+	reg notifier;
+	wire delayed_D, delayed_CLK;
+
+	// Function
+	wire int_fwire_IQ;
+
+	altos_latch (int_fwire_IQ, notifier, delayed_CLK, delayed_D);
+	buf (Q, int_fwire_IQ);
+
+	// Timing
+	specify
+		(D => Q) = 0;
+		(posedge CLK => (Q+:D)) = 0;
+		$setuphold (negedge CLK, posedge D, 0, 0, notifier,,, delayed_CLK, delayed_D);
+		$setuphold (negedge CLK, negedge D, 0, 0, notifier,,, delayed_CLK, delayed_D);
+		$width (posedge CLK &&& D, 0, 0, notifier);
+		$width (posedge CLK &&& ~D, 0, 0, notifier);
+	endspecify
+endmodule
+`endcelldefine
+
+// type:  
+`timescale 1ns/10ps
+`celldefine
+module gf180mcu_osu_sc_9T_dlatn_1 (Q, D, CLKN);
+	output Q;
+	input D, CLKN;
+	reg notifier;
+	wire delayed_D, delayed_CLKN;
+
+	// Function
+	wire int_fwire_IQ;
+
+	altos_latch (int_fwire_IQ, notifier, delayed_CLKN, delayed_D);
+	buf (Q, int_fwire_IQ);
+
+	// Timing
+	specify
+		(D => Q) = 0;
+		(posedge CLKN => (Q+:D)) = 0;
+		$setuphold (negedge CLKN, posedge D, 0, 0, notifier,,, delayed_CLKN, delayed_D);
+		$setuphold (negedge CLKN, negedge D, 0, 0, notifier,,, delayed_CLKN, delayed_D);
+		$width (posedge CLKN &&& D, 0, 0, notifier);
+		$width (posedge CLKN &&& ~D, 0, 0, notifier);
+	endspecify
+endmodule
+`endcelldefine
+
+// type:  
+`timescale 1ns/10ps
+`celldefine
 module gf180mcu_osu_sc_9T_inv_1 (Y, A);
 	output Y;
 	input A;
@@ -414,7 +679,58 @@ endmodule
 // type:  
 `timescale 1ns/10ps
 `celldefine
+module gf180mcu_osu_sc_9T_inv_16 (Y, A);
+	output Y;
+	input A;
+
+	// Function
+	not (Y, A);
+
+	// Timing
+	specify
+		(A => Y) = 0;
+	endspecify
+endmodule
+`endcelldefine
+
+// type:  
+`timescale 1ns/10ps
+`celldefine
 module gf180mcu_osu_sc_9T_inv_2 (Y, A);
+	output Y;
+	input A;
+
+	// Function
+	not (Y, A);
+
+	// Timing
+	specify
+		(A => Y) = 0;
+	endspecify
+endmodule
+`endcelldefine
+
+// type:  
+`timescale 1ns/10ps
+`celldefine
+module gf180mcu_osu_sc_9T_inv_4 (Y, A);
+	output Y;
+	input A;
+
+	// Function
+	not (Y, A);
+
+	// Timing
+	specify
+		(A => Y) = 0;
+	endspecify
+endmodule
+`endcelldefine
+
+// type:  
+`timescale 1ns/10ps
+`celldefine
+module gf180mcu_osu_sc_9T_inv_8 (Y, A);
 	output Y;
 	input A;
 

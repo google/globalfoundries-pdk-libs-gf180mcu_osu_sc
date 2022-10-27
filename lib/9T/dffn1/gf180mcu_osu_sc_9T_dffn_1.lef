@@ -20,7 +20,7 @@ MACRO gf180mcu_osu_sc_9T_dffn_1
   FOREIGN gf180mcu_osu_sc_9T_dffn_1 0 0 ;
   SIZE 14.5 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE 9T ;
+  SITE GF018hv5v_mcu_sc7 ;
   PIN CLKN
     DIRECTION INPUT ;
     USE CLOCK ;
@@ -53,54 +53,6 @@ MACRO gf180mcu_osu_sc_9T_dffn_1
         RECT 1.87 2.87 2.13 3.13 ;
     END
   END D
-  PIN GND
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER MET1 ;
-        RECT 0 0 14.5 0.6 ;
-        RECT 12.85 0 13.1 1.6 ;
-        RECT 10.4 0 10.65 1.4 ;
-        RECT 8.6 0 8.85 1.5 ;
-        RECT 5 0 5.25 1.4 ;
-        RECT 1.4 0 1.65 1.5 ;
-      LAYER MET2 ;
-        RECT 12.45 0.25 12.95 0.55 ;
-        RECT 12.5 0.2 12.9 0.6 ;
-        RECT 11.25 0.25 11.75 0.55 ;
-        RECT 11.3 0.2 11.7 0.6 ;
-        RECT 10.05 0.25 10.55 0.55 ;
-        RECT 10.1 0.2 10.5 0.6 ;
-        RECT 8.85 0.25 9.35 0.55 ;
-        RECT 8.9 0.2 9.3 0.6 ;
-        RECT 7.65 0.25 8.15 0.55 ;
-        RECT 7.7 0.2 8.1 0.6 ;
-        RECT 6.45 0.25 6.95 0.55 ;
-        RECT 6.5 0.2 6.9 0.6 ;
-        RECT 5.25 0.25 5.75 0.55 ;
-        RECT 5.3 0.2 5.7 0.6 ;
-        RECT 4.05 0.25 4.55 0.55 ;
-        RECT 4.1 0.2 4.5 0.6 ;
-        RECT 2.85 0.25 3.35 0.55 ;
-        RECT 2.9 0.2 3.3 0.6 ;
-        RECT 1.65 0.25 2.15 0.55 ;
-        RECT 1.7 0.2 2.1 0.6 ;
-        RECT 0.45 0.25 0.95 0.55 ;
-        RECT 0.5 0.2 0.9 0.6 ;
-      LAYER VIA12 ;
-        RECT 0.57 0.27 0.83 0.53 ;
-        RECT 1.77 0.27 2.03 0.53 ;
-        RECT 2.97 0.27 3.23 0.53 ;
-        RECT 4.17 0.27 4.43 0.53 ;
-        RECT 5.37 0.27 5.63 0.53 ;
-        RECT 6.57 0.27 6.83 0.53 ;
-        RECT 7.77 0.27 8.03 0.53 ;
-        RECT 8.97 0.27 9.23 0.53 ;
-        RECT 10.17 0.27 10.43 0.53 ;
-        RECT 11.37 0.27 11.63 0.53 ;
-        RECT 12.57 0.27 12.83 0.53 ;
-    END
-  END GND
   PIN Q
     DIRECTION OUTPUT ;
     USE SIGNAL ;
@@ -182,6 +134,54 @@ MACRO gf180mcu_osu_sc_9T_dffn_1
         RECT 12.57 5.62 12.83 5.88 ;
     END
   END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 0 14.5 0.6 ;
+        RECT 12.85 0 13.1 1.6 ;
+        RECT 10.4 0 10.65 1.4 ;
+        RECT 8.6 0 8.85 1.5 ;
+        RECT 5 0 5.25 1.4 ;
+        RECT 1.4 0 1.65 1.5 ;
+      LAYER MET2 ;
+        RECT 12.45 0.25 12.95 0.55 ;
+        RECT 12.5 0.2 12.9 0.6 ;
+        RECT 11.25 0.25 11.75 0.55 ;
+        RECT 11.3 0.2 11.7 0.6 ;
+        RECT 10.05 0.25 10.55 0.55 ;
+        RECT 10.1 0.2 10.5 0.6 ;
+        RECT 8.85 0.25 9.35 0.55 ;
+        RECT 8.9 0.2 9.3 0.6 ;
+        RECT 7.65 0.25 8.15 0.55 ;
+        RECT 7.7 0.2 8.1 0.6 ;
+        RECT 6.45 0.25 6.95 0.55 ;
+        RECT 6.5 0.2 6.9 0.6 ;
+        RECT 5.25 0.25 5.75 0.55 ;
+        RECT 5.3 0.2 5.7 0.6 ;
+        RECT 4.05 0.25 4.55 0.55 ;
+        RECT 4.1 0.2 4.5 0.6 ;
+        RECT 2.85 0.25 3.35 0.55 ;
+        RECT 2.9 0.2 3.3 0.6 ;
+        RECT 1.65 0.25 2.15 0.55 ;
+        RECT 1.7 0.2 2.1 0.6 ;
+        RECT 0.45 0.25 0.95 0.55 ;
+        RECT 0.5 0.2 0.9 0.6 ;
+      LAYER VIA12 ;
+        RECT 0.57 0.27 0.83 0.53 ;
+        RECT 1.77 0.27 2.03 0.53 ;
+        RECT 2.97 0.27 3.23 0.53 ;
+        RECT 4.17 0.27 4.43 0.53 ;
+        RECT 5.37 0.27 5.63 0.53 ;
+        RECT 6.57 0.27 6.83 0.53 ;
+        RECT 7.77 0.27 8.03 0.53 ;
+        RECT 8.97 0.27 9.23 0.53 ;
+        RECT 10.17 0.27 10.43 0.53 ;
+        RECT 11.37 0.27 11.63 0.53 ;
+        RECT 12.57 0.27 12.83 0.53 ;
+    END
+  END VSS
   OBS
     LAYER MET2 ;
       RECT 8.1 4.15 8.5 4.55 ;

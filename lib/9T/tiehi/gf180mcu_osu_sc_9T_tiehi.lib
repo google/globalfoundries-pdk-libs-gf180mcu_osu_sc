@@ -13,18 +13,13 @@
   cell (gf180mcu_osu_sc_9T_tiehi) {
     area : 13.53000000;
     cell_leakage_power : 0;
-    pg_pin (GND) {
-      pg_type : primary_ground;
-      voltage_name : "GND";
-    }
     pg_pin (VDD) {
       pg_type : primary_power;
       voltage_name : "VDD";
     }
-    leakage_power () {
-      value : 0;
-      when : "Y";
-      related_pg_pin : GND;
+    pg_pin (VSS) {
+      pg_type : primary_ground;
+      voltage_name : "VSS";
     }
     leakage_power () {
       value : 0;
@@ -33,16 +28,22 @@
     }
     leakage_power () {
       value : 0;
-      related_pg_pin : GND;
+      when : "Y";
+      related_pg_pin : VSS;
     }
     leakage_power () {
       value : 0;
       related_pg_pin : VDD;
+    }
+    leakage_power () {
+      value : 0;
+      related_pg_pin : VSS;
     }
     pin (Y) {
       direction : output;
       driver_type : open_drain;
       function : "1";
+      related_ground_pin : VSS;
       related_power_pin : VDD;
       max_capacitance : 3.44214;
     }

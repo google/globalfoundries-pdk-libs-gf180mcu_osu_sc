@@ -1,0 +1,81 @@
+# Copyright 2022 Google LLC
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+VERSION 5.7 ;
+BUSBITCHARS "[]" ;
+DIVIDERCHAR "/" ;
+
+MACRO gf180mcu_osu_sc_12T_clkinv_2
+  CLASS CORE ;
+  ORIGIN 0 0.15 ;
+  FOREIGN gf180mcu_osu_sc_12T_clkinv_2 0 -0.15 ;
+  SIZE 3.2 BY 8.1 ;
+  SYMMETRY X Y ;
+  SITE GF018hv5v_mcu_sc7 ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 0.65 3.35 1.15 3.65 ;
+      LAYER MET2 ;
+        RECT 0.65 3.3 1.15 3.7 ;
+      LAYER VIA12 ;
+        RECT 0.77 3.37 1.03 3.63 ;
+    END
+  END A
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 7.35 3.2 7.95 ;
+        RECT 2.3 5.3 2.55 7.95 ;
+        RECT 0.55 5.3 0.8 7.95 ;
+      LAYER MET2 ;
+        RECT 0.45 7.4 0.95 7.7 ;
+        RECT 0.5 7.35 0.9 7.75 ;
+      LAYER VIA12 ;
+        RECT 0.57 7.42 0.83 7.68 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 -0.15 3.2 0.45 ;
+        RECT 2.25 -0.15 2.5 1.65 ;
+        RECT 0.55 -0.15 0.8 1.65 ;
+      LAYER MET2 ;
+        RECT 0.45 0.1 0.95 0.4 ;
+        RECT 0.5 0.05 0.9 0.45 ;
+      LAYER VIA12 ;
+        RECT 0.57 0.12 0.83 0.38 ;
+    END
+  END VSS
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 1.4 4.25 2 4.55 ;
+        RECT 1.4 4.1 1.85 4.65 ;
+        RECT 1.4 0.8 1.65 7 ;
+      LAYER MET2 ;
+        RECT 1.5 4.2 2 4.6 ;
+      LAYER VIA12 ;
+        RECT 1.62 4.27 1.88 4.53 ;
+    END
+  END Y
+END gf180mcu_osu_sc_12T_clkinv_2
