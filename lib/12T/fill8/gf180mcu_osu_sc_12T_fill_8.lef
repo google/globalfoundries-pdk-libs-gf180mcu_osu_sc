@@ -16,8 +16,8 @@ DIVIDERCHAR "/" ;
 
 MACRO gf180mcu_osu_sc_12T_fill_8
   CLASS CORE ;
-  ORIGIN 0 0.15 ;
-  FOREIGN gf180mcu_osu_sc_12T_fill_8 0 -0.15 ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_12T_fill_8 0 0 ;
   SIZE 0.8 BY 8.1 ;
   SYMMETRY X Y ;
   SITE GF018hv5v_mcu_sc7 ;
@@ -27,7 +27,7 @@ MACRO gf180mcu_osu_sc_12T_fill_8
     SHAPE ABUTMENT ;
     PORT
       LAYER MET1 ;
-        RECT 0 7.35 0.8 7.95 ;
+        RECT 0 7.5 0.8 8.1 ;
     END
   END VDD
   PIN VSS
@@ -35,7 +35,7 @@ MACRO gf180mcu_osu_sc_12T_fill_8
     USE GROUND ;
     PORT
       LAYER MET1 ;
-        RECT 0 -0.15 0.8 0.45 ;
+        RECT 0 0 0.8 0.6 ;
     END
   END VSS
 END gf180mcu_osu_sc_12T_fill_8

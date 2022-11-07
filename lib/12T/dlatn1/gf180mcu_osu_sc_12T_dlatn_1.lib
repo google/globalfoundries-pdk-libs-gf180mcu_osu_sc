@@ -42,16 +42,6 @@
       related_pg_pin : VSS;
     }
     leakage_power () {
-      value : 0.00474651;
-      when : "(!CLKN * D * !Q)";
-      related_pg_pin : VDD;
-    }
-    leakage_power () {
-      value : 0;
-      when : "(!CLKN * D * !Q)";
-      related_pg_pin : VSS;
-    }
-    leakage_power () {
       value : 0.00425584;
       when : "(!CLKN * D * Q)";
       related_pg_pin : VDD;
@@ -62,13 +52,13 @@
       related_pg_pin : VSS;
     }
     leakage_power () {
-      value : 0.00405682;
-      when : "(!CLKN * !D * !Q)";
+      value : 0.00474651;
+      when : "(!CLKN * D * !Q)";
       related_pg_pin : VDD;
     }
     leakage_power () {
       value : 0;
-      when : "(!CLKN * !D * !Q)";
+      when : "(!CLKN * D * !Q)";
       related_pg_pin : VSS;
     }
     leakage_power () {
@@ -79,6 +69,16 @@
     leakage_power () {
       value : 0;
       when : "(!CLKN * !D * Q)";
+      related_pg_pin : VSS;
+    }
+    leakage_power () {
+      value : 0.00405682;
+      when : "(!CLKN * !D * !Q)";
+      related_pg_pin : VDD;
+    }
+    leakage_power () {
+      value : 0;
+      when : "(!CLKN * !D * !Q)";
       related_pg_pin : VSS;
     }
     leakage_power () {
@@ -1878,7 +1878,7 @@
       max_transition : 10;
       capacitance : 0.00394942;
       rise_capacitance : 0.00393945;
-      rise_capacitance_range (0.00363065, 0.00393945);
+      rise_capacitance_range (0.0036305, 0.00393945);
       fall_capacitance : 0.00394942;
       fall_capacitance_range (0.00353707, 0.00394942);
       timing () {
@@ -1930,25 +1930,25 @@
         receiver_capacitance1_rise (receiver_cap_power_template) {
           index_1 ("0.078815, 0.207628, 0.546972, 1.44093, 3.79596, 10");
           values ( \
-            "0.00360715, 0.00369249, 0.00372992, 0.00375288, 0.00375723, 0.00376" \
+            "0.00360703, 0.00369238, 0.00373197, 0.00375249, 0.00375815, 0.00375953" \
           );
         }
         receiver_capacitance2_rise (receiver_cap_power_template) {
           index_1 ("0.078815, 0.207628, 0.546972, 1.44093, 3.79596, 10");
           values ( \
-            "0.00387056, 0.00390437, 0.00389339, 0.00393737, 0.00396399, 0.00397533" \
+            "0.00387045, 0.00391007, 0.0039076, 0.00393851, 0.00395953, 0.00397534" \
           );
         }
         receiver_capacitance1_fall (receiver_cap_power_template) {
           index_1 ("0.078815, 0.207628, 0.546972, 1.44093, 3.79596, 10");
           values ( \
-            "0.00339419, 0.00344053, 0.00349148, 0.00350847, 0.00352066, 0.00352234" \
+            "0.00338984, 0.00344248, 0.00349425, 0.00351098, 0.00352427, 0.0035261" \
           );
         }
         receiver_capacitance2_fall (receiver_cap_power_template) {
           index_1 ("0.078815, 0.207628, 0.546972, 1.44093, 3.79596, 10");
           values ( \
-            "0.00394239, 0.00403466, 0.00401999, 0.00404956, 0.00401445, 0.00401711" \
+            "0.00395538, 0.00404375, 0.00400763, 0.00404585, 0.00401462, 0.0040171" \
           );
         }
       }
@@ -1958,13 +1958,13 @@
         rise_power (passive_power_template) {
           index_1 ("0.078815, 0.207628, 0.546972, 1.44093, 3.79596, 10");
           values ( \
-            "-0.0133837, -0.0134233, -0.0134505, -0.0135034, -0.0135046, -0.0134503" \
+            "-0.0133494, -0.013441, -0.0134862, -0.0135067, -0.0134914, -0.0134639" \
           );
         }
         fall_power (passive_power_template) {
           index_1 ("0.078815, 0.207628, 0.546972, 1.44093, 3.79596, 10");
           values ( \
-            "0.0133837, 0.0134893, 0.0135146, 0.0136058, 0.0135111, 0.0134503" \
+            "0.01345, 0.0135237, 0.0135473, 0.0135414, 0.0135234, 0.0134639" \
           );
         }
       }
@@ -1974,13 +1974,13 @@
         rise_power (passive_power_template) {
           index_1 ("0.078815, 0.207628, 0.546972, 1.44093, 3.79596, 10");
           values ( \
-            "0.00652963, 0.00649235, 0.00648128, 0.00649444, 0.00649886, 0.00646564" \
+            "0.00658815, 0.00649422, 0.00650286, 0.00649224, 0.00648363, 0.00646259" \
           );
         }
         fall_power (passive_power_template) {
           index_1 ("0.078815, 0.207628, 0.546972, 1.44093, 3.79596, 10");
           values ( \
-            "-0.00636455, -0.00644381, -0.00648087, -0.00649444, -0.00647774, -0.00646464" \
+            "-0.00639356, -0.0064503, -0.0064671, -0.00649224, -0.00647375, -0.00646103" \
           );
         }
       }

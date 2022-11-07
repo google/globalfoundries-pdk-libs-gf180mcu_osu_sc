@@ -16,8 +16,8 @@ DIVIDERCHAR "/" ;
 
 MACRO gf180mcu_osu_sc_12T_nor2_1
   CLASS CORE ;
-  ORIGIN 0 0.15 ;
-  FOREIGN gf180mcu_osu_sc_12T_nor2_1 0 -0.15 ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_12T_nor2_1 0 0 ;
   SIZE 2.8 BY 8.1 ;
   SYMMETRY X Y ;
   SITE GF018hv5v_mcu_sc7 ;
@@ -26,11 +26,11 @@ MACRO gf180mcu_osu_sc_12T_nor2_1
     USE SIGNAL ;
     PORT
       LAYER MET1 ;
-        RECT 0.45 3.35 0.95 3.65 ;
+        RECT 0.45 3.5 0.95 3.8 ;
       LAYER MET2 ;
-        RECT 0.45 3.3 0.95 3.7 ;
+        RECT 0.45 3.45 0.95 3.85 ;
       LAYER VIA12 ;
-        RECT 0.57 3.37 0.83 3.63 ;
+        RECT 0.57 3.52 0.83 3.78 ;
     END
   END A
   PIN B
@@ -38,11 +38,11 @@ MACRO gf180mcu_osu_sc_12T_nor2_1
     USE SIGNAL ;
     PORT
       LAYER MET1 ;
-        RECT 1.85 2.7 2.35 3 ;
+        RECT 1.85 2.85 2.35 3.15 ;
       LAYER MET2 ;
-        RECT 1.85 2.65 2.35 3.05 ;
+        RECT 1.85 2.8 2.35 3.2 ;
       LAYER VIA12 ;
-        RECT 1.97 2.72 2.23 2.98 ;
+        RECT 1.97 2.87 2.23 3.13 ;
     END
   END B
   PIN VDD
@@ -51,16 +51,16 @@ MACRO gf180mcu_osu_sc_12T_nor2_1
     SHAPE ABUTMENT ;
     PORT
       LAYER MET1 ;
-        RECT 0 7.35 2.8 7.95 ;
-        RECT 0.55 5.3 0.8 7.95 ;
+        RECT 0 7.5 2.8 8.1 ;
+        RECT 0.55 5.45 0.8 8.1 ;
       LAYER MET2 ;
-        RECT 1.65 7.4 2.15 7.7 ;
-        RECT 1.7 7.35 2.1 7.75 ;
-        RECT 0.45 7.4 0.95 7.7 ;
-        RECT 0.5 7.35 0.9 7.75 ;
+        RECT 1.65 7.55 2.15 7.85 ;
+        RECT 1.7 7.5 2.1 7.9 ;
+        RECT 0.45 7.55 0.95 7.85 ;
+        RECT 0.5 7.5 0.9 7.9 ;
       LAYER VIA12 ;
-        RECT 0.57 7.42 0.83 7.68 ;
-        RECT 1.77 7.42 2.03 7.68 ;
+        RECT 0.57 7.57 0.83 7.83 ;
+        RECT 1.77 7.57 2.03 7.83 ;
     END
   END VDD
   PIN VSS
@@ -68,17 +68,17 @@ MACRO gf180mcu_osu_sc_12T_nor2_1
     USE GROUND ;
     PORT
       LAYER MET1 ;
-        RECT 0 -0.15 2.8 0.45 ;
-        RECT 2.1 -0.15 2.35 1.65 ;
-        RECT 0.4 -0.15 0.65 1.65 ;
+        RECT 0 0 2.8 0.6 ;
+        RECT 2.1 0 2.35 1.8 ;
+        RECT 0.4 0 0.65 1.8 ;
       LAYER MET2 ;
-        RECT 1.65 0.1 2.15 0.4 ;
-        RECT 1.7 0.05 2.1 0.45 ;
-        RECT 0.45 0.1 0.95 0.4 ;
-        RECT 0.5 0.05 0.9 0.45 ;
+        RECT 1.65 0.25 2.15 0.55 ;
+        RECT 1.7 0.2 2.1 0.6 ;
+        RECT 0.45 0.25 0.95 0.55 ;
+        RECT 0.5 0.2 0.9 0.6 ;
       LAYER VIA12 ;
-        RECT 0.57 0.12 0.83 0.38 ;
-        RECT 1.77 0.12 2.03 0.38 ;
+        RECT 0.57 0.27 0.83 0.53 ;
+        RECT 1.77 0.27 2.03 0.53 ;
     END
   END VSS
   PIN Y
@@ -86,14 +86,14 @@ MACRO gf180mcu_osu_sc_12T_nor2_1
     USE SIGNAL ;
     PORT
       LAYER MET1 ;
-        RECT 1.95 4.6 2.2 7 ;
-        RECT 1.25 4.6 2.2 4.85 ;
-        RECT 1.15 4 1.65 4.3 ;
-        RECT 1.25 0.8 1.5 4.85 ;
+        RECT 1.95 4.75 2.2 7.15 ;
+        RECT 1.25 4.75 2.2 5 ;
+        RECT 1.15 4.15 1.65 4.45 ;
+        RECT 1.25 0.95 1.5 5 ;
       LAYER MET2 ;
-        RECT 1.15 3.95 1.65 4.35 ;
+        RECT 1.15 4.1 1.65 4.5 ;
       LAYER VIA12 ;
-        RECT 1.27 4.02 1.53 4.28 ;
+        RECT 1.27 4.17 1.53 4.43 ;
     END
   END Y
 END gf180mcu_osu_sc_12T_nor2_1

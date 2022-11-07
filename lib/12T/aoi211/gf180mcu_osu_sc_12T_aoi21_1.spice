@@ -12,21 +12,15 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 
-.inc "/import/yukari1/lrburle/OSU_180/char/techfiles/design.hspice"
-.lib "/import/yukari1/lrburle/OSU_180/char/techfiles/sm141064.hspice" typical
-
-.GLOBAL VDD
-.GLOBAL VSS
-
 .option scale=0.05u
 
 .subckt gf180mcu_osu_sc_12T_aoi21_1 Y A0 A1 B
-X0 Y B a_9_106 VDD pmos_3p3 w=34 l=6
-X1 a_9_106 A1 VDD VDD pmos_3p3 w=34 l=6
-X2 VDD A0 a_9_106 VDD pmos_3p3 w=34 l=6
+X0 Y B a_9_109 VDD pmos_3p3 w=34 l=6
+X1 a_9_109 A1 VDD VDD pmos_3p3 w=34 l=6
+X2 VDD A0 a_9_109 VDD pmos_3p3 w=34 l=6
 X3 VSS B Y VSS nmos_3p3 w=17 l=6
-X4 a_28_16 A0 VSS VSS nmos_3p3 w=17 l=6
-X5 Y A1 a_28_16 VSS nmos_3p3 w=17 l=6
+X4 a_28_19 A0 VSS VSS nmos_3p3 w=17 l=6
+X5 Y A1 a_28_19 VSS nmos_3p3 w=17 l=6
 .ends
 
 ** hspice subcircuit dictionary
