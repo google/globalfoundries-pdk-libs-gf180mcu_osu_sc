@@ -47,7 +47,7 @@ X28 VSS A Y VSS nmos_3p3 w=17 l=6
 X29 VSS A Y VSS nmos_3p3 w=17 l=6
 X30 VSS A Y VSS nmos_3p3 w=17 l=6
 X31 VDD A Y VDD pmos_3p3 w=34 l=6
-C0 Y VDD 2.104120fF
+C0 Y VDD 2.058360fF
 .ends
 
 ** hspice subcircuit dictionary

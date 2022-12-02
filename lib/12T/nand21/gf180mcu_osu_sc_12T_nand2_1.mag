@@ -13,7 +13,7 @@
 # limitations under the License.
 magic
 tech gf180mcuC
-timestamp 1666988680
+timestamp 1667922416
 << nwell >>
 rect 0 100 62 162
 << nmos >>
@@ -102,10 +102,10 @@ rect 14 70 20 76
 rect 40 57 46 63
 << metal1 >>
 rect 0 157 62 162
-rect 0 151 11 157
-rect 17 151 35 157
-rect 41 151 62 157
-rect 0 150 62 151
+rect 0 152 11 157
+rect 16 152 35 157
+rect 40 152 62 157
+rect 0 150 62 152
 rect 11 141 16 150
 rect 11 109 16 111
 rect 28 141 33 143
@@ -124,36 +124,16 @@ rect 14 34 19 38
 rect 14 19 19 21
 rect 42 34 47 36
 rect 42 12 47 21
-rect 0 11 62 12
-rect 0 5 11 11
-rect 17 5 35 11
-rect 41 5 62 11
+rect 0 10 62 12
+rect 0 5 11 10
+rect 16 5 35 10
+rect 40 5 62 10
 rect 0 0 62 5
 << via1 >>
-rect 11 152 16 157
-rect 16 152 17 157
-rect 11 151 17 152
-rect 35 152 40 157
-rect 40 152 41 157
-rect 35 151 41 152
 rect 28 83 34 89
 rect 14 70 20 76
 rect 40 57 46 63
-rect 11 10 17 11
-rect 11 5 16 10
-rect 16 5 17 10
-rect 35 10 41 11
-rect 35 5 40 10
-rect 40 5 41 10
 << metal2 >>
-rect 10 157 18 158
-rect 34 157 42 158
-rect 9 151 11 157
-rect 17 151 19 157
-rect 33 151 35 157
-rect 41 151 43 157
-rect 10 150 18 151
-rect 34 150 42 151
 rect 26 89 36 90
 rect 26 83 28 89
 rect 34 83 36 89
@@ -166,14 +146,6 @@ rect 38 63 48 64
 rect 38 57 40 63
 rect 46 57 48 63
 rect 38 56 48 57
-rect 10 11 18 12
-rect 34 11 42 12
-rect 9 5 11 11
-rect 17 5 19 11
-rect 33 5 35 11
-rect 41 5 43 11
-rect 10 4 18 5
-rect 34 4 42 5
 << labels >>
 rlabel metal2 17 73 17 73 1 A
 port 1 n
@@ -181,6 +153,6 @@ rlabel metal2 43 60 43 60 1 B
 port 2 n
 rlabel metal2 31 86 31 86 1 Y
 port 3 n
-rlabel metal2 14 154 14 154 1 VDD
-rlabel metal2 14 8 14 8 1 VSS
+rlabel nsubdiffcont 13 154 13 154 1 VDD
+rlabel psubdiffcont 13 7 13 7 1 VSS
 << end >>

@@ -13,7 +13,7 @@
 # limitations under the License.
 magic
 tech gf180mcuC
-timestamp 1666839813
+timestamp 1667933259
 << nwell >>
 rect 0 61 164 123
 << nmos >>
@@ -237,14 +237,14 @@ rect 138 14 144 19
 rect 11 45 16 50
 << metal1 >>
 rect 0 118 164 123
-rect 0 112 11 118
-rect 17 112 35 118
-rect 41 112 59 118
-rect 65 112 83 118
-rect 89 112 107 118
-rect 113 112 131 118
-rect 137 112 164 118
-rect 0 111 164 112
+rect 0 113 11 118
+rect 16 113 35 118
+rect 40 113 59 118
+rect 64 113 83 118
+rect 88 113 107 118
+rect 112 113 131 118
+rect 136 113 164 118
+rect 0 111 164 113
 rect 11 102 16 111
 rect 11 70 16 72
 rect 28 102 33 104
@@ -290,81 +290,21 @@ rect 130 34 135 41
 rect 130 19 135 21
 rect 147 34 152 36
 rect 147 12 152 21
-rect 0 11 164 12
-rect 0 5 11 11
-rect 17 5 35 11
-rect 41 5 59 11
-rect 65 5 83 11
-rect 89 5 107 11
-rect 113 5 131 11
-rect 137 5 164 11
+rect 0 10 164 12
+rect 0 5 11 10
+rect 16 5 35 10
+rect 40 5 59 10
+rect 64 5 83 10
+rect 88 5 107 10
+rect 112 5 131 10
+rect 136 5 164 10
 rect 0 0 164 5
 << via1 >>
-rect 11 113 16 118
-rect 16 113 17 118
-rect 11 112 17 113
-rect 35 113 40 118
-rect 40 113 41 118
-rect 35 112 41 113
-rect 59 113 64 118
-rect 64 113 65 118
-rect 59 112 65 113
-rect 83 113 88 118
-rect 88 113 89 118
-rect 83 112 89 113
-rect 107 113 112 118
-rect 112 113 113 118
-rect 107 112 113 113
-rect 131 113 136 118
-rect 136 113 137 118
-rect 131 112 137 113
 rect 135 70 141 76
 rect 10 45 11 50
 rect 11 45 16 50
 rect 10 44 16 45
-rect 11 10 17 11
-rect 11 5 16 10
-rect 16 5 17 10
-rect 35 10 41 11
-rect 35 5 40 10
-rect 40 5 41 10
-rect 59 10 65 11
-rect 59 5 64 10
-rect 64 5 65 10
-rect 83 10 89 11
-rect 83 5 88 10
-rect 88 5 89 10
-rect 107 10 113 11
-rect 107 5 112 10
-rect 112 5 113 10
-rect 131 10 137 11
-rect 131 5 136 10
-rect 136 5 137 10
 << metal2 >>
-rect 10 118 18 119
-rect 34 118 42 119
-rect 58 118 66 119
-rect 82 118 90 119
-rect 106 118 114 119
-rect 130 118 138 119
-rect 9 112 11 118
-rect 17 112 19 118
-rect 33 112 35 118
-rect 41 112 43 118
-rect 57 112 59 118
-rect 65 112 67 118
-rect 81 112 83 118
-rect 89 112 91 118
-rect 105 112 107 118
-rect 113 112 115 118
-rect 129 112 131 118
-rect 137 112 139 118
-rect 10 111 18 112
-rect 34 111 42 112
-rect 58 111 66 112
-rect 82 111 90 112
-rect 106 111 114 112
-rect 130 111 138 112
 rect 134 76 142 77
 rect 133 70 135 76
 rect 141 70 143 76
@@ -373,35 +313,11 @@ rect 8 50 18 51
 rect 8 44 10 50
 rect 16 44 18 50
 rect 8 43 18 44
-rect 10 11 18 12
-rect 34 11 42 12
-rect 58 11 66 12
-rect 82 11 90 12
-rect 106 11 114 12
-rect 130 11 138 12
-rect 9 5 11 11
-rect 17 5 19 11
-rect 33 5 35 11
-rect 41 5 43 11
-rect 57 5 59 11
-rect 65 5 67 11
-rect 81 5 83 11
-rect 89 5 91 11
-rect 105 5 107 11
-rect 113 5 115 11
-rect 129 5 131 11
-rect 137 5 139 11
-rect 10 4 18 5
-rect 34 4 42 5
-rect 58 4 66 5
-rect 82 4 90 5
-rect 106 4 114 5
-rect 130 4 138 5
 << labels >>
-rlabel metal2 14 115 14 115 1 VDD
-rlabel metal2 14 8 14 8 1 VSS
 rlabel metal2 13 47 13 47 1 A
 port 1 n
 rlabel metal2 137 73 137 73 1 Y
 port 2 n
+rlabel nsubdiffcont 13 115 13 115 1 VDD
+rlabel psubdiffcont 13 7 13 7 1 VSS
 << end >>

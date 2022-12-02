@@ -1,0 +1,207 @@
+/* Copyright 2022 Google LLC
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*      http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+  cell (gf180mcu_osu_sc_9T_lshifup) {
+    area : 43.66500000;
+    cell_leakage_power : 0;
+    pg_pin (VSS) {
+      pg_type : primary_ground;
+      voltage_name : "VSS";
+    }
+    pg_pin (VDD) {
+      pg_type : primary_power;
+      voltage_name : "VDD";
+    }
+    leakage_power () {
+      value : 0;
+      when : "(A * Y)";
+      related_pg_pin : VSS;
+    }
+    leakage_power () {
+      value : 0;
+      when : "(A * !Y)";
+      related_pg_pin : VSS;
+    }
+    leakage_power () {
+      value : 0;
+      when : "(!A * !Y)";
+      related_pg_pin : VSS;
+    }
+    leakage_power () {
+      value : 0;
+      when : "(!A * Y)";
+      related_pg_pin : VSS;
+    }
+    leakage_power () {
+      value : 0;
+      related_pg_pin : VSS;
+    }
+    pin (Y) {
+      direction : output;
+      function : "0";
+      related_ground_pin : VSS;
+      max_capacitance : 0.0846229;
+      timing () {
+        related_pin : "A";
+        timing_sense : positive_unate;
+        timing_type : three_state_disable_rise;
+        cell_rise (delay_template) {
+          index_1 ("0.0778447, 0.205581, 0.542922, 1.43381, 3.78657, 10");
+          index_2 ("0.00103698, 0.00250101, 0.00603196, 0.0145479, 0.0350869, 0.0846229");
+          values ( \
+            "0.0511101, 0.0511101, 0.0511101, 0.0511101, 0.0511101, 0.0511101", \
+            "0.134977, 0.134977, 0.134977, 0.134977, 0.134977, 0.134977", \
+            "0.356464, 0.356464, 0.356464, 0.356464, 0.356464, 0.356464", \
+            "0.94139, 0.94139, 0.94139, 0.94139, 0.94139, 0.94139", \
+            "2.48613, 2.48613, 2.48613, 2.48613, 2.48613, 2.48613", \
+            "6.56566, 6.56566, 6.56566, 6.56566, 6.56566, 6.56566" \
+          );
+        }
+        rise_transition (delay_template) {
+          index_1 ("0.0778447, 0.205581, 0.542922, 1.43381, 3.78657, 10");
+          index_2 ("0.00103698, 0.00250101, 0.00603196, 0.0145479, 0.0350869, 0.0846229");
+          values ( \
+            "0.0511101, 0.0511101, 0.0511101, 0.0511101, 0.0511101, 0.0511101", \
+            "0.134977, 0.134977, 0.134977, 0.134977, 0.134977, 0.134977", \
+            "0.356464, 0.356464, 0.356464, 0.356464, 0.356464, 0.356464", \
+            "0.94139, 0.94139, 0.94139, 0.94139, 0.94139, 0.94139", \
+            "2.48613, 2.48613, 2.48613, 2.48613, 2.48613, 2.48613", \
+            "6.56566, 6.56566, 6.56566, 6.56566, 6.56566, 6.56566" \
+          );
+        }
+      }
+      timing () {
+        related_pin : "A";
+        timing_sense : negative_unate;
+        timing_type : three_state_disable_rise;
+        cell_rise (delay_template) {
+          index_1 ("0.0778447, 0.205581, 0.542922, 1.43381, 3.78657, 10");
+          index_2 ("0.00103698, 0.00250101, 0.00603196, 0.0145479, 0.0350869, 0.0846229");
+          values ( \
+            "0.0511101, 0.0511101, 0.0511101, 0.0511101, 0.0511101, 0.0511101", \
+            "0.134977, 0.134977, 0.134977, 0.134977, 0.134977, 0.134977", \
+            "0.356464, 0.356464, 0.356464, 0.356464, 0.356464, 0.356464", \
+            "0.94139, 0.94139, 0.94139, 0.94139, 0.94139, 0.94139", \
+            "2.48613, 2.48613, 2.48613, 2.48613, 2.48613, 2.48613", \
+            "6.56566, 6.56566, 6.56566, 6.56566, 6.56566, 6.56566" \
+          );
+        }
+        rise_transition (delay_template) {
+          index_1 ("0.0778447, 0.205581, 0.542922, 1.43381, 3.78657, 10");
+          index_2 ("0.00103698, 0.00250101, 0.00603196, 0.0145479, 0.0350869, 0.0846229");
+          values ( \
+            "0.0511101, 0.0511101, 0.0511101, 0.0511101, 0.0511101, 0.0511101", \
+            "0.134977, 0.134977, 0.134977, 0.134977, 0.134977, 0.134977", \
+            "0.356464, 0.356464, 0.356464, 0.356464, 0.356464, 0.356464", \
+            "0.94139, 0.94139, 0.94139, 0.94139, 0.94139, 0.94139", \
+            "2.48613, 2.48613, 2.48613, 2.48613, 2.48613, 2.48613", \
+            "6.56566, 6.56566, 6.56566, 6.56566, 6.56566, 6.56566" \
+          );
+        }
+      }
+    }
+    pin (A) {
+      direction : input;
+      related_ground_pin : VSS;
+      max_transition : 10;
+      capacitance : 0.00727613;
+      rise_capacitance : 0.00727613;
+      rise_capacitance_range (0.00617559, 0.00727613);
+      fall_capacitance : 0.00454446;
+      fall_capacitance_range (0.00426012, 0.00454446);
+      receiver_capacitance () {
+        is_propagating : true;
+        receiver_capacitance1_rise (receiver_cap_power_template) {
+          index_1 ("0.0778447, 0.205581, 0.542922, 1.43381, 3.78657, 10");
+          values ( \
+            "0.00405633, 0.00410003, 0.00399882, 0.00383229, 0.00368427, 0.00358298" \
+          );
+        }
+        receiver_capacitance2_rise (receiver_cap_power_template) {
+          index_1 ("0.0778447, 0.205581, 0.542922, 1.43381, 3.78657, 10");
+          values ( \
+            "0.0037275, 0.00348655, 0.00317922, 0.0029643, 0.0028775, 0.00283763" \
+          );
+        }
+        receiver_capacitance1_fall (receiver_cap_power_template) {
+          index_1 ("0.0778447, 0.205581, 0.542922, 1.43381, 3.78657, 10");
+          values ( \
+            "0.00405633, 0.00410003, 0.00399882, 0.00383229, 0.00368427, 0.00358298" \
+          );
+        }
+        receiver_capacitance2_fall (receiver_cap_power_template) {
+          index_1 ("0.0778447, 0.205581, 0.542922, 1.43381, 3.78657, 10");
+          values ( \
+            "0.0037275, 0.00348655, 0.00317922, 0.0029643, 0.0028775, 0.00283763" \
+          );
+        }
+      }
+      receiver_capacitance () {
+        is_propagating : true;
+        receiver_capacitance1_rise (receiver_cap_power_template) {
+          index_1 ("0.0778447, 0.205581, 0.542922, 1.43381, 3.78657, 10");
+          values ( \
+            "0.00436075, 0.00550752, 0.00755659, 0.0090358, 0.00913161, 0.00914892" \
+          );
+        }
+        receiver_capacitance2_rise (receiver_cap_power_template) {
+          index_1 ("0.0778447, 0.205581, 0.542922, 1.43381, 3.78657, 10");
+          values ( \
+            "0.00726661, 0.00976879, 0.00756382, 0.00543174, 0.00521874, 0.00522961" \
+          );
+        }
+        receiver_capacitance1_fall (receiver_cap_power_template) {
+          index_1 ("0.0778447, 0.205581, 0.542922, 1.43381, 3.78657, 10");
+          values ( \
+            "0.0045921, 0.00474976, 0.00480801, 0.00484032, 0.00485026, 0.0048541" \
+          );
+        }
+        receiver_capacitance2_fall (receiver_cap_power_template) {
+          index_1 ("0.0778447, 0.205581, 0.542922, 1.43381, 3.78657, 10");
+          values ( \
+            "0.0042905, 0.00447315, 0.00461633, 0.00460513, 0.00467518, 0.0047081" \
+          );
+        }
+      }
+      internal_power () {
+        when : "Y";
+        related_pg_pin : VSS;
+        rise_power (scalar) {
+          values ( \
+            "0" \
+          );
+        }
+        fall_power (passive_power_template) {
+          index_1 ("0.0778447, 0.205581, 0.542922, 1.43381, 3.78657, 10");
+          values ( \
+            "-0.0154793, -0.0154195, -0.0154468, -0.0154422, -0.015552, -0.0160025" \
+          );
+        }
+      }
+      internal_power () {
+        when : "!Y";
+        related_pg_pin : VSS;
+        rise_power (passive_power_template) {
+          index_1 ("0.0778447, 0.205581, 0.542922, 1.43381, 3.78657, 10");
+          values ( \
+            "0.0403103, 0.0404274, 0.0405338, 0.0406222, 0.0402329, 0.0395328" \
+          );
+        }
+        fall_power (passive_power_template) {
+          index_1 ("0.0778447, 0.205581, 0.542922, 1.43381, 3.78657, 10");
+          values ( \
+            "-0.0236909, -0.0237787, -0.0243031, -0.0239501, -0.0241134, -0.0240456" \
+          );
+        }
+      }
+    }
+  }

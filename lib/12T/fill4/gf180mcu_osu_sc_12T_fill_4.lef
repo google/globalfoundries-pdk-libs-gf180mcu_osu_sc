@@ -20,7 +20,7 @@ MACRO gf180mcu_osu_sc_12T_fill_4
   FOREIGN gf180mcu_osu_sc_12T_fill_4 0 0 ;
   SIZE 0.4 BY 8.1 ;
   SYMMETRY X Y ;
-  SITE GF018hv5v_mcu_sc7 ;
+  SITE GF180_3p3_12t ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;

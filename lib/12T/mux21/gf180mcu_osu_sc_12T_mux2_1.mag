@@ -13,7 +13,7 @@
 # limitations under the License.
 magic
 tech gf180mcuC
-timestamp 1666988659
+timestamp 1667922384
 << nwell >>
 rect 0 100 96 162
 << nmos >>
@@ -146,11 +146,11 @@ rect 14 58 19 63
 rect 32 44 38 50
 << metal1 >>
 rect 0 157 96 162
-rect 0 151 11 157
-rect 17 151 35 157
-rect 41 151 59 157
-rect 65 151 96 157
-rect 0 150 96 151
+rect 0 152 11 157
+rect 16 152 35 157
+rect 40 152 59 157
+rect 64 152 96 157
+rect 0 150 96 152
 rect 11 141 16 150
 rect 11 109 16 111
 rect 28 141 33 143
@@ -190,50 +190,20 @@ rect 75 82 85 83
 rect 62 19 67 21
 rect 79 34 84 82
 rect 79 19 84 21
-rect 0 11 96 12
-rect 0 5 11 11
-rect 17 5 35 11
-rect 41 5 59 11
-rect 65 5 96 11
+rect 0 10 96 12
+rect 0 5 11 10
+rect 16 5 35 10
+rect 40 5 59 10
+rect 64 5 96 10
 rect 0 0 96 5
 << via1 >>
-rect 11 152 16 157
-rect 16 152 17 157
-rect 11 151 17 152
-rect 35 152 40 157
-rect 40 152 41 157
-rect 35 151 41 152
-rect 59 152 64 157
-rect 64 152 65 157
-rect 59 151 65 152
 rect 13 58 14 63
 rect 14 58 19 63
 rect 13 57 19 58
 rect 62 96 68 102
 rect 49 70 55 76
 rect 77 83 83 89
-rect 11 10 17 11
-rect 11 5 16 10
-rect 16 5 17 10
-rect 35 10 41 11
-rect 35 5 40 10
-rect 40 5 41 10
-rect 59 10 65 11
-rect 59 5 64 10
-rect 64 5 65 10
 << metal2 >>
-rect 10 157 18 158
-rect 34 157 42 158
-rect 58 157 66 158
-rect 9 151 11 157
-rect 17 151 19 157
-rect 33 151 35 157
-rect 41 151 43 157
-rect 57 151 59 157
-rect 65 151 67 157
-rect 10 150 18 151
-rect 34 150 42 151
-rect 58 150 66 151
 rect 60 102 70 103
 rect 60 96 62 102
 rect 68 96 70 102
@@ -250,21 +220,7 @@ rect 11 63 21 64
 rect 11 57 13 63
 rect 19 57 21 63
 rect 11 56 21 57
-rect 10 11 18 12
-rect 34 11 42 12
-rect 58 11 66 12
-rect 9 5 11 11
-rect 17 5 19 11
-rect 33 5 35 11
-rect 41 5 43 11
-rect 57 5 59 11
-rect 65 5 67 11
-rect 10 4 18 5
-rect 34 4 42 5
-rect 58 4 66 5
 << labels >>
-rlabel metal2 14 8 14 8 1 VSS
-rlabel metal2 14 154 14 154 1 VDD
 rlabel metal2 65 99 65 99 1 Y
 port 2 n
 rlabel metal2 52 73 52 73 1 A
@@ -273,4 +229,6 @@ rlabel metal2 80 86 80 86 1 B
 port 5 n
 rlabel metal2 16 60 16 60 1 Sel
 port 3 n
+rlabel nsubdiffcont 13 155 13 155 1 VDD
+rlabel psubdiffcont 13 8 13 8 1 VSS
 << end >>

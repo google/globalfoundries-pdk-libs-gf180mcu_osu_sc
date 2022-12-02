@@ -1,0 +1,254 @@
+# Copyright 2022 Google LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+magic
+tech gf180mcuC
+timestamp 1669918477
+<< nwell >>
+rect 0 61 108 123
+<< nmos >>
+rect 22 19 28 36
+rect 33 19 39 36
+rect 50 19 56 36
+rect 61 19 67 36
+<< pmos >>
+rect 19 70 25 104
+rect 36 70 42 104
+rect 53 70 59 104
+rect 70 70 76 104
+<< ndiff >>
+rect 12 34 22 36
+rect 12 21 14 34
+rect 19 21 22 34
+rect 12 19 22 21
+rect 28 19 33 36
+rect 39 34 50 36
+rect 39 21 42 34
+rect 47 21 50 34
+rect 39 19 50 21
+rect 56 19 61 36
+rect 67 34 77 36
+rect 67 21 70 34
+rect 75 21 77 34
+rect 67 19 77 21
+<< pdiff >>
+rect 9 102 19 104
+rect 9 87 11 102
+rect 16 87 19 102
+rect 9 70 19 87
+rect 25 102 36 104
+rect 25 87 28 102
+rect 33 87 36 102
+rect 25 70 36 87
+rect 42 102 53 104
+rect 42 87 45 102
+rect 50 87 53 102
+rect 42 70 53 87
+rect 59 102 70 104
+rect 59 87 62 102
+rect 67 87 70 102
+rect 59 70 70 87
+rect 76 102 87 104
+rect 76 87 79 102
+rect 85 87 87 102
+rect 76 70 87 87
+<< ndiffc >>
+rect 14 21 19 34
+rect 42 21 47 34
+rect 70 21 75 34
+<< pdiffc >>
+rect 11 87 16 102
+rect 28 87 33 102
+rect 45 87 50 102
+rect 62 87 67 102
+rect 79 87 85 102
+<< psubdiff >>
+rect 9 10 18 12
+rect 9 5 11 10
+rect 16 5 18 10
+rect 9 3 18 5
+rect 32 10 41 12
+rect 32 5 34 10
+rect 39 5 41 10
+rect 32 3 41 5
+rect 55 10 64 12
+rect 55 5 57 10
+rect 62 5 64 10
+rect 55 3 64 5
+rect 78 10 87 12
+rect 78 5 80 10
+rect 85 5 87 10
+rect 78 3 87 5
+<< nsubdiff >>
+rect 9 118 18 120
+rect 9 113 11 118
+rect 16 113 18 118
+rect 9 111 18 113
+rect 32 118 41 120
+rect 32 113 34 118
+rect 39 113 41 118
+rect 32 111 41 113
+rect 55 118 64 120
+rect 55 113 57 118
+rect 62 113 64 118
+rect 55 111 64 113
+rect 78 118 87 120
+rect 78 113 80 118
+rect 85 113 87 118
+rect 78 111 87 113
+<< psubdiffcont >>
+rect 11 5 16 10
+rect 34 5 39 10
+rect 57 5 62 10
+rect 80 5 85 10
+<< nsubdiffcont >>
+rect 11 113 16 118
+rect 34 113 39 118
+rect 57 113 62 118
+rect 80 113 85 118
+<< polysilicon >>
+rect 19 104 25 109
+rect 36 104 42 109
+rect 53 104 59 109
+rect 70 104 76 109
+rect 19 52 25 70
+rect 36 65 42 70
+rect 53 65 59 70
+rect 70 65 76 70
+rect 30 63 42 65
+rect 30 57 34 63
+rect 40 57 42 63
+rect 30 55 42 57
+rect 48 63 59 65
+rect 48 57 50 63
+rect 56 57 59 63
+rect 48 55 59 57
+rect 66 63 76 65
+rect 66 57 68 63
+rect 74 57 76 63
+rect 66 55 76 57
+rect 11 50 25 52
+rect 11 44 14 50
+rect 20 44 25 50
+rect 11 43 25 44
+rect 36 43 42 55
+rect 11 42 28 43
+rect 19 38 28 42
+rect 22 36 28 38
+rect 33 38 42 43
+rect 33 36 39 38
+rect 50 36 56 55
+rect 70 43 76 55
+rect 61 38 76 43
+rect 61 36 67 38
+rect 22 14 28 19
+rect 33 14 39 19
+rect 50 14 56 19
+rect 61 14 67 19
+<< polycontact >>
+rect 34 57 40 63
+rect 50 57 56 63
+rect 68 57 74 63
+rect 14 44 20 50
+<< metal1 >>
+rect 0 118 108 123
+rect 0 113 11 118
+rect 16 113 34 118
+rect 39 113 57 118
+rect 62 113 80 118
+rect 85 113 108 118
+rect 0 111 108 113
+rect 11 102 16 104
+rect 11 78 16 87
+rect 28 102 33 111
+rect 28 85 33 87
+rect 45 102 50 104
+rect 62 102 67 104
+rect 79 102 85 104
+rect 45 78 50 87
+rect 60 83 62 89
+rect 68 83 70 89
+rect 79 78 85 87
+rect 90 89 96 91
+rect 90 81 96 83
+rect 11 73 85 78
+rect 32 57 34 63
+rect 40 57 42 63
+rect 48 57 50 63
+rect 56 57 58 63
+rect 66 57 68 63
+rect 74 57 76 63
+rect 12 44 14 50
+rect 20 44 22 50
+rect 91 46 96 81
+rect 42 41 96 46
+rect 14 34 19 36
+rect 14 12 19 21
+rect 42 34 47 41
+rect 42 19 47 21
+rect 70 34 75 36
+rect 70 12 75 21
+rect 0 10 108 12
+rect 0 5 11 10
+rect 16 5 34 10
+rect 39 5 57 10
+rect 62 5 80 10
+rect 85 5 108 10
+rect 0 0 108 5
+<< via1 >>
+rect 62 87 67 89
+rect 67 87 68 89
+rect 62 83 68 87
+rect 90 83 96 89
+rect 34 57 40 63
+rect 50 57 56 63
+rect 68 57 74 63
+rect 14 44 20 50
+<< metal2 >>
+rect 60 89 70 90
+rect 89 89 97 91
+rect 60 83 62 89
+rect 68 83 90 89
+rect 96 83 97 89
+rect 60 82 70 83
+rect 89 81 97 83
+rect 32 63 42 64
+rect 32 57 34 63
+rect 40 57 42 63
+rect 32 56 42 57
+rect 48 63 58 64
+rect 48 57 50 63
+rect 56 57 58 63
+rect 48 56 58 57
+rect 66 63 76 64
+rect 66 57 68 63
+rect 74 57 76 63
+rect 66 56 76 57
+rect 12 50 22 51
+rect 12 44 14 50
+rect 20 44 22 50
+rect 12 43 22 44
+<< labels >>
+rlabel metal2 17 47 17 47 1 A0
+port 5 n
+rlabel metal2 37 60 37 60 1 A1
+port 6 n
+rlabel nsubdiffcont 13 115 13 115 1 VDD
+rlabel psubdiffcont 13 8 13 8 1 VSS
+rlabel metal2 53 60 53 60 1 B0
+port 7 n
+rlabel metal2 71 60 71 60 1 B1
+port 8 n
+rlabel metal2 93 86 93 86 1 Y
+port 4 n
+<< end >>

@@ -49,7 +49,6 @@ X30 VDD a_9_19 Y VDD pmos_3p3 w=34 l=6
 X31 Y a_9_19 VDD VDD pmos_3p3 w=34 l=6
 X32 Y a_9_19 VDD VDD pmos_3p3 w=34 l=6
 X33 VDD a_9_19 Y VDD pmos_3p3 w=34 l=6
-C0 VDD Y 2.051450fF
 .ends
 
 ** hspice subcircuit dictionary

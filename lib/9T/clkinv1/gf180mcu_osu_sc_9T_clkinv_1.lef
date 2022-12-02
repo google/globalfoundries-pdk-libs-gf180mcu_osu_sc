@@ -20,7 +20,26 @@ MACRO gf180mcu_osu_sc_9T_clkinv_1
   FOREIGN gf180mcu_osu_sc_9T_clkinv_1 0 0 ;
   SIZE 2.2 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE GF018hv5v_mcu_sc7 ;
+  SITE GF180_3p3_12t ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 5.55 2.2 6.15 ;
+        RECT 0.55 3.5 0.8 6.15 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 0 2.2 0.6 ;
+        RECT 0.55 0 0.8 1.8 ;
+    END
+  END VSS
   PIN A
     DIRECTION INPUT ;
     USE SIGNAL ;
@@ -33,35 +52,6 @@ MACRO gf180mcu_osu_sc_9T_clkinv_1
         RECT 0.67 2.22 0.93 2.48 ;
     END
   END A
-  PIN VDD
-    DIRECTION INOUT ;
-    USE POWER ;
-    SHAPE ABUTMENT ;
-    PORT
-      LAYER MET1 ;
-        RECT 0 5.55 2.2 6.15 ;
-        RECT 0.55 3.5 0.8 6.15 ;
-      LAYER MET2 ;
-        RECT 0.45 5.6 0.95 5.9 ;
-        RECT 0.5 5.55 0.9 5.95 ;
-      LAYER VIA12 ;
-        RECT 0.57 5.62 0.83 5.88 ;
-    END
-  END VDD
-  PIN VSS
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER MET1 ;
-        RECT 0 0 2.2 0.6 ;
-        RECT 0.55 0 0.8 1.8 ;
-      LAYER MET2 ;
-        RECT 0.45 0.25 0.95 0.55 ;
-        RECT 0.5 0.2 0.9 0.6 ;
-      LAYER VIA12 ;
-        RECT 0.57 0.27 0.83 0.53 ;
-    END
-  END VSS
   PIN Y
     DIRECTION OUTPUT ;
     USE SIGNAL ;

@@ -20,7 +20,28 @@ MACRO gf180mcu_osu_sc_9T_xor2_1
   FOREIGN gf180mcu_osu_sc_9T_xor2_1 0 0 ;
   SIZE 6.7 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE GF018hv5v_mcu_sc7 ;
+  SITE GF180_3p3_12t ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 5.55 6.7 6.15 ;
+        RECT 5 3.8 5.25 6.15 ;
+        RECT 1.4 3.8 1.65 6.15 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 0 6.7 0.6 ;
+        RECT 5 0 5.25 1.75 ;
+        RECT 1.4 0 1.65 1.8 ;
+    END
+  END VSS
   PIN A
     DIRECTION INPUT ;
     USE SIGNAL ;
@@ -48,61 +69,6 @@ MACRO gf180mcu_osu_sc_9T_xor2_1
         RECT 5.22 2.22 5.48 2.48 ;
     END
   END B
-  PIN VDD
-    DIRECTION INOUT ;
-    USE POWER ;
-    SHAPE ABUTMENT ;
-    PORT
-      LAYER MET1 ;
-        RECT 0 5.55 6.7 6.15 ;
-        RECT 5 3.8 5.25 6.15 ;
-        RECT 1.4 3.8 1.65 6.15 ;
-      LAYER MET2 ;
-        RECT 5.25 5.6 5.75 5.9 ;
-        RECT 5.3 5.55 5.7 5.95 ;
-        RECT 4.05 5.6 4.55 5.9 ;
-        RECT 4.1 5.55 4.5 5.95 ;
-        RECT 2.85 5.6 3.35 5.9 ;
-        RECT 2.9 5.55 3.3 5.95 ;
-        RECT 1.65 5.6 2.15 5.9 ;
-        RECT 1.7 5.55 2.1 5.95 ;
-        RECT 0.45 5.6 0.95 5.9 ;
-        RECT 0.5 5.55 0.9 5.95 ;
-      LAYER VIA12 ;
-        RECT 0.57 5.62 0.83 5.88 ;
-        RECT 1.77 5.62 2.03 5.88 ;
-        RECT 2.97 5.62 3.23 5.88 ;
-        RECT 4.17 5.62 4.43 5.88 ;
-        RECT 5.37 5.62 5.63 5.88 ;
-    END
-  END VDD
-  PIN VSS
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER MET1 ;
-        RECT 0 0 6.7 0.6 ;
-        RECT 5 0 5.25 1.75 ;
-        RECT 1.4 0 1.65 1.8 ;
-      LAYER MET2 ;
-        RECT 5.25 0.25 5.75 0.55 ;
-        RECT 5.3 0.2 5.7 0.6 ;
-        RECT 4.05 0.25 4.55 0.55 ;
-        RECT 4.1 0.2 4.5 0.6 ;
-        RECT 2.85 0.25 3.35 0.55 ;
-        RECT 2.9 0.2 3.3 0.6 ;
-        RECT 1.65 0.25 2.15 0.55 ;
-        RECT 1.7 0.2 2.1 0.6 ;
-        RECT 0.45 0.25 0.95 0.55 ;
-        RECT 0.5 0.2 0.9 0.6 ;
-      LAYER VIA12 ;
-        RECT 0.57 0.27 0.83 0.53 ;
-        RECT 1.77 0.27 2.03 0.53 ;
-        RECT 2.97 0.27 3.23 0.53 ;
-        RECT 4.17 0.27 4.43 0.53 ;
-        RECT 5.37 0.27 5.63 0.53 ;
-    END
-  END VSS
   PIN Y
     DIRECTION OUTPUT ;
     USE SIGNAL ;
