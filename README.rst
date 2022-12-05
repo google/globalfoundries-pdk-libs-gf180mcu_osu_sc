@@ -12,7 +12,8 @@ VLSI Computer Architecture Research Group
 =========================================
 
 -  James E. Stine, Jr.
--  Landon Burleson   
+-  Landon Burleson  
+-  Brett Mathis
 -  Teo Ene
 
 Thanks to the following for help, guidance and support!
