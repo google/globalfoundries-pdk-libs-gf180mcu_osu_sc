@@ -1,7 +1,7 @@
 library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
-  /* Models written by Liberate 19.2.2.189 from Cadence Design Systems, Inc. on Sat Dec  3 12:41:17 CST 2022 */
+  /* Models written by Liberate 19.2.2.189 from Cadence Design Systems, Inc. on Thu Dec  8 13:31:35 CST 2022 */
   comment : "";
-  date : "$Date: Sat Dec  3 10:39:46 2022 $";
+  date : "$Date: Thu Dec  8 11:32:44 2022 $";
   revision : "1.0";
   delay_model : table_lookup;
   capacitive_load_unit (1,pf);
@@ -63,7 +63,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     index_2 ("0.06, 0.24, 0.48, 0.9, 1.2, 1.8");
   }
   cell (gf180mcu_osu_sc_gp12t3v3__addf_1) {
-    area : 0;
+    area : 113.4;
     cell_leakage_power : 0.00434118;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -2900,7 +2900,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__addh_1) {
-    area : 0;
+    area : 65.61;
     cell_leakage_power : 0.00346932;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -3668,7 +3668,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__and2_1) {
-    area : 0;
+    area : 31.59;
     cell_leakage_power : 0.00145727;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -4040,7 +4040,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__aoi21_1) {
-    area : 0;
+    area : 31.59;
     cell_leakage_power : 0.000952688;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -5039,7 +5039,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__aoi22_1) {
-    area : 0;
+    area : 43.335;
     cell_leakage_power : 0.00123071;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -7479,7 +7479,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__aoi31_1) {
-    area : 0;
+    area : 38.88;
     cell_leakage_power : 0.000836477;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -8459,7 +8459,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__buf_1) {
-    area : 0;
+    area : 25.11;
     cell_leakage_power : 0.00149043;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -8627,7 +8627,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__buf_16) {
-    area : 0;
+    area : 127.98;
     cell_leakage_power : 0.0126687;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -8795,7 +8795,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__buf_2) {
-    area : 0;
+    area : 31.59;
     cell_leakage_power : 0.00223565;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -8963,7 +8963,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__buf_4) {
-    area : 0;
+    area : 45.36;
     cell_leakage_power : 0.00372608;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -9131,7 +9131,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__buf_8) {
-    area : 0;
+    area : 72.9;
     cell_leakage_power : 0.00670694;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -9299,7 +9299,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__clkbuf_1) {
-    area : 0;
+    area : 25.11;
     cell_leakage_power : 0.00149043;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -9467,7 +9467,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__clkbuf_16) {
-    area : 0;
+    area : 127.98;
     cell_leakage_power : 0.0126687;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -9635,7 +9635,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__clkbuf_2) {
-    area : 0;
+    area : 31.59;
     cell_leakage_power : 0.00223565;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -9803,7 +9803,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__clkbuf_4) {
-    area : 0;
+    area : 45.36;
     cell_leakage_power : 0.00372608;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -9971,7 +9971,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__clkbuf_8) {
-    area : 0;
+    area : 72.9;
     cell_leakage_power : 0.00670694;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -10139,7 +10139,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__clkinv_1) {
-    area : 0;
+    area : 17.82;
     cell_leakage_power : 0.000745215;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -10307,7 +10307,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__clkinv_16) {
-    area : 0;
+    area : 121.5;
     cell_leakage_power : 0.0119234;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -10475,7 +10475,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__clkinv_2) {
-    area : 0;
+    area : 25.92;
     cell_leakage_power : 0.00149043;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -10643,7 +10643,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__clkinv_4) {
-    area : 0;
+    area : 38.88;
     cell_leakage_power : 0.00298086;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -10811,7 +10811,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__clkinv_8) {
-    area : 0;
+    area : 66.015;
     cell_leakage_power : 0.00596172;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -10979,7 +10979,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__dff_1) {
-    area : 0;
+    area : 105.3;
     cell_leakage_power : 0.00595199;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -11662,7 +11662,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__dffn_1) {
-    area : 0;
+    area : 105.3;
     cell_leakage_power : 0.00595199;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -12345,7 +12345,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__dffr_1) {
-    area : 0;
+    area : 142.56;
     cell_leakage_power : 0.0070302;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -13928,7 +13928,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__dffrn_1) {
-    area : 0;
+    area : 142.56;
     cell_leakage_power : 0.0070302;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -15511,7 +15511,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__dffs_1) {
-    area : 0;
+    area : 125.145;
     cell_leakage_power : 922916;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -16284,7 +16284,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__dffsn_1) {
-    area : 0;
+    area : 125.55;
     cell_leakage_power : 922916;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -17057,7 +17057,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__dffsr_1) {
-    area : 0;
+    area : 151.47;
     cell_leakage_power : 0.00708493;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -20522,7 +20522,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__dffsrn_1) {
-    area : 0;
+    area : 151.47;
     cell_leakage_power : 0.00708493;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -23987,7 +23987,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__dlat_1) {
-    area : 0;
+    area : 72.9;
     cell_leakage_power : 0.00417596;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -24485,7 +24485,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__dlatn_1) {
-    area : 0;
+    area : 72.9;
     cell_leakage_power : 0.00417596;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -24983,7 +24983,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__inv_1) {
-    area : 0;
+    area : 17.82;
     cell_leakage_power : 0.000745215;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -25151,7 +25151,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__inv_16) {
-    area : 0;
+    area : 121.5;
     cell_leakage_power : 0.0119234;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -25319,7 +25319,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__inv_2) {
-    area : 0;
+    area : 25.92;
     cell_leakage_power : 0.00149043;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -25487,7 +25487,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__inv_4) {
-    area : 0;
+    area : 38.88;
     cell_leakage_power : 0.00298086;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -25655,7 +25655,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__inv_8) {
-    area : 0;
+    area : 66.015;
     cell_leakage_power : 0.00596172;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -25823,7 +25823,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__lshifdown) {
-    area : 0;
+    area : 33.615;
     cell_leakage_power : 0.00149043;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -25991,7 +25991,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__lshifup) {
-    area : 0;
+    area : 53.46;
     cell_leakage_power : 0;
     pg_pin (VSS) {
       pg_type : primary_ground;
@@ -26132,7 +26132,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__mux2_1) {
-    area : 0;
+    area : 38.88;
     cell_leakage_power : 0.00200969;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -26844,7 +26844,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__nand2_1) {
-    area : 0;
+    area : 25.11;
     cell_leakage_power : 0.000789285;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -27216,7 +27216,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__nor2_1) {
-    area : 0;
+    area : 22.68;
     cell_leakage_power : 0.00083904;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -27588,7 +27588,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__oai21_1) {
-    area : 0;
+    area : 31.59;
     cell_leakage_power : 0.000973735;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -28587,7 +28587,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__oai22_1) {
-    area : 0;
+    area : 42.93;
     cell_leakage_power : 0.00127026;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -31027,7 +31027,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__oai31_1) {
-    area : 0;
+    area : 38.88;
     cell_leakage_power : 0.00103253;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -32789,7 +32789,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__or2_1) {
-    area : 0;
+    area : 30.78;
     cell_leakage_power : 0.00166149;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -33161,7 +33161,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__tbuf_1) {
-    area : 0;
+    area : 29.565;
     cell_leakage_power : 0.00104308;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -34691,7 +34691,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__tbuf_16) {
-    area : 0;
+    area : 134.46;
     cell_leakage_power : 1.58327e+06;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -36038,7 +36038,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__tbuf_2) {
-    area : 0;
+    area : 37.665;
     cell_leakage_power : 197909;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -37385,7 +37385,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__tbuf_4) {
-    area : 0;
+    area : 51.435;
     cell_leakage_power : 395818;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -38732,7 +38732,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__tbuf_8) {
-    area : 0;
+    area : 79.38;
     cell_leakage_power : 791637;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -40079,7 +40079,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__tiehi) {
-    area : 0;
+    area : 17.82;
     cell_leakage_power : 0;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -40117,7 +40117,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__tielo) {
-    area : 0;
+    area : 17.82;
     cell_leakage_power : 0;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -40155,7 +40155,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__tinv_1) {
-    area : 0;
+    area : 22.68;
     cell_leakage_power : 0.000297862;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -41685,7 +41685,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__tinv_16) {
-    area : 0;
+    area : 144.18;
     cell_leakage_power : 4.41547e+06;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -42474,7 +42474,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__tinv_2) {
-    area : 0;
+    area : 48.6;
     cell_leakage_power : 927990;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -43263,7 +43263,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__tinv_4) {
-    area : 0;
+    area : 61.155;
     cell_leakage_power : 1.4262e+06;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -44052,7 +44052,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__tinv_8) {
-    area : 0;
+    area : 88.29;
     cell_leakage_power : 2.42262e+06;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -44841,7 +44841,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__xnor2_1) {
-    area : 0;
+    area : 50.22;
     cell_leakage_power : 0.00287924;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -45383,7 +45383,7 @@ library (gf180mcu_osu_sc_gp12t3v3_TT_25C.nldm) {
     }
   }
   cell (gf180mcu_osu_sc_gp12t3v3__xor2_1) {
-    area : 0;
+    area : 50.22;
     cell_leakage_power : 0.00287924;
     pg_pin (VDD) {
       pg_type : primary_power;
