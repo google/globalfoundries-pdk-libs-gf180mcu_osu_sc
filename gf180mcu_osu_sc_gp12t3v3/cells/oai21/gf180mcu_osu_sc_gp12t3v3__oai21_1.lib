@@ -11,7 +11,7 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
   cell (gf180mcu_osu_sc_gp12t3v3__oai21_1) {
-    area : 31.59000000;
+    area : 31.59;
     cell_leakage_power : 0.000973735;
     pg_pin (VDD) {
       pg_type : primary_power;
@@ -5070,7 +5070,7 @@
         receiver_capacitance2_fall (receiver_cap_power_template) {
           index_1 ("0.0774641, 0.204777, 0.541328, 1.431, 3.78286, 10");
           values ( \
-            "0.0039611, 0.00400067, 0.00404387, 0.00402006, 0.00401393, 0.00401683" \
+            "0.0039611, 0.00400067, 0.00404388, 0.00402006, 0.00401393, 0.00401683" \
           );
         }
       }
@@ -5166,7 +5166,7 @@
         fall_power (passive_power_template) {
           index_1 ("0.0774641, 0.204777, 0.541328, 1.431, 3.78286, 10");
           values ( \
-            "-0.00636793, -0.00643212, -0.0064431, -0.00647511, -0.00647774, -0.00644763" \
+            "-0.00636793, -0.00643212, -0.00644311, -0.00647511, -0.00647774, -0.00644763" \
           );
         }
       }

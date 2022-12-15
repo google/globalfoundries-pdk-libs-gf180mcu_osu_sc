@@ -15,9 +15,9 @@
 .option scale=0.05u
 
 .subckt gf180mcu_osu_sc_gp9t3v3__lshifdown A Y
-X0 a_26_19 A VDD VDD pmos_3p3 w=34 l=6
+X0 a_26_19 A VDDH VDDH pmos_3p3 w=34 l=6
 X1 Y a_26_19 VSS VSS nmos_3p3 w=17 l=6
-X2 Y a_26_19 a_43_70 VDD pmos_3p3 w=34 l=6
+X2 Y a_26_19 VDD VDD pmos_3p3 w=34 l=6
 X3 a_26_19 A VSS VSS nmos_3p3 w=17 l=6
 .ends
 

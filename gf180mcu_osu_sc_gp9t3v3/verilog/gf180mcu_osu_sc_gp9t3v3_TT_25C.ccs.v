@@ -1,4 +1,4 @@
-// Verilog for library /import/yukari1/lrburle/OSU_180/char/liberate/VERILOG/gf180mcu_osu_sc_gp9t3v3_TT_25C.ccs created by Liberate 19.2.2.189 on Thu Dec  8 16:34:16 CST 2022 for SDF version 2.1
+// Verilog for library /import/yukari1/lrburle/OSU_180/char/liberate/VERILOG/gf180mcu_osu_sc_gp9t3v3_TT_25C.ccs created by Liberate 19.2.2.189 on Thu Dec 15 17:31:29 CST 2022 for SDF version 2.1
 
 // type:  
 `timescale 1ns/10ps
@@ -851,12 +851,11 @@ module gf180mcu_osu_sc_gp9t3v3__lshifdown (Y, A);
 	input A;
 
 	// Function
-	bufif0 (Y, 1'b0, A);
+	buf (Y, A);
 
 	// Timing
 	specify
-		ifnone (negedge A => (Y+:1'b0)) = 0;
-		(posedge A => (Y:0)) = 0;
+		(A => Y) = 0;
 	endspecify
 endmodule
 `endcelldefine
@@ -869,12 +868,11 @@ module gf180mcu_osu_sc_gp9t3v3__lshifup (Y, A);
 	input A;
 
 	// Function
-	buf (Y, 1'b0);
+	buf (Y, A);
 
 	// Timing
 	specify
-		(posedge A => (Y:0)) = 0;
-		(negedge A => (Y:0)) = 0;
+		(A => Y) = 0;
 	endspecify
 endmodule
 `endcelldefine

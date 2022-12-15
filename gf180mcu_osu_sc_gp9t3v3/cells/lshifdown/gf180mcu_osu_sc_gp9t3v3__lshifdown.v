@@ -17,12 +17,11 @@ module gf180mcu_osu_sc_gp9t3v3__lshifdown (Y, A);
 	input A;
 
 	// Function
-	bufif0 (Y, 1'b0, A);
+	buf (Y, A);
 
 	// Timing
 	specify
-		ifnone (negedge A => (Y+:1'b0)) = 0;
-		(posedge A => (Y:0)) = 0;
+		(A => Y) = 0;
 	endspecify
 endmodule
 `endcelldefine

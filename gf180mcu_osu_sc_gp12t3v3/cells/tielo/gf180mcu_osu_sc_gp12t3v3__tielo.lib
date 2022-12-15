@@ -11,7 +11,7 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
   cell (gf180mcu_osu_sc_gp12t3v3__tielo) {
-    area : 17.82000000;
+    area : 17.82;
     cell_leakage_power : 0;
     pg_pin (VDD) {
       pg_type : primary_power;

@@ -15,14 +15,14 @@
 .option scale=0.05u
 
 .subckt gf180mcu_osu_sc_gp12t3v3__lshifup A Y
-X0 VSS A a_43_19 VSS nmos_3p3 w=17 l=6
-X1 Y a_43_19 VDDH VDDH pmos_3p3 w=34 l=6
-X2 VDDH a_54_82 a_43_19 VDDH pmos_3p3 w=34 l=6
-X3 a_26_19 A VDDH VDDH pmos_3p3 w=34 l=6
-X4 a_54_82 a_43_19 VDDH VDDH pmos_3p3 w=34 l=6
-X5 a_54_82 a_26_19 VSS VSS nmos_3p3 w=17 l=6
-X6 Y a_43_19 VSS VSS nmos_3p3 w=17 l=6
-X7 a_26_19 A VSS VSS nmos_3p3 w=17 l=6
+X0 a_26_19 A VDD VDD pmos_3p3 w=34 l=6
+X1 VSS A a_67_19 VSS nmos_3p3 w=17 l=6
+X2 Y a_67_19 VDDH VDDH pmos_3p3 w=34 l=6
+X3 Y a_67_19 VSS VSS nmos_3p3 w=17 l=6
+X4 VDDH a_78_82 a_67_19 VDDH pmos_3p3 w=34 l=6
+X5 a_78_82 a_67_19 VDDH VDDH pmos_3p3 w=34 l=6
+X6 a_26_19 A VSS VSS nmos_3p3 w=17 l=6
+X7 a_78_82 a_26_19 VSS VSS nmos_3p3 w=17 l=6
 .ends
 
 ** hspice subcircuit dictionary
