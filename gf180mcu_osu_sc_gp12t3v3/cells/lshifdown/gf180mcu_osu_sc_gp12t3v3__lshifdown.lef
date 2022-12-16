@@ -1,0 +1,91 @@
+# Copyright 2022 Google LLC
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+VERSION 5.7 ;
+BUSBITCHARS "[]" ;
+DIVIDERCHAR "/" ;
+
+MACRO gf180mcu_osu_sc_gp12t3v3__lshifdown
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_gp12t3v3__lshifdown 0 0 ;
+  SIZE 5.2 BY 8.1 ;
+  SYMMETRY X Y ;
+  SITE GF180_3p3_12t ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER MET1 ;
+        RECT 2.9 7.5 5.2 8.1 ;
+        RECT 3.45 5.45 3.75 8.1 ;
+    END
+  END VDD
+  PIN VDDH
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 7.5 2.3 8.1 ;
+        RECT 0.55 5.45 0.85 8.1 ;
+    END
+  END VDDH
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER MET1 ;
+        RECT 0 0 5.2 0.6 ;
+        RECT 3.45 0 3.75 1.8 ;
+        RECT 0.55 0 0.85 1.8 ;
+    END
+  END VSS
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 0.6 2.2 1.1 2.5 ;
+      LAYER MET2 ;
+        RECT 0.6 2.15 1.1 2.55 ;
+      LAYER VIA12 ;
+        RECT 0.72 2.22 0.98 2.48 ;
+    END
+  END A
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER MET1 ;
+        RECT 4.3 4.15 4.7 4.45 ;
+        RECT 4.35 0.95 4.65 7.15 ;
+      LAYER MET2 ;
+        RECT 4.25 4.1 4.75 4.5 ;
+      LAYER VIA12 ;
+        RECT 4.37 4.17 4.63 4.43 ;
+    END
+  END Y
+  OBS
+    LAYER MET2 ;
+      RECT 3.5 4.75 4 5.15 ;
+      RECT 1.35 4.75 1.85 5.15 ;
+      RECT 1.35 4.8 4 5.1 ;
+    LAYER VIA12 ;
+      RECT 3.62 4.82 3.88 5.08 ;
+      RECT 1.47 4.82 1.73 5.08 ;
+    LAYER MET1 ;
+      RECT 1.45 0.95 1.75 7.15 ;
+      RECT 1.35 4.8 1.85 5.1 ;
+      RECT 3.5 4.8 4 5.1 ;
+  END
+END gf180mcu_osu_sc_gp12t3v3__lshifdown

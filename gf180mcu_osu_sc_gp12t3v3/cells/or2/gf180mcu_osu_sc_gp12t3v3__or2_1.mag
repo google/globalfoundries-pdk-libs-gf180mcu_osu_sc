@@ -1,0 +1,204 @@
+# Copyright 2022 Google LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+magic
+tech gf180mcuC
+timestamp 1667922516
+<< nwell >>
+rect 0 100 76 162
+<< nmos >>
+rect 16 19 22 36
+rect 33 19 39 36
+rect 50 19 56 36
+<< pmos >>
+rect 19 109 25 143
+rect 30 109 36 143
+rect 50 109 56 143
+<< ndiff >>
+rect 6 34 16 36
+rect 6 21 8 34
+rect 13 21 16 34
+rect 6 19 16 21
+rect 22 34 33 36
+rect 22 21 25 34
+rect 30 21 33 34
+rect 22 19 33 21
+rect 39 34 50 36
+rect 39 21 42 34
+rect 47 21 50 34
+rect 39 19 50 21
+rect 56 34 66 36
+rect 56 21 59 34
+rect 64 21 66 34
+rect 56 19 66 21
+<< pdiff >>
+rect 9 141 19 143
+rect 9 111 11 141
+rect 16 111 19 141
+rect 9 109 19 111
+rect 25 109 30 143
+rect 36 141 50 143
+rect 36 111 39 141
+rect 47 111 50 141
+rect 36 109 50 111
+rect 56 141 66 143
+rect 56 111 59 141
+rect 64 111 66 141
+rect 56 109 66 111
+<< ndiffc >>
+rect 8 21 13 34
+rect 25 21 30 34
+rect 42 21 47 34
+rect 59 21 64 34
+<< pdiffc >>
+rect 11 111 16 141
+rect 39 111 47 141
+rect 59 111 64 141
+<< psubdiff >>
+rect 9 10 18 12
+rect 9 5 11 10
+rect 16 5 18 10
+rect 9 3 18 5
+rect 33 10 42 12
+rect 33 5 35 10
+rect 40 5 42 10
+rect 33 3 42 5
+rect 57 10 66 12
+rect 57 5 59 10
+rect 64 5 66 10
+rect 57 3 66 5
+<< nsubdiff >>
+rect 9 157 18 159
+rect 9 152 11 157
+rect 16 152 18 157
+rect 9 150 18 152
+rect 33 157 42 159
+rect 33 152 35 157
+rect 40 152 42 157
+rect 33 150 42 152
+rect 57 157 66 159
+rect 57 152 59 157
+rect 64 152 66 157
+rect 57 150 66 152
+<< psubdiffcont >>
+rect 11 5 16 10
+rect 35 5 40 10
+rect 59 5 64 10
+<< nsubdiffcont >>
+rect 11 152 16 157
+rect 35 152 40 157
+rect 59 152 64 157
+<< polysilicon >>
+rect 19 143 25 148
+rect 30 143 36 148
+rect 50 143 56 148
+rect 19 105 25 109
+rect 16 100 25 105
+rect 30 106 36 109
+rect 30 100 39 106
+rect 16 78 22 100
+rect 16 76 28 78
+rect 16 70 20 76
+rect 26 70 28 76
+rect 16 68 28 70
+rect 16 36 22 68
+rect 33 65 39 100
+rect 50 91 56 109
+rect 44 89 56 91
+rect 44 83 46 89
+rect 52 83 56 89
+rect 44 81 56 83
+rect 33 63 43 65
+rect 33 57 35 63
+rect 41 57 43 63
+rect 33 55 43 57
+rect 33 36 39 55
+rect 50 36 56 81
+rect 16 14 22 19
+rect 33 14 39 19
+rect 50 14 56 19
+<< polycontact >>
+rect 20 70 26 76
+rect 46 83 52 89
+rect 35 57 41 63
+<< metal1 >>
+rect 0 157 76 162
+rect 0 152 11 157
+rect 16 152 35 157
+rect 40 152 59 157
+rect 64 152 76 157
+rect 0 150 76 152
+rect 11 141 16 143
+rect 11 110 16 111
+rect 8 105 16 110
+rect 39 141 47 150
+rect 39 109 47 111
+rect 59 141 64 143
+rect 8 89 13 105
+rect 59 102 64 111
+rect 59 96 61 102
+rect 67 96 69 102
+rect 8 83 46 89
+rect 52 83 54 89
+rect 8 49 13 83
+rect 18 70 20 76
+rect 26 70 28 76
+rect 33 57 35 63
+rect 41 57 43 63
+rect 8 44 30 49
+rect 8 34 13 36
+rect 8 12 13 21
+rect 25 34 30 44
+rect 25 19 30 21
+rect 42 34 47 36
+rect 42 12 47 21
+rect 59 34 64 96
+rect 59 19 64 21
+rect 0 10 76 12
+rect 0 5 11 10
+rect 16 5 35 10
+rect 40 5 59 10
+rect 64 5 76 10
+rect 0 0 76 5
+<< via1 >>
+rect 61 96 67 102
+rect 46 83 52 89
+rect 20 70 26 76
+rect 35 57 41 63
+<< metal2 >>
+rect 59 102 69 103
+rect 59 96 61 102
+rect 67 96 69 102
+rect 59 95 69 96
+rect 44 89 54 90
+rect 44 83 46 89
+rect 52 83 54 89
+rect 44 82 54 83
+rect 18 76 28 77
+rect 18 70 20 76
+rect 26 70 28 76
+rect 18 69 28 70
+rect 33 63 43 64
+rect 33 57 35 63
+rect 41 57 43 63
+rect 33 56 43 57
+<< labels >>
+rlabel metal2 23 73 23 73 1 A
+port 2 n
+rlabel metal2 64 99 64 99 1 Y
+port 3 n
+rlabel metal2 38 60 38 60 1 B
+port 1 n
+rlabel nsubdiffcont 13 154 13 154 1 VDD
+rlabel psubdiffcont 13 7 13 7 1 VSS
+<< end >>
