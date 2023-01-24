@@ -8,7 +8,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__addf_1
   FOREIGN gf180mcu_osu_sc_gp9t3v3__addf_1 0 0 ;
   SIZE 14 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE GF180_3p3_12t ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
@@ -192,7 +192,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__addh_1
   FOREIGN gf180mcu_osu_sc_gp9t3v3__addh_1 0 0 ;
   SIZE 8.6 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE GF180_3p3_12t ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
@@ -311,7 +311,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__and2_1
   FOREIGN gf180mcu_osu_sc_gp9t3v3__and2_1 0 0 ;
   SIZE 4.1 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE GF180_3p3_12t ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
@@ -387,7 +387,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__aoi21_1
   FOREIGN gf180mcu_osu_sc_gp9t3v3__aoi21_1 0 0 ;
   SIZE 3.9 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE GF180_3p3_12t ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
@@ -473,7 +473,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__aoi22_1
   FOREIGN gf180mcu_osu_sc_gp9t3v3__aoi22_1 0 0 ;
   SIZE 5.4 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE GF180_3p3_12t ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
@@ -577,7 +577,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__buf_1
   FOREIGN gf180mcu_osu_sc_gp9t3v3__buf_1 0 0 ;
   SIZE 3.2 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE GF180_3p3_12t ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
@@ -638,7 +638,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__buf_16
   FOREIGN gf180mcu_osu_sc_gp9t3v3__buf_16 0 0 ;
   SIZE 15.8 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE GF180_3p3_12t ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
@@ -722,7 +722,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__buf_2
   FOREIGN gf180mcu_osu_sc_gp9t3v3__buf_2 0 0 ;
   SIZE 3.9 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE GF180_3p3_12t ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
@@ -783,7 +783,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__buf_4
   FOREIGN gf180mcu_osu_sc_gp9t3v3__buf_4 0 0 ;
   SIZE 5.65 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE GF180_3p3_12t ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
@@ -849,7 +849,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__buf_8
   FOREIGN gf180mcu_osu_sc_gp9t3v3__buf_8 0 0 ;
   SIZE 9.05 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE GF180_3p3_12t ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
@@ -921,7 +921,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__clkbuf_1
   FOREIGN gf180mcu_osu_sc_gp9t3v3__clkbuf_1 0 0 ;
   SIZE 3.2 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE GF180_3p3_12t ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
@@ -985,7 +985,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__clkbuf_16
   FOREIGN gf180mcu_osu_sc_gp9t3v3__clkbuf_16 0 0 ;
   SIZE 15.8 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE GF180_3p3_12t ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
@@ -1069,7 +1069,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__clkbuf_2
   FOREIGN gf180mcu_osu_sc_gp9t3v3__clkbuf_2 0 0 ;
   SIZE 3.9 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE GF180_3p3_12t ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
@@ -1130,7 +1130,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__clkbuf_4
   FOREIGN gf180mcu_osu_sc_gp9t3v3__clkbuf_4 0 0 ;
   SIZE 5.65 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE GF180_3p3_12t ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
@@ -1196,7 +1196,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__clkbuf_8
   FOREIGN gf180mcu_osu_sc_gp9t3v3__clkbuf_8 0 0 ;
   SIZE 9.05 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE GF180_3p3_12t ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
@@ -1268,7 +1268,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__clkinv_1
   FOREIGN gf180mcu_osu_sc_gp9t3v3__clkinv_1 0 0 ;
   SIZE 2.2 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE GF180_3p3_12t ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
@@ -1321,7 +1321,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__clkinv_16
   FOREIGN gf180mcu_osu_sc_gp9t3v3__clkinv_16 0 0 ;
   SIZE 15 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE GF180_3p3_12t ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
@@ -1400,7 +1400,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__clkinv_2
   FOREIGN gf180mcu_osu_sc_gp9t3v3__clkinv_2 0 0 ;
   SIZE 3.2 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE GF180_3p3_12t ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
@@ -1456,7 +1456,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__clkinv_4
   FOREIGN gf180mcu_osu_sc_gp9t3v3__clkinv_4 0 0 ;
   SIZE 4.8 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE GF180_3p3_12t ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
@@ -1517,7 +1517,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__clkinv_8
   FOREIGN gf180mcu_osu_sc_gp9t3v3__clkinv_8 0 0 ;
   SIZE 8.2 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE GF180_3p3_12t ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
@@ -1584,7 +1584,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__dff_1
   FOREIGN gf180mcu_osu_sc_gp9t3v3__dff_1 0 0 ;
   SIZE 14.5 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE GF180_3p3_12t ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
@@ -1766,7 +1766,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__dffn_1
   FOREIGN gf180mcu_osu_sc_gp9t3v3__dffn_1 0 0 ;
   SIZE 15.5 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE GF180_3p3_12t ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
@@ -1957,7 +1957,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__dffsr_1
   FOREIGN gf180mcu_osu_sc_gp9t3v3__dffsr_1 0 0 ;
   SIZE 20.5 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE GF180_3p3_12t ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
@@ -2201,7 +2201,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__dlat_1
   FOREIGN gf180mcu_osu_sc_gp9t3v3__dlat_1 0 0 ;
   SIZE 9.5 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE GF180_3p3_12t ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
@@ -2320,7 +2320,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__dlatn_1
   FOREIGN gf180mcu_osu_sc_gp9t3v3__dlatn_1 0 0 ;
   SIZE 11.3 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE GF180_3p3_12t ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
@@ -2449,7 +2449,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__fill_1
   FOREIGN gf180mcu_osu_sc_gp9t3v3__fill_1 0 0 ;
   SIZE 0.1 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE GF180_3p3_12t ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
@@ -2475,7 +2475,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__fill_16
   FOREIGN gf180mcu_osu_sc_gp9t3v3__fill_16 0 0 ;
   SIZE 1.6 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE GF180_3p3_12t ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
@@ -2501,7 +2501,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__fill_2
   FOREIGN gf180mcu_osu_sc_gp9t3v3__fill_2 0 0 ;
   SIZE 0.2 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE GF180_3p3_12t ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
@@ -2527,7 +2527,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__fill_4
   FOREIGN gf180mcu_osu_sc_gp9t3v3__fill_4 0 0 ;
   SIZE 0.4 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE GF180_3p3_12t ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
@@ -2553,7 +2553,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__fill_8
   FOREIGN gf180mcu_osu_sc_gp9t3v3__fill_8 0 0 ;
   SIZE 0.8 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE GF180_3p3_12t ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
@@ -2579,7 +2579,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__inv_1
   FOREIGN gf180mcu_osu_sc_gp9t3v3__inv_1 0 0 ;
   SIZE 2.2 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE GF180_3p3_12t ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
@@ -2632,7 +2632,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__inv_16
   FOREIGN gf180mcu_osu_sc_gp9t3v3__inv_16 0 0 ;
   SIZE 15 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE GF180_3p3_12t ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
@@ -2711,7 +2711,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__inv_2
   FOREIGN gf180mcu_osu_sc_gp9t3v3__inv_2 0 0 ;
   SIZE 3.2 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE GF180_3p3_12t ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
@@ -2767,7 +2767,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__inv_4
   FOREIGN gf180mcu_osu_sc_gp9t3v3__inv_4 0 0 ;
   SIZE 4.8 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE GF180_3p3_12t ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
@@ -2828,7 +2828,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__inv_8
   FOREIGN gf180mcu_osu_sc_gp9t3v3__inv_8 0 0 ;
   SIZE 8.2 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE GF180_3p3_12t ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
@@ -2895,7 +2895,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__lshifdown
   FOREIGN gf180mcu_osu_sc_gp9t3v3__lshifdown 0 0 ;
   SIZE 5.2 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE GF180_3p3_12t ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
@@ -2972,7 +2972,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__lshifup
   FOREIGN gf180mcu_osu_sc_gp9t3v3__lshifup 0 0 ;
   SIZE 8.15 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE GF180_3p3_12t ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
@@ -3082,7 +3082,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__mux2_1
   FOREIGN gf180mcu_osu_sc_gp9t3v3__mux2_1 0 0 ;
   SIZE 5.1 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE GF180_3p3_12t ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
@@ -3175,7 +3175,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__nand2_1
   FOREIGN gf180mcu_osu_sc_gp9t3v3__nand2_1 0 0 ;
   SIZE 3.1 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE GF180_3p3_12t ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
@@ -3243,7 +3243,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__nor2_1
   FOREIGN gf180mcu_osu_sc_gp9t3v3__nor2_1 0 0 ;
   SIZE 2.8 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE GF180_3p3_12t ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
@@ -3311,7 +3311,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__oai21_1
   FOREIGN gf180mcu_osu_sc_gp9t3v3__oai21_1 0 0 ;
   SIZE 4 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE GF180_3p3_12t ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
@@ -3398,7 +3398,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__oai22_1
   FOREIGN gf180mcu_osu_sc_gp9t3v3__oai22_1 0 0 ;
   SIZE 5.5 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE GF180_3p3_12t ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
@@ -3502,7 +3502,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__oai31_1
   FOREIGN gf180mcu_osu_sc_gp9t3v3__oai31_1 0 0 ;
   SIZE 4.9 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE GF180_3p3_12t ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
@@ -3602,7 +3602,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__or2_1
   FOREIGN gf180mcu_osu_sc_gp9t3v3__or2_1 0 0 ;
   SIZE 3.8 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE GF180_3p3_12t ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
@@ -3683,7 +3683,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__tbuf_1
   FOREIGN gf180mcu_osu_sc_gp9t3v3__tbuf_1 0 0 ;
   SIZE 5.35 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE GF180_3p3_12t ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
@@ -3768,7 +3768,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__tieh
   FOREIGN gf180mcu_osu_sc_gp9t3v3__tieh 0 0 ;
   SIZE 2.2 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE GF180_3p3_12t ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
@@ -3814,7 +3814,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__tiel
   FOREIGN gf180mcu_osu_sc_gp9t3v3__tiel 0 0 ;
   SIZE 2.2 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE GF180_3p3_12t ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
@@ -3860,7 +3860,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__tinv_1
   FOREIGN gf180mcu_osu_sc_gp9t3v3__tinv_1 0 0 ;
   SIZE 3.85 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE GF180_3p3_12t ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
@@ -3952,7 +3952,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__xnor2_1
   FOREIGN gf180mcu_osu_sc_gp9t3v3__xnor2_1 0 0 ;
   SIZE 6.4 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE GF180_3p3_12t ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
@@ -4044,7 +4044,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__xor2_1
   FOREIGN gf180mcu_osu_sc_gp9t3v3__xor2_1 0 0 ;
   SIZE 6.7 BY 6.15 ;
   SYMMETRY X Y ;
-  SITE GF180_3p3_12t ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;

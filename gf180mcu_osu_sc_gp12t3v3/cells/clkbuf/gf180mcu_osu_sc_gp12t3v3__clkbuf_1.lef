@@ -20,7 +20,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__clkbuf_1
   FOREIGN gf180mcu_osu_sc_gp12t3v3__clkbuf_1 0 0 ;
   SIZE 3.1 BY 8.1 ;
   SYMMETRY X Y ;
-  SITE GF180_3p3_12t ;
+  SITE gf180mcu_osu_sc_gp12t3v3 ;
   PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
