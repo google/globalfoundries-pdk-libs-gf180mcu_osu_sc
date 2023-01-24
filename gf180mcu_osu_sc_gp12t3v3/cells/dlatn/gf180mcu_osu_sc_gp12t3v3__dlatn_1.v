@@ -12,26 +12,27 @@
 // limitations under the License.
 `timescale 1ns/10ps
 `celldefine
-module gf180mcu_osu_sc_gp12t3v3__dlatn_1 (Q, D, CLKN);
+module gf180mcu_osu_sc_gp12t3v3__dlatn_1 (Q, D, CLK);
 	output Q;
-	input D, CLKN;
+	input D, CLK;
 	reg notifier;
-	wire delayed_D, delayed_CLKN;
+	wire delayed_D, delayed_CLK;
 
 	// Function
-	wire int_fwire_IQ;
+	wire int_fwire_clk, int_fwire_IQ;
 
-	altos_latch (int_fwire_IQ, notifier, delayed_CLKN, delayed_D);
+	not (int_fwire_clk, delayed_CLK);
+	altos_latch (int_fwire_IQ, notifier, int_fwire_clk, delayed_D);
 	buf (Q, int_fwire_IQ);
 
 	// Timing
 	specify
 		(D => Q) = 0;
-		(posedge CLKN => (Q+:D)) = 0;
-		$setuphold (negedge CLKN, posedge D, 0, 0, notifier,,, delayed_CLKN, delayed_D);
-		$setuphold (negedge CLKN, negedge D, 0, 0, notifier,,, delayed_CLKN, delayed_D);
-		$width (posedge CLKN &&& D, 0, 0, notifier);
-		$width (posedge CLKN &&& ~D, 0, 0, notifier);
+		(negedge CLK => (Q+:D)) = 0;
+		$setuphold (posedge CLK, posedge D, 0, 0, notifier,,, delayed_CLK, delayed_D);
+		$setuphold (posedge CLK, negedge D, 0, 0, notifier,,, delayed_CLK, delayed_D);
+		$width (negedge CLK &&& D, 0, 0, notifier);
+		$width (negedge CLK &&& ~D, 0, 0, notifier);
 	endspecify
 endmodule
 `endcelldefine

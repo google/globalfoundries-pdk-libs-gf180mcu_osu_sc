@@ -13,7 +13,7 @@
 # limitations under the License.
 magic
 tech gf180mcuC
-timestamp 1667930348
+timestamp 1674502472
 << nwell >>
 rect 0 61 280 123
 << nmos >>
@@ -679,5 +679,7 @@ port 10 n
 rlabel metal2 270 63 270 63 1 CO
 port 11 n
 rlabel nsubdiffcont 13 115 13 115 1 VDD
+port 12 n
 rlabel psubdiffcont 13 7 13 7 1 VSS
+port 13 n
 << end >>

@@ -12,20 +12,21 @@
 // limitations under the License.
 `timescale 1ns/10ps
 `celldefine
-module gf180mcu_osu_sc_gp12t3v3__dffsrn_1 (Q, QN, D, RN, SN, CLKN);
+module gf180mcu_osu_sc_gp12t3v3__dffsrn_1 (Q, QN, D, RN, SN, CLK);
 	output Q, QN;
-	input D, RN, SN, CLKN;
+	input D, RN, SN, CLK;
 	reg notifier;
-	wire delayed_D, delayed_RN, delayed_SN, delayed_CLKN;
+	wire delayed_D, delayed_RN, delayed_SN, delayed_CLK;
 
 	// Function
-	wire int_fwire_IQ, int_fwire_IQN, int_fwire_r;
-	wire int_fwire_s, xcr_0;
+	wire int_fwire_clk, int_fwire_IQ, int_fwire_IQN;
+	wire int_fwire_r, int_fwire_s, xcr_0;
 
+	not (int_fwire_clk, delayed_CLK);
 	not (int_fwire_s, delayed_SN);
 	not (int_fwire_r, delayed_RN);
-	altos_dff_sr_err (xcr_0, delayed_CLKN, delayed_D, int_fwire_s, int_fwire_r);
-	altos_dff_sr_0 (int_fwire_IQ, notifier, delayed_CLKN, delayed_D, int_fwire_s, int_fwire_r, xcr_0);
+	altos_dff_sr_err (xcr_0, int_fwire_clk, delayed_D, int_fwire_s, int_fwire_r);
+	altos_dff_sr_0 (int_fwire_IQ, notifier, int_fwire_clk, delayed_D, int_fwire_s, int_fwire_r, xcr_0);
 	buf (Q, int_fwire_IQ);
 	not (int_fwire_IQN, int_fwire_IQ);
 	buf (QN, int_fwire_IQN);
@@ -36,102 +37,102 @@ module gf180mcu_osu_sc_gp12t3v3__dffsrn_1 (Q, QN, D, RN, SN, CLKN);
 	wire adacond0, adacond1, adacond2;
 	wire adacond3, adacond4, adacond5;
 	wire adacond6, adacond7, adacond8;
-	wire CLKN__bar, D__bar;
+	wire CLK__bar, D__bar;
 
 
 	// Additional timing gates
 	and (adacond0, RN, SN);
 	and (adacond1, D, SN);
-	and (adacond2, CLKN, SN);
-	not (CLKN__bar, CLKN);
-	and (adacond3, CLKN__bar, SN);
+	and (adacond2, CLK, SN);
+	not (CLK__bar, CLK);
+	and (adacond3, CLK__bar, SN);
 	not (D__bar, D);
 	and (adacond4, D__bar, RN);
-	and (adacond5, CLKN, RN);
-	and (adacond6, CLKN__bar, RN);
+	and (adacond5, CLK, RN);
+	and (adacond6, CLK__bar, RN);
 	and (adacond7, D, RN, SN);
 	and (adacond8, D__bar, RN, SN);
 
 	specify
-		if ((CLKN & SN))
+		if ((CLK & D & SN))
 			(negedge RN => (Q+:1'b0)) = 0;
-		if ((CLKN & ~SN))
+		if ((CLK & D & ~SN))
 			(negedge RN => (Q+:1'b0)) = 0;
-		if ((~CLKN & D & SN))
+		if ((CLK & ~D & SN))
 			(negedge RN => (Q+:1'b0)) = 0;
-		if ((~CLKN & D & ~SN))
+		if ((CLK & ~D & ~SN))
 			(negedge RN => (Q+:1'b0)) = 0;
-		if ((~CLKN & ~D & SN))
+		if ((~CLK & SN))
 			(negedge RN => (Q+:1'b0)) = 0;
-		if ((~CLKN & ~D & ~SN))
+		if ((~CLK & ~SN))
 			(negedge RN => (Q+:1'b0)) = 0;
 		ifnone (negedge RN => (Q+:1'b0)) = 0;
-		if ((CLKN & ~SN))
+		if ((CLK & D & ~SN))
 			(posedge RN => (Q+:1'b1)) = 0;
-		if ((~CLKN & D & ~SN))
+		if ((CLK & ~D & ~SN))
 			(posedge RN => (Q+:1'b1)) = 0;
-		if ((~CLKN & ~D & ~SN))
+		if ((~CLK & ~SN))
 			(posedge RN => (Q+:1'b1)) = 0;
 		ifnone (posedge RN => (Q+:1'b1)) = 0;
-		if ((CLKN & RN))
+		if ((CLK & D & RN))
 			(negedge SN => (Q+:1'b1)) = 0;
-		if ((~CLKN & D & RN))
+		if ((CLK & ~D & RN))
 			(negedge SN => (Q+:1'b1)) = 0;
-		if ((~CLKN & ~D & RN))
+		if ((~CLK & RN))
 			(negedge SN => (Q+:1'b1)) = 0;
 		ifnone (negedge SN => (Q+:1'b1)) = 0;
-		(posedge CLKN => (Q+:D)) = 0;
-		if ((CLKN & ~SN))
+		(negedge CLK => (Q+:D)) = 0;
+		if ((CLK & D & ~SN))
 			(posedge RN => (QN-:1'b1)) = 0;
-		if ((~CLKN & D & ~SN))
+		if ((CLK & ~D & ~SN))
 			(posedge RN => (QN-:1'b1)) = 0;
-		if ((~CLKN & ~D & ~SN))
+		if ((~CLK & ~SN))
 			(posedge RN => (QN-:1'b1)) = 0;
 		ifnone (posedge RN => (QN-:1'b1)) = 0;
-		if ((CLKN & SN))
+		if ((CLK & D & SN))
 			(negedge RN => (QN-:1'b0)) = 0;
-		if ((CLKN & ~SN))
+		if ((CLK & D & ~SN))
 			(negedge RN => (QN-:1'b0)) = 0;
-		if ((~CLKN & D & SN))
+		if ((CLK & ~D & SN))
 			(negedge RN => (QN-:1'b0)) = 0;
-		if ((~CLKN & D & ~SN))
+		if ((CLK & ~D & ~SN))
 			(negedge RN => (QN-:1'b0)) = 0;
-		if ((~CLKN & ~D & SN))
+		if ((~CLK & SN))
 			(negedge RN => (QN-:1'b0)) = 0;
-		if ((~CLKN & ~D & ~SN))
+		if ((~CLK & ~SN))
 			(negedge RN => (QN-:1'b0)) = 0;
 		ifnone (negedge RN => (QN-:1'b0)) = 0;
-		if ((CLKN & RN))
+		if ((CLK & D & RN))
 			(negedge SN => (QN-:1'b1)) = 0;
-		if ((~CLKN & D & RN))
+		if ((CLK & ~D & RN))
 			(negedge SN => (QN-:1'b1)) = 0;
-		if ((~CLKN & ~D & RN))
+		if ((~CLK & RN))
 			(negedge SN => (QN-:1'b1)) = 0;
 		ifnone (negedge SN => (QN-:1'b1)) = 0;
-		(posedge CLKN => (QN-:D)) = 0;
-		$setuphold (posedge CLKN &&& adacond0, posedge D &&& adacond0, 0, 0, notifier,,, delayed_CLKN, delayed_D);
-		$setuphold (posedge CLKN &&& adacond0, negedge D &&& adacond0, 0, 0, notifier,,, delayed_CLKN, delayed_D);
-		$setuphold (posedge CLKN, posedge D, 0, 0, notifier,,, delayed_CLKN, delayed_D);
-		$setuphold (posedge CLKN, negedge D, 0, 0, notifier,,, delayed_CLKN, delayed_D);
-		$setuphold (posedge SN &&& CLKN, posedge RN &&& CLKN, 0, 0, notifier,,, delayed_SN, delayed_RN);
-		$setuphold (posedge SN &&& ~CLKN, posedge RN &&& ~CLKN, 0, 0, notifier,,, delayed_SN, delayed_RN);
+		(negedge CLK => (QN-:D)) = 0;
+		$setuphold (negedge CLK &&& adacond0, posedge D &&& adacond0, 0, 0, notifier,,, delayed_CLK, delayed_D);
+		$setuphold (negedge CLK &&& adacond0, negedge D &&& adacond0, 0, 0, notifier,,, delayed_CLK, delayed_D);
+		$setuphold (negedge CLK, posedge D, 0, 0, notifier,,, delayed_CLK, delayed_D);
+		$setuphold (negedge CLK, negedge D, 0, 0, notifier,,, delayed_CLK, delayed_D);
+		$setuphold (posedge SN &&& CLK, posedge RN &&& CLK, 0, 0, notifier,,, delayed_SN, delayed_RN);
+		$setuphold (posedge SN &&& ~CLK, posedge RN &&& ~CLK, 0, 0, notifier,,, delayed_SN, delayed_RN);
 		$setuphold (posedge SN, posedge RN, 0, 0, notifier,,, delayed_SN, delayed_RN);
-		$recovery (posedge RN &&& adacond1, posedge CLKN &&& adacond1, 0, notifier);
-		$recovery (posedge RN, posedge CLKN, 0, notifier);
-		$hold (posedge CLKN &&& adacond1, posedge RN &&& adacond1, 0, notifier);
-		$hold (posedge CLKN, posedge RN, 0, notifier);
-		$recovery (posedge SN &&& adacond4, posedge CLKN &&& adacond4, 0, notifier);
-		$recovery (posedge SN, posedge CLKN, 0, notifier);
-		$hold (posedge CLKN &&& adacond4, posedge SN &&& adacond4, 0, notifier);
-		$hold (posedge CLKN, posedge SN, 0, notifier);
+		$recovery (posedge RN &&& adacond1, negedge CLK &&& adacond1, 0, notifier);
+		$recovery (posedge RN, negedge CLK, 0, notifier);
+		$hold (negedge CLK &&& adacond1, posedge RN &&& adacond1, 0, notifier);
+		$hold (negedge CLK, posedge RN, 0, notifier);
+		$recovery (posedge SN &&& adacond4, negedge CLK &&& adacond4, 0, notifier);
+		$recovery (posedge SN, negedge CLK, 0, notifier);
+		$hold (negedge CLK &&& adacond4, posedge SN &&& adacond4, 0, notifier);
+		$hold (negedge CLK, posedge SN, 0, notifier);
 		$width (negedge RN &&& adacond2, 0, 0, notifier);
 		$width (negedge RN &&& adacond3, 0, 0, notifier);
 		$width (negedge SN &&& adacond5, 0, 0, notifier);
 		$width (negedge SN &&& adacond6, 0, 0, notifier);
-		$width (posedge CLKN &&& adacond7, 0, 0, notifier);
-		$width (negedge CLKN &&& adacond7, 0, 0, notifier);
-		$width (posedge CLKN &&& adacond8, 0, 0, notifier);
-		$width (negedge CLKN &&& adacond8, 0, 0, notifier);
+		$width (posedge CLK &&& adacond7, 0, 0, notifier);
+		$width (negedge CLK &&& adacond7, 0, 0, notifier);
+		$width (posedge CLK &&& adacond8, 0, 0, notifier);
+		$width (negedge CLK &&& adacond8, 0, 0, notifier);
 	endspecify
 endmodule
 `endcelldefine

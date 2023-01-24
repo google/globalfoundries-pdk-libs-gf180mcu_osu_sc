@@ -12,21 +12,19 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 
-.option scale=0.05u
+* NGSPICE file created from gf180mcu_osu_sc_gp12t3v3__xnor2_1.ext - technology: gf180mcuC
 
-.subckt gf180mcu_osu_sc_gp12t3v3__xnor2_1 A Y B
-X0 Y a_47_14 a_42_19 VSS nmos_3p3 w=17 l=6
-X1 VDD B a_76_109 VDD pmos_3p3 w=34 l=6
-X2 a_47_14 B VDD VDD pmos_3p3 w=34 l=6
-X3 Y a_47_14 a_42_109 VDD pmos_3p3 w=34 l=6
-X4 a_76_109 A Y VDD pmos_3p3 w=34 l=6
-X5 a_42_109 a_9_19 VDD VDD pmos_3p3 w=34 l=6
-X6 VDD A a_9_19 VDD pmos_3p3 w=34 l=6
-X7 VSS A a_9_19 VSS nmos_3p3 w=17 l=6
-X8 a_76_19 a_9_19 Y VSS nmos_3p3 w=17 l=6
-X9 a_42_19 A VSS VSS nmos_3p3 w=17 l=6
-X10 a_47_14 B VSS VSS nmos_3p3 w=17 l=6
-X11 VSS B a_76_19 VSS nmos_3p3 w=17 l=6
+.subckt gf180mcu_osu_sc_gp12t3v3__xnor2_1 A B Y VDD VSS
+X0 Y a_47_14# a_42_19# VSS nmos_3p3 w=0.85u l=0.3u
+X1 VDD B a_76_109# VDD pmos_3p3 w=1.7u l=0.3u
+X2 a_47_14# B VDD VDD pmos_3p3 w=1.7u l=0.3u
+X3 Y a_47_14# a_42_109# VDD pmos_3p3 w=1.7u l=0.3u
+X4 a_76_109# A Y VDD pmos_3p3 w=1.7u l=0.3u
+X5 a_42_109# a_9_19# VDD VDD pmos_3p3 w=1.7u l=0.3u
+X6 VDD A a_9_19# VDD pmos_3p3 w=1.7u l=0.3u
+X7 VSS A a_9_19# VSS nmos_3p3 w=0.85u l=0.3u
+X8 a_76_19# a_9_19# Y VSS nmos_3p3 w=0.85u l=0.3u
+X9 a_42_19# A VSS VSS nmos_3p3 w=0.85u l=0.3u
+X10 a_47_14# B VSS VSS nmos_3p3 w=0.85u l=0.3u
+X11 VSS B a_76_19# VSS nmos_3p3 w=0.85u l=0.3u
 .ends
-
-** hspice subcircuit dictionary

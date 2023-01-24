@@ -12,35 +12,35 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 
-.option scale=0.05u
+* NGSPICE file created from gf180mcu_osu_sc_gp12t3v3__dffn_1.ext - technology: gf180mcuC
 
-.subckt gf180mcu_osu_sc_gp12t3v3__dffn_1 D Q QN CLKN
-X0 a_75_109 a_52_14 a_19_14 VDD pmos_3p3 w=34 l=6
-X1 a_19_14 CLKN a_42_109 VDD pmos_3p3 w=34 l=6
-X2 a_135_68 a_114_19 VDD VDD pmos_3p3 w=34 l=6
-X3 Q QN VSS VSS nmos_3p3 w=17 l=6
-X4 a_131_19 a_52_14 a_114_19 VSS nmos_3p3 w=17 l=6
-X5 a_42_109 D VDD VDD pmos_3p3 w=34 l=6
-X6 a_135_68 a_114_19 VSS VSS nmos_3p3 w=17 l=6
-X7 VDD a_19_14 a_9_19 VDD pmos_3p3 w=34 l=6
-X8 a_75_19 CLKN a_19_14 VSS nmos_3p3 w=17 l=6
-X9 VSS a_135_68 a_131_19 VSS nmos_3p3 w=17 l=6
-X10 a_19_14 a_52_14 a_42_19 VSS nmos_3p3 w=17 l=6
-X11 VSS a_19_14 a_9_19 VSS nmos_3p3 w=17 l=6
-X12 a_52_14 CLKN VDD VDD pmos_3p3 w=34 l=6
-X13 VDD a_135_68 a_131_109 VDD pmos_3p3 w=34 l=6
-X14 a_131_109 CLKN a_114_19 VDD pmos_3p3 w=34 l=6
-X15 VSS a_135_68 QN VSS nmos_3p3 w=17 l=6
-X16 a_114_19 a_52_14 a_103_109 VDD pmos_3p3 w=34 l=6
-X17 a_114_19 CLKN a_103_19 VSS nmos_3p3 w=17 l=6
-X18 a_52_14 CLKN VSS VSS nmos_3p3 w=17 l=6
-X19 a_103_109 a_9_19 VDD VDD pmos_3p3 w=34 l=6
-X20 a_42_19 D VSS VSS nmos_3p3 w=17 l=6
-X21 VDD a_9_19 a_75_109 VDD pmos_3p3 w=34 l=6
-X22 a_103_19 a_9_19 VSS VSS nmos_3p3 w=17 l=6
-X23 Q QN VDD VDD pmos_3p3 w=34 l=6
-X24 VDD a_135_68 QN VDD pmos_3p3 w=34 l=6
-X25 VSS a_9_19 a_75_19 VSS nmos_3p3 w=17 l=6
+.subckt gf180mcu_osu_sc_gp12t3v3__dffn_1 Q QN D CLK VDD VSS
+X0 a_75_109# a_52_14# a_19_14# VDD pmos_3p3 w=1.7u l=0.3u
+X1 a_19_14# a_52_81# a_42_109# VDD pmos_3p3 w=1.7u l=0.3u
+X2 a_131_19# a_52_14# a_114_19# VSS nmos_3p3 w=0.85u l=0.3u
+X3 a_42_109# D VDD VDD pmos_3p3 w=1.7u l=0.3u
+X4 VDD a_19_14# a_9_19# VDD pmos_3p3 w=1.7u l=0.3u
+X5 a_75_19# a_52_81# a_19_14# VSS nmos_3p3 w=0.85u l=0.3u
+X6 VDD a_135_68# QN VDD pmos_3p3 w=1.7u l=0.3u
+X7 Q QN VDD VDD pmos_3p3 w=1.7u l=0.3u
+X8 Q QN VSS VSS nmos_3p3 w=0.85u l=0.3u
+X9 VSS a_135_68# a_131_19# VSS nmos_3p3 w=0.85u l=0.3u
+X10 a_19_14# a_52_14# a_42_19# VSS nmos_3p3 w=0.85u l=0.3u
+X11 VSS a_19_14# a_9_19# VSS nmos_3p3 w=0.85u l=0.3u
+X12 VSS a_135_68# QN VSS nmos_3p3 w=0.85u l=0.3u
+X13 a_52_14# a_52_81# VDD VDD pmos_3p3 w=1.7u l=0.3u
+X14 VDD a_135_68# a_131_109# VDD pmos_3p3 w=1.7u l=0.3u
+X15 VSS CLK a_52_81# VSS nmos_3p3 w=0.85u l=0.3u
+X16 a_131_109# a_52_81# a_114_19# VDD pmos_3p3 w=1.7u l=0.3u
+X17 a_114_19# a_52_14# a_103_109# VDD pmos_3p3 w=1.7u l=0.3u
+X18 a_135_68# a_114_19# VDD VDD pmos_3p3 w=1.7u l=0.3u
+X19 a_114_19# a_52_81# a_103_19# VSS nmos_3p3 w=0.85u l=0.3u
+X20 a_52_14# a_52_81# VSS VSS nmos_3p3 w=0.85u l=0.3u
+X21 a_103_109# a_9_19# VDD VDD pmos_3p3 w=1.7u l=0.3u
+X22 a_42_19# D VSS VSS nmos_3p3 w=0.85u l=0.3u
+X23 VDD a_9_19# a_75_109# VDD pmos_3p3 w=1.7u l=0.3u
+X24 a_103_19# a_9_19# VSS VSS nmos_3p3 w=0.85u l=0.3u
+X25 a_135_68# a_114_19# VSS VSS nmos_3p3 w=0.85u l=0.3u
+X26 VDD CLK a_52_81# VDD pmos_3p3 w=1.7u l=0.3u
+X27 VSS a_9_19# a_75_19# VSS nmos_3p3 w=0.85u l=0.3u
 .ends
-
-** hspice subcircuit dictionary

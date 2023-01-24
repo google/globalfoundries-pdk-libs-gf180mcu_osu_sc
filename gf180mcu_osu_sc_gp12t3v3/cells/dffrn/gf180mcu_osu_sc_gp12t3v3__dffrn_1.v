@@ -12,19 +12,20 @@
 // limitations under the License.
 `timescale 1ns/10ps
 `celldefine
-module gf180mcu_osu_sc_gp12t3v3__dffrn_1 (Q, QN, D, RN, CLKN);
+module gf180mcu_osu_sc_gp12t3v3__dffrn_1 (Q, QN, D, RN, CLK);
 	output Q, QN;
-	input D, RN, CLKN;
+	input D, RN, CLK;
 	reg notifier;
-	wire delayed_D, delayed_CLKN;
+	wire delayed_D, delayed_CLK;
 
 	// Function
-	wire int_fwire_IQ, int_fwire_IQN, int_fwire_r;
-	wire xcr_0;
+	wire int_fwire_clk, int_fwire_IQ, int_fwire_IQN;
+	wire int_fwire_r, xcr_0;
 
+	not (int_fwire_clk, delayed_CLK);
 	not (int_fwire_r, RN);
-	altos_dff_r_err (xcr_0, delayed_CLKN, delayed_D, int_fwire_r);
-	altos_dff_r (int_fwire_IQ, notifier, delayed_CLKN, delayed_D, int_fwire_r, xcr_0);
+	altos_dff_r_err (xcr_0, int_fwire_clk, delayed_D, int_fwire_r);
+	altos_dff_r (int_fwire_IQ, notifier, int_fwire_clk, delayed_D, int_fwire_r, xcr_0);
 	buf (Q, int_fwire_IQ);
 	not (int_fwire_IQN, int_fwire_IQ);
 	buf (QN, int_fwire_IQN);
@@ -41,36 +42,36 @@ module gf180mcu_osu_sc_gp12t3v3__dffrn_1 (Q, QN, D, RN, CLKN);
 	and (adacond1, D__bar, RN);
 
 	specify
-		if (CLKN)
+		if ((CLK & D))
 			(negedge RN => (Q+:1'b0)) = 0;
-		if ((~CLKN & D))
+		if ((CLK & ~D))
 			(negedge RN => (Q+:1'b0)) = 0;
-		if ((~CLKN & ~D))
+		if (~CLK)
 			(negedge RN => (Q+:1'b0)) = 0;
 		ifnone (negedge RN => (Q+:1'b0)) = 0;
-		(posedge CLKN => (Q+:D)) = 0;
-		if (CLKN)
+		(negedge CLK => (Q+:D)) = 0;
+		if ((CLK & D))
 			(negedge RN => (QN-:1'b0)) = 0;
-		if ((~CLKN & D))
+		if ((CLK & ~D))
 			(negedge RN => (QN-:1'b0)) = 0;
-		if ((~CLKN & ~D))
+		if (~CLK)
 			(negedge RN => (QN-:1'b0)) = 0;
 		ifnone (negedge RN => (QN-:1'b0)) = 0;
-		(posedge CLKN => (QN-:D)) = 0;
-		$setuphold (posedge CLKN &&& RN, posedge D &&& RN, 0, 0, notifier,,, delayed_CLKN, delayed_D);
-		$setuphold (posedge CLKN &&& RN, negedge D &&& RN, 0, 0, notifier,,, delayed_CLKN, delayed_D);
-		$setuphold (posedge CLKN, posedge D, 0, 0, notifier,,, delayed_CLKN, delayed_D);
-		$setuphold (posedge CLKN, negedge D, 0, 0, notifier,,, delayed_CLKN, delayed_D);
-		$recovery (posedge RN &&& D, posedge CLKN &&& D, 0, notifier);
-		$recovery (posedge RN, posedge CLKN, 0, notifier);
-		$hold (posedge CLKN &&& D, posedge RN &&& D, 0, notifier);
-		$hold (posedge CLKN, posedge RN, 0, notifier);
-		$width (negedge RN &&& CLKN, 0, 0, notifier);
-		$width (negedge RN &&& ~CLKN, 0, 0, notifier);
-		$width (posedge CLKN &&& adacond0, 0, 0, notifier);
-		$width (negedge CLKN &&& adacond0, 0, 0, notifier);
-		$width (posedge CLKN &&& adacond1, 0, 0, notifier);
-		$width (negedge CLKN &&& adacond1, 0, 0, notifier);
+		(negedge CLK => (QN-:D)) = 0;
+		$setuphold (negedge CLK &&& RN, posedge D &&& RN, 0, 0, notifier,,, delayed_CLK, delayed_D);
+		$setuphold (negedge CLK &&& RN, negedge D &&& RN, 0, 0, notifier,,, delayed_CLK, delayed_D);
+		$setuphold (negedge CLK, posedge D, 0, 0, notifier,,, delayed_CLK, delayed_D);
+		$setuphold (negedge CLK, negedge D, 0, 0, notifier,,, delayed_CLK, delayed_D);
+		$recovery (posedge RN &&& D, negedge CLK &&& D, 0, notifier);
+		$recovery (posedge RN, negedge CLK, 0, notifier);
+		$hold (negedge CLK &&& D, posedge RN &&& D, 0, notifier);
+		$hold (negedge CLK, posedge RN, 0, notifier);
+		$width (negedge RN &&& CLK, 0, 0, notifier);
+		$width (negedge RN &&& ~CLK, 0, 0, notifier);
+		$width (posedge CLK &&& adacond0, 0, 0, notifier);
+		$width (negedge CLK &&& adacond0, 0, 0, notifier);
+		$width (posedge CLK &&& adacond1, 0, 0, notifier);
+		$width (negedge CLK &&& adacond1, 0, 0, notifier);
 	endspecify
 endmodule
 `endcelldefine

@@ -12,9 +12,7 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 
-.option scale=0.05u
+* NGSPICE file created from gf180mcu_osu_sc_gp12t3v3__fill_2.ext - technology: gf180mcuC
 
-.subckt gf180mcu_osu_sc_gp12t3v3__fill_2
+.subckt gf180mcu_osu_sc_gp12t3v3__fill_2 VDD VSS
 .ends
-
-** hspice subcircuit dictionary

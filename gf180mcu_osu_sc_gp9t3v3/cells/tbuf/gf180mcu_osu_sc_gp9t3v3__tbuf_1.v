@@ -12,32 +12,17 @@
 // limitations under the License.
 `timescale 1ns/10ps
 `celldefine
-module gf180mcu_osu_sc_gp9t3v3__tbuf_1 (Y, A, EN, EN_BAR);
+module gf180mcu_osu_sc_gp9t3v3__tbuf_1 (Y, A, EN);
 	output Y;
-	input A, EN, EN_BAR;
+	input A, EN;
 
 	// Function
-	or (Y, A, EN_BAR);
+	bufif1 (Y, A, EN);
 
 	// Timing
 	specify
-		if ((EN & EN_BAR))
-			(posedge A => (Y+:1'b1)) = 0;
-		if ((EN & ~EN_BAR))
-			(A => Y) = 0;
-		if ((~EN & ~EN_BAR))
-			(negedge A => (Y+:1'b0)) = 0;
-		ifnone (A => Y) = 0;
-		if ((A & EN_BAR))
-			(posedge EN => (Y+:1'b1)) = 0;
-		if ((A & ~EN_BAR))
-			(posedge EN => (Y+:1'b1)) = 0;
-		ifnone (posedge EN => (Y+:1'b1)) = 0;
-		if ((~A & EN))
-			(negedge EN_BAR => (Y+:1'b0)) = 0;
-		if ((~A & ~EN))
-			(negedge EN_BAR => (Y+:1'b0)) = 0;
-		ifnone (negedge EN_BAR => (Y+:1'b0)) = 0;
+		(A => Y) = 0;
+		(EN => Y) = 0;
 	endspecify
 endmodule
 `endcelldefine

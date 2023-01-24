@@ -239,5 +239,7 @@ port 1 n
 rlabel metal2 82 100 82 100 1 Y
 port 2 n
 rlabel nsubdiffcont 14 155 14 155 1 VDD
+port 3 n
 rlabel psubdiffcont 13 7 13 7 1 VSS
+port 4 n
 << end >>

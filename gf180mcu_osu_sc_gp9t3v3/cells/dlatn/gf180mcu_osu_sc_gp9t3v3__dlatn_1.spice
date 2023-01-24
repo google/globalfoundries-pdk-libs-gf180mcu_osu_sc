@@ -12,25 +12,25 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 
-.option scale=0.05u
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__dlatn_1.ext - technology: gf180mcuC
 
-.subckt gf180mcu_osu_sc_gp9t3v3__dlatn_1 D Q CLKN
-X0 VDD a_10_19 a_77_70 VDD pmos_3p3 w=34 l=6
-X1 a_52_58 CLKN VSS VSS nmos_3p3 w=17 l=6
-X2 VDD a_20_14 a_10_19 VDD pmos_3p3 w=34 l=6
-X3 Q a_137_19 VDD VDD pmos_3p3 w=34 l=6
-X4 a_52_58 CLKN VDD VDD pmos_3p3 w=34 l=6
-X5 a_46_19 D VSS VSS nmos_3p3 w=17 l=6
-X6 a_20_14 CLKN a_46_19 VSS nmos_3p3 w=17 l=6
-X7 a_20_14 a_52_58 a_43_70 VDD pmos_3p3 w=34 l=6
-X8 VSS a_10_19 a_137_19 VSS nmos_3p3 w=17 l=6
-X9 VDD a_10_19 a_137_19 VDD pmos_3p3 w=34 l=6
-X10 a_77_19 a_52_58 a_20_14 VSS nmos_3p3 w=17 l=6
-X11 a_77_70 CLKN a_20_14 VDD pmos_3p3 w=34 l=6
-X12 VSS a_20_14 a_10_19 VSS nmos_3p3 w=17 l=6
-X13 Q a_137_19 VSS VSS nmos_3p3 w=17 l=6
-X14 a_43_70 D VDD VDD pmos_3p3 w=34 l=6
-X15 VSS a_10_19 a_77_19 VSS nmos_3p3 w=17 l=6
+.subckt gf180mcu_osu_sc_gp9t3v3__dlatn_1 D Q CLK VDD VSS
+X0 VDD a_10_19# a_77_70# VDD pmos_3p3 w=1.7u l=0.3u
+X1 VDD CLK a_54_14# VDD pmos_3p3 w=1.7u l=0.3u
+X2 a_52_58# a_54_14# VSS VSS nmos_3p3 w=0.85u l=0.3u
+X3 VDD a_20_14# a_10_19# VDD pmos_3p3 w=1.7u l=0.3u
+X4 a_52_58# a_54_14# VDD VDD pmos_3p3 w=1.7u l=0.3u
+X5 a_46_19# D VSS VSS nmos_3p3 w=0.85u l=0.3u
+X6 a_20_14# a_54_14# a_46_19# VSS nmos_3p3 w=0.85u l=0.3u
+X7 VSS a_10_19# a_173_19# VSS nmos_3p3 w=0.85u l=0.3u
+X8 a_20_14# a_52_58# a_43_70# VDD pmos_3p3 w=1.7u l=0.3u
+X9 VDD a_10_19# a_173_19# VDD pmos_3p3 w=1.7u l=0.3u
+X10 a_77_19# a_52_58# a_20_14# VSS nmos_3p3 w=0.85u l=0.3u
+X11 Q a_173_19# VSS VSS nmos_3p3 w=0.85u l=0.3u
+X12 a_77_70# a_54_14# a_20_14# VDD pmos_3p3 w=1.7u l=0.3u
+X13 Q a_173_19# VDD VDD pmos_3p3 w=1.7u l=0.3u
+X14 VSS CLK a_54_14# VSS nmos_3p3 w=0.85u l=0.3u
+X15 VSS a_20_14# a_10_19# VSS nmos_3p3 w=0.85u l=0.3u
+X16 a_43_70# D VDD VDD pmos_3p3 w=1.7u l=0.3u
+X17 VSS a_10_19# a_77_19# VSS nmos_3p3 w=0.85u l=0.3u
 .ends
-
-** hspice subcircuit dictionary

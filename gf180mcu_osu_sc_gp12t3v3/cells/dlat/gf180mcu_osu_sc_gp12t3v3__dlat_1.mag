@@ -419,10 +419,12 @@ rect 135 69 145 70
 << labels >>
 rlabel metal2 42 86 42 86 1 D
 port 1 n
-rlabel polycontact 74 86 74 86 1 CLK
-port 2 n
 rlabel metal2 168 99 168 99 1 Q
-port 4 n
+port 2 n
+rlabel polycontact 74 86 74 86 1 CLK
+port 3 n
 rlabel nsubdiffcont 13 154 13 154 1 VDD
+port 4 n
 rlabel psubdiffcont 13 8 13 8 1 VSS
+port 5 n
 << end >>

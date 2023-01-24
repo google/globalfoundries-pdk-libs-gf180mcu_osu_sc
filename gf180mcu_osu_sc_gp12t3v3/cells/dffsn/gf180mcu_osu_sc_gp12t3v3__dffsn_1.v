@@ -12,9 +12,9 @@
 // limitations under the License.
 `timescale 1ns/10ps
 `celldefine
-module gf180mcu_osu_sc_gp12t3v3__dffsn_1 (Q, QN, D, SN, CLKN);
+module gf180mcu_osu_sc_gp12t3v3__dffsn_1 (Q, QN, D, SN, CLK);
 	output Q, QN;
-	input D, SN, CLKN;
+	input D, SN, CLK;
 	reg notifier;
 
 	// Function
@@ -23,7 +23,7 @@ module gf180mcu_osu_sc_gp12t3v3__dffsn_1 (Q, QN, D, SN, CLKN);
 
 	// Timing
 	specify
-		$width (posedge SN &&& CLKN, 0, 0, notifier);
+		$width (posedge SN &&& ~CLK, 0, 0, notifier);
 	endspecify
 endmodule
 `endcelldefine

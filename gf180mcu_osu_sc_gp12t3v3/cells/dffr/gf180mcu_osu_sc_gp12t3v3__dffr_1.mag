@@ -827,14 +827,16 @@ rect 55 18 281 24
 << labels >>
 rlabel metal2 113 73 113 73 1 D
 port 1 n
-rlabel metal2 228 86 228 86 1 CLK
-port 9 n
-rlabel nsubdiffcont 13 154 13 154 1 VDD
-rlabel psubdiffcont 13 7 13 7 1 VSS
-rlabel metal2 16 99 16 99 1 RN
-port 4 n
 rlabel metal2 341 99 341 99 1 Q
-port 5 n
+port 2 n
 rlabel metal2 326 86 326 86 1 QN
-port 8 n
+port 3 n
+rlabel metal2 228 86 228 86 1 CLK
+port 4 n
+rlabel metal2 16 99 16 99 1 RN
+port 5 n
+rlabel nsubdiffcont 13 154 13 154 1 VDD
+port 6 n
+rlabel psubdiffcont 13 7 13 7 1 VSS
+port 7 n
 << end >>

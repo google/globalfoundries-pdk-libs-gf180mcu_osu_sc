@@ -12,15 +12,13 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 
-.option scale=0.05u
+* NGSPICE file created from gf180mcu_osu_sc_gp12t3v3__mux2_1.ext - technology: gf180mcuC
 
-.subckt gf180mcu_osu_sc_gp12t3v3__mux2_1 Y Sel A B
-X0 B a_25_19 Y VDD pmos_3p3 w=34 l=6
-X1 Y Sel A VDD pmos_3p3 w=34 l=6
-X2 a_25_19 Sel VDD VDD pmos_3p3 w=34 l=6
-X3 Y a_25_19 A VSS nmos_3p3 w=17 l=6
-X4 a_25_19 Sel VSS VSS nmos_3p3 w=17 l=6
-X5 B Sel Y VSS nmos_3p3 w=17 l=6
+.subckt gf180mcu_osu_sc_gp12t3v3__mux2_1 A B Y Sel VDD VSS
+X0 B a_25_19# Y VDD pmos_3p3 w=1.7u l=0.3u
+X1 Y Sel A VDD pmos_3p3 w=1.7u l=0.3u
+X2 a_25_19# Sel VDD VDD pmos_3p3 w=1.7u l=0.3u
+X3 Y a_25_19# A VSS nmos_3p3 w=0.85u l=0.3u
+X4 a_25_19# Sel VSS VSS nmos_3p3 w=0.85u l=0.3u
+X5 B Sel Y VSS nmos_3p3 w=0.85u l=0.3u
 .ends
-
-** hspice subcircuit dictionary

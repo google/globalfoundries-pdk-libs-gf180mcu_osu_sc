@@ -1,4 +1,4 @@
-// Verilog for library /import/yukari1/lrburle/OSU_180/char/liberate/VERILOG/gf180mcu_osu_sc_gp9t3v3_TT_25C.ccs created by Liberate 19.2.2.189 on Thu Dec 15 17:31:29 CST 2022 for SDF version 2.1
+// Verilog for library /import/yukari1/lrburle/OSU_180/char/liberate/VERILOG/gf180mcu_osu_sc_gp9t3v3_TT_25C.ccs created by Liberate 19.2.2.189 on Thu Jan 19 16:12:23 CST 2023 for SDF version 2.1
 
 // type:  
 `timescale 1ns/10ps
@@ -211,49 +211,6 @@ module gf180mcu_osu_sc_gp9t3v3__aoi22_1 (Y, A0, A1, B0, B1);
 		if ((~A0 & ~A1 & B0))
 			(B1 => Y) = 0;
 		ifnone (B1 => Y) = 0;
-	endspecify
-endmodule
-`endcelldefine
-
-// type:  
-`timescale 1ns/10ps
-`celldefine
-module gf180mcu_osu_sc_gp9t3v3__aoi31_1 (Y, A0, A1, A2, B);
-	output Y;
-	input A0, A1, A2, B;
-
-	// Function
-	wire A0__bar, A1__bar, A2__bar;
-	wire B__bar, int_fwire_0, int_fwire_1;
-	wire int_fwire_2;
-
-	not (B__bar, B);
-	not (A2__bar, A2);
-	and (int_fwire_0, A2__bar, B__bar);
-	not (A1__bar, A1);
-	and (int_fwire_1, A1__bar, B__bar);
-	not (A0__bar, A0);
-	and (int_fwire_2, A0__bar, B__bar);
-	or (Y, int_fwire_2, int_fwire_1, int_fwire_0);
-
-	// Timing
-	specify
-		(A0 => Y) = 0;
-		(A1 => Y) = 0;
-		(A2 => Y) = 0;
-		if ((A0 & A1 & ~A2))
-			(B => Y) = 0;
-		if ((A0 & ~A1 & A2))
-			(B => Y) = 0;
-		if ((A0 & ~A1 & ~A2) | (~A0 & ~A1 & A2))
-			(B => Y) = 0;
-		if ((~A0 & A1 & A2))
-			(B => Y) = 0;
-		if ((~A0 & A1 & ~A2))
-			(B => Y) = 0;
-		if ((~A0 & ~A1 & ~A2))
-			(B => Y) = 0;
-		ifnone (B => Y) = 0;
 	endspecify
 endmodule
 `endcelldefine
@@ -548,31 +505,33 @@ endmodule
 // type:  
 `timescale 1ns/10ps
 `celldefine
-module gf180mcu_osu_sc_gp9t3v3__dffn_1 (Q, QN, D, CLKN);
+module gf180mcu_osu_sc_gp9t3v3__dffn_1 (Q, QN, D, CLK);
 	output Q, QN;
-	input D, CLKN;
+	input D, CLK;
 	reg notifier;
-	wire delayed_D, delayed_CLKN;
+	wire delayed_D, delayed_CLK;
 
 	// Function
-	wire int_fwire_IQ, int_fwire_IQN, xcr_0;
+	wire int_fwire_clk, int_fwire_IQ, int_fwire_IQN;
+	wire xcr_0;
 
-	altos_dff_err (xcr_0, delayed_CLKN, delayed_D);
-	altos_dff (int_fwire_IQ, notifier, delayed_CLKN, delayed_D, xcr_0);
+	not (int_fwire_clk, delayed_CLK);
+	altos_dff_err (xcr_0, int_fwire_clk, delayed_D);
+	altos_dff (int_fwire_IQ, notifier, int_fwire_clk, delayed_D, xcr_0);
 	buf (Q, int_fwire_IQ);
 	not (int_fwire_IQN, int_fwire_IQ);
 	buf (QN, int_fwire_IQN);
 
 	// Timing
 	specify
-		(posedge CLKN => (Q+:D)) = 0;
-		(posedge CLKN => (QN-:D)) = 0;
-		$setuphold (posedge CLKN, posedge D, 0, 0, notifier,,, delayed_CLKN, delayed_D);
-		$setuphold (posedge CLKN, negedge D, 0, 0, notifier,,, delayed_CLKN, delayed_D);
-		$width (posedge CLKN &&& D, 0, 0, notifier);
-		$width (negedge CLKN &&& D, 0, 0, notifier);
-		$width (posedge CLKN &&& ~D, 0, 0, notifier);
-		$width (negedge CLKN &&& ~D, 0, 0, notifier);
+		(negedge CLK => (Q+:D)) = 0;
+		(negedge CLK => (QN-:D)) = 0;
+		$setuphold (negedge CLK, posedge D, 0, 0, notifier,,, delayed_CLK, delayed_D);
+		$setuphold (negedge CLK, negedge D, 0, 0, notifier,,, delayed_CLK, delayed_D);
+		$width (posedge CLK &&& D, 0, 0, notifier);
+		$width (negedge CLK &&& D, 0, 0, notifier);
+		$width (posedge CLK &&& ~D, 0, 0, notifier);
+		$width (negedge CLK &&& ~D, 0, 0, notifier);
 	endspecify
 endmodule
 `endcelldefine
@@ -734,26 +693,27 @@ endmodule
 // type:  
 `timescale 1ns/10ps
 `celldefine
-module gf180mcu_osu_sc_gp9t3v3__dlatn_1 (Q, D, CLKN);
+module gf180mcu_osu_sc_gp9t3v3__dlatn_1 (Q, D, CLK);
 	output Q;
-	input D, CLKN;
+	input D, CLK;
 	reg notifier;
-	wire delayed_D, delayed_CLKN;
+	wire delayed_D, delayed_CLK;
 
 	// Function
-	wire int_fwire_IQ;
+	wire int_fwire_clk, int_fwire_IQ;
 
-	altos_latch (int_fwire_IQ, notifier, delayed_CLKN, delayed_D);
+	not (int_fwire_clk, delayed_CLK);
+	altos_latch (int_fwire_IQ, notifier, int_fwire_clk, delayed_D);
 	buf (Q, int_fwire_IQ);
 
 	// Timing
 	specify
 		(D => Q) = 0;
-		(posedge CLKN => (Q+:D)) = 0;
-		$setuphold (negedge CLKN, posedge D, 0, 0, notifier,,, delayed_CLKN, delayed_D);
-		$setuphold (negedge CLKN, negedge D, 0, 0, notifier,,, delayed_CLKN, delayed_D);
-		$width (posedge CLKN &&& D, 0, 0, notifier);
-		$width (posedge CLKN &&& ~D, 0, 0, notifier);
+		(negedge CLK => (Q+:D)) = 0;
+		$setuphold (posedge CLK, posedge D, 0, 0, notifier,,, delayed_CLK, delayed_D);
+		$setuphold (posedge CLK, negedge D, 0, 0, notifier,,, delayed_CLK, delayed_D);
+		$width (negedge CLK &&& D, 0, 0, notifier);
+		$width (negedge CLK &&& ~D, 0, 0, notifier);
 	endspecify
 endmodule
 `endcelldefine
@@ -983,21 +943,52 @@ endmodule
 // type:  
 `timescale 1ns/10ps
 `celldefine
-module gf180mcu_osu_sc_gp9t3v3__oai22_1 (Y, A0, A1);
+module gf180mcu_osu_sc_gp9t3v3__oai22_1 (Y, A0, A1, B0, B1);
 	output Y;
-	input A0, A1;
+	input A0, A1, B0, B1;
 
 	// Function
-	wire A0__bar, A1__bar;
+	wire A0__bar, A1__bar, B0__bar;
+	wire B1__bar, int_fwire_0, int_fwire_1;
 
+	not (B1__bar, B1);
+	not (B0__bar, B0);
+	and (int_fwire_0, B0__bar, B1__bar);
 	not (A1__bar, A1);
 	not (A0__bar, A0);
-	and (Y, A0__bar, A1__bar);
+	and (int_fwire_1, A0__bar, A1__bar);
+	or (Y, int_fwire_1, int_fwire_0);
 
 	// Timing
 	specify
-		(A0 => Y) = 0;
-		(A1 => Y) = 0;
+		if ((~A1 & B0 & B1))
+			(A0 => Y) = 0;
+		if ((~A1 & B0 & ~B1))
+			(A0 => Y) = 0;
+		if ((~A1 & ~B0 & B1))
+			(A0 => Y) = 0;
+		ifnone (A0 => Y) = 0;
+		if ((~A0 & B0 & B1))
+			(A1 => Y) = 0;
+		if ((~A0 & B0 & ~B1))
+			(A1 => Y) = 0;
+		if ((~A0 & ~B0 & B1))
+			(A1 => Y) = 0;
+		ifnone (A1 => Y) = 0;
+		if ((A0 & A1 & ~B1))
+			(B0 => Y) = 0;
+		if ((A0 & ~A1 & ~B1))
+			(B0 => Y) = 0;
+		if ((~A0 & A1 & ~B1))
+			(B0 => Y) = 0;
+		ifnone (B0 => Y) = 0;
+		if ((A0 & A1 & ~B0))
+			(B1 => Y) = 0;
+		if ((A0 & ~A1 & ~B0))
+			(B1 => Y) = 0;
+		if ((~A0 & A1 & ~B0))
+			(B1 => Y) = 0;
+		ifnone (B1 => Y) = 0;
 	endspecify
 endmodule
 `endcelldefine
@@ -1063,32 +1054,17 @@ endmodule
 // type:  
 `timescale 1ns/10ps
 `celldefine
-module gf180mcu_osu_sc_gp9t3v3__tbuf_1 (Y, A, EN, EN_BAR);
+module gf180mcu_osu_sc_gp9t3v3__tbuf_1 (Y, A, EN);
 	output Y;
-	input A, EN, EN_BAR;
+	input A, EN;
 
 	// Function
-	or (Y, A, EN_BAR);
+	bufif1 (Y, A, EN);
 
 	// Timing
 	specify
-		if ((EN & EN_BAR))
-			(posedge A => (Y+:1'b1)) = 0;
-		if ((EN & ~EN_BAR))
-			(A => Y) = 0;
-		if ((~EN & ~EN_BAR))
-			(negedge A => (Y+:1'b0)) = 0;
-		ifnone (A => Y) = 0;
-		if ((A & EN_BAR))
-			(posedge EN => (Y+:1'b1)) = 0;
-		if ((A & ~EN_BAR))
-			(posedge EN => (Y+:1'b1)) = 0;
-		ifnone (posedge EN => (Y+:1'b1)) = 0;
-		if ((~A & EN))
-			(negedge EN_BAR => (Y+:1'b0)) = 0;
-		if ((~A & ~EN))
-			(negedge EN_BAR => (Y+:1'b0)) = 0;
-		ifnone (negedge EN_BAR => (Y+:1'b0)) = 0;
+		(A => Y) = 0;
+		(EN => Y) = 0;
 	endspecify
 endmodule
 `endcelldefine
@@ -1096,139 +1072,7 @@ endmodule
 // type:  
 `timescale 1ns/10ps
 `celldefine
-module gf180mcu_osu_sc_gp9t3v3__tbuf_16 (Y, A, EN, EN_BAR);
-	output Y;
-	input A, EN, EN_BAR;
-
-	// Function
-	or (Y, A, EN_BAR);
-
-	// Timing
-	specify
-		if ((EN & EN_BAR))
-			(posedge A => (Y+:1'b1)) = 0;
-		if ((EN & ~EN_BAR))
-			(A => Y) = 0;
-		if ((~EN & ~EN_BAR))
-			(negedge A => (Y+:1'b0)) = 0;
-		ifnone (A => Y) = 0;
-		if ((A & EN_BAR))
-			(posedge EN => (Y+:1'b1)) = 0;
-		if ((A & ~EN_BAR))
-			(posedge EN => (Y+:1'b1)) = 0;
-		ifnone (posedge EN => (Y+:1'b1)) = 0;
-		if ((~A & EN))
-			(negedge EN_BAR => (Y+:1'b0)) = 0;
-		if ((~A & ~EN))
-			(negedge EN_BAR => (Y+:1'b0)) = 0;
-		ifnone (negedge EN_BAR => (Y+:1'b0)) = 0;
-	endspecify
-endmodule
-`endcelldefine
-
-// type:  
-`timescale 1ns/10ps
-`celldefine
-module gf180mcu_osu_sc_gp9t3v3__tbuf_2 (Y, A, EN, EN_BAR);
-	output Y;
-	input A, EN, EN_BAR;
-
-	// Function
-	or (Y, A, EN_BAR);
-
-	// Timing
-	specify
-		if ((EN & EN_BAR))
-			(posedge A => (Y+:1'b1)) = 0;
-		if ((EN & ~EN_BAR))
-			(A => Y) = 0;
-		if ((~EN & ~EN_BAR))
-			(negedge A => (Y+:1'b0)) = 0;
-		ifnone (A => Y) = 0;
-		if ((A & EN_BAR))
-			(posedge EN => (Y+:1'b1)) = 0;
-		if ((A & ~EN_BAR))
-			(posedge EN => (Y+:1'b1)) = 0;
-		ifnone (posedge EN => (Y+:1'b1)) = 0;
-		if ((~A & EN))
-			(negedge EN_BAR => (Y+:1'b0)) = 0;
-		if ((~A & ~EN))
-			(negedge EN_BAR => (Y+:1'b0)) = 0;
-		ifnone (negedge EN_BAR => (Y+:1'b0)) = 0;
-	endspecify
-endmodule
-`endcelldefine
-
-// type:  
-`timescale 1ns/10ps
-`celldefine
-module gf180mcu_osu_sc_gp9t3v3__tbuf_4 (Y, A, EN, EN_BAR);
-	output Y;
-	input A, EN, EN_BAR;
-
-	// Function
-	or (Y, A, EN_BAR);
-
-	// Timing
-	specify
-		if ((EN & EN_BAR))
-			(posedge A => (Y+:1'b1)) = 0;
-		if ((EN & ~EN_BAR))
-			(A => Y) = 0;
-		if ((~EN & ~EN_BAR))
-			(negedge A => (Y+:1'b0)) = 0;
-		ifnone (A => Y) = 0;
-		if ((A & EN_BAR))
-			(posedge EN => (Y+:1'b1)) = 0;
-		if ((A & ~EN_BAR))
-			(posedge EN => (Y+:1'b1)) = 0;
-		ifnone (posedge EN => (Y+:1'b1)) = 0;
-		if ((~A & EN))
-			(negedge EN_BAR => (Y+:1'b0)) = 0;
-		if ((~A & ~EN))
-			(negedge EN_BAR => (Y+:1'b0)) = 0;
-		ifnone (negedge EN_BAR => (Y+:1'b0)) = 0;
-	endspecify
-endmodule
-`endcelldefine
-
-// type:  
-`timescale 1ns/10ps
-`celldefine
-module gf180mcu_osu_sc_gp9t3v3__tbuf_8 (Y, A, EN, EN_BAR);
-	output Y;
-	input A, EN, EN_BAR;
-
-	// Function
-	or (Y, A, EN_BAR);
-
-	// Timing
-	specify
-		if ((EN & EN_BAR))
-			(posedge A => (Y+:1'b1)) = 0;
-		if ((EN & ~EN_BAR))
-			(A => Y) = 0;
-		if ((~EN & ~EN_BAR))
-			(negedge A => (Y+:1'b0)) = 0;
-		ifnone (A => Y) = 0;
-		if ((A & EN_BAR))
-			(posedge EN => (Y+:1'b1)) = 0;
-		if ((A & ~EN_BAR))
-			(posedge EN => (Y+:1'b1)) = 0;
-		ifnone (posedge EN => (Y+:1'b1)) = 0;
-		if ((~A & EN))
-			(negedge EN_BAR => (Y+:1'b0)) = 0;
-		if ((~A & ~EN))
-			(negedge EN_BAR => (Y+:1'b0)) = 0;
-		ifnone (negedge EN_BAR => (Y+:1'b0)) = 0;
-	endspecify
-endmodule
-`endcelldefine
-
-// type:  
-`timescale 1ns/10ps
-`celldefine
-module gf180mcu_osu_sc_gp9t3v3__tiehi (Y);
+module gf180mcu_osu_sc_gp9t3v3__tieh (Y);
 	output Y;
 
 	// Function
@@ -1243,7 +1087,7 @@ endmodule
 // type:  
 `timescale 1ns/10ps
 `celldefine
-module gf180mcu_osu_sc_gp9t3v3__tielo (Y);
+module gf180mcu_osu_sc_gp9t3v3__tiel (Y);
 	output Y;
 
 	// Function
@@ -1258,137 +1102,29 @@ endmodule
 // type:  
 `timescale 1ns/10ps
 `celldefine
-module gf180mcu_osu_sc_gp9t3v3__tinv_1 (Y, A, EN, EN_BAR);
+module gf180mcu_osu_sc_gp9t3v3__tinv_1 (Y, A, EN);
 	output Y;
-	input A, EN, EN_BAR;
+	input A, EN;
 
 	// Function
-	wire A__bar, EN__bar, EN_BAR__bar;
-	wire int_fwire_0, int_fwire_1, int_fwire___Y;
-	wire int_fwire_enable_Y;
+	wire A__bar, EN__bar, int_fwire_0;
+	wire int_fwire_enable;
 
 	not (A__bar, A);
-	and (int_fwire_0, A__bar, EN_BAR);
 	not (EN__bar, EN);
-	and (int_fwire_1, A, EN__bar);
-	or (int_fwire_enable_Y, int_fwire_1, int_fwire_0);
-	not (EN_BAR__bar, EN_BAR);
-	and (int_fwire___Y, A__bar, EN_BAR__bar);
-	bufif0 (Y, int_fwire___Y, int_fwire_enable_Y);
+	and (int_fwire_0, A, EN__bar);
+	or (int_fwire_enable, int_fwire_0, A__bar);
+	notif0 (Y, A, int_fwire_enable);
 
 	// Timing
 	specify
-		if ((EN & EN_BAR))
-			(posedge A => (Y-:1'b0)) = 0;
-		if ((EN & ~EN_BAR))
-			(A => Y) = 0;
-		if ((~EN & ~EN_BAR))
+		if (EN)
+			(negedge A => (Y+:1'b1)) = 0;
+		if (~EN)
 			(negedge A => (Y+:1'b1)) = 0;
 		ifnone (A => Y) = 0;
-		ifnone (negedge A => (Y:((!A && !EN_BAR)))) = 0;
-		ifnone (posedge EN => (Y-:1'b0)) = 0;
-		(negedge EN => (Y:((!A && !EN_BAR)))) = 0;
-		ifnone (negedge EN_BAR => (Y+:1'b1)) = 0;
-	endspecify
-endmodule
-`endcelldefine
-
-// type:  
-`timescale 1ns/10ps
-`celldefine
-module gf180mcu_osu_sc_gp9t3v3__tinv_16 (Y, A, EN, EN_BAR);
-	output Y;
-	input A, EN, EN_BAR;
-
-	// Function
-	or (Y, A, EN_BAR);
-
-	// Timing
-	specify
-		if ((EN) | (~EN & ~EN_BAR))
-			(A => Y) = 0;
-		if ((~EN & EN_BAR))
-			(posedge A => (Y:A)) = 0;
-		ifnone (A => Y) = 0;
-		if ((~EN & EN_BAR))
-			(negedge A => (Y:A)) = 0;
+		ifnone (negedge A => (Y:!A)) = 0;
 		(EN => Y) = 0;
-		(EN_BAR => Y) = 0;
-	endspecify
-endmodule
-`endcelldefine
-
-// type:  
-`timescale 1ns/10ps
-`celldefine
-module gf180mcu_osu_sc_gp9t3v3__tinv_2 (Y, A, EN, EN_BAR);
-	output Y;
-	input A, EN, EN_BAR;
-
-	// Function
-	or (Y, A, EN_BAR);
-
-	// Timing
-	specify
-		if ((EN) | (~EN & ~EN_BAR))
-			(A => Y) = 0;
-		if ((~EN & EN_BAR))
-			(posedge A => (Y:A)) = 0;
-		ifnone (A => Y) = 0;
-		if ((~EN & EN_BAR))
-			(negedge A => (Y:A)) = 0;
-		(EN => Y) = 0;
-		(EN_BAR => Y) = 0;
-	endspecify
-endmodule
-`endcelldefine
-
-// type:  
-`timescale 1ns/10ps
-`celldefine
-module gf180mcu_osu_sc_gp9t3v3__tinv_4 (Y, A, EN, EN_BAR);
-	output Y;
-	input A, EN, EN_BAR;
-
-	// Function
-	or (Y, A, EN_BAR);
-
-	// Timing
-	specify
-		if ((EN) | (~EN & ~EN_BAR))
-			(A => Y) = 0;
-		if ((~EN & EN_BAR))
-			(posedge A => (Y:A)) = 0;
-		ifnone (A => Y) = 0;
-		if ((~EN & EN_BAR))
-			(negedge A => (Y:A)) = 0;
-		(EN => Y) = 0;
-		(EN_BAR => Y) = 0;
-	endspecify
-endmodule
-`endcelldefine
-
-// type:  
-`timescale 1ns/10ps
-`celldefine
-module gf180mcu_osu_sc_gp9t3v3__tinv_8 (Y, A, EN, EN_BAR);
-	output Y;
-	input A, EN, EN_BAR;
-
-	// Function
-	or (Y, A, EN_BAR);
-
-	// Timing
-	specify
-		if ((EN) | (~EN & ~EN_BAR))
-			(A => Y) = 0;
-		if ((~EN & EN_BAR))
-			(posedge A => (Y:A)) = 0;
-		ifnone (A => Y) = 0;
-		if ((~EN & EN_BAR))
-			(negedge A => (Y:A)) = 0;
-		(EN => Y) = 0;
-		(EN_BAR => Y) = 0;
 	endspecify
 endmodule
 `endcelldefine

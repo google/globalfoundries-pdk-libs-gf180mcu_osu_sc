@@ -910,15 +910,17 @@ rect 55 18 303 24
 rlabel metal2 124 73 124 73 1 D
 port 1 n
 rlabel metal2 363 99 363 99 1 Q
-port 5 n
+port 2 n
+rlabel metal2 348 86 348 86 1 QN
+port 3 n
 rlabel metal2 16 99 16 99 1 RN
 port 4 n
 rlabel metal2 284 86 284 86 1 SN
-port 3 n
-rlabel metal2 348 86 348 86 1 QN
-port 8 n
+port 5 n
 rlabel metal2 239 86 239 86 1 CLK
-port 9 n
-rlabel psubdiffcont 13 7 13 7 1 VSS
+port 6 n
 rlabel nsubdiffcont 13 154 13 154 1 VDD
+port 7 n
+rlabel psubdiffcont 13 7 13 7 1 VSS
+port 8 n
 << end >>

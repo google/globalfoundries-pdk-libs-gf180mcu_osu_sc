@@ -12,48 +12,17 @@
 // limitations under the License.
 `timescale 1ns/10ps
 `celldefine
-module gf180mcu_osu_sc_gp12t3v3__tbuf_1 (Y, A, EN, EN_BAR);
+module gf180mcu_osu_sc_gp12t3v3__tbuf_1 (Y, A, EN);
 	output Y;
-	input A, EN, EN_BAR;
+	input A, EN;
 
 	// Function
-	wire A__bar, EN__bar, EN_BAR__bar;
-	wire int_fwire_0, int_fwire_1, int_fwire___Y;
-	wire int_fwire_enable_Y;
-
-	not (EN__bar, EN);
-	not (A__bar, A);
-	and (int_fwire_0, A__bar, EN__bar);
-	and (int_fwire_1, A, EN_BAR);
-	or (int_fwire_enable_Y, int_fwire_1, int_fwire_0);
-	not (EN_BAR__bar, EN_BAR);
-	and (int_fwire___Y, A, EN_BAR__bar);
-	bufif0 (Y, int_fwire___Y, int_fwire_enable_Y);
+	bufif1 (Y, A, EN);
 
 	// Timing
 	specify
-		if ((EN & EN_BAR))
-			(negedge A => (Y+:1'b0)) = 0;
-		if ((EN & ~EN_BAR))
-			(A => Y) = 0;
-		if ((~EN & ~EN_BAR))
-			(posedge A => (Y+:1'b1)) = 0;
-		ifnone (A => Y) = 0;
-		ifnone (posedge A => (Y:((A && !EN_BAR)))) = 0;
-		if ((~A & EN_BAR))
-			(posedge EN => (Y-:1'b0)) = 0;
-		if ((~A & ~EN_BAR))
-			(posedge EN => (Y-:1'b0)) = 0;
-		ifnone (posedge EN => (Y-:1'b0)) = 0;
-		if ((~A & EN_BAR))
-			(negedge EN => (Y:((A && !EN_BAR)))) = 0;
-		if ((~A & ~EN_BAR))
-			(negedge EN => (Y:((A && !EN_BAR)))) = 0;
-		if ((A & EN))
-			(negedge EN_BAR => (Y+:1'b1)) = 0;
-		if ((A & ~EN))
-			(negedge EN_BAR => (Y+:1'b1)) = 0;
-		ifnone (negedge EN_BAR => (Y+:1'b1)) = 0;
+		(A => Y) = 0;
+		(EN => Y) = 0;
 	endspecify
 endmodule
 `endcelldefine

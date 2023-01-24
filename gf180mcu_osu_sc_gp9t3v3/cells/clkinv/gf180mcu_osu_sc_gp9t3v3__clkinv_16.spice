@@ -12,42 +12,40 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 
-.option scale=0.05u
+* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__clkinv_16.ext - technology: gf180mcuC
 
-.subckt gf180mcu_osu_sc_gp9t3v3__clkinv_16 A Y
-X0 VDD A Y VDD pmos_3p3 w=34 l=6
-X1 VDD A Y VDD pmos_3p3 w=34 l=6
-X2 VDD A Y VDD pmos_3p3 w=34 l=6
-X3 Y A VSS VSS nmos_3p3 w=17 l=6
-X4 Y A VDD VDD pmos_3p3 w=34 l=6
-X5 Y A VSS VSS nmos_3p3 w=17 l=6
-X6 VSS A Y VSS nmos_3p3 w=17 l=6
-X7 Y A VDD VDD pmos_3p3 w=34 l=6
-X8 VSS A Y VSS nmos_3p3 w=17 l=6
-X9 VDD A Y VDD pmos_3p3 w=34 l=6
-X10 Y A VSS VSS nmos_3p3 w=17 l=6
-X11 Y A VSS VSS nmos_3p3 w=17 l=6
-X12 VDD A Y VDD pmos_3p3 w=34 l=6
-X13 Y A VSS VSS nmos_3p3 w=17 l=6
-X14 Y A VSS VSS nmos_3p3 w=17 l=6
-X15 Y A VDD VDD pmos_3p3 w=34 l=6
-X16 Y A VDD VDD pmos_3p3 w=34 l=6
-X17 VSS A Y VSS nmos_3p3 w=17 l=6
-X18 Y A VDD VDD pmos_3p3 w=34 l=6
-X19 Y A VDD VDD pmos_3p3 w=34 l=6
-X20 VSS A Y VSS nmos_3p3 w=17 l=6
-X21 VDD A Y VDD pmos_3p3 w=34 l=6
-X22 VDD A Y VDD pmos_3p3 w=34 l=6
-X23 Y A VSS VSS nmos_3p3 w=17 l=6
-X24 Y A VSS VSS nmos_3p3 w=17 l=6
-X25 VSS A Y VSS nmos_3p3 w=17 l=6
-X26 Y A VDD VDD pmos_3p3 w=34 l=6
-X27 Y A VDD VDD pmos_3p3 w=34 l=6
-X28 VSS A Y VSS nmos_3p3 w=17 l=6
-X29 VSS A Y VSS nmos_3p3 w=17 l=6
-X30 VSS A Y VSS nmos_3p3 w=17 l=6
-X31 VDD A Y VDD pmos_3p3 w=34 l=6
+.subckt gf180mcu_osu_sc_gp9t3v3__clkinv_16 A Y VDD VSS
+X0 VDD A Y VDD pmos_3p3 w=1.7u l=0.3u
+X1 VDD A Y VDD pmos_3p3 w=1.7u l=0.3u
+X2 VDD A Y VDD pmos_3p3 w=1.7u l=0.3u
+X3 Y A VSS VSS nmos_3p3 w=0.85u l=0.3u
+X4 Y A VDD VDD pmos_3p3 w=1.7u l=0.3u
+X5 Y A VSS VSS nmos_3p3 w=0.85u l=0.3u
+X6 VSS A Y VSS nmos_3p3 w=0.85u l=0.3u
+X7 Y A VDD VDD pmos_3p3 w=1.7u l=0.3u
+X8 VSS A Y VSS nmos_3p3 w=0.85u l=0.3u
+X9 VDD A Y VDD pmos_3p3 w=1.7u l=0.3u
+X10 Y A VSS VSS nmos_3p3 w=0.85u l=0.3u
+X11 Y A VSS VSS nmos_3p3 w=0.85u l=0.3u
+X12 VDD A Y VDD pmos_3p3 w=1.7u l=0.3u
+X13 Y A VSS VSS nmos_3p3 w=0.85u l=0.3u
+X14 Y A VSS VSS nmos_3p3 w=0.85u l=0.3u
+X15 Y A VDD VDD pmos_3p3 w=1.7u l=0.3u
+X16 Y A VDD VDD pmos_3p3 w=1.7u l=0.3u
+X17 VSS A Y VSS nmos_3p3 w=0.85u l=0.3u
+X18 Y A VDD VDD pmos_3p3 w=1.7u l=0.3u
+X19 Y A VDD VDD pmos_3p3 w=1.7u l=0.3u
+X20 VSS A Y VSS nmos_3p3 w=0.85u l=0.3u
+X21 VDD A Y VDD pmos_3p3 w=1.7u l=0.3u
+X22 VDD A Y VDD pmos_3p3 w=1.7u l=0.3u
+X23 Y A VSS VSS nmos_3p3 w=0.85u l=0.3u
+X24 Y A VSS VSS nmos_3p3 w=0.85u l=0.3u
+X25 VSS A Y VSS nmos_3p3 w=0.85u l=0.3u
+X26 Y A VDD VDD pmos_3p3 w=1.7u l=0.3u
+X27 Y A VDD VDD pmos_3p3 w=1.7u l=0.3u
+X28 VSS A Y VSS nmos_3p3 w=0.85u l=0.3u
+X29 VSS A Y VSS nmos_3p3 w=0.85u l=0.3u
+X30 VSS A Y VSS nmos_3p3 w=0.85u l=0.3u
+X31 VDD A Y VDD pmos_3p3 w=1.7u l=0.3u
 C0 Y VDD 2.058360fF
 .ends
-
-** hspice subcircuit dictionary

@@ -23,5 +23,7 @@ rect 0 150 16 162
 rect 0 0 16 12
 << labels >>
 rlabel metal1 7 157 7 157 5 VDD
+port 1 n
 rlabel metal1 6 5 6 5 1 VSS
+port 2 n
 << end >>

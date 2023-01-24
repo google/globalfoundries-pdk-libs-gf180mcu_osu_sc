@@ -375,9 +375,11 @@ port 1 n
 rlabel metal2 159 60 159 60 1 S
 port 3 n
 rlabel metal2 52 34 52 34 1 B
-port 5 n
+port 2 n
 rlabel metal2 12 73 12 73 1 CO
 port 4 n
 rlabel nsubdiffcont 14 115 14 115 1 VDD
+port 5 n
 rlabel psubdiffcont 13 7 13 7 1 VSS
+port 6 n
 << end >>

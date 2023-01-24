@@ -199,11 +199,13 @@ rect 67 29 69 35
 rect 59 28 69 29
 << labels >>
 rlabel metal2 23 47 23 47 1 A
-port 2 n
-rlabel metal2 38 60 38 60 1 B
 port 1 n
+rlabel metal2 38 60 38 60 1 B
+port 2 n
 rlabel metal2 64 73 64 73 1 Y
 port 3 n
 rlabel nsubdiffcont 13 115 13 115 1 VDD
+port 4 n
 rlabel psubdiffcont 13 7 13 7 1 VSS
+port 5 n
 << end >>

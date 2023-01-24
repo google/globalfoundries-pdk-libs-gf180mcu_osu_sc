@@ -18,7 +18,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__tbuf_1
   CLASS CORE ;
   ORIGIN 0 0 ;
   FOREIGN gf180mcu_osu_sc_gp12t3v3__tbuf_1 0 0 ;
-  SIZE 3.65 BY 8.1 ;
+  SIZE 5.2 BY 8.1 ;
   SYMMETRY X Y ;
   SITE GF180_3p3_12t ;
   PIN VDD
@@ -27,7 +27,8 @@ MACRO gf180mcu_osu_sc_gp12t3v3__tbuf_1
     SHAPE ABUTMENT ;
     PORT
       LAYER MET1 ;
-        RECT 0 7.5 3.65 8.1 ;
+        RECT 0 7.5 5.2 8.1 ;
+        RECT 3.55 5.45 3.8 8.1 ;
         RECT 1.4 5.45 1.65 8.1 ;
     END
   END VDD
@@ -36,7 +37,8 @@ MACRO gf180mcu_osu_sc_gp12t3v3__tbuf_1
     USE GROUND ;
     PORT
       LAYER MET1 ;
-        RECT 0 0 3.65 0.6 ;
+        RECT 0 0 5.2 0.6 ;
+        RECT 3.55 0 3.8 1.8 ;
         RECT 1.4 0 1.65 1.8 ;
     END
   END VSS
@@ -58,25 +60,13 @@ MACRO gf180mcu_osu_sc_gp12t3v3__tbuf_1
     USE SIGNAL ;
     PORT
       LAYER MET1 ;
-        RECT 2.45 2.2 2.95 2.5 ;
+        RECT 3 2.25 3.5 2.55 ;
       LAYER MET2 ;
-        RECT 2.45 2.15 2.95 2.55 ;
+        RECT 3 2.2 3.5 2.6 ;
       LAYER VIA12 ;
-        RECT 2.57 2.22 2.83 2.48 ;
+        RECT 3.12 2.27 3.38 2.53 ;
     END
   END EN
-  PIN EN_BAR
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER MET1 ;
-        RECT 2.45 4.8 2.95 5.1 ;
-      LAYER MET2 ;
-        RECT 2.45 4.75 2.95 5.15 ;
-      LAYER VIA12 ;
-        RECT 2.57 4.82 2.83 5.08 ;
-    END
-  END EN_BAR
   PIN Y
     DIRECTION OUTPUT ;
     USE SIGNAL ;
@@ -99,8 +89,18 @@ MACRO gf180mcu_osu_sc_gp12t3v3__tbuf_1
     END
   END Y
   OBS
+    LAYER MET2 ;
+      RECT 4.3 4.75 4.8 5.15 ;
+      RECT 2.45 4.75 2.95 5.15 ;
+      RECT 2.45 4.8 4.8 5.1 ;
+    LAYER VIA12 ;
+      RECT 4.42 4.82 4.68 5.08 ;
+      RECT 2.57 4.82 2.83 5.08 ;
     LAYER MET1 ;
+      RECT 4.4 0.95 4.65 7.15 ;
+      RECT 4.3 4.8 4.8 5.1 ;
       RECT 0.55 0.95 0.8 7.15 ;
       RECT 0.55 3.35 2 3.65 ;
+      RECT 2.45 4.8 2.95 5.1 ;
   END
 END gf180mcu_osu_sc_gp12t3v3__tbuf_1
