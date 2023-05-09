@@ -1,0 +1,76 @@
+# Copyright 2022 Google LLC
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+VERSION 5.7 ;
+BUSBITCHARS "[]" ;
+DIVIDERCHAR "/" ;
+
+MACRO gf180mcu_osu_sc_gp12t3v3__clkinv_4
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_gp12t3v3__clkinv_4 0 0 ;
+  SIZE 4.8 BY 8.3 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp12t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 7.6 4.8 8.3 ;
+        RECT 3.95 5.55 4.2 8.3 ;
+        RECT 2.25 5.55 2.5 8.3 ;
+        RECT 0.55 5.55 0.8 8.3 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 0 4.8 0.7 ;
+        RECT 3.95 0 4.2 1.9 ;
+        RECT 2.25 0 2.5 1.9 ;
+        RECT 0.55 0 0.8 1.9 ;
+    END
+  END VSS
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.4 3.6 0.9 3.9 ;
+      LAYER Metal2 ;
+        RECT 0.4 3.55 0.9 3.95 ;
+      LAYER Via1 ;
+        RECT 0.52 3.62 0.78 3.88 ;
+    END
+  END A
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 3.1 1.05 3.35 7.25 ;
+        RECT 1.4 4.55 3.35 4.8 ;
+        RECT 2.95 4.45 3.35 4.8 ;
+        RECT 1.4 2.15 3.35 2.4 ;
+        RECT 1.4 1.05 1.65 7.25 ;
+      LAYER Metal2 ;
+        RECT 2.95 4.45 3.45 4.85 ;
+      LAYER Via1 ;
+        RECT 3.07 4.52 3.33 4.78 ;
+    END
+  END Y
+END gf180mcu_osu_sc_gp12t3v3__clkinv_4

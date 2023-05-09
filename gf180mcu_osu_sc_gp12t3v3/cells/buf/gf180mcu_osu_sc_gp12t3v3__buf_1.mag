@@ -1,0 +1,153 @@
+# Copyright 2022 Google LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+magic
+tech gf180mcuC
+timestamp 1678200934
+<< nwell >>
+rect 0 102 62 166
+<< nmos >>
+rect 19 21 25 38
+rect 36 21 42 38
+<< pmos >>
+rect 19 111 25 145
+rect 36 111 42 145
+<< ndiff >>
+rect 9 36 19 38
+rect 9 23 11 36
+rect 16 23 19 36
+rect 9 21 19 23
+rect 25 36 36 38
+rect 25 23 28 36
+rect 33 23 36 36
+rect 25 21 36 23
+rect 42 36 52 38
+rect 42 23 45 36
+rect 50 23 52 36
+rect 42 21 52 23
+<< pdiff >>
+rect 9 143 19 145
+rect 9 113 11 143
+rect 16 113 19 143
+rect 9 111 19 113
+rect 25 143 36 145
+rect 25 113 28 143
+rect 33 113 36 143
+rect 25 111 36 113
+rect 42 143 52 145
+rect 42 113 45 143
+rect 50 113 52 143
+rect 42 111 52 113
+<< ndiffc >>
+rect 11 23 16 36
+rect 28 23 33 36
+rect 45 23 50 36
+<< pdiffc >>
+rect 11 113 16 143
+rect 28 113 33 143
+rect 45 113 50 143
+<< psubdiff >>
+rect 6 12 21 14
+rect 6 7 11 12
+rect 16 7 21 12
+rect 6 5 21 7
+rect 30 12 45 14
+rect 30 7 35 12
+rect 40 7 45 12
+rect 30 5 45 7
+<< nsubdiff >>
+rect 6 159 21 161
+rect 6 154 11 159
+rect 16 154 21 159
+rect 6 152 21 154
+rect 30 159 45 161
+rect 30 154 35 159
+rect 40 154 45 159
+rect 30 152 45 154
+<< psubdiffcont >>
+rect 11 7 16 12
+rect 35 7 40 12
+<< nsubdiffcont >>
+rect 11 154 16 159
+rect 35 154 40 159
+<< polysilicon >>
+rect 19 145 25 150
+rect 36 145 42 150
+rect 19 93 25 111
+rect 19 91 31 93
+rect 19 85 23 91
+rect 29 85 31 91
+rect 19 83 31 85
+rect 19 38 25 83
+rect 36 69 42 111
+rect 30 66 42 69
+rect 30 60 32 66
+rect 38 60 42 66
+rect 30 57 42 60
+rect 36 38 42 57
+rect 19 16 25 21
+rect 36 16 42 21
+<< polycontact >>
+rect 23 85 29 91
+rect 32 60 38 66
+<< metal1 >>
+rect 0 159 62 166
+rect 0 154 11 159
+rect 16 154 35 159
+rect 40 154 62 159
+rect 0 152 62 154
+rect 11 143 16 145
+rect 11 66 16 113
+rect 28 143 33 152
+rect 28 111 33 113
+rect 45 143 50 145
+rect 45 104 50 113
+rect 43 98 45 104
+rect 51 98 53 104
+rect 21 85 23 91
+rect 29 85 31 91
+rect 11 60 32 66
+rect 38 60 40 66
+rect 11 36 16 60
+rect 11 21 16 23
+rect 28 36 33 38
+rect 28 14 33 23
+rect 45 36 50 98
+rect 45 21 50 23
+rect 0 12 62 14
+rect 0 7 11 12
+rect 16 7 35 12
+rect 40 7 62 12
+rect 0 0 62 7
+<< via1 >>
+rect 45 98 51 104
+rect 23 85 29 91
+<< metal2 >>
+rect 43 104 53 105
+rect 43 98 45 104
+rect 51 98 53 104
+rect 43 97 53 98
+rect 22 91 30 92
+rect 21 85 23 91
+rect 29 85 31 91
+rect 22 84 30 85
+<< labels >>
+rlabel metal2 26 88 26 88 1 A
+port 1 n
+rlabel metal2 48 101 48 101 1 Y
+port 2 n
+rlabel nsubdiffcont 14 156 14 156 1 VDD
+port 3 n
+rlabel psubdiffcont 13 10 13 10 1 VSS
+port 4 n
+<< end >>

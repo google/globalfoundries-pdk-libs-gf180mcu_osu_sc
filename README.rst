@@ -2,25 +2,19 @@ Oklahoma State University (OSU) standard cells for GF180MCU
 ===========================================================
 
 This repository will contain a new set of standard cells for the
-`GF180MCU process technology release by Google and GlobalFoundries <https://github.com/google/gf180mcu>`_.
+`GF180MCU process technology release by Google and GlobalFoundries
+<https://github.com/google/gf180mcu-pdk>`_.
 
 These standard cells are being designed by James E. Stine, Jr. from the
-VLSI Computer Architecture Research Group.
+VLSI Computer Architecture Research Group at Oklahoma State University.
 
 VLSI Computer Architecture Research Group
 =========================================
 
 -  James E. Stine, Jr.
--  Teo Ene
--  Landon Burleson
--  Ryan Swann
--  Ryan Ridley
+-  Landon Burleson  
 -  Brett Mathis
--  Alex Underwood
--  S. Ross Thompson
--  Peter Tikalsky
--  Brandon Ong
--  Hunter Lusk
+-  Teo Ene
 
 Thanks to the following for help, guidance and support!
 

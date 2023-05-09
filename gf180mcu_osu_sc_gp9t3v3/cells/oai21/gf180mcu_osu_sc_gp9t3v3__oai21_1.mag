@@ -1,0 +1,208 @@
+# Copyright 2022 Google LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+magic
+tech gf180mcuC
+timestamp 1677451774
+<< nwell >>
+rect 0 63 80 127
+<< nmos >>
+rect 18 21 24 38
+rect 35 21 41 38
+rect 54 21 60 38
+<< pmos >>
+rect 21 72 27 106
+rect 33 72 39 106
+rect 52 72 58 106
+<< ndiff >>
+rect 8 30 18 38
+rect 8 23 10 30
+rect 15 23 18 30
+rect 8 21 18 23
+rect 24 28 35 38
+rect 24 23 27 28
+rect 32 23 35 28
+rect 24 21 35 23
+rect 41 30 54 38
+rect 41 23 44 30
+rect 51 23 54 30
+rect 41 21 54 23
+rect 60 34 70 38
+rect 60 23 63 34
+rect 68 23 70 34
+rect 60 21 70 23
+<< pdiff >>
+rect 11 104 21 106
+rect 11 74 13 104
+rect 18 74 21 104
+rect 11 72 21 74
+rect 27 72 33 106
+rect 39 104 52 106
+rect 39 82 42 104
+rect 49 82 52 104
+rect 39 72 52 82
+rect 58 104 68 106
+rect 58 93 61 104
+rect 66 93 68 104
+rect 58 79 68 93
+rect 58 72 69 79
+<< ndiffc >>
+rect 10 23 15 30
+rect 27 23 32 28
+rect 44 23 51 30
+rect 63 23 68 34
+<< pdiffc >>
+rect 13 74 18 104
+rect 42 82 49 104
+rect 61 93 66 104
+<< psubdiff >>
+rect 6 12 21 14
+rect 6 7 11 12
+rect 16 7 21 12
+rect 6 5 21 7
+rect 30 12 45 14
+rect 30 7 35 12
+rect 40 7 45 12
+rect 30 5 45 7
+rect 54 12 69 14
+rect 54 7 59 12
+rect 64 7 69 12
+rect 54 5 69 7
+<< nsubdiff >>
+rect 6 120 21 122
+rect 6 115 11 120
+rect 16 115 21 120
+rect 6 113 21 115
+rect 30 120 45 122
+rect 30 115 35 120
+rect 40 115 45 120
+rect 30 113 45 115
+rect 54 120 69 122
+rect 54 115 59 120
+rect 64 115 69 120
+rect 54 113 69 115
+<< psubdiffcont >>
+rect 11 7 16 12
+rect 35 7 40 12
+rect 59 7 64 12
+<< nsubdiffcont >>
+rect 11 115 16 120
+rect 35 115 40 120
+rect 59 115 64 120
+<< polysilicon >>
+rect 21 106 27 111
+rect 33 106 39 111
+rect 52 106 58 111
+rect 21 70 27 72
+rect 16 66 27 70
+rect 33 67 39 72
+rect 16 54 22 66
+rect 32 65 43 67
+rect 32 59 35 65
+rect 41 59 43 65
+rect 32 57 43 59
+rect 11 52 22 54
+rect 11 46 14 52
+rect 20 47 22 52
+rect 33 47 39 57
+rect 52 54 58 72
+rect 47 52 60 54
+rect 20 46 24 47
+rect 11 44 24 46
+rect 33 44 41 47
+rect 47 46 49 52
+rect 55 46 60 52
+rect 47 44 60 46
+rect 18 38 24 44
+rect 35 38 41 44
+rect 54 38 60 44
+rect 18 16 24 21
+rect 35 16 41 21
+rect 54 16 60 21
+<< polycontact >>
+rect 35 59 41 65
+rect 14 46 20 52
+rect 49 46 55 52
+<< metal1 >>
+rect 0 120 80 127
+rect 0 115 11 120
+rect 16 115 35 120
+rect 40 115 59 120
+rect 64 115 80 120
+rect 0 113 80 115
+rect 13 104 18 113
+rect 13 72 18 74
+rect 42 104 49 106
+rect 61 104 66 113
+rect 61 91 66 93
+rect 42 78 49 82
+rect 42 72 62 78
+rect 68 72 70 78
+rect 62 71 69 72
+rect 33 59 35 65
+rect 41 59 43 65
+rect 12 46 14 52
+rect 20 46 22 52
+rect 47 46 49 52
+rect 55 46 57 52
+rect 10 35 51 40
+rect 10 30 15 35
+rect 44 30 51 35
+rect 10 21 15 23
+rect 27 28 32 30
+rect 27 14 32 23
+rect 44 21 51 23
+rect 63 34 68 71
+rect 63 21 68 23
+rect 0 12 80 14
+rect 0 7 11 12
+rect 16 7 35 12
+rect 40 7 59 12
+rect 64 7 80 12
+rect 0 0 80 7
+<< via1 >>
+rect 62 72 68 78
+rect 35 59 41 65
+rect 14 46 20 52
+rect 49 46 55 52
+<< metal2 >>
+rect 61 78 69 79
+rect 60 72 62 78
+rect 68 72 70 78
+rect 61 71 69 72
+rect 33 65 43 66
+rect 33 59 35 65
+rect 41 59 43 65
+rect 33 58 43 59
+rect 12 52 22 53
+rect 12 46 14 52
+rect 20 46 22 52
+rect 12 45 22 46
+rect 47 52 57 53
+rect 47 46 49 52
+rect 55 46 57 52
+rect 47 45 57 46
+<< labels >>
+rlabel metal2 17 49 17 49 1 A0
+port 1 n
+rlabel metal2 38 62 38 62 1 A1
+port 2 n
+rlabel metal2 52 49 52 49 1 B
+port 3 n
+rlabel metal2 65 75 65 75 1 Y
+port 4 n
+rlabel nsubdiffcont 13 117 13 117 1 VDD
+port 5 n
+rlabel psubdiffcont 13 10 13 10 1 VSS
+port 6 n
+<< end >>

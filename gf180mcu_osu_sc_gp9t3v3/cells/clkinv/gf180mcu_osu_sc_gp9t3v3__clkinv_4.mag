@@ -1,0 +1,207 @@
+# Copyright 2022 Google LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+magic
+tech gf180mcuC
+timestamp 1677450598
+<< nwell >>
+rect 0 63 96 127
+<< nmos >>
+rect 19 21 25 38
+rect 36 21 42 38
+rect 53 21 59 38
+rect 70 21 76 38
+<< pmos >>
+rect 19 72 25 106
+rect 36 72 42 106
+rect 53 72 59 106
+rect 70 72 76 106
+<< ndiff >>
+rect 9 36 19 38
+rect 9 23 11 36
+rect 16 23 19 36
+rect 9 21 19 23
+rect 25 36 36 38
+rect 25 23 28 36
+rect 33 23 36 36
+rect 25 21 36 23
+rect 42 36 53 38
+rect 42 23 45 36
+rect 50 23 53 36
+rect 42 21 53 23
+rect 59 36 70 38
+rect 59 23 62 36
+rect 67 23 70 36
+rect 59 21 70 23
+rect 76 36 86 38
+rect 76 23 79 36
+rect 84 23 86 36
+rect 76 21 86 23
+<< pdiff >>
+rect 9 104 19 106
+rect 9 74 11 104
+rect 16 74 19 104
+rect 9 72 19 74
+rect 25 104 36 106
+rect 25 74 28 104
+rect 33 74 36 104
+rect 25 72 36 74
+rect 42 104 53 106
+rect 42 74 45 104
+rect 50 74 53 104
+rect 42 72 53 74
+rect 59 104 70 106
+rect 59 74 62 104
+rect 67 74 70 104
+rect 59 72 70 74
+rect 76 104 87 106
+rect 76 74 80 104
+rect 85 74 87 104
+rect 76 72 87 74
+<< ndiffc >>
+rect 11 23 16 36
+rect 28 23 33 36
+rect 45 23 50 36
+rect 62 23 67 36
+rect 79 23 84 36
+<< pdiffc >>
+rect 11 74 16 104
+rect 28 74 33 104
+rect 45 74 50 104
+rect 62 74 67 104
+rect 80 74 85 104
+<< psubdiff >>
+rect 6 12 21 14
+rect 6 7 11 12
+rect 16 7 21 12
+rect 6 5 21 7
+rect 30 12 45 14
+rect 30 7 35 12
+rect 40 7 45 12
+rect 30 5 45 7
+rect 54 12 69 14
+rect 54 7 59 12
+rect 64 7 69 12
+rect 54 5 69 7
+<< nsubdiff >>
+rect 6 120 21 122
+rect 6 115 11 120
+rect 16 115 21 120
+rect 6 113 21 115
+rect 30 120 45 122
+rect 30 115 35 120
+rect 40 115 45 120
+rect 30 113 45 115
+rect 54 120 69 122
+rect 54 115 59 120
+rect 64 115 69 120
+rect 54 113 69 115
+<< psubdiffcont >>
+rect 11 7 16 12
+rect 35 7 40 12
+rect 59 7 64 12
+<< nsubdiffcont >>
+rect 11 115 16 120
+rect 35 115 40 120
+rect 59 115 64 120
+<< polysilicon >>
+rect 19 106 25 111
+rect 36 106 42 111
+rect 53 106 59 111
+rect 70 106 76 111
+rect 19 67 25 72
+rect 36 67 42 72
+rect 53 67 59 72
+rect 70 67 76 72
+rect 19 62 76 67
+rect 19 54 25 62
+rect 9 52 25 54
+rect 9 47 11 52
+rect 16 48 25 52
+rect 16 47 76 48
+rect 9 45 76 47
+rect 19 42 76 45
+rect 19 38 25 42
+rect 36 38 42 42
+rect 53 38 59 42
+rect 70 38 76 42
+rect 19 16 25 21
+rect 36 16 42 21
+rect 53 16 59 21
+rect 70 16 76 21
+<< polycontact >>
+rect 11 47 16 52
+<< metal1 >>
+rect 0 120 96 127
+rect 0 115 11 120
+rect 16 115 35 120
+rect 40 115 59 120
+rect 64 115 96 120
+rect 0 113 96 115
+rect 11 104 16 113
+rect 11 72 16 74
+rect 28 104 33 106
+rect 28 67 33 74
+rect 45 104 50 113
+rect 45 72 50 74
+rect 62 104 67 106
+rect 80 104 85 113
+rect 62 67 67 74
+rect 73 72 75 78
+rect 80 72 85 74
+rect 28 62 67 67
+rect 8 46 10 52
+rect 16 46 18 52
+rect 28 48 33 62
+rect 62 48 67 62
+rect 28 43 67 48
+rect 11 36 16 38
+rect 11 14 16 23
+rect 28 36 33 43
+rect 28 21 33 23
+rect 45 36 50 38
+rect 45 14 50 23
+rect 62 36 67 43
+rect 62 21 67 23
+rect 79 36 84 38
+rect 79 14 84 23
+rect 0 12 96 14
+rect 0 7 11 12
+rect 16 7 35 12
+rect 40 7 59 12
+rect 64 7 96 12
+rect 0 0 96 7
+<< via1 >>
+rect 67 72 73 78
+rect 10 47 11 52
+rect 11 47 16 52
+rect 10 46 16 47
+<< metal2 >>
+rect 66 78 74 79
+rect 65 72 67 78
+rect 73 72 75 78
+rect 66 71 74 72
+rect 8 52 18 53
+rect 8 46 10 52
+rect 16 46 18 52
+rect 8 45 18 46
+<< labels >>
+rlabel metal2 13 49 13 49 1 A
+port 1 n
+rlabel metal2 69 75 69 75 1 Y
+port 2 n
+rlabel nsubdiffcont 13 117 13 117 1 VDD
+port 3 n
+rlabel psubdiffcont 13 9 13 9 1 VSS
+port 4 n
+<< end >>

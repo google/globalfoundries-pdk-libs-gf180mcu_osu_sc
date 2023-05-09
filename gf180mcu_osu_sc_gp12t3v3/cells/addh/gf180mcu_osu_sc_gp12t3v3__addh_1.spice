@@ -1,0 +1,32 @@
+* Copyright 2022 Google LLC
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*      http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+
+* NGSPICE file created from gf180mcu_osu_sc_gp12t3v3__addh_1.ext - technology: gf180mcuC
+
+.subckt gf180mcu_osu_sc_gp12t3v3__addh_1 A B S CO VDD VSS
+X0 VDD B a_19_16# VDD pfet_03p3 w=1.7u l=0.3u
+X1 a_19_16# A VDD VDD pfet_03p3 w=1.7u l=0.3u
+X2 VDD a_19_16# CO VDD pfet_03p3 w=1.7u l=0.3u
+X3 a_19_16# B a_42_21# VSS nfet_03p3 w=0.85u l=0.3u
+X4 S a_91_21# VSS VSS nfet_03p3 w=0.85u l=0.3u
+X5 VSS a_19_16# CO VSS nfet_03p3 w=0.85u l=0.3u
+X6 S a_91_21# VDD VDD pfet_03p3 w=1.7u l=0.3u
+X7 a_91_21# B a_91_111# VDD pfet_03p3 w=1.7u l=0.3u
+X8 VDD a_19_16# a_91_21# VDD pfet_03p3 w=1.7u l=0.3u
+X9 a_91_111# A VDD VDD pfet_03p3 w=1.7u l=0.3u
+X10 a_91_21# A a_75_21# VSS nfet_03p3 w=0.85u l=0.3u
+X11 a_42_21# A VSS VSS nfet_03p3 w=0.85u l=0.3u
+X12 VSS a_19_16# a_75_21# VSS nfet_03p3 w=0.85u l=0.3u
+X13 a_75_21# B a_91_21# VSS nfet_03p3 w=0.85u l=0.3u
+.ends

@@ -1,0 +1,4107 @@
+VERSION 5.7 ;
+BUSBITCHARS "[]" ;
+DIVIDERCHAR "/" ;
+
+MACRO gf180mcu_osu_sc_gp9t3v3__addf_1
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_gp9t3v3__addf_1 0 0 ;
+  SIZE 14 BY 6.35 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 5.65 14 6.35 ;
+        RECT 12.35 4.8 12.6 6.35 ;
+        RECT 10.75 4.8 11 6.35 ;
+        RECT 6.5 4.8 6.75 6.35 ;
+        RECT 4.8 4.8 5.05 6.35 ;
+        RECT 1.4 4.8 1.65 6.35 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 0 14 0.7 ;
+        RECT 12.35 0 12.6 1.5 ;
+        RECT 10.75 0 11 1.5 ;
+        RECT 6.5 0 6.75 1.5 ;
+        RECT 4.8 0 5.05 1.5 ;
+        RECT 1.4 0 1.65 1.5 ;
+    END
+  END VSS
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 8.7 2.45 9.2 2.75 ;
+        RECT 6.4 3.15 9.1 3.45 ;
+        RECT 8.8 2.45 9.1 3.45 ;
+        RECT 6.4 2.45 6.7 3.45 ;
+        RECT 3.2 2.45 6.7 2.75 ;
+        RECT 2.15 3.2 3.45 3.5 ;
+        RECT 3.2 2.45 3.45 3.5 ;
+        RECT 2.15 2.3 2.4 3.5 ;
+        RECT 0.6 2.3 2.4 2.6 ;
+      LAYER Metal2 ;
+        RECT 0.6 2.25 1.1 2.65 ;
+      LAYER Via1 ;
+        RECT 0.72 2.32 0.98 2.58 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 5.85 3.7 9.95 4 ;
+        RECT 9.65 3 9.95 4 ;
+        RECT 5.85 3 6.15 4 ;
+        RECT 3.7 3.1 6.15 3.4 ;
+        RECT 1.6 3.75 4 4.05 ;
+        RECT 3.7 3 4 4.05 ;
+        RECT 1.6 2.85 1.9 4.05 ;
+      LAYER Metal2 ;
+        RECT 1.5 2.95 2 3.25 ;
+        RECT 1.55 2.9 1.95 3.3 ;
+      LAYER Via1 ;
+        RECT 1.62 2.97 1.88 3.23 ;
+    END
+  END B
+  PIN CI
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 9.75 2.35 10.6 2.65 ;
+        RECT 9.75 1.9 10.05 2.65 ;
+        RECT 2.65 1.9 10.05 2.2 ;
+        RECT 7.05 1.9 7.35 2.85 ;
+        RECT 2.65 1.9 2.95 2.7 ;
+      LAYER Metal2 ;
+        RECT 2.55 2.3 3.05 2.6 ;
+        RECT 2.6 2.25 3 2.65 ;
+      LAYER Via1 ;
+        RECT 2.67 2.32 2.93 2.58 ;
+    END
+  END CI
+  PIN CO
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 13.2 3.1 13.75 3.4 ;
+        RECT 13.2 3.05 13.65 3.45 ;
+        RECT 13.2 1.05 13.45 5.3 ;
+      LAYER Metal2 ;
+        RECT 13.25 3.1 13.75 3.4 ;
+        RECT 13.3 3.05 13.7 3.45 ;
+      LAYER Via1 ;
+        RECT 13.37 3.12 13.63 3.38 ;
+    END
+  END CO
+  PIN S
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 11.6 3.1 12.05 3.4 ;
+        RECT 11.6 3.05 11.9 3.45 ;
+        RECT 11.6 1.05 11.85 5.3 ;
+      LAYER Metal2 ;
+        RECT 11.55 3.1 12.05 3.4 ;
+        RECT 11.6 3.05 12 3.45 ;
+      LAYER Via1 ;
+        RECT 11.67 3.12 11.93 3.38 ;
+    END
+  END S
+  OBS
+    LAYER Metal2 ;
+      RECT 3.1 4.85 3.4 5.3 ;
+      RECT 3.05 4.85 3.45 5.25 ;
+      RECT 3 4.9 12.85 5.2 ;
+      RECT 12.55 2.35 12.85 5.2 ;
+      RECT 3.75 1.15 4.05 5.2 ;
+      RECT 12.5 2.4 12.9 2.8 ;
+      RECT 7.85 2.4 8.25 2.8 ;
+      RECT 12.45 2.45 12.95 2.75 ;
+      RECT 3.75 2.45 8.3 2.75 ;
+      RECT 3.1 1.05 3.4 1.55 ;
+      RECT 3.05 1.1 3.45 1.5 ;
+      RECT 3.05 1.15 4.05 1.45 ;
+      RECT 8.15 4.2 8.55 4.6 ;
+      RECT 8.1 4.25 11.25 4.55 ;
+      RECT 10.95 2.35 11.25 4.55 ;
+      RECT 8.85 1.15 9.15 4.55 ;
+      RECT 10.9 2.4 11.3 2.8 ;
+      RECT 8.15 1.1 8.55 1.5 ;
+      RECT 8.1 1.15 9.15 1.45 ;
+      RECT 7.3 1.05 7.6 1.55 ;
+      RECT 5.65 1.05 5.95 1.55 ;
+      RECT 7.25 1.1 7.65 1.5 ;
+      RECT 5.6 1.1 6 1.5 ;
+      RECT 5.6 1.15 7.65 1.45 ;
+      RECT 2.2 1.05 2.5 1.55 ;
+      RECT 0.5 1.05 0.8 1.55 ;
+      RECT 2.15 1.1 2.55 1.5 ;
+      RECT 0.45 1.1 0.85 1.5 ;
+      RECT 0.45 1.15 2.55 1.45 ;
+    LAYER Via1 ;
+      RECT 12.57 2.47 12.83 2.73 ;
+      RECT 10.97 2.47 11.23 2.73 ;
+      RECT 8.22 1.17 8.48 1.43 ;
+      RECT 8.22 4.27 8.48 4.53 ;
+      RECT 7.92 2.47 8.18 2.73 ;
+      RECT 7.32 1.17 7.58 1.43 ;
+      RECT 5.67 1.17 5.93 1.43 ;
+      RECT 3.12 1.17 3.38 1.43 ;
+      RECT 3.12 4.92 3.38 5.18 ;
+      RECT 2.22 1.17 2.48 1.43 ;
+      RECT 0.52 1.17 0.78 1.43 ;
+    LAYER Metal1 ;
+      RECT 7.35 4.3 7.6 5.3 ;
+      RECT 5.65 4.3 5.9 5.3 ;
+      RECT 5.65 4.3 7.6 4.55 ;
+      RECT 2.25 4.3 2.5 5.3 ;
+      RECT 0.55 4.3 0.8 5.3 ;
+      RECT 0.55 4.3 2.5 4.55 ;
+      RECT 12.45 2.45 12.95 2.75 ;
+      RECT 10.85 2.45 11.35 2.75 ;
+      RECT 8.1 4.25 8.6 4.55 ;
+      RECT 8.2 1.05 8.5 1.55 ;
+      RECT 7.8 2.45 8.3 2.75 ;
+      RECT 7.3 1.05 7.6 1.55 ;
+      RECT 5.65 1.05 5.95 1.55 ;
+      RECT 3.1 1.05 3.4 1.55 ;
+      RECT 3.1 4.8 3.4 5.3 ;
+      RECT 2.2 1.05 2.5 1.55 ;
+      RECT 0.5 1.05 0.8 1.55 ;
+  END
+END gf180mcu_osu_sc_gp9t3v3__addf_1
+
+MACRO gf180mcu_osu_sc_gp9t3v3__addh_1
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_gp9t3v3__addh_1 0 0 ;
+  SIZE 8.6 BY 6.35 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 5.65 8.6 6.35 ;
+        RECT 6.65 4.6 6.9 6.35 ;
+        RECT 3.85 3.6 4.1 6.35 ;
+        RECT 3.1 3.6 3.35 6.35 ;
+        RECT 1.4 3.6 1.65 6.35 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 0 8.6 0.7 ;
+        RECT 6.65 0 6.9 1.9 ;
+        RECT 1.4 0 1.65 1.9 ;
+    END
+  END VSS
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 3.9 2.3 4.4 2.6 ;
+        RECT 1.5 2.3 2 2.6 ;
+      LAYER Metal2 ;
+        RECT 3.9 2.25 4.4 2.65 ;
+        RECT 1.5 2.3 4.4 2.6 ;
+        RECT 1.5 2.25 2 2.65 ;
+      LAYER Via1 ;
+        RECT 1.62 2.32 1.88 2.58 ;
+        RECT 4.02 2.32 4.28 2.58 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 5.2 2 5.5 2.5 ;
+        RECT 2.35 2.25 2.85 2.55 ;
+        RECT 2.35 1.65 2.85 1.95 ;
+        RECT 2.45 1.65 2.75 2.55 ;
+      LAYER Metal2 ;
+        RECT 5.15 2.05 5.55 2.45 ;
+        RECT 5.2 1.65 5.5 2.5 ;
+        RECT 5.15 1.65 5.5 2.45 ;
+        RECT 2.35 1.65 5.5 1.95 ;
+        RECT 2.4 1.6 2.8 2 ;
+      LAYER Via1 ;
+        RECT 2.47 1.67 2.73 1.93 ;
+        RECT 5.22 2.12 5.48 2.38 ;
+    END
+  END B
+  PIN CO
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.4 3.6 0.9 3.9 ;
+        RECT 0.55 1.05 0.8 5.3 ;
+      LAYER Metal2 ;
+        RECT 0.4 3.55 0.9 3.95 ;
+      LAYER Via1 ;
+        RECT 0.52 3.62 0.78 3.88 ;
+    END
+  END CO
+  PIN S
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 7.7 2.95 8.2 3.25 ;
+        RECT 7.75 2.9 8.1 3.3 ;
+        RECT 7.5 3.6 8 5.3 ;
+        RECT 7.75 1.05 8 5.3 ;
+      LAYER Metal2 ;
+        RECT 7.7 2.9 8.2 3.3 ;
+      LAYER Via1 ;
+        RECT 7.82 2.97 8.08 3.23 ;
+    END
+  END S
+  OBS
+    LAYER Metal2 ;
+      RECT 6.3 3.05 6.8 3.45 ;
+      RECT 3 3 3.5 3.4 ;
+      RECT 3 3.05 6.8 3.35 ;
+    LAYER Via1 ;
+      RECT 6.42 3.12 6.68 3.38 ;
+      RECT 3.12 3.07 3.38 3.33 ;
+    LAYER Metal1 ;
+      RECT 5.55 3.6 6.05 5.3 ;
+      RECT 5.55 2.85 5.8 5.3 ;
+      RECT 4.7 2.85 6.05 3.1 ;
+      RECT 5.75 2.6 6.75 2.85 ;
+      RECT 4.7 1.45 4.95 3.1 ;
+      RECT 6.5 2.3 7.25 2.6 ;
+      RECT 5.55 0.95 5.8 1.55 ;
+      RECT 3.85 0.95 4.1 1.55 ;
+      RECT 3.85 0.95 5.8 1.2 ;
+      RECT 2.25 3.05 2.5 5.3 ;
+      RECT 1.05 3.05 3.5 3.35 ;
+      RECT 3.1 1.05 3.35 3.35 ;
+      RECT 6.3 3.1 6.8 3.4 ;
+  END
+END gf180mcu_osu_sc_gp9t3v3__addh_1
+
+MACRO gf180mcu_osu_sc_gp9t3v3__and2_1
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_gp9t3v3__and2_1 0 0 ;
+  SIZE 4.1 BY 6.35 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 5.65 4.1 6.35 ;
+        RECT 2.25 3.6 2.7 6.35 ;
+        RECT 0.55 3.6 0.8 6.35 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 0 4.1 0.7 ;
+        RECT 2.1 0 2.7 1.9 ;
+    END
+  END VSS
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.6 2.3 1.1 2.6 ;
+      LAYER Metal2 ;
+        RECT 0.6 2.3 1.1 2.6 ;
+        RECT 0.65 2.25 1.05 2.65 ;
+      LAYER Via1 ;
+        RECT 0.72 2.32 0.98 2.58 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 1.95 2.95 2.45 3.25 ;
+      LAYER Metal2 ;
+        RECT 1.95 2.9 2.45 3.3 ;
+      LAYER Via1 ;
+        RECT 2.07 2.97 2.33 3.23 ;
+    END
+  END B
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 3.3 3.6 3.8 3.9 ;
+        RECT 3.3 3.55 3.7 3.95 ;
+        RECT 3.3 1.05 3.55 5.3 ;
+      LAYER Metal2 ;
+        RECT 3.3 3.55 3.8 3.95 ;
+      LAYER Via1 ;
+        RECT 3.42 3.62 3.68 3.88 ;
+    END
+  END Y
+  OBS
+    LAYER Metal1 ;
+      RECT 1.4 1.55 1.65 5.3 ;
+      RECT 2.75 2.2 3.05 2.7 ;
+      RECT 1.4 2.3 3.05 2.6 ;
+      RECT 0.7 1.55 1.65 1.8 ;
+      RECT 0.7 1.05 0.95 1.8 ;
+  END
+END gf180mcu_osu_sc_gp9t3v3__and2_1
+
+MACRO gf180mcu_osu_sc_gp9t3v3__ant
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_gp9t3v3__ant 0 0 ;
+  SIZE 2.2 BY 6.35 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 5.65 2.2 6.35 ;
+        RECT 1.4 3.6 1.65 6.35 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 0 2.2 0.7 ;
+    END
+  END VSS
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.45 2.3 1.65 2.6 ;
+        RECT 1.4 1.05 1.65 2.6 ;
+        RECT 0.55 1.05 0.8 5.3 ;
+        RECT 0.5 2.25 0.8 2.7 ;
+      LAYER Metal2 ;
+        RECT 0.5 2.25 0.95 2.65 ;
+        RECT 0.45 2.3 0.95 2.6 ;
+      LAYER Via1 ;
+        RECT 0.57 2.32 0.83 2.58 ;
+    END
+  END A
+END gf180mcu_osu_sc_gp9t3v3__ant
+
+MACRO gf180mcu_osu_sc_gp9t3v3__antfill
+  CLASS CORE ;
+  ORIGIN 0 0.05 ;
+  FOREIGN gf180mcu_osu_sc_gp9t3v3__antfill 0 -0.05 ;
+  SIZE 2.2 BY 6.35 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 5.6 2.2 6.3 ;
+        RECT 1.4 3.55 1.65 6.3 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 -0.05 2.2 0.65 ;
+    END
+  END VSS
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.45 2.25 1.65 2.55 ;
+        RECT 1.4 1 1.65 2.55 ;
+        RECT 0.55 1 0.8 5.25 ;
+        RECT 0.5 2.2 0.8 2.65 ;
+      LAYER Metal2 ;
+        RECT 0.45 2.25 0.95 2.55 ;
+        RECT 0.5 2.2 0.9 2.6 ;
+      LAYER Via1 ;
+        RECT 0.57 2.27 0.83 2.53 ;
+    END
+  END A
+END gf180mcu_osu_sc_gp9t3v3__antfill
+
+MACRO gf180mcu_osu_sc_gp9t3v3__aoi21_1
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_gp9t3v3__aoi21_1 0 0 ;
+  SIZE 3.9 BY 6.35 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 5.65 3.9 6.35 ;
+        RECT 1.4 4.35 1.65 6.35 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 0 3.9 0.7 ;
+        RECT 2.95 0 3.2 1.5 ;
+        RECT 0.7 0 0.95 1.9 ;
+    END
+  END VSS
+  PIN A0
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.6 2.3 1.1 2.6 ;
+      LAYER Metal2 ;
+        RECT 0.6 2.25 1.1 2.65 ;
+      LAYER Via1 ;
+        RECT 0.72 2.32 0.98 2.58 ;
+    END
+  END A0
+  PIN A1
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 1.6 2.95 2.1 3.25 ;
+      LAYER Metal2 ;
+        RECT 1.6 2.9 2.1 3.3 ;
+      LAYER Via1 ;
+        RECT 1.72 2.97 1.98 3.23 ;
+    END
+  END A1
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 2.35 2.3 2.85 2.6 ;
+      LAYER Metal2 ;
+        RECT 2.35 2.25 2.85 2.65 ;
+      LAYER Via1 ;
+        RECT 2.47 2.32 2.73 2.58 ;
+    END
+  END B
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 3 3.6 3.5 3.9 ;
+        RECT 3.1 1.75 3.35 5.3 ;
+        RECT 2.1 1.75 3.35 2 ;
+        RECT 2.1 1.05 2.35 2 ;
+      LAYER Metal2 ;
+        RECT 3 3.55 3.5 3.95 ;
+      LAYER Via1 ;
+        RECT 3.12 3.62 3.38 3.88 ;
+    END
+  END Y
+  OBS
+    LAYER Metal1 ;
+      RECT 2.25 3.85 2.5 5.3 ;
+      RECT 0.55 3.85 0.8 5.3 ;
+      RECT 0.55 3.85 2.5 4.1 ;
+  END
+END gf180mcu_osu_sc_gp9t3v3__aoi21_1
+
+MACRO gf180mcu_osu_sc_gp9t3v3__aoi22_1
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_gp9t3v3__aoi22_1 0 0 ;
+  SIZE 5.4 BY 6.35 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 5.65 5.4 6.35 ;
+        RECT 1.4 4.35 1.65 6.35 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 0 5.4 0.7 ;
+        RECT 3.5 0 3.75 1.9 ;
+        RECT 0.7 0 0.95 1.9 ;
+    END
+  END VSS
+  PIN A0
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.6 2.3 1.1 2.6 ;
+      LAYER Metal2 ;
+        RECT 0.6 2.25 1.1 2.65 ;
+      LAYER Via1 ;
+        RECT 0.72 2.32 0.98 2.58 ;
+    END
+  END A0
+  PIN A1
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 1.6 2.95 2.1 3.25 ;
+      LAYER Metal2 ;
+        RECT 1.6 2.9 2.1 3.3 ;
+      LAYER Via1 ;
+        RECT 1.72 2.97 1.98 3.23 ;
+    END
+  END A1
+  PIN B0
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 2.4 2.95 2.9 3.25 ;
+      LAYER Metal2 ;
+        RECT 2.4 2.9 2.9 3.3 ;
+      LAYER Via1 ;
+        RECT 2.52 2.97 2.78 3.23 ;
+    END
+  END B0
+  PIN B1
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 3.3 2.95 3.8 3.25 ;
+      LAYER Metal2 ;
+        RECT 3.3 2.9 3.8 3.3 ;
+      LAYER Via1 ;
+        RECT 3.42 2.97 3.68 3.23 ;
+    END
+  END B1
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 4.5 4.15 4.8 4.65 ;
+        RECT 4.55 2.15 4.8 4.65 ;
+        RECT 2.1 2.15 4.8 2.4 ;
+        RECT 2.1 1.05 2.35 2.4 ;
+        RECT 3 4.25 3.5 4.55 ;
+        RECT 3.1 4.25 3.35 5.3 ;
+      LAYER Metal2 ;
+        RECT 4.45 4.15 4.85 4.65 ;
+        RECT 3 4.25 4.85 4.55 ;
+        RECT 3 4.2 3.5 4.6 ;
+      LAYER Via1 ;
+        RECT 3.12 4.27 3.38 4.53 ;
+        RECT 4.52 4.27 4.78 4.53 ;
+    END
+  END Y
+  OBS
+    LAYER Metal1 ;
+      RECT 3.95 3.75 4.25 5.3 ;
+      RECT 2.25 3.75 2.5 5.3 ;
+      RECT 0.55 3.75 0.8 5.3 ;
+      RECT 0.55 3.75 4.25 4 ;
+  END
+END gf180mcu_osu_sc_gp9t3v3__aoi22_1
+
+MACRO gf180mcu_osu_sc_gp9t3v3__buf_1
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_gp9t3v3__buf_1 0 0 ;
+  SIZE 3.2 BY 6.35 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 5.65 3.2 6.35 ;
+        RECT 1.4 3.6 1.75 6.35 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 0 3.2 0.7 ;
+        RECT 1.4 0 1.75 1.9 ;
+    END
+  END VSS
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 1.05 2.95 1.55 3.25 ;
+      LAYER Metal2 ;
+        RECT 1.05 2.95 1.55 3.25 ;
+        RECT 1.1 2.9 1.5 3.3 ;
+      LAYER Via1 ;
+        RECT 1.17 2.97 1.43 3.23 ;
+    END
+  END A
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 2.25 3.6 2.75 3.9 ;
+        RECT 2.45 1.6 2.7 3.9 ;
+        RECT 2.35 3.6 2.6 5.3 ;
+        RECT 2.35 1.05 2.6 1.9 ;
+      LAYER Metal2 ;
+        RECT 2.25 3.55 2.75 3.95 ;
+      LAYER Via1 ;
+        RECT 2.37 3.62 2.63 3.88 ;
+    END
+  END Y
+  OBS
+    LAYER Metal1 ;
+      RECT 0.55 1.05 0.8 5.3 ;
+      RECT 0.55 2.25 2.2 2.55 ;
+  END
+END gf180mcu_osu_sc_gp9t3v3__buf_1
+
+MACRO gf180mcu_osu_sc_gp9t3v3__buf_16
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_gp9t3v3__buf_16 0 0 ;
+  SIZE 15.8 BY 6.35 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 5.65 15.8 6.35 ;
+        RECT 15 3.6 15.25 6.35 ;
+        RECT 13.3 3.6 13.55 6.35 ;
+        RECT 11.6 3.6 11.85 6.35 ;
+        RECT 9.9 3.6 10.15 6.35 ;
+        RECT 8.2 3.6 8.45 6.35 ;
+        RECT 6.5 3.6 6.75 6.35 ;
+        RECT 4.8 3.6 5.05 6.35 ;
+        RECT 3.1 3.6 3.35 6.35 ;
+        RECT 1.4 3.6 1.65 6.35 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 0 15.8 0.7 ;
+        RECT 15 0 15.25 1.9 ;
+        RECT 13.3 0 13.55 1.9 ;
+        RECT 11.6 0 11.85 1.9 ;
+        RECT 9.9 0 10.15 1.9 ;
+        RECT 8.2 0 8.45 1.9 ;
+        RECT 6.5 0 6.75 1.9 ;
+        RECT 4.8 0 5.05 1.9 ;
+        RECT 3.1 0 3.35 1.9 ;
+        RECT 1.4 0 1.65 1.9 ;
+    END
+  END VSS
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 1.05 2.3 1.55 2.6 ;
+      LAYER Metal2 ;
+        RECT 1.05 2.3 1.55 2.6 ;
+        RECT 1.1 2.25 1.5 2.65 ;
+      LAYER Via1 ;
+        RECT 1.17 2.32 1.43 2.58 ;
+    END
+  END A
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 14.05 3.6 14.55 3.9 ;
+        RECT 14.15 1.05 14.4 5.3 ;
+        RECT 2.25 3.05 14.4 3.35 ;
+        RECT 2.25 2.15 14.4 2.45 ;
+        RECT 12.45 1.05 12.7 5.3 ;
+        RECT 10.75 1.05 11 5.3 ;
+        RECT 9.05 1.05 9.3 5.3 ;
+        RECT 7.35 1.05 7.6 5.3 ;
+        RECT 5.65 1.05 5.9 5.3 ;
+        RECT 3.95 1.05 4.2 5.3 ;
+        RECT 2.25 1.05 2.5 5.3 ;
+      LAYER Metal2 ;
+        RECT 14.05 3.55 14.55 3.95 ;
+      LAYER Via1 ;
+        RECT 14.17 3.62 14.43 3.88 ;
+    END
+  END Y
+  OBS
+    LAYER Metal1 ;
+      RECT 0.55 1.05 0.8 5.3 ;
+      RECT 0.55 3.05 2 3.35 ;
+  END
+END gf180mcu_osu_sc_gp9t3v3__buf_16
+
+MACRO gf180mcu_osu_sc_gp9t3v3__buf_2
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_gp9t3v3__buf_2 0 0 ;
+  SIZE 3.9 BY 6.35 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 5.65 3.9 6.35 ;
+        RECT 3.1 3.6 3.35 6.35 ;
+        RECT 1.4 3.6 1.65 6.35 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 0 3.9 0.7 ;
+        RECT 3.1 0 3.35 1.9 ;
+        RECT 1.4 0 1.65 1.9 ;
+    END
+  END VSS
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 1.05 2.3 1.55 2.6 ;
+      LAYER Metal2 ;
+        RECT 1.05 2.3 1.55 2.6 ;
+        RECT 1.1 2.25 1.5 2.65 ;
+      LAYER Via1 ;
+        RECT 1.17 2.32 1.43 2.58 ;
+    END
+  END A
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 2.15 3.6 2.65 3.9 ;
+        RECT 2.25 1.05 2.5 5.3 ;
+      LAYER Metal2 ;
+        RECT 2.15 3.55 2.65 3.95 ;
+      LAYER Via1 ;
+        RECT 2.27 3.62 2.53 3.88 ;
+    END
+  END Y
+  OBS
+    LAYER Metal1 ;
+      RECT 0.55 1.05 0.8 5.3 ;
+      RECT 0.55 3.05 2 3.35 ;
+  END
+END gf180mcu_osu_sc_gp9t3v3__buf_2
+
+MACRO gf180mcu_osu_sc_gp9t3v3__buf_4
+  CLASS CORE ;
+  ORIGIN 0 0.05 ;
+  FOREIGN gf180mcu_osu_sc_gp9t3v3__buf_4 0 -0.05 ;
+  SIZE 5.7 BY 6.35 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 5.6 5.7 6.3 ;
+        RECT 4.85 3.55 5.1 6.3 ;
+        RECT 3.15 3.55 3.4 6.3 ;
+        RECT 1.45 3.55 1.7 6.3 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 -0.05 5.7 0.65 ;
+        RECT 4.85 -0.05 5.1 1.85 ;
+        RECT 3.15 -0.05 3.4 1.85 ;
+        RECT 1.45 -0.05 1.7 1.85 ;
+    END
+  END VSS
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 1.1 2.25 1.6 2.55 ;
+      LAYER Metal2 ;
+        RECT 1.1 2.25 1.6 2.55 ;
+        RECT 1.15 2.2 1.55 2.6 ;
+      LAYER Via1 ;
+        RECT 1.22 2.27 1.48 2.53 ;
+    END
+  END A
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 3.9 3.55 4.4 3.85 ;
+        RECT 4 1 4.25 5.25 ;
+        RECT 2.3 3 4.25 3.3 ;
+        RECT 2.3 2.1 4.25 2.4 ;
+        RECT 2.3 1 2.55 5.25 ;
+      LAYER Metal2 ;
+        RECT 3.9 3.5 4.4 3.9 ;
+      LAYER Via1 ;
+        RECT 4.02 3.57 4.28 3.83 ;
+    END
+  END Y
+  OBS
+    LAYER Metal1 ;
+      RECT 0.6 1 0.85 5.25 ;
+      RECT 0.6 3 2.05 3.3 ;
+  END
+END gf180mcu_osu_sc_gp9t3v3__buf_4
+
+MACRO gf180mcu_osu_sc_gp9t3v3__buf_8
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_gp9t3v3__buf_8 0 0 ;
+  SIZE 9.05 BY 6.35 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 5.65 9.05 6.35 ;
+        RECT 8.2 3.6 8.45 6.35 ;
+        RECT 6.5 3.6 6.75 6.35 ;
+        RECT 4.8 3.6 5.05 6.35 ;
+        RECT 3.1 3.6 3.35 6.35 ;
+        RECT 1.4 3.6 1.65 6.35 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 0 9.05 0.7 ;
+        RECT 8.2 0 8.45 1.9 ;
+        RECT 6.5 0 6.75 1.9 ;
+        RECT 4.8 0 5.05 1.9 ;
+        RECT 3.1 0 3.35 1.9 ;
+        RECT 1.4 0 1.65 1.9 ;
+    END
+  END VSS
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 1.05 2.3 1.55 2.6 ;
+      LAYER Metal2 ;
+        RECT 1.05 2.3 1.55 2.6 ;
+        RECT 1.1 2.25 1.5 2.65 ;
+      LAYER Via1 ;
+        RECT 1.17 2.32 1.43 2.58 ;
+    END
+  END A
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 7.25 3.6 7.75 3.9 ;
+        RECT 7.35 1.05 7.6 5.3 ;
+        RECT 2.25 3.05 7.6 3.35 ;
+        RECT 2.25 2.15 7.6 2.45 ;
+        RECT 5.65 1.05 5.9 5.3 ;
+        RECT 3.95 1.05 4.2 5.3 ;
+        RECT 2.25 1.05 2.5 5.3 ;
+      LAYER Metal2 ;
+        RECT 7.25 3.55 7.75 3.95 ;
+      LAYER Via1 ;
+        RECT 7.37 3.62 7.63 3.88 ;
+    END
+  END Y
+  OBS
+    LAYER Metal1 ;
+      RECT 0.55 1.05 0.8 5.3 ;
+      RECT 0.55 3.05 2 3.35 ;
+  END
+END gf180mcu_osu_sc_gp9t3v3__buf_8
+
+MACRO gf180mcu_osu_sc_gp9t3v3__clkbuf_1
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_gp9t3v3__clkbuf_1 0 0 ;
+  SIZE 3.2 BY 6.35 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 5.65 3.2 6.35 ;
+        RECT 1.4 3.6 1.75 6.35 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 0 3.2 0.7 ;
+        RECT 1.4 0 1.75 1.9 ;
+    END
+  END VSS
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 1.05 2.95 1.55 3.25 ;
+      LAYER Metal2 ;
+        RECT 1.05 2.95 1.55 3.25 ;
+        RECT 1.1 2.9 1.5 3.3 ;
+      LAYER Via1 ;
+        RECT 1.17 2.97 1.43 3.23 ;
+    END
+  END A
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 2.25 1.6 2.75 1.9 ;
+        RECT 2.35 1.05 2.6 1.9 ;
+        RECT 2.25 3.6 2.75 3.9 ;
+        RECT 2.35 3.6 2.6 5.3 ;
+      LAYER Metal2 ;
+        RECT 2.25 3.55 2.75 3.95 ;
+        RECT 2.25 1.55 2.75 1.95 ;
+        RECT 2.35 1.55 2.65 3.95 ;
+      LAYER Via1 ;
+        RECT 2.37 3.62 2.63 3.88 ;
+        RECT 2.37 1.62 2.63 1.88 ;
+    END
+  END Y
+  OBS
+    LAYER Metal1 ;
+      RECT 0.55 1.05 0.8 5.3 ;
+      RECT 0.55 2.25 2.2 2.55 ;
+  END
+END gf180mcu_osu_sc_gp9t3v3__clkbuf_1
+
+MACRO gf180mcu_osu_sc_gp9t3v3__clkbuf_16
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_gp9t3v3__clkbuf_16 0 0 ;
+  SIZE 15.8 BY 6.35 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 5.65 15.8 6.35 ;
+        RECT 15 3.6 15.25 6.35 ;
+        RECT 13.3 3.6 13.55 6.35 ;
+        RECT 11.6 3.6 11.85 6.35 ;
+        RECT 9.9 3.6 10.15 6.35 ;
+        RECT 8.2 3.6 8.45 6.35 ;
+        RECT 6.5 3.6 6.75 6.35 ;
+        RECT 4.8 3.6 5.05 6.35 ;
+        RECT 3.1 3.6 3.35 6.35 ;
+        RECT 1.4 3.6 1.65 6.35 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 0 15.8 0.7 ;
+        RECT 15 0 15.25 1.9 ;
+        RECT 13.3 0 13.55 1.9 ;
+        RECT 11.6 0 11.85 1.9 ;
+        RECT 9.9 0 10.15 1.9 ;
+        RECT 8.2 0 8.45 1.9 ;
+        RECT 6.5 0 6.75 1.9 ;
+        RECT 4.8 0 5.05 1.9 ;
+        RECT 3.1 0 3.35 1.9 ;
+        RECT 1.4 0 1.65 1.9 ;
+    END
+  END VSS
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 1.05 2.3 1.55 2.6 ;
+      LAYER Metal2 ;
+        RECT 1.05 2.3 1.55 2.6 ;
+        RECT 1.1 2.25 1.5 2.65 ;
+      LAYER Via1 ;
+        RECT 1.17 2.32 1.43 2.58 ;
+    END
+  END A
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 14.05 3.6 14.55 3.9 ;
+        RECT 14.15 1.05 14.4 5.3 ;
+        RECT 2.25 3.05 14.4 3.35 ;
+        RECT 2.25 2.15 14.4 2.45 ;
+        RECT 12.45 1.05 12.7 5.3 ;
+        RECT 10.75 1.05 11 5.3 ;
+        RECT 9.05 1.05 9.3 5.3 ;
+        RECT 7.35 1.05 7.6 5.3 ;
+        RECT 5.65 1.05 5.9 5.3 ;
+        RECT 3.95 1.05 4.2 5.3 ;
+        RECT 2.25 1.05 2.5 5.3 ;
+      LAYER Metal2 ;
+        RECT 14.05 3.55 14.55 3.95 ;
+      LAYER Via1 ;
+        RECT 14.17 3.62 14.43 3.88 ;
+    END
+  END Y
+  OBS
+    LAYER Metal1 ;
+      RECT 0.55 1.05 0.8 5.3 ;
+      RECT 0.55 3.05 2 3.35 ;
+  END
+END gf180mcu_osu_sc_gp9t3v3__clkbuf_16
+
+MACRO gf180mcu_osu_sc_gp9t3v3__clkbuf_2
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_gp9t3v3__clkbuf_2 0 0 ;
+  SIZE 3.9 BY 6.35 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 5.65 3.9 6.35 ;
+        RECT 3.1 3.6 3.35 6.35 ;
+        RECT 1.4 3.6 1.65 6.35 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 0 3.9 0.7 ;
+        RECT 3.1 0 3.35 1.9 ;
+        RECT 1.4 0 1.65 1.9 ;
+    END
+  END VSS
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 1.05 2.3 1.55 2.6 ;
+      LAYER Metal2 ;
+        RECT 1.05 2.3 1.55 2.6 ;
+        RECT 1.1 2.25 1.5 2.65 ;
+      LAYER Via1 ;
+        RECT 1.17 2.32 1.43 2.58 ;
+    END
+  END A
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 2.15 3.6 2.65 3.9 ;
+        RECT 2.25 1.05 2.5 5.3 ;
+      LAYER Metal2 ;
+        RECT 2.15 3.55 2.65 3.95 ;
+      LAYER Via1 ;
+        RECT 2.27 3.62 2.53 3.88 ;
+    END
+  END Y
+  OBS
+    LAYER Metal1 ;
+      RECT 0.55 1.05 0.8 5.3 ;
+      RECT 0.55 3.05 2 3.35 ;
+  END
+END gf180mcu_osu_sc_gp9t3v3__clkbuf_2
+
+MACRO gf180mcu_osu_sc_gp9t3v3__clkbuf_4
+  CLASS CORE ;
+  ORIGIN 0 0.05 ;
+  FOREIGN gf180mcu_osu_sc_gp9t3v3__clkbuf_4 0 -0.05 ;
+  SIZE 5.7 BY 6.35 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 5.6 5.7 6.3 ;
+        RECT 4.85 3.55 5.1 6.3 ;
+        RECT 3.15 3.55 3.4 6.3 ;
+        RECT 1.45 3.55 1.7 6.3 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 -0.05 5.7 0.65 ;
+        RECT 4.85 -0.05 5.1 1.85 ;
+        RECT 3.15 -0.05 3.4 1.85 ;
+        RECT 1.45 -0.05 1.7 1.85 ;
+    END
+  END VSS
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 1.1 2.25 1.6 2.55 ;
+      LAYER Metal2 ;
+        RECT 1.1 2.25 1.6 2.55 ;
+        RECT 1.15 2.2 1.55 2.6 ;
+      LAYER Via1 ;
+        RECT 1.22 2.27 1.48 2.53 ;
+    END
+  END A
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 3.9 3.55 4.4 3.85 ;
+        RECT 4 1 4.25 5.25 ;
+        RECT 2.3 3 4.25 3.3 ;
+        RECT 2.3 2.1 4.25 2.4 ;
+        RECT 2.3 1 2.55 5.25 ;
+      LAYER Metal2 ;
+        RECT 3.9 3.5 4.4 3.9 ;
+      LAYER Via1 ;
+        RECT 4.02 3.57 4.28 3.83 ;
+    END
+  END Y
+  OBS
+    LAYER Metal1 ;
+      RECT 0.6 1 0.85 5.25 ;
+      RECT 0.6 3 2.05 3.3 ;
+  END
+END gf180mcu_osu_sc_gp9t3v3__clkbuf_4
+
+MACRO gf180mcu_osu_sc_gp9t3v3__clkbuf_8
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_gp9t3v3__clkbuf_8 0 0 ;
+  SIZE 9.05 BY 6.35 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 5.65 9.05 6.35 ;
+        RECT 8.2 3.6 8.45 6.35 ;
+        RECT 6.5 3.6 6.75 6.35 ;
+        RECT 4.8 3.6 5.05 6.35 ;
+        RECT 3.1 3.6 3.35 6.35 ;
+        RECT 1.4 3.6 1.65 6.35 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 0 9.05 0.7 ;
+        RECT 8.2 0 8.45 1.9 ;
+        RECT 6.5 0 6.75 1.9 ;
+        RECT 4.8 0 5.05 1.9 ;
+        RECT 3.1 0 3.35 1.9 ;
+        RECT 1.4 0 1.65 1.9 ;
+    END
+  END VSS
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 1.05 2.3 1.55 2.6 ;
+      LAYER Metal2 ;
+        RECT 1.05 2.3 1.55 2.6 ;
+        RECT 1.1 2.25 1.5 2.65 ;
+      LAYER Via1 ;
+        RECT 1.17 2.32 1.43 2.58 ;
+    END
+  END A
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 7.25 3.6 7.75 3.9 ;
+        RECT 7.35 1.05 7.6 5.3 ;
+        RECT 2.25 3.05 7.6 3.35 ;
+        RECT 2.25 2.15 7.6 2.45 ;
+        RECT 5.65 1.05 5.9 5.3 ;
+        RECT 3.95 1.05 4.2 5.3 ;
+        RECT 2.25 1.05 2.5 5.3 ;
+      LAYER Metal2 ;
+        RECT 7.25 3.55 7.75 3.95 ;
+      LAYER Via1 ;
+        RECT 7.37 3.62 7.63 3.88 ;
+    END
+  END Y
+  OBS
+    LAYER Metal1 ;
+      RECT 0.55 1.05 0.8 5.3 ;
+      RECT 0.55 3.05 2 3.35 ;
+  END
+END gf180mcu_osu_sc_gp9t3v3__clkbuf_8
+
+MACRO gf180mcu_osu_sc_gp9t3v3__clkinv_1
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_gp9t3v3__clkinv_1 0 0 ;
+  SIZE 2.2 BY 6.35 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 5.65 2.2 6.35 ;
+        RECT 0.55 3.6 0.8 6.35 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 0 2.2 0.7 ;
+        RECT 0.55 0 0.8 1.9 ;
+    END
+  END VSS
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.55 2.3 1.05 2.6 ;
+      LAYER Metal2 ;
+        RECT 0.55 2.25 1.05 2.65 ;
+      LAYER Via1 ;
+        RECT 0.67 2.32 0.93 2.58 ;
+    END
+  END A
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 1.3 3.6 1.8 3.9 ;
+        RECT 1.4 1.05 1.65 5.3 ;
+      LAYER Metal2 ;
+        RECT 1.3 3.55 1.8 3.95 ;
+      LAYER Via1 ;
+        RECT 1.42 3.62 1.68 3.88 ;
+    END
+  END Y
+END gf180mcu_osu_sc_gp9t3v3__clkinv_1
+
+MACRO gf180mcu_osu_sc_gp9t3v3__clkinv_16
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_gp9t3v3__clkinv_16 0 0 ;
+  SIZE 15 BY 6.35 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 5.65 15 6.35 ;
+        RECT 14.15 3.6 14.4 6.35 ;
+        RECT 12.45 3.6 12.7 6.35 ;
+        RECT 10.75 3.6 11 6.35 ;
+        RECT 9.05 3.6 9.3 6.35 ;
+        RECT 7.35 3.6 7.6 6.35 ;
+        RECT 5.65 3.6 5.9 6.35 ;
+        RECT 3.95 3.6 4.2 6.35 ;
+        RECT 2.25 3.6 2.5 6.35 ;
+        RECT 0.55 3.6 0.8 6.35 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 0 15 0.7 ;
+        RECT 14.15 0 14.4 1.9 ;
+        RECT 12.45 0 12.7 1.9 ;
+        RECT 10.75 0 11 1.9 ;
+        RECT 9.05 0 9.3 1.9 ;
+        RECT 7.35 0 7.6 1.9 ;
+        RECT 5.65 0 5.9 1.9 ;
+        RECT 3.95 0 4.2 1.9 ;
+        RECT 2.25 0 2.5 1.9 ;
+        RECT 0.55 0 0.8 1.9 ;
+    END
+  END VSS
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.4 2.3 0.9 2.6 ;
+      LAYER Metal2 ;
+        RECT 0.4 2.25 0.9 2.65 ;
+      LAYER Via1 ;
+        RECT 0.52 2.32 0.78 2.58 ;
+    END
+  END A
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 13.3 3.6 13.85 3.9 ;
+        RECT 13.3 1.05 13.55 5.3 ;
+        RECT 1.4 3.1 13.55 3.35 ;
+        RECT 1.4 2.15 13.55 2.4 ;
+        RECT 11.6 1.05 11.85 5.3 ;
+        RECT 9.9 1.05 10.15 5.3 ;
+        RECT 8.2 1.05 8.45 5.3 ;
+        RECT 6.5 1.05 6.75 5.3 ;
+        RECT 4.8 1.05 5.05 5.3 ;
+        RECT 3.1 1.05 3.35 5.3 ;
+        RECT 1.4 1.05 1.65 5.3 ;
+      LAYER Metal2 ;
+        RECT 13.35 3.6 13.85 3.9 ;
+        RECT 13.4 3.55 13.8 3.95 ;
+      LAYER Via1 ;
+        RECT 13.47 3.62 13.73 3.88 ;
+    END
+  END Y
+END gf180mcu_osu_sc_gp9t3v3__clkinv_16
+
+MACRO gf180mcu_osu_sc_gp9t3v3__clkinv_2
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_gp9t3v3__clkinv_2 0 0 ;
+  SIZE 3.2 BY 6.35 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 5.65 3.2 6.35 ;
+        RECT 2.3 3.6 2.55 6.35 ;
+        RECT 0.55 3.6 0.8 6.35 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 0 3.2 0.7 ;
+        RECT 2.25 0 2.5 1.9 ;
+        RECT 0.55 0 0.8 1.9 ;
+    END
+  END VSS
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.65 2.3 1.15 2.6 ;
+      LAYER Metal2 ;
+        RECT 0.65 2.25 1.15 2.65 ;
+      LAYER Via1 ;
+        RECT 0.77 2.32 1.03 2.58 ;
+    END
+  END A
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 1.4 3.6 2.05 3.9 ;
+        RECT 1.4 1.05 1.65 5.3 ;
+      LAYER Metal2 ;
+        RECT 1.55 3.6 2.05 3.9 ;
+        RECT 1.6 3.55 2 3.95 ;
+      LAYER Via1 ;
+        RECT 1.67 3.62 1.93 3.88 ;
+    END
+  END Y
+END gf180mcu_osu_sc_gp9t3v3__clkinv_2
+
+MACRO gf180mcu_osu_sc_gp9t3v3__clkinv_4
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_gp9t3v3__clkinv_4 0 0 ;
+  SIZE 4.8 BY 6.35 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 5.65 4.8 6.35 ;
+        RECT 4 3.6 4.25 6.35 ;
+        RECT 2.25 3.6 2.5 6.35 ;
+        RECT 0.55 3.6 0.8 6.35 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 0 4.8 0.7 ;
+        RECT 3.95 0 4.2 1.9 ;
+        RECT 2.25 0 2.5 1.9 ;
+        RECT 0.55 0 0.8 1.9 ;
+    END
+  END VSS
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.4 2.3 0.9 2.6 ;
+      LAYER Metal2 ;
+        RECT 0.4 2.25 0.9 2.65 ;
+      LAYER Via1 ;
+        RECT 0.52 2.32 0.78 2.58 ;
+    END
+  END A
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 3.1 3.6 3.75 3.9 ;
+        RECT 3.1 1.05 3.35 5.3 ;
+        RECT 1.4 3.1 3.35 3.35 ;
+        RECT 1.4 2.15 3.35 2.4 ;
+        RECT 1.4 1.05 1.65 5.3 ;
+      LAYER Metal2 ;
+        RECT 3.25 3.6 3.75 3.9 ;
+        RECT 3.3 3.55 3.7 3.95 ;
+      LAYER Via1 ;
+        RECT 3.37 3.62 3.63 3.88 ;
+    END
+  END Y
+END gf180mcu_osu_sc_gp9t3v3__clkinv_4
+
+MACRO gf180mcu_osu_sc_gp9t3v3__clkinv_8
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_gp9t3v3__clkinv_8 0 0 ;
+  SIZE 8.2 BY 6.35 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 5.65 8.2 6.35 ;
+        RECT 7.4 3.6 7.65 6.35 ;
+        RECT 5.65 3.6 5.9 6.35 ;
+        RECT 3.95 3.6 4.2 6.35 ;
+        RECT 2.25 3.6 2.5 6.35 ;
+        RECT 0.55 3.6 0.8 6.35 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 0 8.2 0.7 ;
+        RECT 7.35 0 7.6 1.9 ;
+        RECT 5.65 0 5.9 1.9 ;
+        RECT 3.95 0 4.2 1.9 ;
+        RECT 2.25 0 2.5 1.9 ;
+        RECT 0.55 0 0.8 1.9 ;
+    END
+  END VSS
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.4 2.3 0.9 2.6 ;
+      LAYER Metal2 ;
+        RECT 0.4 2.25 0.9 2.65 ;
+      LAYER Via1 ;
+        RECT 0.52 2.32 0.78 2.58 ;
+    END
+  END A
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 6.5 3.6 7.15 3.9 ;
+        RECT 6.5 1.05 6.75 5.3 ;
+        RECT 1.4 3.1 6.75 3.35 ;
+        RECT 1.4 2.15 6.75 2.4 ;
+        RECT 4.8 1.05 5.05 5.3 ;
+        RECT 3.1 1.05 3.35 5.3 ;
+        RECT 1.4 1.05 1.65 5.3 ;
+      LAYER Metal2 ;
+        RECT 6.65 3.6 7.15 3.9 ;
+        RECT 6.7 3.55 7.1 3.95 ;
+      LAYER Via1 ;
+        RECT 6.77 3.62 7.03 3.88 ;
+    END
+  END Y
+END gf180mcu_osu_sc_gp9t3v3__clkinv_8
+
+MACRO gf180mcu_osu_sc_gp9t3v3__decap_1
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_gp9t3v3__decap_1 0 0 ;
+  SIZE 2.2 BY 6.35 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 5.65 2.2 6.35 ;
+        RECT 1.4 3.6 1.65 6.35 ;
+        RECT 0.55 3.6 0.8 6.35 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 0 2.2 0.7 ;
+        RECT 1.4 0 1.65 1.9 ;
+        RECT 0.55 0 0.8 1.9 ;
+    END
+  END VSS
+END gf180mcu_osu_sc_gp9t3v3__decap_1
+
+MACRO gf180mcu_osu_sc_gp9t3v3__dff_1
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_gp9t3v3__dff_1 0 0 ;
+  SIZE 14.5 BY 6.35 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 5.65 14.5 6.35 ;
+        RECT 12.85 4.15 13.1 6.35 ;
+        RECT 10.4 3.6 10.65 6.35 ;
+        RECT 8.6 4.85 8.85 6.35 ;
+        RECT 5 4.2 5.25 6.35 ;
+        RECT 1.4 4.85 1.65 6.35 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 0 14.5 0.7 ;
+        RECT 12.85 0 13.1 1.7 ;
+        RECT 10.4 0 10.65 1.5 ;
+        RECT 8.6 0 8.85 1.6 ;
+        RECT 5 0 5.25 1.5 ;
+        RECT 1.4 0 1.65 1.6 ;
+    END
+  END VSS
+  PIN CLK
+    DIRECTION INPUT ;
+    USE CLOCK ;
+    PORT
+      LAYER Metal1 ;
+        RECT 9 2.95 9.5 3.25 ;
+        RECT 2.5 3.1 9.4 3.35 ;
+        RECT 2.5 3.1 8.95 3.4 ;
+        RECT 5.95 2.05 6.45 2.35 ;
+        RECT 6.05 2.05 6.35 3.4 ;
+        RECT 3.8 2.1 4.3 2.4 ;
+        RECT 3.9 2.1 4.2 3.4 ;
+      LAYER Metal2 ;
+        RECT 9 2.95 9.5 3.25 ;
+        RECT 9.05 2.9 9.45 3.3 ;
+      LAYER Via1 ;
+        RECT 9.12 2.97 9.38 3.23 ;
+    END
+  END CLK
+  PIN D
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 1.75 2.95 2.25 3.25 ;
+      LAYER Metal2 ;
+        RECT 1.7 2.95 2.3 3.25 ;
+        RECT 1.75 2.9 2.25 3.3 ;
+      LAYER Via1 ;
+        RECT 1.87 2.97 2.13 3.23 ;
+    END
+  END D
+  PIN Q
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 13.7 4.25 14.25 4.6 ;
+        RECT 13.7 4.2 14.2 4.6 ;
+        RECT 13.7 1.05 13.95 5.3 ;
+      LAYER Metal2 ;
+        RECT 13.75 4.25 14.25 4.55 ;
+        RECT 13.8 4.2 14.2 4.6 ;
+      LAYER Via1 ;
+        RECT 13.87 4.27 14.13 4.53 ;
+    END
+  END Q
+  PIN QN
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 12 3.6 13.45 3.9 ;
+        RECT 13.05 1.95 13.35 3.9 ;
+        RECT 12 1.95 13.35 2.2 ;
+        RECT 12 3.6 12.25 5.3 ;
+        RECT 12 1.05 12.25 2.2 ;
+      LAYER Metal2 ;
+        RECT 12.95 3.6 13.45 3.9 ;
+        RECT 13 3.55 13.4 3.95 ;
+      LAYER Via1 ;
+        RECT 13.07 3.62 13.33 3.88 ;
+    END
+  END QN
+  OBS
+    LAYER Metal2 ;
+      RECT 8.1 4.25 8.5 4.65 ;
+      RECT 8.05 4.3 11.45 4.6 ;
+      RECT 11.15 2.65 11.45 4.6 ;
+      RECT 8.15 2.25 8.45 4.65 ;
+      RECT 12.2 2.6 12.6 3 ;
+      RECT 11.15 2.65 12.65 2.95 ;
+      RECT 8.1 2.25 8.5 2.65 ;
+      RECT 8.05 2.3 8.55 2.6 ;
+      RECT 6.5 1 6.8 4.7 ;
+      RECT 6.45 4.25 6.85 4.65 ;
+      RECT 10.55 1.7 10.95 2.1 ;
+      RECT 10.2 1.75 11 2.05 ;
+      RECT 6.45 1.4 6.85 1.8 ;
+      RECT 6.5 1 6.85 1.8 ;
+      RECT 10.2 1.7 10.95 2.05 ;
+      RECT 10.2 1 10.5 2.05 ;
+      RECT 6.5 1 10.5 1.3 ;
+      RECT 2.8 5 7.55 5.3 ;
+      RECT 7.25 1.6 7.55 5.3 ;
+      RECT 2.8 2.05 3.1 5.3 ;
+      RECT 2.75 2.05 3.2 2.45 ;
+      RECT 2.7 2.1 3.2 2.4 ;
+      RECT 9.4 1.6 9.8 2 ;
+      RECT 7.2 1.6 7.6 2 ;
+      RECT 7.15 1.65 9.9 1.95 ;
+      RECT 4.65 2.05 5.05 2.45 ;
+      RECT 0.45 2.05 0.85 2.45 ;
+      RECT 4.6 2.1 5.1 2.4 ;
+      RECT 0.4 2.1 0.9 2.4 ;
+      RECT 4.7 1.15 5 2.45 ;
+      RECT 0.5 1.15 0.8 2.45 ;
+      RECT 0.5 1.15 5 1.45 ;
+    LAYER Via1 ;
+      RECT 12.27 2.67 12.53 2.93 ;
+      RECT 10.62 1.77 10.88 2.03 ;
+      RECT 9.47 1.67 9.73 1.93 ;
+      RECT 8.17 2.32 8.43 2.58 ;
+      RECT 8.17 4.32 8.43 4.58 ;
+      RECT 7.27 1.67 7.53 1.93 ;
+      RECT 6.52 1.47 6.78 1.73 ;
+      RECT 6.52 4.32 6.78 4.58 ;
+      RECT 4.72 2.12 4.98 2.38 ;
+      RECT 2.82 2.12 3.08 2.38 ;
+      RECT 0.52 2.12 0.78 2.38 ;
+    LAYER Metal1 ;
+      RECT 11.25 1.05 11.5 5.3 ;
+      RECT 11.25 2.65 12.65 2.95 ;
+      RECT 10.6 1.75 10.9 3.05 ;
+      RECT 10.5 1.75 11 2.05 ;
+      RECT 9.45 3.6 9.7 5.3 ;
+      RECT 9.45 3.6 10 3.85 ;
+      RECT 9.75 2.3 10 3.85 ;
+      RECT 9.45 1.55 9.75 2.6 ;
+      RECT 9.45 1.05 9.7 2.6 ;
+      RECT 8.05 4.3 8.55 4.6 ;
+      RECT 8.15 4.2 8.45 4.6 ;
+      RECT 6.95 2 7.25 2.5 ;
+      RECT 6.9 2.1 7.55 2.4 ;
+      RECT 7.25 1.55 7.55 2.4 ;
+      RECT 4.7 2.1 5 2.45 ;
+      RECT 4.6 2.1 5.1 2.4 ;
+      RECT 3.3 4.3 3.85 5.3 ;
+      RECT 1.05 4.3 3.85 4.6 ;
+      RECT 1.05 1.9 1.35 4.6 ;
+      RECT 1.05 3.1 1.45 3.4 ;
+      RECT 1.05 1.9 2.25 2.15 ;
+      RECT 2 1.5 2.25 2.15 ;
+      RECT 2 1.5 3.85 1.75 ;
+      RECT 3.3 1.05 3.85 1.75 ;
+      RECT 0.55 1.05 0.8 5.3 ;
+      RECT 0.5 2 0.8 2.45 ;
+      RECT 0.4 2.1 0.8 2.4 ;
+      RECT 8.05 2.3 8.55 2.6 ;
+      RECT 6.4 1.05 6.95 1.75 ;
+      RECT 6.4 4.2 6.95 5.3 ;
+      RECT 2.7 2.1 3.2 2.4 ;
+  END
+END gf180mcu_osu_sc_gp9t3v3__dff_1
+
+MACRO gf180mcu_osu_sc_gp9t3v3__dffn_1
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_gp9t3v3__dffn_1 0 0 ;
+  SIZE 15.5 BY 6.35 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 5.65 15.5 6.35 ;
+        RECT 13.85 4.15 14.1 6.35 ;
+        RECT 11.4 3.6 11.65 6.35 ;
+        RECT 8.6 4.85 8.85 6.35 ;
+        RECT 5 4.2 5.25 6.35 ;
+        RECT 1.4 4.85 1.65 6.35 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 0 15.5 0.7 ;
+        RECT 13.85 0 14.1 1.7 ;
+        RECT 11.4 0 11.65 1.5 ;
+        RECT 8.6 0 8.85 1.6 ;
+        RECT 5 0 5.25 1.5 ;
+        RECT 1.4 0 1.65 1.6 ;
+    END
+  END VSS
+  PIN CLK
+    DIRECTION INPUT ;
+    USE CLOCK ;
+    PORT
+      LAYER Metal1 ;
+        RECT 11.15 2.85 11.45 3.35 ;
+      LAYER Metal2 ;
+        RECT 11.05 2.95 11.55 3.25 ;
+        RECT 11.1 2.9 11.5 3.3 ;
+      LAYER Via1 ;
+        RECT 11.17 2.97 11.43 3.23 ;
+    END
+  END CLK
+  PIN D
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 1.75 2.95 2.25 3.25 ;
+      LAYER Metal2 ;
+        RECT 1.7 2.95 2.3 3.25 ;
+        RECT 1.75 2.9 2.25 3.3 ;
+      LAYER Via1 ;
+        RECT 1.87 2.97 2.13 3.23 ;
+    END
+  END D
+  PIN Q
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 14.7 4.25 15.25 4.6 ;
+        RECT 14.7 4.2 15.2 4.6 ;
+        RECT 14.7 1.05 14.95 5.3 ;
+      LAYER Metal2 ;
+        RECT 14.75 4.25 15.25 4.55 ;
+        RECT 14.8 4.2 15.2 4.6 ;
+      LAYER Via1 ;
+        RECT 14.87 4.27 15.13 4.53 ;
+    END
+  END Q
+  PIN QN
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 13 3.6 14.45 3.9 ;
+        RECT 14.05 1.95 14.35 3.9 ;
+        RECT 13 1.95 14.35 2.2 ;
+        RECT 13 3.6 13.25 5.3 ;
+        RECT 13 1.05 13.25 2.2 ;
+      LAYER Metal2 ;
+        RECT 13.95 3.6 14.45 3.9 ;
+        RECT 14 3.55 14.4 3.95 ;
+      LAYER Via1 ;
+        RECT 14.07 3.62 14.33 3.88 ;
+    END
+  END QN
+  OBS
+    LAYER Metal2 ;
+      RECT 8.1 4.25 8.5 4.65 ;
+      RECT 8.05 4.3 12.45 4.6 ;
+      RECT 12.15 2.65 12.45 4.6 ;
+      RECT 8.15 2.25 8.45 4.65 ;
+      RECT 13.2 2.6 13.6 3 ;
+      RECT 12.15 2.65 13.65 2.95 ;
+      RECT 8.1 2.25 8.5 2.65 ;
+      RECT 8.05 2.3 8.55 2.6 ;
+      RECT 6.5 1 6.8 4.7 ;
+      RECT 6.45 4.25 6.85 4.65 ;
+      RECT 11.55 1.7 11.95 2.1 ;
+      RECT 11.2 1.75 12 2.05 ;
+      RECT 6.45 1.4 6.85 1.8 ;
+      RECT 6.5 1 6.85 1.8 ;
+      RECT 11.2 1.7 11.95 2.05 ;
+      RECT 11.2 1 11.5 2.05 ;
+      RECT 6.5 1 11.75 1.3 ;
+      RECT 10.3 2.9 10.7 3.3 ;
+      RECT 9.05 2.9 9.45 3.3 ;
+      RECT 9 2.95 10.75 3.25 ;
+      RECT 2.8 5 7.55 5.3 ;
+      RECT 7.25 1.6 7.55 5.3 ;
+      RECT 2.8 2.05 3.1 5.3 ;
+      RECT 2.75 2.05 3.2 2.45 ;
+      RECT 2.7 2.1 3.2 2.4 ;
+      RECT 9.4 1.6 9.8 2 ;
+      RECT 7.2 1.6 7.6 2 ;
+      RECT 7.15 1.65 9.9 1.95 ;
+      RECT 4.65 2.05 5.05 2.45 ;
+      RECT 0.45 2.05 0.85 2.45 ;
+      RECT 4.6 2.1 5.1 2.4 ;
+      RECT 0.4 2.1 0.9 2.4 ;
+      RECT 4.7 1.15 5 2.45 ;
+      RECT 0.5 1.15 0.8 2.45 ;
+      RECT 0.5 1.15 5 1.45 ;
+    LAYER Via1 ;
+      RECT 13.27 2.67 13.53 2.93 ;
+      RECT 11.62 1.77 11.88 2.03 ;
+      RECT 10.37 2.97 10.63 3.23 ;
+      RECT 9.47 1.67 9.73 1.93 ;
+      RECT 9.12 2.97 9.38 3.23 ;
+      RECT 8.17 2.32 8.43 2.58 ;
+      RECT 8.17 4.32 8.43 4.58 ;
+      RECT 7.27 1.67 7.53 1.93 ;
+      RECT 6.52 1.47 6.78 1.73 ;
+      RECT 6.52 4.32 6.78 4.58 ;
+      RECT 4.72 2.12 4.98 2.38 ;
+      RECT 2.82 2.12 3.08 2.38 ;
+      RECT 0.52 2.12 0.78 2.38 ;
+    LAYER Metal1 ;
+      RECT 12.25 1.05 12.5 5.3 ;
+      RECT 12.25 2.65 13.65 2.95 ;
+      RECT 11.6 1.75 11.9 2.55 ;
+      RECT 11.5 1.75 12 2.05 ;
+      RECT 10.55 1.05 10.8 5.3 ;
+      RECT 10.5 2.9 10.8 3.3 ;
+      RECT 10.25 2.95 10.8 3.25 ;
+      RECT 9.45 3.6 9.7 5.3 ;
+      RECT 9.45 3.6 10 3.85 ;
+      RECT 9.75 2.3 10 3.85 ;
+      RECT 9.45 1.55 9.75 2.6 ;
+      RECT 9.45 1.05 9.7 2.6 ;
+      RECT 2.5 3.1 8.95 3.4 ;
+      RECT 2.5 3.1 9.4 3.35 ;
+      RECT 9 2.95 9.5 3.25 ;
+      RECT 6.05 2.05 6.35 3.4 ;
+      RECT 3.9 2.1 4.2 3.4 ;
+      RECT 3.8 2.1 4.3 2.4 ;
+      RECT 5.95 2.05 6.45 2.35 ;
+      RECT 8.05 4.3 8.55 4.6 ;
+      RECT 8.15 4.2 8.45 4.6 ;
+      RECT 6.95 2 7.25 2.5 ;
+      RECT 6.9 2.1 7.55 2.4 ;
+      RECT 7.25 1.55 7.55 2.4 ;
+      RECT 4.7 2.1 5 2.45 ;
+      RECT 4.6 2.1 5.1 2.4 ;
+      RECT 3.3 4.3 3.85 5.3 ;
+      RECT 1.05 4.3 3.85 4.6 ;
+      RECT 1.05 1.9 1.35 4.6 ;
+      RECT 1.05 3.1 1.45 3.4 ;
+      RECT 1.05 1.9 2.25 2.15 ;
+      RECT 2 1.5 2.25 2.15 ;
+      RECT 2 1.5 3.85 1.75 ;
+      RECT 3.3 1.05 3.85 1.75 ;
+      RECT 0.55 1.05 0.8 5.3 ;
+      RECT 0.5 2 0.8 2.45 ;
+      RECT 0.4 2.1 0.8 2.4 ;
+      RECT 8.05 2.3 8.55 2.6 ;
+      RECT 6.4 1.05 6.95 1.75 ;
+      RECT 6.4 4.2 6.95 5.3 ;
+      RECT 2.7 2.1 3.2 2.4 ;
+  END
+END gf180mcu_osu_sc_gp9t3v3__dffn_1
+
+MACRO gf180mcu_osu_sc_gp9t3v3__dffsr_1
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_gp9t3v3__dffsr_1 0 0 ;
+  SIZE 20.5 BY 6.35 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 5.65 20.5 6.35 ;
+        RECT 18.8 4.15 19.05 6.35 ;
+        RECT 15.5 4.35 15.75 6.35 ;
+        RECT 12.9 4.85 13.15 6.35 ;
+        RECT 9.3 4.2 9.55 6.35 ;
+        RECT 5.7 4.85 5.95 6.35 ;
+        RECT 3.85 4.35 4.1 6.35 ;
+        RECT 0.55 3.6 0.8 6.35 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 0 20.5 0.7 ;
+        RECT 18.8 0 19.05 1.7 ;
+        RECT 17.05 0 17.3 1.5 ;
+        RECT 14.8 0 15.05 1.9 ;
+        RECT 12.9 0 13.15 1.8 ;
+        RECT 9.3 0 9.55 1.5 ;
+        RECT 5.7 0 5.95 1.6 ;
+        RECT 4.55 0 4.8 1.55 ;
+        RECT 2.3 0 2.55 1.5 ;
+        RECT 0.55 0 0.8 1.9 ;
+    END
+  END VSS
+  PIN CLK
+    DIRECTION INPUT ;
+    USE CLOCK ;
+    PORT
+      LAYER Metal1 ;
+        RECT 13.3 2.95 13.8 3.25 ;
+        RECT 6.8 3.1 13.7 3.4 ;
+        RECT 10.25 2.3 10.75 2.55 ;
+        RECT 10.35 2.3 10.65 3.4 ;
+        RECT 8.1 2.25 8.6 2.55 ;
+        RECT 8.2 2.25 8.5 3.4 ;
+      LAYER Metal2 ;
+        RECT 13.3 2.95 13.8 3.25 ;
+        RECT 13.35 2.9 13.75 3.3 ;
+      LAYER Via1 ;
+        RECT 13.42 2.97 13.68 3.23 ;
+    END
+  END CLK
+  PIN D
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 6.05 2.95 6.55 3.25 ;
+      LAYER Metal2 ;
+        RECT 6 2.95 6.6 3.25 ;
+        RECT 6.05 2.9 6.55 3.3 ;
+      LAYER Via1 ;
+        RECT 6.17 2.97 6.43 3.23 ;
+    END
+  END D
+  PIN Q
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 19.65 1.05 19.9 5.3 ;
+        RECT 19.6 4.15 19.9 4.65 ;
+      LAYER Metal2 ;
+        RECT 19.5 4.25 20 4.55 ;
+        RECT 19.55 4.2 19.95 4.6 ;
+      LAYER Via1 ;
+        RECT 19.62 4.27 19.88 4.53 ;
+    END
+  END Q
+  PIN QN
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 17.95 3.6 19.4 3.9 ;
+        RECT 19 3.55 19.3 3.9 ;
+        RECT 19.05 1.95 19.3 3.9 ;
+        RECT 17.95 1.95 19.3 2.2 ;
+        RECT 17.95 3.6 18.2 5.3 ;
+        RECT 17.95 1.05 18.2 2.2 ;
+      LAYER Metal2 ;
+        RECT 18.9 3.6 19.4 3.9 ;
+        RECT 18.95 3.55 19.35 3.95 ;
+      LAYER Via1 ;
+        RECT 19.02 3.62 19.28 3.88 ;
+    END
+  END QN
+  PIN RN
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.8 2.85 1.1 3.35 ;
+      LAYER Metal2 ;
+        RECT 0.7 2.95 1.2 3.25 ;
+        RECT 0.75 2.9 1.15 3.3 ;
+      LAYER Via1 ;
+        RECT 0.82 2.97 1.08 3.23 ;
+    END
+  END RN
+  PIN SN
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 15.9 2.95 16.4 3.25 ;
+        RECT 3.4 3.1 3.9 3.4 ;
+      LAYER Metal2 ;
+        RECT 15.9 2.9 16.4 3.3 ;
+        RECT 3.5 5.05 16.3 5.35 ;
+        RECT 16 2.9 16.3 5.35 ;
+        RECT 3.4 3.05 3.9 3.45 ;
+        RECT 3.5 3.05 3.8 5.35 ;
+      LAYER Via1 ;
+        RECT 3.52 3.12 3.78 3.38 ;
+        RECT 16.02 2.97 16.28 3.23 ;
+    END
+  END SN
+  OBS
+    LAYER Metal2 ;
+      RECT 18.15 2.6 18.55 3 ;
+      RECT 18 2.65 18.6 2.95 ;
+      RECT 16.6 2.15 16.9 2.65 ;
+      RECT 2.65 2.25 3.15 2.65 ;
+      RECT 1.35 2.25 1.75 2.65 ;
+      RECT 16.55 2.15 16.95 2.6 ;
+      RECT 1.3 2.3 3.15 2.6 ;
+      RECT 2.75 1 3.05 2.65 ;
+      RECT 16.55 1 16.85 2.6 ;
+      RECT 2.75 1 16.85 1.3 ;
+      RECT 10.8 1.6 11.1 4.15 ;
+      RECT 10.75 3.7 11.15 4.1 ;
+      RECT 14.6 2.1 15.1 2.5 ;
+      RECT 14.6 1.65 15 2.5 ;
+      RECT 10.75 1.6 11.15 2 ;
+      RECT 10.7 1.65 15 1.95 ;
+      RECT 12.4 4.25 12.8 4.65 ;
+      RECT 12.35 4.3 14.5 4.6 ;
+      RECT 14.2 2.95 14.5 4.6 ;
+      RECT 12.45 2.5 12.75 4.65 ;
+      RECT 14.2 2.95 15.05 3.3 ;
+      RECT 14.55 2.9 15.05 3.3 ;
+      RECT 12.4 2.5 12.8 2.9 ;
+      RECT 12.35 2.55 12.85 2.85 ;
+      RECT 7.1 4.45 11.8 4.75 ;
+      RECT 11.5 2.25 11.8 4.75 ;
+      RECT 7.1 2.2 7.4 4.75 ;
+      RECT 11.45 2.3 11.85 2.7 ;
+      RECT 7.05 2.2 7.5 2.6 ;
+      RECT 7 2.25 7.5 2.55 ;
+      RECT 9 1.6 9.3 2.5 ;
+      RECT 8.95 2.05 9.35 2.45 ;
+      RECT 8.95 2.1 9.4 2.4 ;
+      RECT 4.65 1.95 5.15 2.35 ;
+      RECT 4.65 2 6.6 2.3 ;
+      RECT 6.3 1.6 6.6 2.3 ;
+      RECT 8.95 1.6 9.3 2.45 ;
+      RECT 6.3 1.6 9.3 1.9 ;
+      RECT 4.4 3.05 4.9 3.45 ;
+    LAYER Via1 ;
+      RECT 18.22 2.67 18.48 2.93 ;
+      RECT 16.62 2.27 16.88 2.53 ;
+      RECT 14.72 2.17 14.98 2.43 ;
+      RECT 14.67 2.97 14.93 3.23 ;
+      RECT 12.47 2.57 12.73 2.83 ;
+      RECT 12.47 4.32 12.73 4.58 ;
+      RECT 11.52 2.37 11.78 2.63 ;
+      RECT 10.82 1.67 11.08 1.93 ;
+      RECT 10.82 3.77 11.08 4.03 ;
+      RECT 9.02 2.12 9.28 2.38 ;
+      RECT 7.12 2.27 7.38 2.53 ;
+      RECT 4.77 2.02 5.03 2.28 ;
+      RECT 4.52 3.12 4.78 3.38 ;
+      RECT 2.77 2.32 3.03 2.58 ;
+      RECT 1.42 2.32 1.68 2.58 ;
+    LAYER Metal1 ;
+      RECT 17.2 3.95 17.45 5.3 ;
+      RECT 17.25 1.75 17.5 4.2 ;
+      RECT 14.55 2.95 15.65 3.25 ;
+      RECT 15.35 1.75 15.65 3.25 ;
+      RECT 17.25 2.65 18.6 2.95 ;
+      RECT 15.35 1.75 17.5 2 ;
+      RECT 16.2 1.05 16.45 2 ;
+      RECT 16.35 3.85 16.6 5.3 ;
+      RECT 14.65 3.85 14.9 5.3 ;
+      RECT 14.65 3.85 16.6 4.1 ;
+      RECT 13.75 3.7 14 5.3 ;
+      RECT 13.75 3.7 14.3 3.95 ;
+      RECT 14.05 2.3 14.3 3.95 ;
+      RECT 11.5 2.05 11.8 2.8 ;
+      RECT 11.3 2.35 11.8 2.65 ;
+      RECT 13.75 2.3 14.3 2.6 ;
+      RECT 11.5 2.05 14 2.3 ;
+      RECT 13.75 1.05 14 2.6 ;
+      RECT 12.35 4.3 12.85 4.6 ;
+      RECT 12.45 4.2 12.75 4.6 ;
+      RECT 9 2.1 9.3 2.45 ;
+      RECT 8.9 2.1 9.4 2.4 ;
+      RECT 7.6 4.3 8.15 5.3 ;
+      RECT 5.4 4.3 8.15 4.6 ;
+      RECT 5.4 2.3 5.7 4.6 ;
+      RECT 4.4 3.1 5.7 3.4 ;
+      RECT 5.4 2.3 6.55 2.6 ;
+      RECT 6.25 1.5 6.55 2.6 ;
+      RECT 6.25 1.5 8.15 1.75 ;
+      RECT 7.6 1.05 8.15 1.75 ;
+      RECT 2.15 1.75 2.4 5.3 ;
+      RECT 3.85 2 5.15 2.3 ;
+      RECT 3.15 1.7 4.1 2 ;
+      RECT 2.15 1.75 4.1 2 ;
+      RECT 3.15 1.05 3.4 2 ;
+      RECT 4.7 3.85 4.95 5.3 ;
+      RECT 3 3.85 3.25 5.3 ;
+      RECT 3 3.85 4.95 4.1 ;
+      RECT 1.4 1.05 1.65 5.3 ;
+      RECT 1.4 2 1.7 2.65 ;
+      RECT 1.4 2.3 1.8 2.6 ;
+      RECT 16.5 2.25 17 2.55 ;
+      RECT 14.6 2.15 15.1 2.45 ;
+      RECT 12.35 2.55 12.85 2.85 ;
+      RECT 10.7 1.05 11.25 1.95 ;
+      RECT 10.7 3.65 11.25 5.3 ;
+      RECT 7 2.25 7.5 2.55 ;
+      RECT 2.65 2.3 3.15 2.6 ;
+  END
+END gf180mcu_osu_sc_gp9t3v3__dffsr_1
+
+MACRO gf180mcu_osu_sc_gp9t3v3__dlat_1
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_gp9t3v3__dlat_1 0 0 ;
+  SIZE 9.5 BY 6.35 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 5.65 9.5 6.35 ;
+        RECT 7.8 4.3 8.05 6.35 ;
+        RECT 5.35 3.85 5.6 6.35 ;
+        RECT 1.45 4.4 1.7 6.35 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 0 9.5 0.7 ;
+        RECT 7.8 0 8.05 1.55 ;
+        RECT 5.2 0 5.6 1.55 ;
+        RECT 1.45 0 1.85 1.6 ;
+    END
+  END VSS
+  PIN CLK
+    DIRECTION INPUT ;
+    USE CLOCK ;
+    PORT
+      LAYER Metal1 ;
+        RECT 5.7 3.1 6.2 3.4 ;
+        RECT 3.4 2.95 3.9 3.4 ;
+      LAYER Metal2 ;
+        RECT 5.7 3.05 6.2 3.45 ;
+        RECT 3.5 3.1 6.2 3.4 ;
+        RECT 3.4 2.95 3.9 3.25 ;
+        RECT 3.45 2.9 3.85 3.3 ;
+      LAYER Via1 ;
+        RECT 3.52 2.97 3.78 3.23 ;
+        RECT 5.82 3.12 6.08 3.38 ;
+    END
+  END CLK
+  PIN D
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 1.85 2.95 2.35 3.25 ;
+      LAYER Metal2 ;
+        RECT 1.85 2.9 2.35 3.3 ;
+      LAYER Via1 ;
+        RECT 1.97 2.97 2.23 3.23 ;
+    END
+  END D
+  PIN Q
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 8.65 2.95 9.15 3.25 ;
+        RECT 8.65 2.9 9.05 3.3 ;
+        RECT 8.65 1.05 8.9 5.3 ;
+      LAYER Metal2 ;
+        RECT 8.65 2.95 9.15 3.25 ;
+        RECT 8.7 2.9 9.1 3.3 ;
+      LAYER Via1 ;
+        RECT 8.77 2.97 9.03 3.23 ;
+    END
+  END Q
+  OBS
+    LAYER Metal2 ;
+      RECT 7.2 2.4 7.7 2.8 ;
+      RECT 5.05 2.4 5.45 2.8 ;
+      RECT 4.6 2.45 7.7 2.75 ;
+      RECT 0.35 2.25 0.85 2.65 ;
+      RECT 0.35 2.3 4.9 2.6 ;
+      RECT 0.35 2.4 5.45 2.6 ;
+    LAYER Via1 ;
+      RECT 7.32 2.47 7.58 2.73 ;
+      RECT 5.12 2.47 5.38 2.73 ;
+      RECT 0.47 2.32 0.73 2.58 ;
+    LAYER Metal1 ;
+      RECT 6.95 3.45 7.2 5.3 ;
+      RECT 6.95 3.45 8.3 3.7 ;
+      RECT 8 1.95 8.3 3.7 ;
+      RECT 6.95 1.95 8.3 2.2 ;
+      RECT 6.95 1.05 7.2 2.2 ;
+      RECT 6.2 3.75 6.45 5.3 ;
+      RECT 6.45 2.1 6.7 4 ;
+      RECT 2.6 3.1 3.1 3.4 ;
+      RECT 2.7 2.4 3 3.4 ;
+      RECT 4.15 2.55 4.65 2.85 ;
+      RECT 2.7 2.4 4.5 2.7 ;
+      RECT 2.7 2.45 4.55 2.7 ;
+      RECT 4.2 1.8 4.5 2.85 ;
+      RECT 6.2 1.05 6.45 2.35 ;
+      RECT 4.2 1.8 6.45 2.05 ;
+      RECT 3.15 3.9 3.4 5.3 ;
+      RECT 1.15 3.9 3.4 4.15 ;
+      RECT 1.15 2 1.4 4.15 ;
+      RECT 1.1 3.1 1.55 3.4 ;
+      RECT 1.15 2 2.4 2.25 ;
+      RECT 2.15 1.3 2.4 2.25 ;
+      RECT 3.15 1.05 3.4 1.65 ;
+      RECT 2.15 1.3 3.4 1.55 ;
+      RECT 0.6 1.05 0.85 5.3 ;
+      RECT 0.5 2.25 0.85 2.65 ;
+      RECT 0.35 2.3 0.85 2.6 ;
+      RECT 0.45 2.25 0.85 2.6 ;
+      RECT 7.2 2.45 7.7 2.75 ;
+      RECT 5 2.45 5.5 2.75 ;
+  END
+END gf180mcu_osu_sc_gp9t3v3__dlat_1
+
+MACRO gf180mcu_osu_sc_gp9t3v3__dlatn_1
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_gp9t3v3__dlatn_1 0 0 ;
+  SIZE 11.3 BY 6.35 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 5.65 11.3 6.35 ;
+        RECT 9.6 4.3 9.85 6.35 ;
+        RECT 8 3.65 8.25 6.35 ;
+        RECT 5.35 3.85 5.6 6.35 ;
+        RECT 1.45 4.4 1.7 6.35 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 0 11.3 0.7 ;
+        RECT 9.6 0 9.85 1.55 ;
+        RECT 8 0 8.25 1.9 ;
+        RECT 5.2 0 5.6 1.55 ;
+        RECT 1.45 0 1.85 1.6 ;
+    END
+  END VSS
+  PIN CLK
+    DIRECTION INPUT ;
+    USE CLOCK ;
+    PORT
+      LAYER Metal1 ;
+        RECT 7.75 2.95 8.25 3.25 ;
+      LAYER Metal2 ;
+        RECT 7.75 2.9 8.25 3.3 ;
+      LAYER Via1 ;
+        RECT 7.87 2.97 8.13 3.23 ;
+    END
+  END CLK
+  PIN D
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 1.85 2.95 2.35 3.25 ;
+      LAYER Metal2 ;
+        RECT 1.85 2.9 2.35 3.3 ;
+      LAYER Via1 ;
+        RECT 1.97 2.97 2.23 3.23 ;
+    END
+  END D
+  PIN Q
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 10.45 2.95 10.95 3.25 ;
+        RECT 10.45 2.9 10.85 3.3 ;
+        RECT 10.45 1.05 10.7 5.3 ;
+      LAYER Metal2 ;
+        RECT 10.45 2.95 10.95 3.25 ;
+        RECT 10.5 2.9 10.9 3.3 ;
+      LAYER Via1 ;
+        RECT 10.57 2.97 10.83 3.23 ;
+    END
+  END Q
+  OBS
+    LAYER Metal2 ;
+      RECT 9 2.4 9.5 2.8 ;
+      RECT 5.05 2.4 5.5 2.8 ;
+      RECT 8.95 2.4 9.5 2.75 ;
+      RECT 4.6 2.4 5.5 2.75 ;
+      RECT 0.35 2.25 0.85 2.65 ;
+      RECT 0.35 2.3 4.9 2.6 ;
+      RECT 5.2 2.25 9.25 2.55 ;
+      RECT 6.95 3.05 7.45 3.45 ;
+      RECT 5.7 3.05 6.2 3.45 ;
+      RECT 3.5 3.1 7.45 3.4 ;
+      RECT 3.45 2.9 3.85 3.3 ;
+      RECT 3.4 2.95 3.9 3.25 ;
+    LAYER Via1 ;
+      RECT 9.12 2.47 9.38 2.73 ;
+      RECT 7.07 3.12 7.33 3.38 ;
+      RECT 5.82 3.12 6.08 3.38 ;
+      RECT 5.12 2.47 5.38 2.73 ;
+      RECT 3.52 2.97 3.78 3.23 ;
+      RECT 0.47 2.32 0.73 2.58 ;
+    LAYER Metal1 ;
+      RECT 8.75 3.45 9 5.3 ;
+      RECT 8.75 3.45 10.1 3.7 ;
+      RECT 9.8 1.95 10.1 3.7 ;
+      RECT 8.75 1.95 10.1 2.2 ;
+      RECT 8.75 1.05 9 2.2 ;
+      RECT 7.15 1.05 7.4 5.3 ;
+      RECT 6.95 3.1 7.45 3.4 ;
+      RECT 6.2 3.75 6.45 5.3 ;
+      RECT 6.45 2.1 6.7 4 ;
+      RECT 2.6 3.1 3.1 3.4 ;
+      RECT 2.7 2.4 3 3.4 ;
+      RECT 4.15 2.55 4.65 2.85 ;
+      RECT 2.7 2.4 4.5 2.7 ;
+      RECT 2.7 2.45 4.55 2.7 ;
+      RECT 4.2 1.8 4.5 2.85 ;
+      RECT 6.2 1.05 6.45 2.35 ;
+      RECT 4.2 1.8 6.45 2.05 ;
+      RECT 3.15 3.9 3.4 5.3 ;
+      RECT 1.15 3.9 3.4 4.15 ;
+      RECT 1.15 2 1.4 4.15 ;
+      RECT 1.1 3.1 1.55 3.4 ;
+      RECT 1.15 2 2.4 2.25 ;
+      RECT 2.15 1.3 2.4 2.25 ;
+      RECT 3.15 1.05 3.4 1.65 ;
+      RECT 2.15 1.3 3.4 1.55 ;
+      RECT 0.6 1.05 0.85 5.3 ;
+      RECT 0.5 2.25 0.85 2.65 ;
+      RECT 0.35 2.3 0.85 2.6 ;
+      RECT 0.45 2.25 0.85 2.6 ;
+      RECT 9 2.45 9.5 2.75 ;
+      RECT 5.7 3.1 6.2 3.4 ;
+      RECT 5 2.45 5.5 2.75 ;
+      RECT 3.4 2.95 3.9 3.4 ;
+  END
+END gf180mcu_osu_sc_gp9t3v3__dlatn_1
+
+MACRO gf180mcu_osu_sc_gp9t3v3__fill_1
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_gp9t3v3__fill_1 0 0 ;
+  SIZE 0.1 BY 6.35 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 5.65 0.1 6.35 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 0 0.1 0.7 ;
+    END
+  END VSS
+END gf180mcu_osu_sc_gp9t3v3__fill_1
+
+MACRO gf180mcu_osu_sc_gp9t3v3__fill_16
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_gp9t3v3__fill_16 0 0 ;
+  SIZE 1.6 BY 6.35 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 5.65 1.6 6.35 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 0 1.6 0.7 ;
+    END
+  END VSS
+END gf180mcu_osu_sc_gp9t3v3__fill_16
+
+MACRO gf180mcu_osu_sc_gp9t3v3__fill_2
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_gp9t3v3__fill_2 0 0 ;
+  SIZE 0.2 BY 6.35 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 5.65 0.2 6.35 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 0 0.2 0.7 ;
+    END
+  END VSS
+END gf180mcu_osu_sc_gp9t3v3__fill_2
+
+MACRO gf180mcu_osu_sc_gp9t3v3__fill_4
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_gp9t3v3__fill_4 0 0 ;
+  SIZE 0.4 BY 6.35 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 5.65 0.4 6.35 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 0 0.4 0.7 ;
+    END
+  END VSS
+END gf180mcu_osu_sc_gp9t3v3__fill_4
+
+MACRO gf180mcu_osu_sc_gp9t3v3__fill_8
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_gp9t3v3__fill_8 0 0 ;
+  SIZE 0.8 BY 6.35 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 5.65 0.8 6.35 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 0 0.8 0.7 ;
+    END
+  END VSS
+END gf180mcu_osu_sc_gp9t3v3__fill_8
+
+MACRO gf180mcu_osu_sc_gp9t3v3__inv_1
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_gp9t3v3__inv_1 0 0 ;
+  SIZE 2.2 BY 6.35 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 5.65 2.2 6.35 ;
+        RECT 0.55 3.6 0.8 6.35 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 0 2.2 0.7 ;
+        RECT 0.55 0 0.8 1.9 ;
+    END
+  END VSS
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.55 2.3 1.05 2.6 ;
+      LAYER Metal2 ;
+        RECT 0.55 2.25 1.05 2.65 ;
+      LAYER Via1 ;
+        RECT 0.67 2.32 0.93 2.58 ;
+    END
+  END A
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 1.3 3.6 1.8 3.9 ;
+        RECT 1.4 1.05 1.65 5.3 ;
+      LAYER Metal2 ;
+        RECT 1.3 3.55 1.8 3.95 ;
+      LAYER Via1 ;
+        RECT 1.42 3.62 1.68 3.88 ;
+    END
+  END Y
+END gf180mcu_osu_sc_gp9t3v3__inv_1
+
+MACRO gf180mcu_osu_sc_gp9t3v3__inv_16
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_gp9t3v3__inv_16 0 0 ;
+  SIZE 15 BY 6.35 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 5.65 15 6.35 ;
+        RECT 14.15 3.6 14.4 6.35 ;
+        RECT 12.45 3.6 12.7 6.35 ;
+        RECT 10.75 3.6 11 6.35 ;
+        RECT 9.05 3.6 9.3 6.35 ;
+        RECT 7.35 3.6 7.6 6.35 ;
+        RECT 5.65 3.6 5.9 6.35 ;
+        RECT 3.95 3.6 4.2 6.35 ;
+        RECT 2.25 3.6 2.5 6.35 ;
+        RECT 0.55 3.6 0.8 6.35 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 0 15 0.7 ;
+        RECT 14.15 0 14.4 1.9 ;
+        RECT 12.45 0 12.7 1.9 ;
+        RECT 10.75 0 11 1.9 ;
+        RECT 9.05 0 9.3 1.9 ;
+        RECT 7.35 0 7.6 1.9 ;
+        RECT 5.65 0 5.9 1.9 ;
+        RECT 3.95 0 4.2 1.9 ;
+        RECT 2.25 0 2.5 1.9 ;
+        RECT 0.55 0 0.8 1.9 ;
+    END
+  END VSS
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.4 2.3 0.9 2.6 ;
+      LAYER Metal2 ;
+        RECT 0.4 2.25 0.9 2.65 ;
+      LAYER Via1 ;
+        RECT 0.52 2.32 0.78 2.58 ;
+    END
+  END A
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 13.3 3.6 13.85 3.9 ;
+        RECT 13.3 1.05 13.55 5.3 ;
+        RECT 1.4 3.1 13.55 3.35 ;
+        RECT 1.4 2.15 13.55 2.4 ;
+        RECT 11.6 1.05 11.85 5.3 ;
+        RECT 9.9 1.05 10.15 5.3 ;
+        RECT 8.2 1.05 8.45 5.3 ;
+        RECT 6.5 1.05 6.75 5.3 ;
+        RECT 4.8 1.05 5.05 5.3 ;
+        RECT 3.1 1.05 3.35 5.3 ;
+        RECT 1.4 1.05 1.65 5.3 ;
+      LAYER Metal2 ;
+        RECT 13.35 3.6 13.85 3.9 ;
+        RECT 13.4 3.55 13.8 3.95 ;
+      LAYER Via1 ;
+        RECT 13.47 3.62 13.73 3.88 ;
+    END
+  END Y
+END gf180mcu_osu_sc_gp9t3v3__inv_16
+
+MACRO gf180mcu_osu_sc_gp9t3v3__inv_2
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_gp9t3v3__inv_2 0 0 ;
+  SIZE 3.2 BY 6.35 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 5.65 3.2 6.35 ;
+        RECT 2.3 3.6 2.55 6.35 ;
+        RECT 0.55 3.6 0.8 6.35 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 0 3.2 0.7 ;
+        RECT 2.25 0 2.5 1.9 ;
+        RECT 0.55 0 0.8 1.9 ;
+    END
+  END VSS
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.65 2.3 1.15 2.6 ;
+      LAYER Metal2 ;
+        RECT 0.65 2.25 1.15 2.65 ;
+      LAYER Via1 ;
+        RECT 0.77 2.32 1.03 2.58 ;
+    END
+  END A
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 1.4 3.6 2.05 3.9 ;
+        RECT 1.4 1.05 1.65 5.3 ;
+      LAYER Metal2 ;
+        RECT 1.55 3.6 2.05 3.9 ;
+        RECT 1.6 3.55 2 3.95 ;
+      LAYER Via1 ;
+        RECT 1.67 3.62 1.93 3.88 ;
+    END
+  END Y
+END gf180mcu_osu_sc_gp9t3v3__inv_2
+
+MACRO gf180mcu_osu_sc_gp9t3v3__inv_4
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_gp9t3v3__inv_4 0 0 ;
+  SIZE 4.8 BY 6.35 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 5.65 4.8 6.35 ;
+        RECT 4 3.6 4.25 6.35 ;
+        RECT 2.25 3.6 2.5 6.35 ;
+        RECT 0.55 3.6 0.8 6.35 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 0 4.8 0.7 ;
+        RECT 3.95 0 4.2 1.9 ;
+        RECT 2.25 0 2.5 1.9 ;
+        RECT 0.55 0 0.8 1.9 ;
+    END
+  END VSS
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.4 2.3 0.9 2.6 ;
+      LAYER Metal2 ;
+        RECT 0.4 2.25 0.9 2.65 ;
+      LAYER Via1 ;
+        RECT 0.52 2.32 0.78 2.58 ;
+    END
+  END A
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 3.1 3.6 3.75 3.9 ;
+        RECT 3.1 1.05 3.35 5.3 ;
+        RECT 1.4 3.1 3.35 3.35 ;
+        RECT 1.4 2.15 3.35 2.4 ;
+        RECT 1.4 1.05 1.65 5.3 ;
+      LAYER Metal2 ;
+        RECT 3.25 3.6 3.75 3.9 ;
+        RECT 3.3 3.55 3.7 3.95 ;
+      LAYER Via1 ;
+        RECT 3.37 3.62 3.63 3.88 ;
+    END
+  END Y
+END gf180mcu_osu_sc_gp9t3v3__inv_4
+
+MACRO gf180mcu_osu_sc_gp9t3v3__inv_8
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_gp9t3v3__inv_8 0 0 ;
+  SIZE 8.2 BY 6.35 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 5.65 8.2 6.35 ;
+        RECT 7.4 3.6 7.65 6.35 ;
+        RECT 5.65 3.6 5.9 6.35 ;
+        RECT 3.95 3.6 4.2 6.35 ;
+        RECT 2.25 3.6 2.5 6.35 ;
+        RECT 0.55 3.6 0.8 6.35 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 0 8.2 0.7 ;
+        RECT 7.35 0 7.6 1.9 ;
+        RECT 5.65 0 5.9 1.9 ;
+        RECT 3.95 0 4.2 1.9 ;
+        RECT 2.25 0 2.5 1.9 ;
+        RECT 0.55 0 0.8 1.9 ;
+    END
+  END VSS
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.4 2.3 0.9 2.6 ;
+      LAYER Metal2 ;
+        RECT 0.4 2.25 0.9 2.65 ;
+      LAYER Via1 ;
+        RECT 0.52 2.32 0.78 2.58 ;
+    END
+  END A
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 6.5 3.6 7.15 3.9 ;
+        RECT 6.5 1.05 6.75 5.3 ;
+        RECT 1.4 3.1 6.75 3.35 ;
+        RECT 1.4 2.15 6.75 2.4 ;
+        RECT 4.8 1.05 5.05 5.3 ;
+        RECT 3.1 1.05 3.35 5.3 ;
+        RECT 1.4 1.05 1.65 5.3 ;
+      LAYER Metal2 ;
+        RECT 6.65 3.6 7.15 3.9 ;
+        RECT 6.7 3.55 7.1 3.95 ;
+      LAYER Via1 ;
+        RECT 6.77 3.62 7.03 3.88 ;
+    END
+  END Y
+END gf180mcu_osu_sc_gp9t3v3__inv_8
+
+MACRO gf180mcu_osu_sc_gp9t3v3__mux2_1
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_gp9t3v3__mux2_1 0 0 ;
+  SIZE 5.1 BY 6.35 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 5.65 5.1 6.35 ;
+        RECT 0.55 3.6 0.8 6.35 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 0 5.1 0.7 ;
+        RECT 0.55 0 0.8 1.9 ;
+    END
+  END VSS
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 2.25 2.25 2.85 2.65 ;
+        RECT 2.25 1.05 2.5 5.3 ;
+      LAYER Metal2 ;
+        RECT 2.35 2.25 2.85 2.65 ;
+      LAYER Via1 ;
+        RECT 2.47 2.32 2.73 2.58 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 4.25 2.25 4.75 2.65 ;
+        RECT 4.25 1.05 4.5 5.3 ;
+      LAYER Metal2 ;
+        RECT 4.25 2.25 4.75 2.65 ;
+      LAYER Via1 ;
+        RECT 4.37 2.32 4.63 2.58 ;
+    END
+  END B
+  PIN Sel
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.55 2.95 1.05 3.25 ;
+      LAYER Metal2 ;
+        RECT 0.55 2.9 1.05 3.3 ;
+      LAYER Via1 ;
+        RECT 0.67 2.97 0.93 3.23 ;
+    END
+  END Sel
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 3.1 4.15 3.4 4.65 ;
+        RECT 3.1 1.05 3.35 5.3 ;
+      LAYER Metal2 ;
+        RECT 3 4.2 3.5 4.6 ;
+      LAYER Via1 ;
+        RECT 3.12 4.27 3.38 4.53 ;
+    END
+  END Y
+  OBS
+    LAYER Metal2 ;
+      RECT 3.55 3.1 4.05 3.5 ;
+      RECT 1.45 3.1 1.95 3.5 ;
+      RECT 1.45 3.15 4.05 3.45 ;
+    LAYER Via1 ;
+      RECT 3.67 3.17 3.93 3.43 ;
+      RECT 1.57 3.17 1.83 3.43 ;
+    LAYER Metal1 ;
+      RECT 1.4 1.05 1.65 5.3 ;
+      RECT 1.4 3.15 1.95 3.45 ;
+      RECT 1.4 2.1 2 2.4 ;
+      RECT 3.65 3 3.95 3.55 ;
+  END
+END gf180mcu_osu_sc_gp9t3v3__mux2_1
+
+MACRO gf180mcu_osu_sc_gp9t3v3__nand2_1
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_gp9t3v3__nand2_1 0 0 ;
+  SIZE 3.1 BY 6.35 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 5.65 3.1 6.35 ;
+        RECT 2.25 3.6 2.5 6.35 ;
+        RECT 0.55 3.6 0.8 6.35 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 0 3.1 0.7 ;
+        RECT 2.1 0 2.35 1.9 ;
+    END
+  END VSS
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.6 2.3 1.1 2.6 ;
+      LAYER Metal2 ;
+        RECT 0.6 2.25 1.1 2.65 ;
+      LAYER Via1 ;
+        RECT 0.72 2.32 0.98 2.58 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 2 2.95 2.5 3.25 ;
+      LAYER Metal2 ;
+        RECT 2 2.9 2.5 3.3 ;
+      LAYER Via1 ;
+        RECT 2.12 2.97 2.38 3.23 ;
+    END
+  END B
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 1.3 3.6 1.8 3.9 ;
+        RECT 1.4 1.6 1.65 5.3 ;
+        RECT 0.7 1.6 1.65 1.85 ;
+        RECT 0.7 1.05 0.95 1.85 ;
+      LAYER Metal2 ;
+        RECT 1.3 3.55 1.8 3.95 ;
+      LAYER Via1 ;
+        RECT 1.42 3.62 1.68 3.88 ;
+    END
+  END Y
+END gf180mcu_osu_sc_gp9t3v3__nand2_1
+
+MACRO gf180mcu_osu_sc_gp9t3v3__nor2_1
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_gp9t3v3__nor2_1 0 0 ;
+  SIZE 3.2 BY 6.35 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 5.65 3.2 6.35 ;
+        RECT 0.7 3.6 0.95 6.35 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 0 3.2 0.7 ;
+        RECT 2.25 0 2.5 1.9 ;
+        RECT 0.55 0 0.8 1.9 ;
+    END
+  END VSS
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.6 2.3 1.1 2.6 ;
+      LAYER Metal2 ;
+        RECT 0.6 2.25 1.1 2.65 ;
+      LAYER Via1 ;
+        RECT 0.72 2.32 0.98 2.58 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 2 2.95 2.5 3.25 ;
+      LAYER Metal2 ;
+        RECT 2 2.9 2.5 3.3 ;
+      LAYER Via1 ;
+        RECT 2.12 2.97 2.38 3.23 ;
+    END
+  END B
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 2.1 3.7 2.35 5.3 ;
+        RECT 1.4 3.7 2.35 3.95 ;
+        RECT 1.3 3.6 1.8 3.9 ;
+        RECT 1.4 1.05 1.65 3.95 ;
+      LAYER Metal2 ;
+        RECT 1.3 3.55 1.8 3.95 ;
+      LAYER Via1 ;
+        RECT 1.42 3.62 1.68 3.88 ;
+    END
+  END Y
+END gf180mcu_osu_sc_gp9t3v3__nor2_1
+
+MACRO gf180mcu_osu_sc_gp9t3v3__oai21_1
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_gp9t3v3__oai21_1 0 0 ;
+  SIZE 4 BY 6.35 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 5.65 4 6.35 ;
+        RECT 3.05 4.55 3.3 6.35 ;
+        RECT 0.65 3.6 0.9 6.35 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 0 4 0.7 ;
+        RECT 1.35 0 1.6 1.5 ;
+    END
+  END VSS
+  PIN A0
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.6 2.3 1.1 2.6 ;
+      LAYER Metal2 ;
+        RECT 0.6 2.25 1.1 2.65 ;
+      LAYER Via1 ;
+        RECT 0.72 2.32 0.98 2.58 ;
+    END
+  END A0
+  PIN A1
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 1.65 2.95 2.15 3.25 ;
+      LAYER Metal2 ;
+        RECT 1.65 2.9 2.15 3.3 ;
+      LAYER Via1 ;
+        RECT 1.77 2.97 2.03 3.23 ;
+    END
+  END A1
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 2.35 2.3 2.85 2.6 ;
+      LAYER Metal2 ;
+        RECT 2.35 2.25 2.85 2.65 ;
+      LAYER Via1 ;
+        RECT 2.47 2.32 2.73 2.58 ;
+    END
+  END B
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 2.1 3.6 3.5 3.9 ;
+        RECT 3.1 3.55 3.45 3.9 ;
+        RECT 3.15 1.05 3.4 3.9 ;
+        RECT 2.1 3.6 2.45 5.3 ;
+      LAYER Metal2 ;
+        RECT 3 3.6 3.5 3.9 ;
+        RECT 3.05 3.55 3.45 3.95 ;
+      LAYER Via1 ;
+        RECT 3.12 3.62 3.38 3.88 ;
+    END
+  END Y
+  OBS
+    LAYER Metal1 ;
+      RECT 0.5 1.75 2.55 2 ;
+      RECT 2.2 1.05 2.55 2 ;
+      RECT 0.5 1.05 0.75 2 ;
+  END
+END gf180mcu_osu_sc_gp9t3v3__oai21_1
+
+MACRO gf180mcu_osu_sc_gp9t3v3__oai22_1
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_gp9t3v3__oai22_1 0 0 ;
+  SIZE 5.5 BY 6.35 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 5.65 5.5 6.35 ;
+        RECT 3.6 3.6 3.85 6.35 ;
+        RECT 0.65 3.6 0.9 6.35 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 0 5.5 0.7 ;
+        RECT 1.35 0 1.6 1.55 ;
+    END
+  END VSS
+  PIN A0
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.7 2.3 1.2 2.6 ;
+      LAYER Metal2 ;
+        RECT 0.7 2.25 1.2 2.65 ;
+      LAYER Via1 ;
+        RECT 0.82 2.32 1.08 2.58 ;
+    END
+  END A0
+  PIN A1
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 1.65 2.3 2.15 2.6 ;
+      LAYER Metal2 ;
+        RECT 1.65 2.25 2.15 2.65 ;
+      LAYER Via1 ;
+        RECT 1.77 2.32 2.03 2.58 ;
+    END
+  END A1
+  PIN B0
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 2.55 2.3 3.05 2.6 ;
+      LAYER Metal2 ;
+        RECT 2.55 2.25 3.05 2.65 ;
+      LAYER Via1 ;
+        RECT 2.67 2.32 2.93 2.58 ;
+    END
+  END B0
+  PIN B1
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 3.35 2.3 3.85 2.6 ;
+      LAYER Metal2 ;
+        RECT 3.35 2.25 3.85 2.65 ;
+      LAYER Via1 ;
+        RECT 3.47 2.32 3.73 2.58 ;
+    END
+  END B1
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 4.5 0.95 5 1.25 ;
+        RECT 2.1 2.85 4.9 3.15 ;
+        RECT 4.6 0.95 4.9 3.15 ;
+        RECT 2.1 2.85 2.45 5.3 ;
+        RECT 3.05 0.95 3.55 1.3 ;
+        RECT 3.15 0.95 3.4 1.55 ;
+      LAYER Metal2 ;
+        RECT 3.05 0.95 5 1.25 ;
+        RECT 4.55 0.9 4.95 1.3 ;
+        RECT 3.05 0.9 3.55 1.3 ;
+      LAYER Via1 ;
+        RECT 3.17 0.97 3.43 1.23 ;
+        RECT 4.62 0.97 4.88 1.23 ;
+    END
+  END Y
+  OBS
+    LAYER Metal1 ;
+      RECT 0.5 1.8 4.25 2.05 ;
+      RECT 4 1.05 4.25 2.05 ;
+      RECT 2.2 1.05 2.55 2.05 ;
+      RECT 0.5 1.05 0.75 2.05 ;
+  END
+END gf180mcu_osu_sc_gp9t3v3__oai22_1
+
+MACRO gf180mcu_osu_sc_gp9t3v3__oai31_1
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_gp9t3v3__oai31_1 0 0 ;
+  SIZE 4.9 BY 6.35 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 5.65 4.9 6.35 ;
+        RECT 3.95 4.55 4.2 6.35 ;
+        RECT 1 3.6 1.25 6.35 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 0 4.9 0.7 ;
+        RECT 2.25 0 2.5 1.5 ;
+        RECT 0.55 0 0.8 1.9 ;
+    END
+  END VSS
+  PIN A0
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 1.75 2.3 2.25 2.6 ;
+      LAYER Metal2 ;
+        RECT 1.75 2.25 2.25 2.65 ;
+      LAYER Via1 ;
+        RECT 1.87 2.32 2.13 2.58 ;
+    END
+  END A0
+  PIN A1
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 2.55 2.95 3.05 3.25 ;
+      LAYER Metal2 ;
+        RECT 2.55 2.9 3.05 3.3 ;
+      LAYER Via1 ;
+        RECT 2.67 2.97 2.93 3.23 ;
+    END
+  END A1
+  PIN A2
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.75 2.3 1.25 2.6 ;
+      LAYER Metal2 ;
+        RECT 0.75 2.25 1.25 2.65 ;
+      LAYER Via1 ;
+        RECT 0.87 2.32 1.13 2.58 ;
+    END
+  END A2
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 3.25 2.3 3.75 2.6 ;
+      LAYER Metal2 ;
+        RECT 3.25 2.25 3.75 2.65 ;
+      LAYER Via1 ;
+        RECT 3.37 2.32 3.63 2.58 ;
+    END
+  END B
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 3 3.6 4.4 3.9 ;
+        RECT 4 3.55 4.35 3.9 ;
+        RECT 4.05 1.05 4.3 3.9 ;
+        RECT 3 3.6 3.35 5.3 ;
+      LAYER Metal2 ;
+        RECT 3.9 3.6 4.4 3.9 ;
+        RECT 3.95 3.55 4.35 3.95 ;
+      LAYER Via1 ;
+        RECT 4.02 3.62 4.28 3.88 ;
+    END
+  END Y
+  OBS
+    LAYER Metal1 ;
+      RECT 1.4 1.75 3.45 2 ;
+      RECT 3.1 1.05 3.45 2 ;
+      RECT 1.4 1.05 1.65 2 ;
+  END
+END gf180mcu_osu_sc_gp9t3v3__oai31_1
+
+MACRO gf180mcu_osu_sc_gp9t3v3__or2_1
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_gp9t3v3__or2_1 0 0 ;
+  SIZE 3.8 BY 6.35 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 5.65 3.8 6.35 ;
+        RECT 1.95 4.4 2.35 6.35 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 0 3.8 0.7 ;
+        RECT 2.1 0 2.35 1.9 ;
+        RECT 0.4 0 0.65 1.55 ;
+    END
+  END VSS
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.9 2.3 1.4 2.6 ;
+      LAYER Metal2 ;
+        RECT 0.9 2.25 1.4 2.65 ;
+      LAYER Via1 ;
+        RECT 1.02 2.32 1.28 2.58 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 1.65 2.95 2.15 3.25 ;
+      LAYER Metal2 ;
+        RECT 1.65 2.9 2.15 3.3 ;
+      LAYER Via1 ;
+        RECT 1.77 2.97 2.03 3.23 ;
+    END
+  END B
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 2.95 1.55 3.45 1.85 ;
+        RECT 2.95 1.05 3.2 1.9 ;
+        RECT 2.95 3.6 3.45 3.9 ;
+        RECT 2.95 3.6 3.2 5.3 ;
+      LAYER Metal2 ;
+        RECT 2.95 3.55 3.45 3.95 ;
+        RECT 2.95 1.5 3.45 1.9 ;
+        RECT 3.05 1.5 3.35 3.95 ;
+      LAYER Via1 ;
+        RECT 3.07 3.62 3.33 3.88 ;
+        RECT 3.07 1.57 3.33 1.83 ;
+    END
+  END Y
+  OBS
+    LAYER Metal1 ;
+      RECT 0.55 3.05 0.8 5.3 ;
+      RECT 0.55 3.85 2.7 4.15 ;
+      RECT 2.4 3.05 2.7 4.15 ;
+      RECT 2.4 3.05 2.95 3.35 ;
+      RECT 0.4 1.8 0.65 3.35 ;
+      RECT 0.4 1.8 1.5 2.05 ;
+      RECT 1.25 1.05 1.5 2.05 ;
+  END
+END gf180mcu_osu_sc_gp9t3v3__or2_1
+
+MACRO gf180mcu_osu_sc_gp9t3v3__tbuf_1
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_gp9t3v3__tbuf_1 0 0 ;
+  SIZE 5.35 BY 6.35 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 5.65 5.35 6.35 ;
+        RECT 3.65 3.6 3.9 6.35 ;
+        RECT 1.4 4 1.75 6.35 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 0 5.35 0.7 ;
+        RECT 3.65 0 3.9 1.9 ;
+        RECT 1.4 0 1.75 1.9 ;
+    END
+  END VSS
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.95 2.95 1.45 3.25 ;
+      LAYER Metal2 ;
+        RECT 0.95 2.95 1.45 3.25 ;
+        RECT 1 2.9 1.4 3.3 ;
+      LAYER Via1 ;
+        RECT 1.07 2.97 1.33 3.23 ;
+    END
+  END A
+  PIN EN
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 3.75 2.3 4.25 2.6 ;
+      LAYER Metal2 ;
+        RECT 3.75 2.25 4.25 2.65 ;
+      LAYER Via1 ;
+        RECT 3.87 2.32 4.13 2.58 ;
+    END
+  END EN
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 2.9 4.15 3.2 4.65 ;
+        RECT 2.9 3.5 3.15 5.3 ;
+        RECT 2.45 1.65 3.15 1.9 ;
+        RECT 2.9 1.05 3.15 1.9 ;
+        RECT 2.45 3.5 3.15 3.75 ;
+        RECT 2.45 1.65 2.7 3.75 ;
+      LAYER Metal2 ;
+        RECT 2.8 4.2 3.3 4.6 ;
+      LAYER Via1 ;
+        RECT 2.92 4.27 3.18 4.53 ;
+    END
+  END Y
+  OBS
+    LAYER Metal2 ;
+      RECT 3.05 2.9 3.55 3.3 ;
+    LAYER Via1 ;
+      RECT 3.17 2.97 3.43 3.23 ;
+    LAYER Metal1 ;
+      RECT 4.5 1.05 4.75 5.3 ;
+      RECT 3.05 2.95 4.75 3.25 ;
+      RECT 0.55 3.5 0.8 5.3 ;
+      RECT 0.45 1.6 0.7 3.9 ;
+      RECT 0.45 2.2 2.15 2.5 ;
+      RECT 0.55 1.05 0.8 1.9 ;
+  END
+END gf180mcu_osu_sc_gp9t3v3__tbuf_1
+
+MACRO gf180mcu_osu_sc_gp9t3v3__tieh
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_gp9t3v3__tieh 0 0 ;
+  SIZE 2.2 BY 6.35 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 5.65 2.2 6.35 ;
+        RECT 0.55 3.6 0.8 6.35 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 0 2.2 0.7 ;
+        RECT 0.55 0 0.8 1.9 ;
+    END
+  END VSS
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 1.3 3.6 1.8 3.9 ;
+        RECT 1.4 3.55 1.65 5.3 ;
+      LAYER Metal2 ;
+        RECT 1.3 3.55 1.8 3.95 ;
+      LAYER Via1 ;
+        RECT 1.42 3.62 1.68 3.88 ;
+    END
+  END Y
+  OBS
+    LAYER Metal1 ;
+      RECT 1.15 2.3 1.65 2.55 ;
+      RECT 1.4 1.05 1.65 2.55 ;
+  END
+END gf180mcu_osu_sc_gp9t3v3__tieh
+
+MACRO gf180mcu_osu_sc_gp9t3v3__tiel
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_gp9t3v3__tiel 0 0 ;
+  SIZE 2.2 BY 6.35 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 5.65 2.2 6.35 ;
+        RECT 0.55 3.6 0.8 6.35 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 0 2.2 0.7 ;
+        RECT 0.55 0 0.8 1.9 ;
+    END
+  END VSS
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 1.3 1.65 1.8 1.95 ;
+        RECT 1.4 1.05 1.65 2 ;
+      LAYER Metal2 ;
+        RECT 1.3 1.6 1.8 2 ;
+      LAYER Via1 ;
+        RECT 1.42 1.67 1.68 1.93 ;
+    END
+  END Y
+  OBS
+    LAYER Metal1 ;
+      RECT 1.4 3 1.65 5.3 ;
+      RECT 1.15 3 1.65 3.25 ;
+  END
+END gf180mcu_osu_sc_gp9t3v3__tiel
+
+MACRO gf180mcu_osu_sc_gp9t3v3__tinv_1
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_gp9t3v3__tinv_1 0 0 ;
+  SIZE 3.85 BY 6.35 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 5.65 3.85 6.35 ;
+        RECT 1.4 3.6 1.75 6.35 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 0 3.85 0.7 ;
+        RECT 1.4 0 1.75 1.9 ;
+    END
+  END VSS
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 1.6 2.3 2.1 2.6 ;
+      LAYER Metal2 ;
+        RECT 1.6 2.3 2.1 2.6 ;
+        RECT 1.65 2.25 2.05 2.65 ;
+      LAYER Via1 ;
+        RECT 1.72 2.32 1.98 2.58 ;
+    END
+  END A
+  PIN EN
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 2.5 2 2.8 2.5 ;
+        RECT 0.8 2.3 1.3 2.6 ;
+      LAYER Metal2 ;
+        RECT 2.4 2.05 2.9 2.45 ;
+        RECT 2.4 1.65 2.8 2.45 ;
+        RECT 0.9 1.65 2.8 1.95 ;
+        RECT 0.8 2.3 1.3 2.6 ;
+        RECT 0.85 2.25 1.25 2.65 ;
+        RECT 0.9 1.65 1.2 2.65 ;
+      LAYER Via1 ;
+        RECT 0.92 2.32 1.18 2.58 ;
+        RECT 2.52 2.12 2.78 2.38 ;
+    END
+  END EN
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 3.15 1.35 3.4 4.15 ;
+        RECT 2.9 3.85 3.2 4.65 ;
+        RECT 2.9 3.85 3.15 5.3 ;
+        RECT 2.9 1.05 3.15 1.6 ;
+      LAYER Metal2 ;
+        RECT 2.8 4.2 3.3 4.6 ;
+      LAYER Via1 ;
+        RECT 2.92 4.27 3.18 4.53 ;
+    END
+  END Y
+  OBS
+    LAYER Metal2 ;
+      RECT 0.4 3.55 0.9 3.95 ;
+      RECT 0.4 3.6 2 3.9 ;
+      RECT 1.7 3.1 2 3.9 ;
+      RECT 2.4 3.05 2.9 3.45 ;
+      RECT 1.7 3.1 2.9 3.4 ;
+    LAYER Via1 ;
+      RECT 2.52 3.12 2.78 3.38 ;
+      RECT 0.52 3.62 0.78 3.88 ;
+    LAYER Metal1 ;
+      RECT 0.55 3.05 0.8 5.3 ;
+      RECT 0.4 3.6 0.9 3.9 ;
+      RECT 0.3 1.65 0.55 3.3 ;
+      RECT 0.55 1.05 0.8 1.9 ;
+      RECT 2.5 3 2.8 3.5 ;
+  END
+END gf180mcu_osu_sc_gp9t3v3__tinv_1
+
+MACRO gf180mcu_osu_sc_gp9t3v3__xnor2_1
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_gp9t3v3__xnor2_1 0 0 ;
+  SIZE 6.4 BY 6.35 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 5.65 6.4 6.35 ;
+        RECT 4.7 4.7 4.95 6.35 ;
+        RECT 1.4 4.7 1.65 6.35 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 0 6.4 0.7 ;
+        RECT 4.7 0 4.95 1.9 ;
+        RECT 1.4 0 1.65 1.9 ;
+    END
+  END VSS
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 3.5 3.1 4 3.4 ;
+        RECT 1.25 2.3 1.75 2.6 ;
+      LAYER Metal2 ;
+        RECT 3.55 3.05 4 3.45 ;
+        RECT 3.7 1 4 3.45 ;
+        RECT 3.6 3 3.95 3.5 ;
+        RECT 1.35 1 4 1.3 ;
+        RECT 1.3 2.25 1.7 2.65 ;
+        RECT 1.35 1 1.65 2.7 ;
+      LAYER Via1 ;
+        RECT 1.37 2.32 1.63 2.58 ;
+        RECT 3.62 3.12 3.88 3.38 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 4.55 2.3 5.05 2.6 ;
+      LAYER Metal2 ;
+        RECT 4.55 2.3 5.05 2.6 ;
+        RECT 4.6 2.25 5 2.65 ;
+        RECT 4.65 2.2 4.95 2.7 ;
+      LAYER Via1 ;
+        RECT 4.67 2.32 4.93 2.58 ;
+    END
+  END B
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 3 1.5 3.3 2.05 ;
+        RECT 3.05 1.05 3.3 2.05 ;
+        RECT 3.05 4.15 3.3 5.3 ;
+        RECT 3 4.15 3.3 4.85 ;
+      LAYER Metal2 ;
+        RECT 2.9 1.6 3.4 2 ;
+        RECT 2.95 4.2 3.35 4.6 ;
+        RECT 3 4.15 3.3 4.85 ;
+        RECT 2.95 1.6 3.25 4.6 ;
+      LAYER Via1 ;
+        RECT 3.02 4.27 3.28 4.53 ;
+        RECT 3.02 1.67 3.28 1.93 ;
+    END
+  END Y
+  OBS
+    LAYER Metal1 ;
+      RECT 5.55 1.05 5.8 5.3 ;
+      RECT 2.75 3.65 5.8 3.9 ;
+      RECT 2.75 3 3.05 3.9 ;
+      RECT 0.55 1.05 0.8 5.3 ;
+      RECT 0.55 3.1 2.4 3.4 ;
+      RECT 2.1 2.3 2.4 3.4 ;
+      RECT 2.1 2.3 3.5 2.6 ;
+  END
+END gf180mcu_osu_sc_gp9t3v3__xnor2_1
+
+MACRO gf180mcu_osu_sc_gp9t3v3__xor2_1
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_gp9t3v3__xor2_1 0 0 ;
+  SIZE 6.7 BY 6.35 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp9t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 5.65 6.7 6.35 ;
+        RECT 5 3.9 5.25 6.35 ;
+        RECT 1.4 3.9 1.65 6.35 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 0 6.7 0.7 ;
+        RECT 5 0 5.25 1.85 ;
+        RECT 1.4 0 1.65 1.9 ;
+    END
+  END VSS
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 1.1 2.3 1.6 2.6 ;
+      LAYER Metal2 ;
+        RECT 1.1 2.3 1.6 2.6 ;
+        RECT 1.15 2.25 1.55 2.65 ;
+      LAYER Via1 ;
+        RECT 1.22 2.32 1.48 2.58 ;
+    END
+  END A
+  PIN B
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 5.1 2.3 5.6 2.6 ;
+        RECT 2.35 2.1 5.45 2.4 ;
+      LAYER Metal2 ;
+        RECT 5.1 2.3 5.6 2.6 ;
+        RECT 5.15 2.25 5.55 2.65 ;
+      LAYER Via1 ;
+        RECT 5.22 2.32 5.48 2.58 ;
+    END
+  END B
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 3.05 1.5 3.55 1.8 ;
+        RECT 3.15 1.4 3.45 1.85 ;
+        RECT 3.2 1.05 3.45 1.85 ;
+        RECT 3.05 4.25 3.55 4.55 ;
+        RECT 3.2 4.25 3.45 5.3 ;
+        RECT 3.15 4.25 3.45 4.65 ;
+      LAYER Metal2 ;
+        RECT 3.05 1.45 3.55 1.85 ;
+        RECT 3.1 4.2 3.5 4.6 ;
+        RECT 3.15 1.45 3.45 4.65 ;
+      LAYER Via1 ;
+        RECT 3.17 4.27 3.43 4.53 ;
+        RECT 3.17 1.52 3.43 1.78 ;
+    END
+  END Y
+  OBS
+    LAYER Metal1 ;
+      RECT 5.85 1.05 6.1 5.3 ;
+      RECT 2.7 3.75 4.7 4 ;
+      RECT 4.45 2.65 4.7 4 ;
+      RECT 2.7 3.15 3 4 ;
+      RECT 4.45 3.2 6.1 3.5 ;
+      RECT 2.6 3.15 3.1 3.4 ;
+      RECT 4.45 2.65 4.75 3.5 ;
+      RECT 4.35 2.65 4.85 2.95 ;
+      RECT 0.55 1.05 0.8 5.3 ;
+      RECT 3.65 2.65 3.95 3.5 ;
+      RECT 0.55 3.1 2.35 3.35 ;
+      RECT 2.05 2.65 2.35 3.35 ;
+      RECT 2.05 2.65 3.95 2.9 ;
+  END
+END gf180mcu_osu_sc_gp9t3v3__xor2_1
+
+END LIBRARY

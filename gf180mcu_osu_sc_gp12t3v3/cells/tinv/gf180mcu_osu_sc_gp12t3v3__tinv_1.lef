@@ -1,0 +1,105 @@
+# Copyright 2022 Google LLC
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+VERSION 5.7 ;
+BUSBITCHARS "[]" ;
+DIVIDERCHAR "/" ;
+
+MACRO gf180mcu_osu_sc_gp12t3v3__tinv_1
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN gf180mcu_osu_sc_gp12t3v3__tinv_1 0 0 ;
+  SIZE 3.65 BY 8.3 ;
+  SYMMETRY X Y ;
+  SITE gf180mcu_osu_sc_gp12t3v3 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 7.6 3.65 8.3 ;
+        RECT 1.4 5.55 1.65 8.3 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0 0 3.65 0.7 ;
+        RECT 1.4 0 1.65 1.9 ;
+    END
+  END VSS
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 1.45 4.9 1.95 5.2 ;
+      LAYER Metal2 ;
+        RECT 1.45 4.85 1.95 5.25 ;
+      LAYER Via1 ;
+        RECT 1.57 4.92 1.83 5.18 ;
+    END
+  END A
+  PIN EN
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 2.7 2.3 3.2 2.6 ;
+        RECT 1 2.3 1.5 2.6 ;
+      LAYER Metal2 ;
+        RECT 2.7 2.25 3.2 2.65 ;
+        RECT 1 2.3 3.2 2.6 ;
+        RECT 1 2.25 1.5 2.65 ;
+      LAYER Via1 ;
+        RECT 1.12 2.32 1.38 2.58 ;
+        RECT 2.82 2.32 3.08 2.58 ;
+    END
+  END EN
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER Metal1 ;
+        RECT 2.8 5.55 3.05 7.25 ;
+        RECT 2.2 1.65 3.05 1.9 ;
+        RECT 2.8 1.05 3.05 1.9 ;
+        RECT 2.2 5.55 3.05 5.8 ;
+        RECT 2.05 3.6 2.6 3.9 ;
+        RECT 2.2 1.65 2.45 5.8 ;
+      LAYER Metal2 ;
+        RECT 2.05 3.55 2.55 3.95 ;
+      LAYER Via1 ;
+        RECT 2.17 3.62 2.43 3.88 ;
+    END
+  END Y
+  OBS
+    LAYER Metal2 ;
+      RECT 2.7 4.85 3.2 5.25 ;
+      RECT 2.8 4.25 3.1 5.25 ;
+      RECT 0.35 4.2 0.85 4.6 ;
+      RECT 0.35 4.25 3.1 4.55 ;
+    LAYER Via1 ;
+      RECT 2.82 4.92 3.08 5.18 ;
+      RECT 0.47 4.27 0.73 4.53 ;
+    LAYER Metal1 ;
+      RECT 0.55 5.55 0.8 7.25 ;
+      RECT 0.5 1.9 0.75 5.8 ;
+      RECT 0.35 4.25 0.85 4.55 ;
+      RECT 0.55 1.05 0.8 2.15 ;
+      RECT 2.7 4.9 3.2 5.2 ;
+  END
+END gf180mcu_osu_sc_gp12t3v3__tinv_1
