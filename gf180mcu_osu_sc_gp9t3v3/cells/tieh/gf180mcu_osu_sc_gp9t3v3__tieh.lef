@@ -18,7 +18,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__tieh
   CLASS CORE ;
   ORIGIN 0 0 ;
   FOREIGN gf180mcu_osu_sc_gp9t3v3__tieh 0 0 ;
-  SIZE 2.2 BY 6.15 ;
+  SIZE 2.2 BY 6.35 ;
   SYMMETRY X Y ;
   SITE gf180mcu_osu_sc_gp9t3v3 ;
   PIN VDD
@@ -26,36 +26,37 @@ MACRO gf180mcu_osu_sc_gp9t3v3__tieh
     USE POWER ;
     SHAPE ABUTMENT ;
     PORT
-      LAYER MET1 ;
-        RECT 0 5.55 2.2 6.15 ;
-        RECT 0.55 3.5 0.8 6.15 ;
+      LAYER Metal1 ;
+        RECT 0 5.65 2.2 6.35 ;
+        RECT 0.55 3.6 0.8 6.35 ;
     END
   END VDD
   PIN VSS
     DIRECTION INOUT ;
     USE GROUND ;
+    SHAPE ABUTMENT ;
     PORT
-      LAYER MET1 ;
-        RECT 0 0 2.2 0.6 ;
-        RECT 0.55 0 0.8 1.8 ;
+      LAYER Metal1 ;
+        RECT 0 0 2.2 0.7 ;
+        RECT 0.55 0 0.8 1.9 ;
     END
   END VSS
   PIN Y
     DIRECTION OUTPUT ;
     USE SIGNAL ;
     PORT
-      LAYER MET1 ;
-        RECT 1.3 3.5 1.8 3.8 ;
-        RECT 1.4 3.45 1.65 5.2 ;
-      LAYER MET2 ;
-        RECT 1.3 3.45 1.8 3.85 ;
-      LAYER VIA12 ;
-        RECT 1.42 3.52 1.68 3.78 ;
+      LAYER Metal1 ;
+        RECT 1.3 3.6 1.8 3.9 ;
+        RECT 1.4 3.55 1.65 5.3 ;
+      LAYER Metal2 ;
+        RECT 1.3 3.55 1.8 3.95 ;
+      LAYER Via1 ;
+        RECT 1.42 3.62 1.68 3.88 ;
     END
   END Y
   OBS
-    LAYER MET1 ;
-      RECT 1.15 2.2 1.65 2.45 ;
-      RECT 1.4 0.95 1.65 2.45 ;
+    LAYER Metal1 ;
+      RECT 1.15 2.3 1.65 2.55 ;
+      RECT 1.4 1.05 1.65 2.55 ;
   END
 END gf180mcu_osu_sc_gp9t3v3__tieh

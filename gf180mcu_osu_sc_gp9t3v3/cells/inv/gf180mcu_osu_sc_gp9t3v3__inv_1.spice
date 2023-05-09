@@ -15,6 +15,6 @@
 * NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__inv_1.ext - technology: gf180mcuC
 
 .subckt gf180mcu_osu_sc_gp9t3v3__inv_1 A Y VDD VSS
-X0 Y A VSS VSS nmos_3p3 w=0.85u l=0.3u
-X1 Y A VDD VDD pmos_3p3 w=1.7u l=0.3u
+X0 Y A VDD VDD pfet_03p3 w=1.7u l=0.3u
+X1 Y A VSS VSS nfet_03p3 w=0.85u l=0.3u
 .ends

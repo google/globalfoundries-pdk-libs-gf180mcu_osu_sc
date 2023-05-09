@@ -12,16 +12,10 @@
 // limitations under the License.
 `timescale 1ns/10ps
 `celldefine
-module gf180mcu_osu_sc_gp9t3v3__lshifup (Y, A);
-	output Y;
+module gf180mcu_osu_sc_gp9t3v3__ant (A);
 	input A;
-
-	// Function
-	buf (Y, A);
-
 	// Timing
 	specify
-		(A => Y) = 0;
 	endspecify
 endmodule
 `endcelldefine

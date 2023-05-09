@@ -18,7 +18,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__clkinv_2
   CLASS CORE ;
   ORIGIN 0 0 ;
   FOREIGN gf180mcu_osu_sc_gp12t3v3__clkinv_2 0 0 ;
-  SIZE 3.2 BY 8.1 ;
+  SIZE 3.2 BY 8.3 ;
   SYMMETRY X Y ;
   SITE gf180mcu_osu_sc_gp12t3v3 ;
   PIN VDD
@@ -26,46 +26,47 @@ MACRO gf180mcu_osu_sc_gp12t3v3__clkinv_2
     USE POWER ;
     SHAPE ABUTMENT ;
     PORT
-      LAYER MET1 ;
-        RECT 0 7.5 3.2 8.1 ;
-        RECT 2.3 5.45 2.55 8.1 ;
-        RECT 0.55 5.45 0.8 8.1 ;
+      LAYER Metal1 ;
+        RECT 0 7.6 3.2 8.3 ;
+        RECT 2.3 5.55 2.55 8.3 ;
+        RECT 0.55 5.55 0.8 8.3 ;
     END
   END VDD
   PIN VSS
     DIRECTION INOUT ;
     USE GROUND ;
+    SHAPE ABUTMENT ;
     PORT
-      LAYER MET1 ;
-        RECT 0 0 3.2 0.6 ;
-        RECT 2.25 0 2.5 1.8 ;
-        RECT 0.55 0 0.8 1.8 ;
+      LAYER Metal1 ;
+        RECT 0 0 3.2 0.7 ;
+        RECT 2.25 0 2.5 1.9 ;
+        RECT 0.55 0 0.8 1.9 ;
     END
   END VSS
   PIN A
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
-      LAYER MET1 ;
-        RECT 0.65 3.5 1.15 3.8 ;
-      LAYER MET2 ;
-        RECT 0.65 3.45 1.15 3.85 ;
-      LAYER VIA12 ;
-        RECT 0.77 3.52 1.03 3.78 ;
+      LAYER Metal1 ;
+        RECT 0.65 3.6 1.15 3.9 ;
+      LAYER Metal2 ;
+        RECT 0.65 3.55 1.15 3.95 ;
+      LAYER Via1 ;
+        RECT 0.77 3.62 1.03 3.88 ;
     END
   END A
   PIN Y
     DIRECTION OUTPUT ;
     USE SIGNAL ;
     PORT
-      LAYER MET1 ;
-        RECT 1.4 4.4 2 4.7 ;
-        RECT 1.4 4.25 1.85 4.8 ;
-        RECT 1.4 0.95 1.65 7.15 ;
-      LAYER MET2 ;
-        RECT 1.5 4.35 2 4.75 ;
-      LAYER VIA12 ;
-        RECT 1.62 4.42 1.88 4.68 ;
+      LAYER Metal1 ;
+        RECT 1.4 4.5 2 4.8 ;
+        RECT 1.4 4.35 1.85 4.9 ;
+        RECT 1.4 1.05 1.65 7.25 ;
+      LAYER Metal2 ;
+        RECT 1.5 4.45 2 4.85 ;
+      LAYER Via1 ;
+        RECT 1.62 4.52 1.88 4.78 ;
     END
   END Y
 END gf180mcu_osu_sc_gp12t3v3__clkinv_2

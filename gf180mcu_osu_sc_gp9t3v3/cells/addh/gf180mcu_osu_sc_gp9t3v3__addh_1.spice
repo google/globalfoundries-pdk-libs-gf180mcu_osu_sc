@@ -15,18 +15,18 @@
 * NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__addh_1.ext - technology: gf180mcuC
 
 .subckt gf180mcu_osu_sc_gp9t3v3__addh_1 A B S CO VDD VSS
-X0 a_19_14# A VDD VDD pmos_3p3 w=1.7u l=0.3u
-X1 a_91_19# B a_91_70# VDD pmos_3p3 w=1.7u l=0.3u
-X2 VSS a_19_14# a_75_19# VSS nmos_3p3 w=0.85u l=0.3u
-X3 VDD a_19_14# a_91_19# VDD pmos_3p3 w=1.7u l=0.3u
-X4 a_19_14# B a_42_19# VSS nmos_3p3 w=0.85u l=0.3u
-X5 VSS a_19_14# CO VSS nmos_3p3 w=0.85u l=0.3u
-X6 VDD B a_19_14# VDD pmos_3p3 w=1.7u l=0.3u
-X7 VDD a_19_14# CO VDD pmos_3p3 w=1.7u l=0.3u
-X8 S a_91_19# VSS VSS nmos_3p3 w=0.85u l=0.3u
-X9 a_91_19# A a_75_19# VSS nmos_3p3 w=0.85u l=0.3u
-X10 S a_91_19# VDD VDD pmos_3p3 w=1.7u l=0.3u
-X11 a_42_19# A VSS VSS nmos_3p3 w=0.85u l=0.3u
-X12 a_91_70# A VDD VDD pmos_3p3 w=1.7u l=0.3u
-X13 a_75_19# B a_91_19# VSS nmos_3p3 w=0.85u l=0.3u
+X0 VDD a_19_16# a_91_21# VDD pfet_03p3 w=1.7u l=0.3u
+X1 VDD B a_19_16# VDD pfet_03p3 w=1.7u l=0.3u
+X2 VSS a_19_16# a_75_21# VSS nfet_03p3 w=0.85u l=0.3u
+X3 VDD a_19_16# CO VDD pfet_03p3 w=1.7u l=0.3u
+X4 a_19_16# B a_42_21# VSS nfet_03p3 w=0.85u l=0.3u
+X5 VSS a_19_16# CO VSS nfet_03p3 w=0.85u l=0.3u
+X6 S a_91_21# VDD VDD pfet_03p3 w=1.7u l=0.3u
+X7 a_91_72# A VDD VDD pfet_03p3 w=1.7u l=0.3u
+X8 S a_91_21# VSS VSS nfet_03p3 w=0.85u l=0.3u
+X9 a_19_16# A VDD VDD pfet_03p3 w=1.7u l=0.3u
+X10 a_91_21# B a_91_72# VDD pfet_03p3 w=1.7u l=0.3u
+X11 a_91_21# A a_75_21# VSS nfet_03p3 w=0.85u l=0.3u
+X12 a_42_21# A VSS VSS nfet_03p3 w=0.85u l=0.3u
+X13 a_75_21# B a_91_21# VSS nfet_03p3 w=0.85u l=0.3u
 .ends

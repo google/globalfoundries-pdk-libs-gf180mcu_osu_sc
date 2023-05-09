@@ -30,20 +30,20 @@ C {vdd.sym} 180 -740 0 0 {name=l1 lab=VDD}
 C {gnd.sym} 180 -490 0 0 {name=l3 lab=GND}
 C {ipin.sym} 80 -620 0 0 {name=p3 lab=Sel
 }
-C {pmos4.sym} 160 -680 0 0 {name=X0 model=pmos_3p3 w=1.7u l=0.3u m=1}
-C {nmos4.sym} 160 -550 0 0 {name=X1 model=nmos_3p3 w=0.85u l=0.3u m=1}
+C {pmos4.sym} 160 -680 0 0 {name=X0 model=pfet_03p3 w=1.7u l=0.3u m=1}
+C {nmos4.sym} 160 -550 0 0 {name=X1 model=nfet_03p3 w=0.85u l=0.3u m=1}
 C {lab_wire.sym} 210 -680 2 0 {name=l2 sig_type=std_logic lab=VDD
 }
 C {lab_wire.sym} 210 -550 2 0 {name=l4 sig_type=std_logic lab=GND
 }
-C {pmos4.sym} 180 -160 1 0 {name=X2 model=pmos_3p3 w=1.7u l=0.3u m=1}
+C {pmos4.sym} 180 -160 1 0 {name=X2 model=pfet_03p3 w=1.7u l=0.3u m=1}
 C {lab_wire.sym} 180 -140 3 0 {name=l5 sig_type=std_logic lab=VDD
 }
-C {nmos4.sym} 180 -40 3 0 {name=X3 model=nmos_3p3 w=0.85u l=0.3u m=1}
-C {pmos4.sym} 180 -390 1 0 {name=X4 model=pmos_3p3 w=1.7u l=0.3u m=1}
+C {nmos4.sym} 180 -40 3 0 {name=X3 model=nfet_03p3 w=0.85u l=0.3u m=1}
+C {pmos4.sym} 180 -390 1 0 {name=X4 model=pfet_03p3 w=1.7u l=0.3u m=1}
 C {lab_wire.sym} 180 -370 3 0 {name=l6 sig_type=std_logic lab=VDD
 }
-C {nmos4.sym} 180 -270 3 0 {name=X5 model=nmos_3p3 w=0.85u l=0.3u m=1}
+C {nmos4.sym} 180 -270 3 0 {name=X5 model=nfet_03p3 w=0.85u l=0.3u m=1}
 C {lab_wire.sym} 180 -290 1 0 {name=l7 sig_type=std_logic lab=GND
 }
 C {lab_wire.sym} 180 -60 1 0 {name=l8 sig_type=std_logic lab=GND

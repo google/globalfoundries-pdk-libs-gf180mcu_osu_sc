@@ -15,12 +15,12 @@
 * NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__oai31_1.ext - technology: gf180mcuC
 
 .subckt gf180mcu_osu_sc_gp9t3v3__oai31_1 A0 A1 A2 B Y VDD VSS
-X0 a_25_19# A1 VSS VSS nmos_3p3 w=0.85u l=0.3u
-X1 a_25_19# A2 VSS VSS nmos_3p3 w=0.85u l=0.3u
-X2 Y A1 a_45_70# VDD pmos_3p3 w=1.7u l=0.3u
-X3 Y B a_25_19# VSS nmos_3p3 w=0.85u l=0.3u
-X4 a_34_70# A2 VDD VDD pmos_3p3 w=1.7u l=0.3u
-X5 VSS A0 a_25_19# VSS nmos_3p3 w=0.85u l=0.3u
-X6 a_45_70# A0 a_34_70# VDD pmos_3p3 w=1.7u l=0.3u
-X7 VDD B Y VDD pmos_3p3 w=1.7u l=0.3u
+X0 Y A1 a_45_72# VDD pfet_03p3 w=1.7u l=0.3u
+X1 a_25_21# A1 VSS VSS nfet_03p3 w=0.85u l=0.3u
+X2 a_25_21# A2 VSS VSS nfet_03p3 w=0.85u l=0.3u
+X3 a_34_72# A2 VDD VDD pfet_03p3 w=1.7u l=0.3u
+X4 a_45_72# A0 a_34_72# VDD pfet_03p3 w=1.7u l=0.3u
+X5 VDD B Y VDD pfet_03p3 w=1.7u l=0.3u
+X6 Y B a_25_21# VSS nfet_03p3 w=0.85u l=0.3u
+X7 VSS A0 a_25_21# VSS nfet_03p3 w=0.85u l=0.3u
 .ends

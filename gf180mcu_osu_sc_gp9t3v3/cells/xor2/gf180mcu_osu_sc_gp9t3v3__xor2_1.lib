@@ -11,7 +11,7 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
   cell (gf180mcu_osu_sc_gp9t3v3__xor2_1) {
-    area : 41.205;
+    area : 42.545;
     cell_leakage_power : 0.00287924;
     pg_pin (VDD) {
       pg_type : primary_power;

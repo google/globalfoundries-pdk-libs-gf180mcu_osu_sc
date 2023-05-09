@@ -15,20 +15,20 @@
 * NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__clkinv_8.ext - technology: gf180mcuC
 
 .subckt gf180mcu_osu_sc_gp9t3v3__clkinv_8 A Y VDD VSS
-X0 VDD A Y VDD pmos_3p3 w=1.7u l=0.3u
-X1 VDD A Y VDD pmos_3p3 w=1.7u l=0.3u
-X2 VSS A Y VSS nmos_3p3 w=0.85u l=0.3u
-X3 Y A VSS VSS nmos_3p3 w=0.85u l=0.3u
-X4 Y A VSS VSS nmos_3p3 w=0.85u l=0.3u
-X5 VDD A Y VDD pmos_3p3 w=1.7u l=0.3u
-X6 Y A VSS VSS nmos_3p3 w=0.85u l=0.3u
-X7 Y A VDD VDD pmos_3p3 w=1.7u l=0.3u
-X8 Y A VDD VDD pmos_3p3 w=1.7u l=0.3u
-X9 Y A VDD VDD pmos_3p3 w=1.7u l=0.3u
-X10 Y A VSS VSS nmos_3p3 w=0.85u l=0.3u
-X11 VSS A Y VSS nmos_3p3 w=0.85u l=0.3u
-X12 Y A VDD VDD pmos_3p3 w=1.7u l=0.3u
-X13 VSS A Y VSS nmos_3p3 w=0.85u l=0.3u
-X14 VSS A Y VSS nmos_3p3 w=0.85u l=0.3u
-X15 VDD A Y VDD pmos_3p3 w=1.7u l=0.3u
+X0 VDD A Y VDD pfet_03p3 w=1.7u l=0.3u
+X1 Y A VDD VDD pfet_03p3 w=1.7u l=0.3u
+X2 Y A VDD VDD pfet_03p3 w=1.7u l=0.3u
+X3 Y A VDD VDD pfet_03p3 w=1.7u l=0.3u
+X4 VSS A Y VSS nfet_03p3 w=0.85u l=0.3u
+X5 Y A VSS VSS nfet_03p3 w=0.85u l=0.3u
+X6 Y A VSS VSS nfet_03p3 w=0.85u l=0.3u
+X7 Y A VSS VSS nfet_03p3 w=0.85u l=0.3u
+X8 Y A VDD VDD pfet_03p3 w=1.7u l=0.3u
+X9 VDD A Y VDD pfet_03p3 w=1.7u l=0.3u
+X10 VDD A Y VDD pfet_03p3 w=1.7u l=0.3u
+X11 VDD A Y VDD pfet_03p3 w=1.7u l=0.3u
+X12 Y A VSS VSS nfet_03p3 w=0.85u l=0.3u
+X13 VSS A Y VSS nfet_03p3 w=0.85u l=0.3u
+X14 VSS A Y VSS nfet_03p3 w=0.85u l=0.3u
+X15 VSS A Y VSS nfet_03p3 w=0.85u l=0.3u
 .ends

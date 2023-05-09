@@ -18,7 +18,7 @@ MACRO gf180mcu_osu_sc_gp9t3v3__fill_8
   CLASS CORE ;
   ORIGIN 0 0 ;
   FOREIGN gf180mcu_osu_sc_gp9t3v3__fill_8 0 0 ;
-  SIZE 0.8 BY 6.15 ;
+  SIZE 0.8 BY 6.35 ;
   SYMMETRY X Y ;
   SITE gf180mcu_osu_sc_gp9t3v3 ;
   PIN VDD
@@ -26,16 +26,17 @@ MACRO gf180mcu_osu_sc_gp9t3v3__fill_8
     USE POWER ;
     SHAPE ABUTMENT ;
     PORT
-      LAYER MET1 ;
-        RECT 0 5.55 0.8 6.15 ;
+      LAYER Metal1 ;
+        RECT 0 5.65 0.8 6.35 ;
     END
   END VDD
   PIN VSS
     DIRECTION INOUT ;
     USE GROUND ;
+    SHAPE ABUTMENT ;
     PORT
-      LAYER MET1 ;
-        RECT 0 0 0.8 0.6 ;
+      LAYER Metal1 ;
+        RECT 0 0 0.8 0.7 ;
     END
   END VSS
 END gf180mcu_osu_sc_gp9t3v3__fill_8

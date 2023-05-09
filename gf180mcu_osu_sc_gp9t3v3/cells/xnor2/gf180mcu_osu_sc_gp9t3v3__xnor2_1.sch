@@ -55,23 +55,23 @@ N 400 -260 400 -210 { lab=Y}
 N 200 -230 400 -230 { lab=Y}
 N 400 -230 440 -230 { lab=Y}
 C {gnd.sym} 200 -20 0 0 {name=l3 lab=GND}
-C {nmos4.sym} 180 -180 0 0 {name=X2 model=nmos_3p3 w=0.85u l=0.3u m=1}
-C {nmos4.sym} 180 -80 0 0 {name=X3 model=nmos_3p3 w=0.85u l=0.3u m=1}
+C {nmos4.sym} 180 -180 0 0 {name=X2 model=nfet_03p3 w=0.85u l=0.3u m=1}
+C {nmos4.sym} 180 -80 0 0 {name=X3 model=nfet_03p3 w=0.85u l=0.3u m=1}
 C {lab_wire.sym} 210 -180 2 0 {name=l6 sig_type=std_logic lab=GND}
 C {lab_wire.sym} 220 -80 2 0 {name=l7 sig_type=std_logic lab=GND}
 C {lab_wire.sym} 140 -180 0 0 {name=l8 sig_type=std_logic lab=A}
 C {lab_wire.sym} 140 -80 0 0 {name=l9 sig_type=std_logic lab=BN}
 C {gnd.sym} 400 -20 0 0 {name=l1 lab=GND}
-C {nmos4.sym} 380 -180 0 0 {name=X1 model=nmos_3p3 w=0.85u l=0.3u m=1}
-C {nmos4.sym} 380 -80 0 0 {name=X4 model=nmos_3p3 w=0.85u l=0.3u m=1}
+C {nmos4.sym} 380 -180 0 0 {name=X1 model=nfet_03p3 w=0.85u l=0.3u m=1}
+C {nmos4.sym} 380 -80 0 0 {name=X4 model=nfet_03p3 w=0.85u l=0.3u m=1}
 C {lab_wire.sym} 410 -180 2 0 {name=l2 sig_type=std_logic lab=GND}
 C {lab_wire.sym} 420 -80 2 0 {name=l4 sig_type=std_logic lab=GND}
 C {lab_wire.sym} 340 -180 0 0 {name=l5 sig_type=std_logic lab=AN}
 C {lab_wire.sym} 340 -80 0 0 {name=l10 sig_type=std_logic lab=B}
-C {pmos4.sym} 180 -370 0 0 {name=M1 model=pmos_3p3 w=1.7u l=0.3u m=1}
-C {pmos4.sym} 180 -290 0 0 {name=M2 model=pmos_3p3 w=1.7u l=0.3u m=1}
-C {pmos4.sym} 380 -370 0 0 {name=M3 model=pmos_3p3 w=1.7u l=0.3u m=1}
-C {pmos4.sym} 380 -290 0 0 {name=M4 model=pmos_3p3 w=1.7u l=0.3u m=1}
+C {pmos4.sym} 180 -370 0 0 {name=M1 model=pfet_03p3 w=1.7u l=0.3u m=1}
+C {pmos4.sym} 180 -290 0 0 {name=M2 model=pfet_03p3 w=1.7u l=0.3u m=1}
+C {pmos4.sym} 380 -370 0 0 {name=M3 model=pfet_03p3 w=1.7u l=0.3u m=1}
+C {pmos4.sym} 380 -290 0 0 {name=M4 model=pfet_03p3 w=1.7u l=0.3u m=1}
 C {vdd.sym} 200 -420 0 0 {name=l11 lab=VDD}
 C {vdd.sym} 400 -420 0 0 {name=l12 lab=VDD}
 C {lab_wire.sym} 220 -370 2 0 {name=l13 sig_type=std_logic lab=VDD
@@ -86,8 +86,8 @@ C {ipin.sym} 140 -290 0 0 {name=p1 lab=B
 }
 C {ipin.sym} 140 -370 0 0 {name=p2 lab=A
 }
-C {nmos4.sym} 580 -290 0 0 {name=X5 model=nmos_3p3 w=0.85u l=0.3u m=1}
-C {pmos4.sym} 580 -390 0 0 {name=M5 model=pmos_3p3 w=1.7u l=0.3u m=1}
+C {nmos4.sym} 580 -290 0 0 {name=X5 model=nfet_03p3 w=0.85u l=0.3u m=1}
+C {pmos4.sym} 580 -390 0 0 {name=M5 model=pfet_03p3 w=1.7u l=0.3u m=1}
 C {lab_wire.sym} 620 -390 2 0 {name=l17 sig_type=std_logic lab=VDD
 }
 C {lab_wire.sym} 620 -290 2 0 {name=l18 sig_type=std_logic lab=GND}
@@ -97,8 +97,8 @@ C {lab_wire.sym} 510 -340 0 0 {name=l21 sig_type=std_logic lab=A
 }
 C {lab_wire.sym} 640 -340 2 0 {name=l22 sig_type=std_logic lab=AN
 }
-C {nmos4.sym} 800 -290 0 0 {name=X6 model=nmos_3p3 w=0.85u l=0.3u m=1}
-C {pmos4.sym} 800 -390 0 0 {name=M6 model=pmos_3p3 w=1.7u l=0.3u m=1}
+C {nmos4.sym} 800 -290 0 0 {name=X6 model=nfet_03p3 w=0.85u l=0.3u m=1}
+C {pmos4.sym} 800 -390 0 0 {name=M6 model=pfet_03p3 w=1.7u l=0.3u m=1}
 C {lab_wire.sym} 840 -390 2 0 {name=l23 sig_type=std_logic lab=VDD
 }
 C {lab_wire.sym} 840 -290 2 0 {name=l24 sig_type=std_logic lab=GND}

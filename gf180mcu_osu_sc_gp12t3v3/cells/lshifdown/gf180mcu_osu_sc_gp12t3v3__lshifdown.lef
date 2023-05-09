@@ -18,7 +18,7 @@ MACRO gf180mcu_osu_sc_gp12t3v3__lshifdown
   CLASS CORE ;
   ORIGIN 0 0 ;
   FOREIGN gf180mcu_osu_sc_gp12t3v3__lshifdown 0 0 ;
-  SIZE 5.2 BY 8.1 ;
+  SIZE 5.2 BY 8.3 ;
   SYMMETRY X Y ;
   SITE gf180mcu_osu_sc_gp12t3v3 ;
   PIN VDD
@@ -26,66 +26,67 @@ MACRO gf180mcu_osu_sc_gp12t3v3__lshifdown
     USE POWER ;
     SHAPE ABUTMENT ;
     PORT
-      LAYER MET1 ;
-        RECT 2.9 7.5 5.2 8.1 ;
-        RECT 3.45 5.45 3.75 8.1 ;
+      LAYER Metal1 ;
+        RECT 2.9 7.6 5.2 8.3 ;
+        RECT 3.45 5.55 3.75 8.3 ;
     END
   END VDD
   PIN VDDH
     DIRECTION INOUT ;
     USE POWER ;
     PORT
-      LAYER MET1 ;
-        RECT 0 7.5 2.3 8.1 ;
-        RECT 0.55 5.45 0.85 8.1 ;
+      LAYER Metal1 ;
+        RECT 0 7.6 2.3 8.3 ;
+        RECT 0.55 5.55 0.85 8.3 ;
     END
   END VDDH
   PIN VSS
     DIRECTION INOUT ;
     USE GROUND ;
+    SHAPE ABUTMENT ;
     PORT
-      LAYER MET1 ;
-        RECT 0 0 5.2 0.6 ;
-        RECT 3.45 0 3.75 1.8 ;
-        RECT 0.55 0 0.85 1.8 ;
+      LAYER Metal1 ;
+        RECT 0 0 5.2 0.7 ;
+        RECT 3.45 0 3.75 1.9 ;
+        RECT 0.55 0 0.85 1.9 ;
     END
   END VSS
   PIN A
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
-      LAYER MET1 ;
-        RECT 0.6 2.2 1.1 2.5 ;
-      LAYER MET2 ;
-        RECT 0.6 2.15 1.1 2.55 ;
-      LAYER VIA12 ;
-        RECT 0.72 2.22 0.98 2.48 ;
+      LAYER Metal1 ;
+        RECT 0.6 2.3 1.1 2.6 ;
+      LAYER Metal2 ;
+        RECT 0.6 2.25 1.1 2.65 ;
+      LAYER Via1 ;
+        RECT 0.72 2.32 0.98 2.58 ;
     END
   END A
   PIN Y
     DIRECTION OUTPUT ;
     USE SIGNAL ;
     PORT
-      LAYER MET1 ;
-        RECT 4.3 4.15 4.7 4.45 ;
-        RECT 4.35 0.95 4.65 7.15 ;
-      LAYER MET2 ;
-        RECT 4.25 4.1 4.75 4.5 ;
-      LAYER VIA12 ;
-        RECT 4.37 4.17 4.63 4.43 ;
+      LAYER Metal1 ;
+        RECT 4.3 4.25 4.7 4.55 ;
+        RECT 4.35 1.05 4.65 7.25 ;
+      LAYER Metal2 ;
+        RECT 4.25 4.2 4.75 4.6 ;
+      LAYER Via1 ;
+        RECT 4.37 4.27 4.63 4.53 ;
     END
   END Y
   OBS
-    LAYER MET2 ;
-      RECT 3.5 4.75 4 5.15 ;
-      RECT 1.35 4.75 1.85 5.15 ;
-      RECT 1.35 4.8 4 5.1 ;
-    LAYER VIA12 ;
-      RECT 3.62 4.82 3.88 5.08 ;
-      RECT 1.47 4.82 1.73 5.08 ;
-    LAYER MET1 ;
-      RECT 1.45 0.95 1.75 7.15 ;
-      RECT 1.35 4.8 1.85 5.1 ;
-      RECT 3.5 4.8 4 5.1 ;
+    LAYER Metal2 ;
+      RECT 3.5 4.85 4 5.25 ;
+      RECT 1.35 4.85 1.85 5.25 ;
+      RECT 1.35 4.9 4 5.2 ;
+    LAYER Via1 ;
+      RECT 3.62 4.92 3.88 5.18 ;
+      RECT 1.47 4.92 1.73 5.18 ;
+    LAYER Metal1 ;
+      RECT 1.45 1.05 1.75 7.25 ;
+      RECT 1.35 4.9 1.85 5.2 ;
+      RECT 3.5 4.9 4 5.2 ;
   END
 END gf180mcu_osu_sc_gp12t3v3__lshifdown

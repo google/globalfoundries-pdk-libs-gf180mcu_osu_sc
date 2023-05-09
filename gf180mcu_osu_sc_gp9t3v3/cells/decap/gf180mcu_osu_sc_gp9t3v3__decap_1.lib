@@ -1,5 +1,4 @@
-* Copyright 2022 Google LLC
-*
+/* Copyright 2022 Google LLC
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
 * You may obtain a copy of the License at
@@ -11,12 +10,23 @@
 * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 * See the License for the specific language governing permissions and
 * limitations under the License.
-
-* NGSPICE file created from gf180mcu_osu_sc_gp9t3v3__lshifdown.ext - technology: gf180mcuC
-
-.subckt gf180mcu_osu_sc_gp9t3v3__lshifdown A Y VDDH VDD VSS
-X0 a_26_19# A VDDH VDDH pmos_3p3 w=1.7u l=0.3u
-X1 Y a_26_19# VSS VSS nmos_3p3 w=0.85u l=0.3u
-X2 Y a_26_19# VDD VDD pmos_3p3 w=1.7u l=0.3u
-X3 a_26_19# A VSS VSS nmos_3p3 w=0.85u l=0.3u
-.ends
+  cell (gf180mcu_osu_sc_gp9t3v3__decap_1) {
+    area : 13.97;
+    cell_leakage_power : 0;
+    pg_pin (VDD) {
+      pg_type : primary_power;
+      voltage_name : "VDD";
+    }
+    pg_pin (VSS) {
+      pg_type : primary_ground;
+      voltage_name : "VSS";
+    }
+    leakage_power () {
+      value : 0;
+      related_pg_pin : VDD;
+    }
+    leakage_power () {
+      value : 0;
+      related_pg_pin : VSS;
+    }
+  }

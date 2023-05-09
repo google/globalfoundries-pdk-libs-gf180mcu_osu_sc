@@ -15,8 +15,8 @@
 * NGSPICE file created from gf180mcu_osu_sc_gp12t3v3__lshifdown.ext - technology: gf180mcuC
 
 .subckt gf180mcu_osu_sc_gp12t3v3__lshifdown A Y VDDH VDD VSS
-X0 a_26_19# A VDDH VDDH pmos_3p3 w=1.7u l=0.3u
-X1 Y a_26_19# VSS VSS nmos_3p3 w=0.85u l=0.3u
-X2 Y a_26_19# VDD VDD pmos_3p3 w=1.7u l=0.3u
-X3 a_26_19# A VSS VSS nmos_3p3 w=0.85u l=0.3u
+X0 a_26_21# A VDDH VDDH pfet_03p3 w=1.7u l=0.3u
+X1 Y a_26_21# VSS VSS nfet_03p3 w=0.85u l=0.3u
+X2 Y a_26_21# VDD VDD pfet_03p3 w=1.7u l=0.3u
+X3 a_26_21# A VSS VSS nfet_03p3 w=0.85u l=0.3u
 .ends

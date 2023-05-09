@@ -36,16 +36,16 @@ N 230 -225 230 -200 { lab=GND}
 N 230 -305 230 -285 { lab=A}
 C {vdd.sym} 615 -480 0 0 {name=l1 lab=VDDH}
 C {gnd.sym} 615 -230 0 0 {name=l3 lab=GND}
-C {pmos4.sym} 595 -420 0 0 {name=X0 model=pmos_3p3 w=1.7u l=0.3u m=1}
-C {nmos4.sym} 595 -290 0 0 {name=X1 model=nmos_3p3 w=0.85u l=0.3u m=1}
+C {pmos4.sym} 595 -420 0 0 {name=X0 model=pfet_03p3 w=1.7u l=0.3u m=1}
+C {nmos4.sym} 595 -290 0 0 {name=X1 model=nfet_03p3 w=0.85u l=0.3u m=1}
 C {lab_wire.sym} 645 -420 2 0 {name=l2 sig_type=std_logic lab=VDD
 }
 C {lab_wire.sym} 645 -290 2 0 {name=l4 sig_type=std_logic lab=GND
 }
 C {vdd.sym} 875 -480 0 0 {name=l11 lab=VDD}
 C {gnd.sym} 875 -230 0 0 {name=l12 lab=GND}
-C {pmos4.sym} 855 -420 0 0 {name=X6 model=pmos_3p3 w=1.7u l=0.3u m=1}
-C {nmos4.sym} 855 -290 0 0 {name=X7 model=nmos_3p3 w=0.85u l=0.3u m=1}
+C {pmos4.sym} 855 -420 0 0 {name=X6 model=pfet_03p3 w=1.7u l=0.3u m=1}
+C {nmos4.sym} 855 -290 0 0 {name=X7 model=nfet_03p3 w=0.85u l=0.3u m=1}
 C {lab_wire.sym} 905 -420 2 0 {name=l13 sig_type=std_logic lab=VDDH
 }
 C {lab_wire.sym} 905 -290 2 0 {name=l14 sig_type=std_logic lab=GND

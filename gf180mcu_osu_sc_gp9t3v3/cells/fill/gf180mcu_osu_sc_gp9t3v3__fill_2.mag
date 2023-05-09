@@ -13,19 +13,19 @@
 # limitations under the License.
 magic
 tech gf180mcuC
-timestamp 1661875002
+timestamp 1677107365
 << error_p >>
-rect 0 111 18 123
-rect 4 61 18 111
-rect 0 0 5 12
+rect 0 113 18 127
+rect 4 63 18 113
+rect 0 0 5 14
 << nwell >>
-rect 0 61 4 123
+rect 0 63 4 127
 << metal1 >>
-rect 0 111 4 123
-rect 0 0 4 12
+rect 0 113 4 127
+rect 0 0 4 14
 << labels >>
-rlabel metal1 2 116 2 116 3 VDD
+rlabel metal1 2 118 2 118 3 VDD
 port 1 n
-rlabel metal1 2 5 2 5 2 VSS
+rlabel metal1 2 7 2 7 2 VSS
 port 2 n
 << end >>
